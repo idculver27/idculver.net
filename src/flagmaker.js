@@ -1,3 +1,5 @@
+// https://en.wikipedia.org/wiki/International_maritime_signal_flags
+// change to rely much more heavily upon blazon functions
 export default class FlagMaker {
     constructor() {
         this.ns = "http://www.w3.org/2000/svg";
@@ -9,6 +11,7 @@ export default class FlagMaker {
         this.yellow = "#ffcc00";
         this.blue = "#000080";
         this.flag = null;
+        this.numFlagWConst = 1.75;
     }
 
     make(char) {
@@ -150,46 +153,68 @@ export default class FlagMaker {
                 this.drawPolygon([0,h, 0,0, w/2,h/2], black);
                 break;
             case "0":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawNumFlagBG(yellow);
+                this.drawPolygon([w*7/12,h/12, w*7/6,h/6, w*7/6,h*5/6, w*7/12,h*11/12], red);
                 break;
             case "1":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawNumFlagBG(white);
+                this.drawCircle(w/2, h/2, w/4, red);
                 break;
             case "2":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawNumFlagBG(blue);
+                this.drawCircle(w/2, h/2, w/4, white);
                 break;
             case "3":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawPolygon([0,0, w*7/12,h/12, w*7/12,h*11/12, 0,h], red);
+                this.drawPolygon([w*7/12,h/12, w*7/6,h/6, w*7/6,h*5/6, w*7/12,h*11/12], white);
+                this.drawPolygon([w*7/6,h/6, w*7/4,h/4, w*7/4,h*3/4, w*7/6,h*5/6], blue);
                 break;
             case "4":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawNumFlagSaltire(red, white);
                 break;
             case "5":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawPolygon([0,0, w*7/8,h/8, w*7/8,h*7/8, 0,h], yellow);
+                this.drawPolygon([w*7/8,h/8, w*this.numFlagWConst,h/4, w*this.numFlagWConst,h*3/4, w*7/8,h*7/8], blue);
                 break;
             case "6":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawPolygon([0,0, w*this.numFlagWConst,h/4, w*this.numFlagWConst,h/2, 0,h/2], black);
+                this.drawPolygon([0,h/2, w*this.numFlagWConst,h/2, w*this.numFlagWConst,h*3/4, 0,h], white);
                 break;
             case "7":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawPolygon([0,0, w*this.numFlagWConst,h/4, w*this.numFlagWConst,h/2, 0,h/2], yellow);
+                this.drawPolygon([0,h/2, w*this.numFlagWConst,h/2, w*this.numFlagWConst,h*3/4, 0,h], red);
                 break;
             case "8":
-
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawNumFlagSaltire(white, red);
                 break;
             case "9":
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                this.drawPolygon([0,0, w*7/8,h/8, w*7/8,h/2, 0,h/2], white);
+                this.drawPolygon([0,h/2, w*7/8,h/2, w*7/8,h*7/8, 0,h], red);
+                this.drawPolygon([w*7/8,h/8, w*this.numFlagWConst,h/4, w*this.numFlagWConst,h/2, w*7/8,h/2], black);
+                this.drawPolygon([w*7/8,h/2, w*this.numFlagWConst,h/2, w*this.numFlagWConst,h*3/4, w*7/8,h*7/8], yellow);
+                break;
+            case "x": // first substitute
 
                 break;
-            case "x":
+            case "y": // second subsitute
 
                 break;
-            case "y":
+            case "z": // third substitute
 
                 break;
-            case "z":
-
-                break;
-            case "#":
-
+            case "#": // code
+                this.flag.setAttribute("width", w*this.numFlagWConst);
+                //this.drawPolygon([0,0, w*7/20,])
                 break;
             default:
                 console.log("Invalid flag token: " + char);
@@ -251,8 +276,17 @@ export default class FlagMaker {
     }
 
     drawNumFlagBG(fill) {
-        let w = this.width*1.75;
+        let w = this.width*this.numFlagWConst;
         let h = this.height;
-        
+        this.drawPolygon([0,0, w,h/4, w,h*3/4, 0,h], fill);
+    }
+
+    drawNumFlagSaltire(bgFill, saltireFill) { // verify that these measurements are correct
+        let w = this.width;
+        let h = this.height;
+        this.drawPolygon([0,0, w*3/8,h*3/56, w*3/8,h*53/56, 0,h], bgFill);
+        this.drawPolygon([w*5/8,h*5/56, w*this.numFlagWConst,h/4, w*this.numFlagWConst,h*3/4, w*5/8,h*51/56], bgFill);
+        this.drawPolygon([w*3/8,h*3/56, w*5/8,h*5/56, w*5/8,h*51/56, w*3/8,h*53/56], saltireFill);
+        this.drawRect(0, h*3/8, w*this.numFlagWConst, h/4, saltireFill);
     }
 }
