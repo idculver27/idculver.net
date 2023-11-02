@@ -12,3 +12,11 @@ p {
     font-family: "Helvetica";
     font-size: 120%;
 }
+.entry {
+    color: white;
+    font-family: "Helvetica";
+    font-size: 120%;
+}
+button {
+    font-family: "Helvetica";
+}
