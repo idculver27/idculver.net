@@ -81,43 +81,73 @@ export default class FlagMaker {
                 this.drawSaltire(white);
                 break;
             case "N":
-
+                this.drawBG(blue);
+                this.drawRect(w/4, 0, w/4, h/4, white);
+                this.drawRect(w*3/4, 0, w/4, h/4, white);
+                this.drawRect(0, h/4, w/4, h/4, white);
+                this.drawRect(w/2, h/4, w/4, h/4, white);
+                this.drawRect(w/4, h/2, w/4, h/4, white);
+                this.drawRect(w*3/4, h/2, w/4, h/4, white);
+                this.drawRect(0, h*3/4, w/4, h/4, white);
+                this.drawRect(w/2, h*3/4, w/4, h/4, white);
                 break;
             case "O":
-
+                this.drawBG(red);
+                this.drawPolygon([0,0, w,h, 0,h], yellow);
                 break;
             case "P":
-
+                this.drawBG(blue);
+                this.drawRect(w/3, h/3, w/3, h/3, white);
                 break;
             case "Q":
                 this.drawBG(yellow);
                 break;
             case "R":
-
+                this.drawBG(red);
+                this.drawRect(w*2/5, 0, w/5, h, yellow);
+                this.drawRect(0, h*2/5, w, h/5, yellow);
                 break;
             case "S":
-
+                this.drawBG(white);
+                this.drawRect(w/3, h/3, w/3, h/3, blue);
                 break;
             case "T":
-
+                this.drawRect(0, 0, w/3, h, red);
+                this.drawRect(w/3, 0, w/3, h, white);
+                this.drawRect(w*2/3, 0, w/3, h, blue);
                 break;
             case "U":
-
+                this.drawBG(red);
+                this.drawRect(w/2, 0, w/2, h/2, white);
+                this.drawRect(0, h/2, w/2, h/2, white);
                 break;
             case "V":
-
+                this.drawBG(white);
+                this.drawSaltire(red);
                 break;
             case "W":
-
+                this.drawBG(blue);
+                this.drawRect(w/5, h/5, w*3/5, h*3/5, white);
+                this.drawRect(w*2/5, h*2/5, w/5, h/5, red);
                 break;
             case "X":
-
+                this.drawBG(white);
+                this.drawRect(w*2/5, 0, w/5, h, blue);
+                this.drawRect(0, h*2/5, w, h/5, blue);
                 break;
             case "Y":
-
+                this.drawBG(yellow);
+                this.drawPolygon([w/5,0, w*2/5,0, 0,h*2/5, 0,h/5], red);
+                this.drawPolygon([w*3/5,0, w*4/5,0, 0,h*4/5, 0,h*3/5], red);
+                this.drawPolygon([w,0, w,h/5, w/5,h, 0,h], red);
+                this.drawPolygon([w,h*2/5, w,h*3/5, w*3/5,h, w*2/5,h], red);
+                this.drawPolygon([w,h*4/5, w,h, w*4/5,h], red);
                 break;
             case "Z":
-
+                this.drawPolygon([0,0, w,0, w/2,h/2], yellow);
+                this.drawPolygon([w,0, w,h, w/2,h/2], blue);
+                this.drawPolygon([w,h, 0,h, w/2,h/2], red);
+                this.drawPolygon([0,h, 0,0, w/2,h/2], black);
                 break;
             case "0":
 
@@ -216,6 +246,13 @@ export default class FlagMaker {
     drawSaltire(fill) {
         let w = this.width;
         let h = this.height;
-        this.drawPolygon([], fill);
+        this.drawPolygon([0,h/8, 0,0, w/8,0, w,h*7/8, w,h, w*7/8,h], fill);
+        this.drawPolygon([w*7/8,0, w,0, w,h/8, w/8,h, 0,h, 0,h*7/8], fill);
+    }
+
+    drawNumFlagBG(fill) {
+        let w = this.width*1.75;
+        let h = this.height;
+        
     }
 }
