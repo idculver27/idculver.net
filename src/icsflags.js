@@ -31,7 +31,7 @@ function parseMsg(msg) {
     
     // substitutes
     // TODO
-    // apparently string are immutable in js
+    // apparently strings are immutable in js
     /*msgArray.forEach(word => {
         if (word.length >= 4) {
             if (word[3] == word[2]) {
@@ -58,6 +58,11 @@ function parseMsg(msg) {
 
     return msgArray;
 }
+
+// somewhere in these to functions, padding between flags
+// words vertical
+// words next to each other
+// bg should be there before the flags are made
 
 function drawFlags(msgArray) {
     // for each letter of each word, buildFlag()
