@@ -133,13 +133,11 @@ export default class FlagMaker {
                 break;
             case "W":
                 this.drawBG(blue);
-                this.drawRect(w/5, h/5, w*3/5, h*3/5, white);
-                this.drawRect(w*2/5, h*2/5, w/5, h/5, red);
+                this.drawRect(w/6, h/6, w*2/3, h*2/3, white);
+                this.drawRect(w/3, h/3, w/3, h/3, red);
                 break;
             case "X":
-                this.drawBG(white);
-                this.drawRect(w*2/5, 0, w/5, h, blue);
-                this.drawRect(0, h*2/5, w, h/5, blue);
+                this.drawCross(white, blue)
                 break;
             case "Y":
                 this.drawBG(yellow);
@@ -156,16 +154,16 @@ export default class FlagMaker {
                 break;
             case "x": // first substitute
                 this.drawPolygon([0,0, subW,h/2, 0,h], blue);
-                this.drawPolygon([0,h/6, subW*2/3,h/2, 0,h*5/6], yellow);
+                this.drawPolygon([0,h/5, subW*3/5,h/2, 0,h*4/5], yellow);
                 break;
             case "y": // second subsitute
                 this.drawPolygon([0,0, subW/2,h/4, subW/2,h*3/4, 0,h], blue);
                 this.drawPolygon([subW/2,h/4, subW,h/2, subW/2,h*3/4], white);
                 break;
             case "z": // third substitute
-                this.drawPolygon([0,0, subW*3/2,h/3, 0,h/3], white);
-                this.drawPolygon([0,h/3, subW*3/2,h/3, subW,h/2, subW*3/2,h*2/3, 0,h*2/3], black);
-                this.drawPolygon([0,h*2/3, subW*3/2,h*2/3, 0,h], white);
+                this.drawPolygon([0,0, subW*2/3,h/3, 0,h/3], white);
+                this.drawPolygon([0,h/3, subW*2/3,h/3, subW,h/2, subW*2/3,h*2/3, 0,h*2/3], black);
+                this.drawPolygon([0,h*2/3, subW*2/3,h*2/3, 0,h], white);
                 break;
             case "#": // code
                 this.drawPolygon([0,0, penW/5,h/20, penW/5,h*19/20, 0,h], red);
@@ -281,13 +279,13 @@ export default class FlagMaker {
 
     drawInescutcheon(bgFill, fill) {
         this.drawBG(bgFill);
-        this.drawRect(this.w/3, this.h/3, this.w/3, this.h/3, fill);
+        this.drawRect(this.w/4, this.h/4, this.w/2, this.h/2, fill);
     }
 
     drawCross(bgFill, fill) {
         this.drawBG(bgFill);
-        this.drawRect(this.w*2/5, 0, this.w/5, this.h, fill);
-        this.drawRect(0, this.h*2/5, this.w, this.h/5, fill);
+        this.drawRect(this.w*3/8, 0, this.w/4, this.h, fill);
+        this.drawRect(0, this.h*3/8, this.w, this.h/4, fill);
     }
 
     drawBGPen(fill) {
