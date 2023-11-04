@@ -9,6 +9,9 @@
    id="svg1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="favicon.svg"
+   inkscape:export-filename="favicon-anti3.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="16.719529"
-     inkscape:cx="34.689973"
-     inkscape:cy="30.114485"
+     inkscape:zoom="11.822492"
+     inkscape:cx="14.886878"
+     inkscape:cy="34.129859"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -38,8 +41,8 @@
        units="mm"
        originx="0"
        originy="0"
-       spacingx="3.9999999"
-       spacingy="3.9999999"
+       spacingx="7.9999998"
+       spacingy="7.9999998"
        empcolor="#0099e5"
        empopacity="0.30196078"
        color="#0099e5"
@@ -57,47 +60,46 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       id="rect12"
-       style="fill:#ff0000;stroke-width:0.5;stroke-linejoin:bevel"
-       d="M 7.9999994,0.40442683 14.577959,4.202213 8.0000002,8.0000002 1.4220404,4.2022138 Z"
+       id="rect4"
+       style="fill:#ff0000;stroke-linejoin:bevel"
+       d="M 1.5048096,4.2499998 8.0000002,0.5 14.49519,4.2500002 l -6.4951898,3.75 z"
        sodipodi:nodetypes="ccccc" />
     <path
-       id="rect13"
-       style="fill:#ffffff;stroke-width:0.499999;stroke-linejoin:bevel"
-       d="m 8,8 6.577959,-3.797787 10e-7,7.595573 -6.5779594,3.797787 z"
+       id="rect5"
+       style="fill:#00ffff;stroke-linejoin:bevel"
+       d="M 1.5048096,4.2499998 8.0000002,8.0000002 7.9999998,15.5 1.5048094,11.75 Z"
        sodipodi:nodetypes="ccccc" />
     <path
-       id="rect14"
-       style="fill:#00ffff;stroke-width:0.499999;stroke-linejoin:bevel"
-       d="m 1.4220404,4.2022139 6.5779598,3.7977863 4e-7,7.5955728 -6.5779596,-3.797786 z"
+       id="rect6"
+       style="fill:#ffffff;stroke-linejoin:bevel"
+       d="m 8.0000002,8.0000002 6.4951898,-3.75 0,7.4999998 -6.4951902,3.75 z"
        sodipodi:nodetypes="ccccc" />
     <path
        sodipodi:type="star"
-       style="fill:none;stroke:#000000;stroke-width:0.49537115;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       id="path7"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
        inkscape:flatsided="true"
        sodipodi:sides="6"
        sodipodi:cx="8"
        sodipodi:cy="8"
-       sodipodi:r1="7.5252557"
-       sodipodi:r2="6.5170627"
-       sodipodi:arg1="-1.5707964"
-       sodipodi:arg2="-1.0471976"
+       sodipodi:r1="7.5"
+       sodipodi:r2="3.803535"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471975"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="m 7.9999994,0.47474432 6.5170626,3.76262738 1e-6,7.5252553 -6.5170624,3.762629 -6.5170629,-3.762628 -6e-7,-7.5252554 z"
-       transform="matrix(1.0093442,0,0,1.0093442,-0.0747536,-0.0747536)" />
+       d="M 8.0000002,0.5 14.495191,4.2500002 14.49519,11.75 7.9999998,15.5 1.5048094,11.75 l 2e-7,-7.5000002 z" />
     <path
-       style="fill:#ff0000;stroke:#000000;stroke-width:0.499999;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       d="M 8,8 1.4220404,4.2022138"
-       id="path9" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       d="M 8,8 1.5048095,4.2499996"
+       id="path2" />
     <path
-       style="fill:#ff0000;stroke:#000000;stroke-width:0.499999;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       d="M 14.577959,4.202213 8,8"
-       id="path10" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       d="M 14.49519,4.2500002 7.9999998,7.9999998"
+       id="path3" />
     <path
-       style="fill:#ff0000;stroke:#000000;stroke-width:0.499999;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       d="M 8.0000006,15.595573 8,8"
-       id="path11" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.9999998,15.5 8,8"
+       id="path4" />
   </g>
 </svg>
