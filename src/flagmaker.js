@@ -36,7 +36,8 @@ export default class FlagMaker {
         } else if (/[#0-9]/.test(char)) {
             this.flag.setAttribute("width", penW);
         } else {
-            console.log("Invalid flag token: " + char);
+            this.flag.setAttribute("width", w);
+            return this.flag;
         }
         
         // draw flag

@@ -90,18 +90,19 @@ function parseMsg(msg) {
 
 function drawFlags(msgArray) {
     msgArray.forEach(row => {
+        let tr = document.createElement("tr");
         row.forEach(char => {
-            buildFlag(char);
-        })
+            let td = document.createElement("td");
+            let flag = flagMaker.make(char);
+            td.appendChild(flag);
+            tr.appendChild(td);
+            
+            // padding
+            let pad = document.createElement("td");
+            pad.className = "padcol";
+            tr.appendChild(pad);
+        });
+        tr.lastChild.remove(); // delete last pad
+        flagsField.appendChild(tr);
     });
 }
-
-function buildFlag(char) {
-    let div = document.createElement("div");
-    let flag = flagMaker.make(char);
-    div.className = "flag";
-    div.id = char;
-    div.appendChild(flag);
-    flagsField.appendChild(div);
-}
-
