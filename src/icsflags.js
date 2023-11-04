@@ -10,8 +10,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     msgInput.addEventListener("input", (event) => {
         clearField();
-        let msgArray = parseMsg(event.target.value.trim());
-        drawFlags(msgArray);
+        let msg = parseMsg(event.target.value.trim());
+        drawFlags(msg);
     });
 });
 
@@ -27,10 +27,27 @@ function parseMsg(msg) {
     msg = msg.toUpperCase();
     msg = msg.replace(/[^A-Z0-9#\s]/g, ""); // remove everything except letters, numbers, #, and space
     msg = msg.replace(/\s+/g, " "); // squish spaces
-    let msgArray = msg.split(" "); // split into array of words
-    
-    // substitutes
-    // TODO
+    msg = msg.split(" "); // split into array of words
+
+    // find longest word
+    let longest = 0;
+    msg.forEach(word => {
+        if (word.length > longest) {
+            longest = word.length;
+        }
+    });
+
+    // split each word into array of chars
+    let msgArray = [];
+    msg.forEach(word => {
+        let wordArray = [];
+        for (let i = 0; i < longest; i++) {
+            wordArray.push(word.charAt(i));
+        }
+        msgArray.push(wordArray);
+    });
+
+    // substitutes // TODO
     // apparently strings are immutable in js
     /*msgArray.forEach(word => {
         if (word.length >= 4) {
@@ -56,20 +73,26 @@ function parseMsg(msg) {
         }
     });*/
 
-    return msgArray;
+    // swap the dimensions
+    let finalMsg = [];
+    for (let i = 0; i < msgArray.length; i++) {
+        for (let j = 0; j < msgArray[i].length; j++) {
+            if (finalMsg[j] == null) {
+                finalMsg[j] = [];
+            }
+            finalMsg[j][i] = msgArray[i][j];
+        }
+    }
+   
+    console.log(finalMsg);
+    return finalMsg;
 }
 
-// somewhere in these to functions, padding between flags
-// words vertical
-// words next to each other
-// bg should be there before the flags are made
-
 function drawFlags(msgArray) {
-    // for each letter of each word, buildFlag()
-    msgArray.forEach(word => {
-        word.split("").forEach(char => {
+    msgArray.forEach(row => {
+        row.forEach(char => {
             buildFlag(char);
-        });
+        })
     });
 }
 
