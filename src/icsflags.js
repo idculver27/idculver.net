@@ -4,7 +4,7 @@ const flagMaker = new FlagMaker();
 var useSubs = null;
 
 // main
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {    
     const msgInput = document.getElementById("msgInput");
     const wInput = document.getElementById("wInput");
     const hInput = document.getElementById("hInput");
