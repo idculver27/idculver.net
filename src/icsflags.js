@@ -1,6 +1,7 @@
 import FlagMaker from "./flagmaker.js";
 
 const flagMaker = new FlagMaker();
+var useSubs = null;
 
 // main
 window.addEventListener("DOMContentLoaded", () => {
@@ -17,13 +18,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const flagsField = document.getElementById("flagsField");
     msgInput.focus();
 
-    /*msgInput.addEventListener("input", (event) => {
-        refreshFlags();
-    });*/
     // add event listeners to all inputs
     let inputs = [msgInput, wInput, hInput, subInput, bgInput, blackInput, whiteInput, redInput, yellowInput, blueInput];
     inputs.forEach(input => {
-        input.addEventListener("input", (event) => {
+        input.addEventListener("input", () => {
             refreshFlags();
         });
     });
@@ -39,8 +37,8 @@ function refreshFlags() {
 function getAndSetSettings() {
     flagMaker.w = wInput.value;
     flagMaker.h = hInput.value;
-    // TODO: use subs
-    // TODO: bg color
+    useSubs = subInput.checked;
+    document.getElementsByClassName("flagsfield")[0].style.backgroundColor = bgInput.value;
     flagMaker.black = blackInput.value;
     flagMaker.white = whiteInput.value;
     flagMaker.red = redInput.value;
@@ -81,20 +79,22 @@ function parseMsg(msg) {
     });
 
     // substitutes
-    for (let i = 0; i < msgArray.length; i++) {
-        for (let j = 1; j < msgArray[i].length; j++) {
-            if (msgArray[i][j] == msgArray[i][0] && msgArray[i][j] != "") {
-                msgArray[i][j] = "x" // first substitute
+    if (useSubs == true) {
+        for (let i = 0; i < msgArray.length; i++) {
+            for (let j = 1; j < msgArray[i].length; j++) {
+                if (msgArray[i][j] == msgArray[i][0] && msgArray[i][j] != "") {
+                    msgArray[i][j] = "x" // first substitute
+                }
             }
-        }
-        for (let j = 2; j < msgArray[i].length; j++) {
-            if (msgArray[i][j] == msgArray[i][1] && msgArray[i][j] != "") {
-                msgArray[i][j] = "y" // second substitute
+            for (let j = 2; j < msgArray[i].length; j++) {
+                if (msgArray[i][j] == msgArray[i][1] && msgArray[i][j] != "") {
+                    msgArray[i][j] = "y" // second substitute
+                }
             }
-        }
-        for (let j = 3; j < msgArray[i].length; j++) {
-            if (msgArray[i][j] == msgArray[i][2] && msgArray[i][j] != "") {
-                msgArray[i][j] = "z" // third substitute
+            for (let j = 3; j < msgArray[i].length; j++) {
+                if (msgArray[i][j] == msgArray[i][2] && msgArray[i][j] != "") {
+                    msgArray[i][j] = "z" // third substitute
+                }
             }
         }
     }
