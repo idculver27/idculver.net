@@ -47,31 +47,24 @@ function parseMsg(msg) {
         msgArray.push(wordArray);
     });
 
-    // substitutes // TODO
-    // apparently strings are immutable in js
-    /*msgArray.forEach(word => {
-        if (word.length >= 4) {
-            if (word[3] == word[2]) {
-                word[3] = "z";
-            } else if (word[3] == word[1]) {
-                word[3] = "y";
-            } else if (word[3] == word[0]) {
-                word[3] = "x";
+    // substitutes
+    for (let i = 0; i < msgArray.length; i++) {
+        for (let j = 1; j < msgArray[i].length; j++) {
+            if (msgArray[i][j] == msgArray[i][0] && msgArray[i][j] != "") {
+                msgArray[i][j] = "x" // first substitute
             }
         }
-        if (word.length >= 3) {
-            if (word[2] == word[1]) {
-                word[2] = "y";
-            } else if (word[2] == word[0]) {
-                word[2] = "x";
+        for (let j = 2; j < msgArray[i].length; j++) {
+            if (msgArray[i][j] == msgArray[i][1] && msgArray[i][j] != "") {
+                msgArray[i][j] = "y" // second substitute
             }
         }
-        if (word.length >= 2) {
-            if (word[1] == word[0]) {
-                word[1] = "x";
+        for (let j = 3; j < msgArray[i].length; j++) {
+            if (msgArray[i][j] == msgArray[i][2] && msgArray[i][j] != "") {
+                msgArray[i][j] = "z" // third substitute
             }
         }
-    });*/
+    }
 
     // swap the dimensions
     let finalMsg = [];
@@ -84,7 +77,7 @@ function parseMsg(msg) {
         }
     }
    
-    console.log(finalMsg);
+    //console.log(finalMsg);
     return finalMsg;
 }
 
