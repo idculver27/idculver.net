@@ -10,12 +10,64 @@
 </head>
 <body>
     <div class="entry">
-        <h1>Translate a message to <a href=https://en.wikipedia.org/wiki/International_Code_of_Signals>International Code of Signals (ICS)</a> flags</h1>
-        <input id="msgInput" type="text" size="64" autocomplete="off" placeholder="Message..." tabindex="0"/>
+        <table>
+            <tr>
+                <td>
+                    <h1>Translate a message to <a href=https://en.wikipedia.org/wiki/International_Code_of_Signals>International Code of Signals (ICS)</a> flags</h1>
+                    <input id="msgInput" type="text" size="64" autocomplete="off" placeholder="Message..." tabindex="0"/>
+                </td>
+                <td class="options">
+                    <h2>Options</h2>
+                    <label>Width:</label>
+                    <input id="wInput" type="text" size="10" autocomplete="off" tabindex="1" value="100"/>
+                    <br>
+                    <label>Height:</label>
+                    <input id="hInput" type="text" size="10" autocomplete="off" tabindex="1" value="100"/>
+                    <br>
+                    <input id="subInput" type="checkbox" tabindex="1" checked/> <!--WHY ISNT THIS CHECKED-->
+                    <label>Use substitutes?</label>
+                </td>
+                <td>
+                    <h2>Colors</h2>
+                    <label>Background:</label>
+                    <input id="bgInput" type="color" tabindex="0" value="#b89869"/>
+                    <br>
+                    <label>Black:</label>
+                    <input id="blackInput" type="color" tabindex="0" value="#000000"/>
+                    <br>
+                    <label>White:</label>
+                    <input id="whiteInput" type="color" tabindex="0" value="#ffffff"/>
+                </td>
+                <td>
+                    <label>Red:</label>
+                    <input id="redInput" type="color" tabindex="0" value="#ff0000"/>
+                    <br>
+                    <label>Yellow:</label>
+                    <input id="yellowInput" type="color" tabindex="0" value="#ffcc00"/>
+                    <br>
+                    <label>Blue:</label>
+                    <input id="blueInput" type="color" tabindex="0" value="#000080"/>
+                </td>
+            </tr>
+        </table>
+        
+        <!--add inputs for:
+        height
+        width
+        colors
+            black
+            white
+            red
+            yellow
+            blue
+        substitutes
+        width multipliers?
+        -->
+        
     </div>
     <br/>
-    <div class="flagsfield" id="flagsField">
-        <table></table>
+    <div class="flagsfield">
+        <table id="flagsField"></table>
     </div>
 </body>
 </html>
