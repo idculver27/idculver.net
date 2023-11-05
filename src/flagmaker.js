@@ -260,7 +260,11 @@ export default class FlagMaker {
         let circle = document.createElementNS(this.ns, "circle");
         circle.setAttribute("cx", this.w/2);
         circle.setAttribute("cy", this.h/2);
-        circle.setAttribute("r", this.w/4);
+        if (+this.w < +this.h) {
+            circle.setAttribute("r", this.w/4);
+        } else {
+            circle.setAttribute("r", this.h/4);
+        }
         circle.setAttribute("fill", fill);
         this.flag.appendChild(circle);
     }
