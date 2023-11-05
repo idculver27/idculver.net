@@ -12,23 +12,30 @@
     <div class="entry">
         <table>
             <tr>
-                <td>
+                <td class="titletd" rowspan="2">
                     <h1>Translate a message to <a href=https://en.wikipedia.org/wiki/International_Code_of_Signals>International Code of Signals (ICS)</a> flags</h1>
                     <input id="msgInput" type="text" size="64" autocomplete="off" placeholder="Message..." tabindex="0"/>
                 </td>
-                <td class="options">
+                <td class="padcol" rowspan="2"></td>
+                <td class="entryheader">
                     <h2>Options</h2>
+                </td>
+                <td class="entryheader" colspan="2">
+                    <h2>Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="optionsinputs">
                     <label>Width:</label>
                     <input id="wInput" type="text" size="10" autocomplete="off" tabindex="1" value="100"/>
                     <br>
                     <label>Height:</label>
                     <input id="hInput" type="text" size="10" autocomplete="off" tabindex="1" value="100"/>
                     <br>
-                    <input id="subInput" type="checkbox" tabindex="1" checked/> <!--WHY ISNT THIS CHECKED-->
+                    <input id="subInput" type="checkbox" tabindex="1" checked/>
                     <label>Use substitutes?</label>
                 </td>
-                <td>
-                    <h2>Colors</h2>
+                <td class="optionsinputs">
                     <label>Background:</label>
                     <input id="bgInput" type="color" tabindex="0" value="#b89869"/>
                     <br>
@@ -38,7 +45,7 @@
                     <label>White:</label>
                     <input id="whiteInput" type="color" tabindex="0" value="#ffffff"/>
                 </td>
-                <td>
+                <td class="optionsinputs">
                     <label>Red:</label>
                     <input id="redInput" type="color" tabindex="0" value="#ff0000"/>
                     <br>

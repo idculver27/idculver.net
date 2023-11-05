@@ -6,7 +6,7 @@ h1 {
     font-size: 150%;
 }
 h2 {
-    font-size: 100%;
+    font-size: 110%;
 }
 .entry {
     color: white;
@@ -23,14 +23,24 @@ input {
     height: 100vh;
 }
 table {
+    font-family: "Helvetica";
     padding: 20px;
+    /*border: 1px solid white;*/
 }
 td {
     padding: 10px;
+    /*border: 1px solid white;*/
 }
 .padcol {
     width: 100px;
 }
-.options {
-    font-family: Helvetica;
+.entryheader {
+    text-align: center;
+    padding: 0px;
+}
+.optionsinputs {
+    text-align: right;
+}
+.titletd {
+    vertical-align: top;
 }
