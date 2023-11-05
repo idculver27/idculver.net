@@ -5,15 +5,48 @@ const flagMaker = new FlagMaker();
 // main
 window.addEventListener("DOMContentLoaded", () => {
     const msgInput = document.getElementById("msgInput");
+    const wInput = document.getElementById("wInput");
+    const hInput = document.getElementById("hInput");
+    const subInput = document.getElementById("subInput");
+    const bgInput = document.getElementById("bgInput");
+    const blackInput = document.getElementById("blackInput");
+    const whiteInput = document.getElementById("whiteInput");
+    const redInput = document.getElementById("redInput");
+    const yellowInput = document.getElementById("yellowInput");
+    const blueInput = document.getElementById("blueInput");
     const flagsField = document.getElementById("flagsField");
     msgInput.focus();
 
-    msgInput.addEventListener("input", (event) => {
-        clearField();
-        let msg = parseMsg(event.target.value.trim());
-        drawFlags(msg);
+    /*msgInput.addEventListener("input", (event) => {
+        refreshFlags();
+    });*/
+    // add event listeners to all inputs
+    let inputs = [msgInput, wInput, hInput, subInput, bgInput, blackInput, whiteInput, redInput, yellowInput, blueInput];
+    inputs.forEach(input => {
+        input.addEventListener("input", (event) => {
+            refreshFlags();
+        });
     });
 });
+
+function refreshFlags() {
+    getAndSetSettings();
+    clearField();
+    let msg = parseMsg(msgInput.value.trim());
+    drawFlags(msg);
+}
+
+function getAndSetSettings() {
+    flagMaker.w = wInput.value;
+    flagMaker.h = hInput.value;
+    // TODO: use subs
+    // TODO: bg color
+    flagMaker.black = blackInput.value;
+    flagMaker.white = whiteInput.value;
+    flagMaker.red = redInput.value;
+    flagMaker.yellow = yellowInput.value;
+    flagMaker.blue = blueInput.value;
+}
 
 function clearField() {
     let child = flagsField.lastElementChild;

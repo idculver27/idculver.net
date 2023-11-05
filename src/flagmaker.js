@@ -26,6 +26,10 @@ export default class FlagMaker {
         let yellow = this.yellow;
         let blue = this.blue;
 
+        // update multipliers
+        this.subW = this.w*1.5;
+        this.penW = this.w*1.75;
+
         this.flag = document.createElementNS(this.ns, "svg");
         this.flag.setAttribute("height", h);
         // determine width
