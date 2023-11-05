@@ -13,6 +13,9 @@ h2 {
     font-family: "Helvetica";
     font-size: 120%;
 }
+.home {
+    color: white;
+}
 input {
     font-family: "Helvetica";
     font-size: 90%;
