@@ -35,8 +35,8 @@ function refreshFlags() {
 }
 
 function getAndSetSettings() {
-    flagMaker.w = wInput.value;
-    flagMaker.h = hInput.value;
+    flagMaker.w = Math.min(Math.max(wInput.value, 20), 2000);
+    flagMaker.h = Math.min(Math.max(hInput.value, 20), 2000);
     useSubs = subInput.checked;
     document.getElementsByClassName("flagsfield")[0].style.backgroundColor = bgInput.value;
     flagMaker.black = blackInput.value;
