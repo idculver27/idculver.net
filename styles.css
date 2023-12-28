@@ -64,14 +64,15 @@ body {
     line-height: 0.5;
     margin-top: 0;
 }
+.bppunique {
+    line-height: 0.5;
+    margin-top: 0;
+    color: gold;
+}
 .bph3 {
     line-height: 0;
     margin-bottom: 0;
 }
 .bplinkimg {
     margin-right: 20px;
-}
-
-#footer a {
-    text-decoration: none;
 }
