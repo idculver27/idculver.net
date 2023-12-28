@@ -38,5 +38,40 @@ body {
 }
 
 .bptable {
-    border: 1px solid white;
+    padding: 30px;
+}
+.bpheadertd {
+    padding: 10px;
+    margin-bottom: 0;
+}
+.bplabeltd {
+    text-align: right;
+    padding: 10px;
+    vertical-align: top;
+}
+.bpstatstd {
+    padding: 10px;
+    vertical-align: top;
+}
+.bptd {
+    text-align: center;
+    padding: 10px;
+}
+.bpminifigimg {
+    height: 200px;
+}
+.bpp {
+    line-height: 0.5;
+    margin-top: 0;
+}
+.bph3 {
+    line-height: 0;
+    margin-bottom: 0;
+}
+.bplinkimg {
+    margin-right: 20px;
+}
+
+#footer a {
+    text-decoration: none;
 }
