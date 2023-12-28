@@ -57,6 +57,9 @@ body {
     text-align: center;
     padding: 10px;
 }
+.bpimg {
+    max-width: 500px;
+}
 .bpminifigimg {
     height: 200px;
 }

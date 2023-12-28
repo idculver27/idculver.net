@@ -152,7 +152,7 @@
         },
         {
             "id": "06",
-            "number": "8083",
+            "number": "8083-1",
             "name": "Rebel Trooper Battle Pack",
             "subtheme": "Episode V",
             "year": 2010,
@@ -173,6 +173,7 @@
                 {
                     "blid": "sw0260",
                     "name": "Zev Senesca",
+                    "count": 1,
                     "unique": false
                 }
             ],
@@ -469,7 +470,7 @@
         },
         {
             "id": "17",
-            "number": "75037",
+            "number": "75037-1",
             "name": "Battle on Saleucami",
             "subtheme": "Episode III",
             "year": 2014,

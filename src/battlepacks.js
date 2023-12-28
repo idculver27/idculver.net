@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
                         td.className = "bptd";
                         td.setAttribute("rowspan","3");
                             let img = document.createElement("img");
+                            img.className = "bpimg";
                             img.src = "https://www.bricklink.com/SL/" + set.number + ".jpg"
                             td.appendChild(img);
                         tr.appendChild(td);
@@ -69,6 +70,11 @@ window.addEventListener("DOMContentLoaded", () => {
                             set.minifigs.forEach(minifig => {
                                 minifigCount += minifig.count;
                             });
+                            // get current value
+                            let value = "N/A";
+                            if(set.current) {
+                                value = "~$" + set.current;
+                            };
                             let stats = [
                                 set.year,
                                 set.subtheme,
@@ -76,8 +82,8 @@ window.addEventListener("DOMContentLoaded", () => {
                                 minifigCount,
                                 "$" + set.rrp,
                                 Math.round(set.rrp / set.pieces * 1000) / 10 + "c",
-                                "~$" + set.current
-                            ]
+                                value
+                            ];
                             stats.forEach(stat => {
                                 let p = document.createElement("p");
                                 p.className = "bpp";
