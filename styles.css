@@ -1,57 +1,42 @@
 body {
     background-color: #121218;
-    font-family: "Helvetica";
-}
-h1 {
-    color: white;
-    font-size: 150%;
-}
-h2 {
-    font-size: 110%;
-}
-.entry {
     color: white;
     font-family: "Helvetica";
-    font-size: 120%;
 }
-.home {
-    color: white;
-}
-input {
-    font-family: "Helvetica";
-    font-size: 90%;
-}
-.flagsfield {
+
+.flagdiv {
     background-color: #b89869;
-    width: 100%;
     height: 100vh;
     overflow: auto;
+    width: 100%;
 }
-table {
+.flaginput {
     font-family: "Helvetica";
-    padding: 20px;
-    /*border: 1px solid white;*/
+    font-size: 100%;
 }
-td {
-    padding: 10px;
-    /*border: 1px solid white;*/
-}
-.padcol {
-    width: 100px;
-}
-.entryheader {
+.flagoptionsheadertd {
     text-align: center;
-    padding: 0px;
 }
-.optionsinputs {
+.flagoptionstd {
+    padding: 10px;
     text-align: right;
 }
-.titletd {
+.flagpadcol {
+    width: 100px;
+}
+.flagsfield {
+    padding: 20px;
+}
+.flagtd {
+    padding: 10px;
+}
+.flagtitletd {
     vertical-align: top;
 }
-.bptable {
-    color: white;
+.flagtoptable {
+    padding: 20px;
 }
-i {
-    color: white;
+
+.bptable {
+    border: 1px solid white;
 }

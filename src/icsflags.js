@@ -38,7 +38,7 @@ function getAndSetSettings() {
     flagMaker.w = Math.min(Math.max(wInput.value, 20), 2000);
     flagMaker.h = Math.min(Math.max(hInput.value, 20), 2000);
     useSubs = subInput.checked;
-    document.getElementsByClassName("flagsfield")[0].style.backgroundColor = bgInput.value;
+    document.getElementsByClassName("flagdiv")[0].style.backgroundColor = bgInput.value;
     flagMaker.black = blackInput.value;
     flagMaker.white = whiteInput.value;
     flagMaker.red = redInput.value;
@@ -119,13 +119,14 @@ function drawFlags(msgArray) {
         let tr = document.createElement("tr");
         row.forEach(char => {
             let td = document.createElement("td");
+            td.className = "flagtd";
             let flag = flagMaker.make(char);
             td.appendChild(flag);
             tr.appendChild(td);
             
             // padding
             let pad = document.createElement("td");
-            pad.className = "padcol";
+            pad.className = "flagpadcol";
             tr.appendChild(pad);
         });
         tr.lastChild.remove(); // delete last pad
