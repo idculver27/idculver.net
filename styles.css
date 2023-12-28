@@ -3,6 +3,7 @@ body {
     font-family: "Helvetica";
 }
 h1 {
+    color: white;
     font-size: 150%;
 }
 h2 {
@@ -47,4 +48,10 @@ td {
 }
 .titletd {
     vertical-align: top;
+}
+.bptable {
+    color: white;
+}
+i {
+    color: white;
 }
