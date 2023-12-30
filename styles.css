@@ -64,16 +64,16 @@ body {
     height: 200px;
 }
 .bpp {
-    line-height: 0.5;
     margin-top: 0;
+    margin-bottom: 0;
 }
 .bppunique {
-    line-height: 0.5;
     margin-top: 0;
+    margin-bottom: 0;
     color: gold;
 }
 .bph3 {
-    line-height: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 .bplinkimg {
