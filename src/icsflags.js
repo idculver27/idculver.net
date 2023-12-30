@@ -4,18 +4,7 @@ const flagMaker = new FlagMaker();
 var useSubs = null;
 
 // main
-window.addEventListener("DOMContentLoaded", () => {    
-    const msgInput = document.getElementById("msgInput");
-    const wInput = document.getElementById("wInput");
-    const hInput = document.getElementById("hInput");
-    const subInput = document.getElementById("subInput");
-    const bgInput = document.getElementById("bgInput");
-    const blackInput = document.getElementById("blackInput");
-    const whiteInput = document.getElementById("whiteInput");
-    const redInput = document.getElementById("redInput");
-    const yellowInput = document.getElementById("yellowInput");
-    const blueInput = document.getElementById("blueInput");
-    //const flagsField = document.getElementById("flagsField"); // unused?
+window.addEventListener("DOMContentLoaded", () => {
     msgInput.focus();
 
     // add event listeners to all inputs
@@ -38,7 +27,7 @@ function getAndSetSettings() {
     flagMaker.w = Math.min(Math.max(wInput.value, 20), 2000);
     flagMaker.h = Math.min(Math.max(hInput.value, 20), 2000);
     useSubs = subInput.checked;
-    document.getElementById("flagdiv").style.backgroundColor = bgInput.value;
+    flagdiv.style.backgroundColor = bgInput.value;
     flagMaker.black = blackInput.value;
     flagMaker.white = whiteInput.value;
     flagMaker.red = redInput.value;
