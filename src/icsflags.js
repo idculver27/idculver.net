@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const redInput = document.getElementById("redInput");
     const yellowInput = document.getElementById("yellowInput");
     const blueInput = document.getElementById("blueInput");
-    const flagsField = document.getElementById("flagsField");
+    //const flagsField = document.getElementById("flagsField"); // unused?
     msgInput.focus();
 
     // add event listeners to all inputs
@@ -38,7 +38,7 @@ function getAndSetSettings() {
     flagMaker.w = Math.min(Math.max(wInput.value, 20), 2000);
     flagMaker.h = Math.min(Math.max(hInput.value, 20), 2000);
     useSubs = subInput.checked;
-    document.getElementsByClassName("flagdiv")[0].style.backgroundColor = bgInput.value;
+    document.getElementById("flagdiv").style.backgroundColor = bgInput.value;
     flagMaker.black = blackInput.value;
     flagMaker.white = whiteInput.value;
     flagMaker.red = redInput.value;
