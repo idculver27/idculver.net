@@ -38,20 +38,21 @@ body {
 }
 
 .bptable {
-    padding: 30px;
+    border-collapse: collapse;
 }
 .bpheadertd {
     padding: 10px;
     margin-bottom: 0;
+    border: 1px solid gray;
 }
 .bplabeltd {
     text-align: right;
-    padding: 10px;
-    vertical-align: top;
+    border: 1px solid gray;
+    padding-right: 10px;
 }
 .bpstatstd {
-    padding: 10px;
-    vertical-align: top;
+    border: 1px solid gray;
+    padding-left: 10px;
 }
 .bptd {
     text-align: center;
@@ -64,18 +65,18 @@ body {
     height: 200px;
 }
 .bpp {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 5px;
 }
 .bppunique {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 5px;
     color: gold;
 }
 .bph3 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
-.bplinkimg {
+.bpleftlinkimg {
     margin-right: 20px;
+}
+.bpdiv {
+    padding: 40px;
 }
