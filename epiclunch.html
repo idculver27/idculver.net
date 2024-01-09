@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Lunch Planner | Isaac's Amazing Website</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/epiclunch.css">
+    <script src="src/epiclunch.js" type="module"></script>
+</head>
+<body>
+    <div style="background-color: red; height: 150px;">
+        <a href="https://idculver27.github.io">Home</a>
+        <h1 style="text-align: center;">Epic Lunch Planner (WIP)</h1>
+        <h2 id="todaysDate" style="text-align: center;">Monday 2000-01-01</h2>
+    </div>
+    <div style="white-space: nowrap;">
+        <div class="halfdiv">
+            <div class="abovetable">
+                <div id="prelogin">
+                    <label>Name:</label>
+                    <input id="nameInput" type="text" maxlength=10 style="font-family: Helvetica">
+                    <button id="loginButton" type="button">Login</button>
+                    <p id="nameWarning" style="color: red;"></p>
+                </div>
+                <div id="postlogin" hidden>
+                    <h3 id="nameHeader">Your Name</h3>
+                    <p>Click where/when you want to eat</p>
+                </div>                
+            </div>
+            <table id="leftTable" style="visibility: hidden;">
+                <tr>
+                    <th></th>
+                    <th>KX</th>
+                    <th>S&F</th>
+                    <th>R42</th>
+                    <th>Chopsticks</th>
+                    <th>Cass</th>
+                    <th>Sofrito</th>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                    <td class="cell" title="No"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="rightTableDiv" class="halfdiv">
+            <div class="abovetable">
+                <h3>Everyone</h3>
+            </div>
+            <table class="DELETE THIS LATER">
+                <tr>
+                    <th></th>
+                    <th id="cell_h_1">Cass</th>
+                    <th id="cell_h_2">Chopsticks</th>
+                    <th id="cell_h_3">KX</th>
+                    <th id="cell_h_4">R42</th>
+                    <th id="cell_h_5">S&F</th>
+                    <th id="cell_h_6">Sofrito</th>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
