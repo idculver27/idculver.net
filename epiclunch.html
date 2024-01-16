@@ -18,10 +18,12 @@
         <div class="halfdiv">
             <div class="abovetable">
                 <div id="prelogin">
-                    <label>Name:</label>
-                    <input id="nameInput" type="text" maxlength=10 style="font-family: Helvetica">
-                    <button id="loginButton" type="button">Login</button>
-                    <p id="nameWarning" style="color: red;"></p>
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+                        <label>Name:</label>
+                        <input name="name" type="text" maxlength=10 style="font-family: Helvetica;">
+                        <input type="submit" value="Login">
+                        <p id="nameWarning" style="color: red;"></p>
+                    </form>
                 </div>
                 <div id="postlogin" hidden>
                     <h3 id="nameHeader">Your Name</h3>
