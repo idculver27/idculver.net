@@ -1,25 +1,10 @@
-var sizeLvl = 0;
-var waterLvl = 0;
-var heatLvl = 0;
-
 window.addEventListener("DOMContentLoaded", () => {
-    updateSize();
-    updateWater();
-    updateHeat();
-    
-    // add listeners
+    update();
 
-    let sizeInputs = [footprint2x2,footprint3x3,heightRange];
-    sizeInputs.forEach(input => {
+    let normalInputs = [footprint2x2,footprint3x3,heightRange,pumps1,pumps2,rpmRange];
+    normalInputs.forEach(input => {
         input.addEventListener("input", () => {
-            updateSize();
-        });
-    });
-
-    let waterInputs = [pumps1,pumps2,rpmRange];
-    waterInputs.forEach(input => {
-        input.addEventListener("input", () => {
-            updateWater();
+            update();
         });
     });
 
@@ -30,39 +15,43 @@ window.addEventListener("DOMContentLoaded", () => {
             if(input.textContent == 3) {
                 input.textContent = 0;
             }
-            updateHeat();
+            update();
         });
     });
 
-    // implement optimize buttons (should be pretty easy) (hard code - dictionary?)
+    let optimizeButtons = document.getElementsByClassName("optimizeButtons");
+    Array.from(optimizeButtons).forEach(button => {
+        button.addEventListener("click", () => {
+            optimizeForLvl(button.textContent);
+        });
+    });
 });
 
+function update() {
+    // size
 
-function updateSize() {
     let footprint = 4;
     if(footprint3x3.checked) {
         footprint = 9;
     }
 
     let height = heightRange.value;
-    heightDisplay.textContent = height;
+    heightDisplay.textContent = "Height: " + height + " blocks";
 
     let volume = footprint * height;
     volumeDisplay.textContent = "Volume: " + volume + " blocks";
 
-    sizeLvl = clampLvl(Math.floor(volume / 4));
+    let sizeLvl = clampLvl(Math.floor(volume / 4));
 
-    updateStatus();
-}
+    // water
 
-function updateWater() {
     let pumps = 1;
     if(pumps2.checked) {
         pumps = 2;
     }
 
     let rpm = rpmRange.value;
-    rpmDisplay.textContent = rpm;
+    rpmDisplay.textContent = "Pump speed: " + rpm + " RPM";
 
     let combinedRPM = pumps * rpm;
     combinedRPMdisplay.textContent = "Combined RPM: " + combinedRPM;
@@ -73,48 +62,116 @@ function updateWater() {
     }
     thruputDisplay.textContent = "Throughput: " + thruput + " mB per Tick";
 
-    waterLvl = clampLvl(Math.floor(combinedRPM / 20));
+    let waterLvl = clampLvl(Math.floor(combinedRPM / 20));
+    if(thruput < 810) {
+        waterLvl = -1;
+    }
 
-    updateStatus();
-}
+    // heat
 
-function updateHeat() {
-    heatLvl = 0;
+    updateBlazeGrid(footprint);
 
+    let heatLvl = 0;
     let blazes = document.getElementsByClassName("blaze");
     Array.from(blazes).forEach(blaze => {
-        heatLvl += parseInt(blaze.textContent);
+        if(!blaze.getAttribute("hidden")) {
+            heatLvl += parseInt(blaze.textContent);
+        }
     });
     heatDisplay.textContent = "Total heat: " + heatLvl;
     if(heatLvl == 0) {
         heatDisplay.textContent += " (Passive)"
     }
 
-    updateStatus();
-}
-
-function updateStatus() {
+    // status
+    
     let boilerLvl = Math.min(sizeLvl,waterLvl,heatLvl);
     statusDisplay.textContent = "Boiler Status: Lvl " + boilerLvl;
-    if(boilerLvl == 0) {
+    if(boilerLvl == -1) {
+        statusDisplay.textContent = "Boiler Status: Idle";
+    } else if(boilerLvl == 0) {
         statusDisplay.textContent += " (Passive)";
     } else if(boilerLvl == 18) {
         statusDisplay.textContent += " (Max)";
     }
 
-    // implement diagram table later
+    // TODO: implement diagram table later
 
     let stressCapacity = boilerLvl * 16384;
-    let reqEngines = boilerLvl;
+    let enginesReq = boilerLvl;
     let outputSpeed = 64;
-    if(boilerLvl == 0) {
+    if(boilerLvl == -1) {
+        stressCapacity = 0;
+        enginesReq = 0;
+        outputSpeed = 0;
+    } else if(boilerLvl == 0) {
         stressCapacity = 2048;
-        reqEngines = 1;
+        enginesReq = 1;
         outputSpeed = 16;
     }
     capacityDisplay.textContent = "Stress capacity: " + stressCapacity + "su";
-    enginesDisplay.textContent = "Required engines: " + reqEngines;
-    speedDisplay = "Output speed: " + outputSpeed + " RPM";
+    enginesDisplay.textContent = "Engines required: " + enginesReq;
+    speedDisplay.textContent = "Output speed: " + outputSpeed + " RPM";
+}
+
+function optimizeForLvl(lvl) {
+    // size
+    if(lvl < 9) {
+        footprint2x2.checked = true;
+        heightRange.value = lvl;
+    } else {
+        footprint3x3.checked = true;
+        heightRange.value = Math.ceil(lvl * 4 / 9);
+    }
+
+    // water
+    let combinedRPM = lvl * 20;
+    if(combinedRPM < 257) {
+        pumps1.checked = true;
+        rpmRange.value = combinedRPM;
+    } else {
+        pumps2.checked = true;
+        rpmRange.value = combinedRPM / 2;
+    }
+
+    // heat
+    updateBlazeGrid();
+    let blazes = document.getElementsByClassName("blaze");
+    // reset
+    Array.from(blazes).forEach(blaze => {
+        blaze.textContent = 0;
+    });
+    // set 1s
+    Array.from(blazes).forEach(blaze => {
+        if(!blaze.getAttribute("hidden") && lvl > 0) {
+            blaze.textContent = 1;
+            lvl -= 1;
+        }
+    });
+    // set 2s
+    if(lvl > 0) {
+        Array.from(blazes).forEach(blaze => {
+            if(!blaze.getAttribute("hidden") && lvl > 0) {
+                blaze.textContent = 2;
+                lvl -= 1;
+            }
+        });
+    }
+
+    update();
+}
+
+function updateBlazeGrid(size) {
+    let blaze3onlys = document.getElementsByClassName("3only");
+    if(size == 4) {
+        Array.from(blaze3onlys).forEach(blaze3only => {
+            blaze3only.setAttribute("hidden",true);
+        });
+    } else {
+        Array.from(blaze3onlys).forEach(blaze3only => {
+            blaze3only.removeAttribute("hidden");
+        });
+    }
 }
 
 function clampLvl(lvl) {
