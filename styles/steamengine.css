@@ -17,11 +17,9 @@ table {
 }
 .blaze {
     padding: 0px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
 }
 .optimizeButtons {
     padding: 20px;
     text-align: center;
+    border: 1px solid white;
 }

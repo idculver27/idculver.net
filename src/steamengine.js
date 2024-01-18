@@ -1,20 +1,19 @@
 window.addEventListener("DOMContentLoaded", () => {
     update();
 
-    let normalInputs = [footprint2x2,footprint3x3,heightRange,pumps1,pumps2,rpmRange];
-    normalInputs.forEach(input => {
+    let inputs = [footprint2x2,footprint3x3,heightRange,pumps1,pumps2,rpmRange];
+    inputs.forEach(input => {
         input.addEventListener("input", () => {
             update();
         });
     });
 
-    let heatInputs = document.getElementsByClassName("blaze");
-    Array.from(heatInputs).forEach(input => {
-        input.addEventListener("click", () => {
-            input.textContent = parseInt(input.textContent) + 1;
-            if(input.textContent == 3) {
-                input.textContent = 0;
-            }
+    // TODO: add optimize for size button
+
+    let blazes = document.getElementsByClassName("blaze");
+    Array.from(blazes).forEach(blaze => {
+        blaze.addEventListener("click", () => {
+            incrementBlaze(blaze)
             update();
         });
     });
@@ -75,7 +74,7 @@ function update() {
     let blazes = document.getElementsByClassName("blaze");
     Array.from(blazes).forEach(blaze => {
         if(!blaze.getAttribute("hidden")) {
-            heatLvl += parseInt(blaze.textContent);
+            heatLvl += parseInt(blaze.title);
         }
     });
     heatDisplay.textContent = "Total heat: " + heatLvl;
@@ -119,9 +118,11 @@ function optimizeForLvl(lvl) {
     if(lvl < 9) {
         footprint2x2.checked = true;
         heightRange.value = lvl;
+        updateBlazeGrid(4);
     } else {
         footprint3x3.checked = true;
         heightRange.value = Math.ceil(lvl * 4 / 9);
+        updateBlazeGrid(9);
     }
 
     // water
@@ -135,16 +136,16 @@ function optimizeForLvl(lvl) {
     }
 
     // heat
-    updateBlazeGrid();
     let blazes = document.getElementsByClassName("blaze");
     // reset
     Array.from(blazes).forEach(blaze => {
-        blaze.textContent = 0;
+        blaze.title = 2;
+        incrementBlaze(blaze);
     });
     // set 1s
     Array.from(blazes).forEach(blaze => {
         if(!blaze.getAttribute("hidden") && lvl > 0) {
-            blaze.textContent = 1;
+            incrementBlaze(blaze);
             lvl -= 1;
         }
     });
@@ -152,7 +153,7 @@ function optimizeForLvl(lvl) {
     if(lvl > 0) {
         Array.from(blazes).forEach(blaze => {
             if(!blaze.getAttribute("hidden") && lvl > 0) {
-                blaze.textContent = 2;
+                incrementBlaze(blaze);
                 lvl -= 1;
             }
         });
@@ -171,6 +172,19 @@ function updateBlazeGrid(size) {
         Array.from(blaze3onlys).forEach(blaze3only => {
             blaze3only.removeAttribute("hidden");
         });
+    }
+}
+
+function incrementBlaze(blaze) {
+    if(blaze.title == 0) {
+        blaze.title = 1;
+        blaze.innerHTML = '<img src="images/blaze1.png">';
+    } else if(blaze.title == 1) {
+        blaze.title = 2;
+        blaze.innerHTML = '<img src="images/blaze2.png">';
+    } else {
+        blaze.title = 0;
+        blaze.innerHTML = '<img src="images/blaze0.png">';
     }
 }
 
