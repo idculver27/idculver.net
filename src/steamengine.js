@@ -94,7 +94,19 @@ function update() {
         statusDisplay.textContent += " (Max)";
     }
 
-    // TODO: implement diagram table later
+    // diagram
+
+    sizeRed.setAttribute("width",sizeLvl * 30);
+    waterRed.setAttribute("width",waterLvl * 30);
+    heatRed.setAttribute("width",heatLvl * 30);
+    sizeGreen.setAttribute("width",boilerLvl * 30);
+    waterGreen.setAttribute("width",boilerLvl * 30);
+    heatGreen.setAttribute("width",boilerLvl * 30);
+    sizeLime.setAttribute("x",boilerLvl * 30 - 30);
+    waterLime.setAttribute("x",boilerLvl * 30 - 30);
+    heatLime.setAttribute("x",boilerLvl * 30 - 30);
+
+    // more status
 
     let stressCapacity = boilerLvl * 16384;
     let enginesReq = boilerLvl;

@@ -4,13 +4,19 @@ body {
     font-family: "Helvetica";
 }
 tr,th,td {
-    border: 1px solid white;
-    padding: 20px;
+    /*border: 1px solid white;*/
+    padding: 10px;
     padding-top: 0px;
     
 }
 table {
     border-collapse: collapse;
+}
+img {
+    display: block;
+}
+svg {
+    display: block;
 }
 .rangeSlider {
     width: 500px;
@@ -22,4 +28,20 @@ table {
     padding: 20px;
     text-align: center;
     border: 1px solid white;
+}
+.notOptimal {
+    color: red;
+}
+.outerTd {
+    vertical-align: top;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.diagramLabel {
+    text-align: right;
+    padding-bottom: 0px;
+}
+.diagramBar {
+    border: 1px solid white;
+    padding: 0px;
 }
