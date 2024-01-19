@@ -7,7 +7,6 @@ tr,th,td {
     /*border: 1px solid white;*/
     padding: 10px;
     padding-top: 0px;
-    
 }
 table {
     border-collapse: collapse;
@@ -17,6 +16,9 @@ img {
 }
 svg {
     display: block;
+}
+button {
+    font-family: inherit;
 }
 .rangeSlider {
     width: 500px;

@@ -8,7 +8,10 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // TODO: add optimize for size button
+    optimizeForSizeButton.addEventListener("click", () => {
+        optimizeforSize();
+        update();
+    })
 
     let blazes = document.getElementsByClassName("blaze");
     Array.from(blazes).forEach(blaze => {
@@ -198,6 +201,10 @@ function incrementBlaze(blaze) {
         blaze.title = 0;
         blaze.innerHTML = '<img src="images/blaze0.png">';
     }
+}
+
+function optimizeForSize() {
+    // TODO
 }
 
 function clampLvl(lvl) {
