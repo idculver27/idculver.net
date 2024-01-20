@@ -51,7 +51,10 @@ function update() {
         pumps = 2;
     }
 
-    let rpm = rpmRange.value;
+    let rpm = rpmRange.value * 10;
+    if(rpm == 260) {
+        rpm = 256;
+    }
     rpmDisplay.textContent = "Pump speed: " + rpm + " RPM";
 
     let combinedRPM = pumps * rpm;
@@ -130,26 +133,56 @@ function update() {
     speedDisplay.textContent = "Output speed: " + outputSpeed + " RPM";
 }
 
-function optimizeForLvl(lvl) {
-    // size
-    if(lvl < 9) {
-        footprint2x2.checked = true;
-        heightRange.value = lvl;
-        updateBlazeGrid(4);
+function updateBlazeGrid(size) {
+    let blaze3onlys = document.getElementsByClassName("3only");
+    if(size == 4) {
+        Array.from(blaze3onlys).forEach(blaze3only => {
+            blaze3only.setAttribute("hidden",true);
+        });
     } else {
-        footprint3x3.checked = true;
-        heightRange.value = Math.ceil(lvl * 4 / 9);
-        updateBlazeGrid(9);
+        Array.from(blaze3onlys).forEach(blaze3only => {
+            blaze3only.removeAttribute("hidden");
+        });
     }
+}
 
+function incrementBlaze(blaze) {
+    if(blaze.title == 0) {
+        blaze.title = 1;
+        blaze.innerHTML = '<img src="images/blaze1.png">';
+    } else if(blaze.title == 1) {
+        blaze.title = 2;
+        blaze.innerHTML = '<img src="images/blaze2.png">';
+    } else {
+        blaze.title = 0;
+        blaze.innerHTML = '<img src="images/blaze0.png">';
+    }
+}
+
+function optimizeForSize() {
+    // size
+    let footprint = 4;
+    if(footprint3x3.checked) {
+        footprint = 9;
+    }
+    let height = heightRange.value;
+    let volume = footprint * height;
+    
+    let lvl = null;
+    if(footprint == 4 && height > 8) {
+        lvl = 8;
+    } else {
+        lvl = clampLvl(Math.floor(volume / 4));
+    }
+    
     // water
     let combinedRPM = lvl * 20;
     if(combinedRPM < 257) {
         pumps1.checked = true;
-        rpmRange.value = combinedRPM;
+        rpmRange.value = combinedRPM / 10;
     } else {
         pumps2.checked = true;
-        rpmRange.value = combinedRPM / 2;
+        rpmRange.value = combinedRPM / 20;
     }
 
     // heat
@@ -179,55 +212,26 @@ function optimizeForLvl(lvl) {
     update();
 }
 
-function updateBlazeGrid(size) {
-    let blaze3onlys = document.getElementsByClassName("3only");
-    if(size == 4) {
-        Array.from(blaze3onlys).forEach(blaze3only => {
-            blaze3only.setAttribute("hidden",true);
-        });
+function optimizeForLvl(lvl) {
+    // size
+    if(lvl < 9) {
+        footprint2x2.checked = true;
+        heightRange.value = lvl;
+        updateBlazeGrid(4);
     } else {
-        Array.from(blaze3onlys).forEach(blaze3only => {
-            blaze3only.removeAttribute("hidden");
-        });
+        footprint3x3.checked = true;
+        heightRange.value = Math.ceil(lvl * 4 / 9);
+        updateBlazeGrid(9);
     }
-}
 
-function incrementBlaze(blaze) {
-    if(blaze.title == 0) {
-        blaze.title = 1;
-        blaze.innerHTML = '<img src="images/blaze1.png">';
-    } else if(blaze.title == 1) {
-        blaze.title = 2;
-        blaze.innerHTML = '<img src="images/blaze2.png">';
-    } else {
-        blaze.title = 0;
-        blaze.innerHTML = '<img src="images/blaze0.png">';
-    }
-}
-
-function optimizeForSize() {
-    let footprint = 4;
-    if(footprint3x3.checked) {
-        footprint = 9;
-    }
-    let height = heightRange.value;
-    let volume = footprint * height;
-    
-    let lvl = null;
-    if(footprint == 4 && height > 8) {
-        lvl = 8;
-    } else {
-        lvl = clampLvl(Math.floor(volume / 4));
-    }
-    
     // water
     let combinedRPM = lvl * 20;
     if(combinedRPM < 257) {
         pumps1.checked = true;
-        rpmRange.value = combinedRPM;
+        rpmRange.value = combinedRPM / 10;
     } else {
         pumps2.checked = true;
-        rpmRange.value = combinedRPM / 2;
+        rpmRange.value = combinedRPM / 20;
     }
 
     // heat
