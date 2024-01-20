@@ -9,14 +9,13 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     optimizeForSizeButton.addEventListener("click", () => {
-        optimizeforSize();
-        update();
+        optimizeForSize();
     })
 
     let blazes = document.getElementsByClassName("blaze");
     Array.from(blazes).forEach(blaze => {
         blaze.addEventListener("click", () => {
-            incrementBlaze(blaze)
+            incrementBlaze(blaze);
             update();
         });
     });
@@ -99,6 +98,9 @@ function update() {
 
     // diagram
 
+    sizeBar.title = "Lvl " + sizeLvl;
+    waterBar.title = "Lvl " + waterLvl;
+    heatBar.title = "Lvl " + heatLvl;
     sizeRed.setAttribute("width",sizeLvl * 30);
     waterRed.setAttribute("width",waterLvl * 30);
     heatRed.setAttribute("width",heatLvl * 30);
@@ -204,7 +206,55 @@ function incrementBlaze(blaze) {
 }
 
 function optimizeForSize() {
-    // TODO
+    let footprint = 4;
+    if(footprint3x3.checked) {
+        footprint = 9;
+    }
+    let height = heightRange.value;
+    let volume = footprint * height;
+    
+    let lvl = null;
+    if(footprint == 4 && height > 8) {
+        lvl = 8;
+    } else {
+        lvl = clampLvl(Math.floor(volume / 4));
+    }
+    
+    // water
+    let combinedRPM = lvl * 20;
+    if(combinedRPM < 257) {
+        pumps1.checked = true;
+        rpmRange.value = combinedRPM;
+    } else {
+        pumps2.checked = true;
+        rpmRange.value = combinedRPM / 2;
+    }
+
+    // heat
+    let blazes = document.getElementsByClassName("blaze");
+    // reset
+    Array.from(blazes).forEach(blaze => {
+        blaze.title = 2;
+        incrementBlaze(blaze);
+    });
+    // set 1s
+    Array.from(blazes).forEach(blaze => {
+        if(!blaze.getAttribute("hidden") && lvl > 0) {
+            incrementBlaze(blaze);
+            lvl -= 1;
+        }
+    });
+    // set 2s
+    if(lvl > 0) {
+        Array.from(blazes).forEach(blaze => {
+            if(!blaze.getAttribute("hidden") && lvl > 0) {
+                incrementBlaze(blaze);
+                lvl -= 1;
+            }
+        });
+    }
+
+    update();
 }
 
 function clampLvl(lvl) {
