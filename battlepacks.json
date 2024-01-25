@@ -22,7 +22,7 @@
                 }
             ],
             "rrp": 9.99,
-            "current": 38
+            "current": 37
         },
         {
             "id": "01",
@@ -94,7 +94,7 @@
                 }
             ],
             "rrp": 9.99,
-            "current": 20
+            "current": 19
         },
         {
             "id": "04",
@@ -148,7 +148,7 @@
                 }
             ],
             "rrp": 11.99,
-            "current": 12
+            "current": 11
         },
         {
             "id": "06",
@@ -238,7 +238,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 31
+            "current": 32
         },
         {
             "id": "09",
@@ -256,7 +256,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 24
+            "current": 23
         },
         {
             "id": "10",
@@ -286,7 +286,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 48
+            "current": 49
         },
         {
             "id": "11",
@@ -418,7 +418,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 16
+            "current": 15
         },
         {
             "id": "15",
@@ -442,7 +442,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 50
+            "current": 55
         },
         {
             "id": "16",
@@ -466,7 +466,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 64
+            "current": 61
         },
         {
             "id": "17",
@@ -502,7 +502,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 37
+            "current": 38
         },
         {
             "id": "18",
@@ -598,7 +598,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 37
+            "current": 38
         },
         {
             "id": "22",
@@ -736,7 +736,7 @@
                 }
             ],
             "rrp": 12.99,
-            "current": 30
+            "current": 32
         },
         {
             "id": "26",
@@ -772,7 +772,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 21
+            "current": 22
         },
         {
             "id": "27",
@@ -826,7 +826,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 15
+            "current": 16
         },
         {
             "id": "29",
@@ -958,7 +958,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 32
+            "current": 31
         },
         {
             "id": "33",
@@ -988,7 +988,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 22
+            "current": 25
         },
         {
             "id": "34",
@@ -1024,7 +1024,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 24
+            "current": 19
         },
         {
             "id": "35",
@@ -1060,7 +1060,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 36
+            "current": 37
         },
         {
             "id": "36",
@@ -1120,7 +1120,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 13
+            "current": 12
         },
         {
             "id": "38",
@@ -1186,7 +1186,7 @@
                 }
             ],
             "rrp": 29.99,
-            "current": 29
+            "current": 30
         },
         {
             "id": "40",
@@ -1210,7 +1210,7 @@
                 }
             ],
             "rrp": 14.99,
-            "current": 18
+            "current": 19
         },
         {
             "id": "41",
@@ -1347,26 +1347,32 @@
             "pieces": 215,
             "minifigs": [
                 {
-                    "blid": "?",
+                    "blid": "sw1320",
                     "name": "Battle Droid",
-                    "count": 2,
-                    "unique": false
-                },
-                {
-                    "blid": "?",
-                    "name": "Super Battle Droid",
-                    "count": 3,
+                    "count": 1,
                     "unique": true
                 },
                 {
-                    "blid": "?",
+                    "blid": "sw0001d",
+                    "name": "Battle Droid",
+                    "count": 1,
+                    "unique": false
+                },
+                {
+                    "blid": "sw1305",
                     "name": "Shock Trooper",
                     "count": 1,
                     "unique": true
                 },
                 {
-                    "blid": "?",
+                    "blid": "sw1319",
                     "name": "Clone Trooper",
+                    "count": 1,
+                    "unique": true
+                },
+                {
+                    "blid": "sw1321",
+                    "name": "Super Battle Droid",
                     "count": 3,
                     "unique": true
                 }

@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", () => {
                                         a.appendChild(img);
                                     td.appendChild(a);
                                 a = newElement("a");
-                                    a.href = "https://brickset.com/sets/" + set.number + "/" + set.name.replace("& ","").replace(" ","-");
+                                    a.href = "https://brickset.com/sets/" + set.number + "/" + set.name.replace("& ","").replace(".","").replace(/ /g,"-");
                                     a.title = "View on Brickset";
                                     img = newElement("img");
                                         img.src = "https://brickset.com/assets/images/icons/favicon-32x32.png";
