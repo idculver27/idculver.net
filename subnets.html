@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subnet Calculator | Isaac's Amazing Website</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/subnets.css">
+    <script src="src/subnets.js" type="module"></script>
+</head>
+<body>
+    <a href="https://idculver27.github.io">Home</a>
+    <h1>Subnet Calculator (WIP)</h1>
+    <label>Address:</label>
+    <input id="inAddress" type="text">
+    <br>
+    <label>CIDR:</label>
+    <input id="inCIDR" type="number">
+    <br>
+    <label>or subnet mask:</label>
+    <input id="inMask" type="text">
+    <hr>
+    <table>
+        <tr>
+            <th></th>
+            <th>Decimal</th>
+            <th>Binary</th>
+            <th>Hex</th>
+        </tr>
+        <tr>
+            <td>Network address</td>
+            <td id="tdAddrDec"></td>
+            <td id="tdAddrBin"></td>
+            <td id="tdAddrHex"></td>
+        </tr>
+        <tr>
+            <td>CIDR</td>
+            <td id="tdCIDR"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Usable host range</td>
+            <td id="tdFirstUsableDec"></td>
+            <td id="tdFirstUsableBin"></td>
+            <td id="tdFirstUsableHex"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="tdLastUsableDec"></td>
+            <td id="tdLastUsableBin"></td>
+            <td id="tdLastUsableHex"></td>
+        </tr>
+        <tr>
+            <td>Broadcast address</td>
+            <td id="tdBroadcastDec"></td>
+            <td id="tdBroadcastBin"></td>
+            <td id="tdBroadcastHex"></td>
+        </tr>
+        <tr>
+            <td>Subnet mask</td>
+            <td id="tdSubnetMaskDec"></td>
+            <td id="tdSubnetMaskBin"></td>
+            <td id="tdSubnetMaskHex"></td>
+        </tr>
+        <tr>
+            <td>Wildcard mask</td>
+            <td id="tdWildcardMaskDec"></td>
+            <td id="tdWildcardMaskBin"></td>
+            <td id="tdWildcardMaskHex"></td>
+        </tr>
+        <tr>
+            <td>Total hosts</td>
+            <td id="tdTotalHosts"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Usable hosts</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
