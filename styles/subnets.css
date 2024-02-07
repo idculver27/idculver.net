@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: white;
+    color: #00ff77;
     font-family: "Courier New";
 }
 table {
@@ -8,6 +8,14 @@ table {
     text-align: center;
 }
 tr,th,td {
-    border: 1px solid white;
-    padding: 10px;
+    border: 1px solid #00ff77;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.dec {
+    width: 150px;
+}
+.red {
+    color: red;
 }
