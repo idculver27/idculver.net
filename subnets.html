@@ -12,13 +12,15 @@
     <a href="https://idculver27.github.io">Home</a>
     <h1>Subnet Calculator (WIP)</h1>
     <label>Address:</label>
-    <input id="inAddress" type="text">
+    <input id="inAddr" type="text" value="192.168.1.1" autocomplete="off">
+    <label id="warnAddr" hidden>Invalid</label>
     <br>
-    <label>CIDR:</label>
-    <input id="inCIDR" type="number">
+    <label>CIDR: /</label>
+    <input id="inCIDR" type="number" value="24" min="0" max="32" autocomplete="off">
     <br>
     <label>or subnet mask:</label>
-    <input id="inMask" type="text">
+    <input id="inMask" type="text" value="255.255.255.0" autocomplete="off">
+    <label id="warnMask" hidden>Invalid</label>
     <hr>
     <table>
         <tr>
