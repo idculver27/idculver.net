@@ -21,66 +21,55 @@
     <label>or subnet mask:</label>
     <input id="inMask" type="text" value="255.255.255.0" autocomplete="off">
     <label id="warnMask" hidden>Invalid</label>
-    <hr>
+    <br><br>
     <table>
         <tr>
             <th></th>
             <th>Decimal</th>
             <th>Binary</th>
-            <th>Hex</th>
         </tr>
         <tr>
             <td>Network address</td>
-            <td id="tdAddrDec"></td>
-            <td id="tdAddrBin"></td>
-            <td id="tdAddrHex"></td>
+            <td id="tdNetwDec"></td>
+            <td id="tdNetwBin"></td>
         </tr>
         <tr>
-            <td>CIDR</td>
-            <td id="tdCIDR"></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Usable host range</td>
+            <td rowspan="2">Usable host range</td>
             <td id="tdFirstUsableDec"></td>
             <td id="tdFirstUsableBin"></td>
-            <td id="tdFirstUsableHex"></td>
         </tr>
         <tr>
-            <td></td>
             <td id="tdLastUsableDec"></td>
             <td id="tdLastUsableBin"></td>
-            <td id="tdLastUsableHex"></td>
         </tr>
         <tr>
             <td>Broadcast address</td>
             <td id="tdBroadcastDec"></td>
             <td id="tdBroadcastBin"></td>
-            <td id="tdBroadcastHex"></td>
+        </tr>
+        <tr>
+            <td>CIDR</td>
+            <td id="tdCIDR"></td>
+            <td></td>
         </tr>
         <tr>
             <td>Subnet mask</td>
             <td id="tdSubnetMaskDec"></td>
             <td id="tdSubnetMaskBin"></td>
-            <td id="tdSubnetMaskHex"></td>
         </tr>
         <tr>
             <td>Wildcard mask</td>
             <td id="tdWildcardMaskDec"></td>
             <td id="tdWildcardMaskBin"></td>
-            <td id="tdWildcardMaskHex"></td>
         </tr>
         <tr>
             <td>Total hosts</td>
             <td id="tdTotalHosts"></td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td>Usable hosts</td>
-            <td></td>
-            <td></td>
+            <td ID="tdUsableHosts"></td>
             <td></td>
         </tr>
     </table>
