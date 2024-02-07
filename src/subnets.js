@@ -82,12 +82,14 @@ function updateCIDR() {
     let count1 = i;
     
     i = 31;
-    while(i > 0) {
+    while(i > -1) {
         if(mask.charAt(i) != "0") break;
         i--;
     }
     let count0 = 31 - i;
     
+    console.log(count1 + " " + count0);
+
     if(count1 + count0 != 32) {
         warnMask.removeAttribute("hidden");
         return;
@@ -103,6 +105,7 @@ function dec2bin(addrStr) {
     addrStr.split(".").forEach(octetStr => {
         let octet = parseInt(octetStr);
         if(octet < 0 || octet > 255) return false;
+        if(isNaN(octet)) octet = 0;
         bin += octet.toString(2).padStart(8,"0");
     });
     if(bin.length != 32) return false;
