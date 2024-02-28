@@ -34,7 +34,7 @@
             "minifigs": [
                 {
                     "blid": "sw0091",
-                    "name": "Shock Trooper",
+                    "name": "Clone Shock Trooper, Coruscant Guard",
                     "count": 1,
                     "unique": true
                 },
@@ -46,7 +46,7 @@
                 },
                 {
                     "blid": "sw0128a",
-                    "name": "327th Star Corps Clone Trooper",
+                    "name": "Clone Trooper, 327th Star Corps",
                     "count": 1,
                     "unique": true
                 }
@@ -64,13 +64,13 @@
             "minifigs": [
                 {
                     "blid": "sw0166a",
-                    "name": "Shadow Trooper",
+                    "name": "Imperial Shadow Trooper",
                     "count": 1,
                     "unique": false
                 },
                 {
                     "blid": "sw0188",
-                    "name": "Stormtrooper",
+                    "name": "Imperial Stormtrooper",
                     "count": 3,
                     "unique": false
                 }
@@ -106,7 +106,7 @@
             "minifigs": [
                 {
                     "blid": "sw0223",
-                    "name": "Clone Commander",
+                    "name": "Clone Trooper - Black Visor, Pauldron, and Kama",
                     "count": 1,
                     "unique": true
                 },
@@ -118,7 +118,7 @@
                 },
                 {
                     "blid": "sw0221",
-                    "name": "Clone Gunner",
+                    "name": "Clone Trooper Gunner",
                     "count": 1,
                     "unique": false
                 }
@@ -196,7 +196,7 @@
                 },
                 {
                     "blid": "sw0261",
-                    "name": "Imperial Officer",
+                    "name": "Imperial Officer with Battle Armor",
                     "count": 1,
                     "unique": true
                 },
@@ -220,19 +220,19 @@
             "minifigs": [
                 {
                     "blid": "sw0297",
-                    "name": "91st Mobile Reconnaissance Corps Lightning Squadron ARF Trooper",
+                    "name": "Clone ARF Trooper Razor / Stak, 91st Mobile Reconnaissance Corps Lightning Squadron",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw0298",
-                    "name": "Horn Company Clone Trooper",
+                    "name": "Clone Trooper, Horn Company",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw0299",
-                    "name": "Bomb Squad Trooper",
+                    "name": "Clone Bomb Squad Trooper",
                     "count": 2,
                     "unique": true
                 }
@@ -250,7 +250,7 @@
             "minifigs": [
                 {
                     "blid": "sw0296",
-                    "name": "Death Watch Mandalorian",
+                    "name": "Mandalorian Death Watch Warrior",
                     "count": 4,
                     "unique": false
                 }
@@ -274,13 +274,13 @@
                 },
                 {
                     "blid": "sw0377",
-                    "name": "ARC Trooper Hammer",
+                    "name": "Clone ARC Trooper Hammer, Rancor Battalion",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw0378",
-                    "name": "Rancor Battalion ARF Trooper",
+                    "name": "Clone ARF Trooper, Rancor Battalion",
                     "count": 1,
                     "unique": true
                 }
@@ -298,13 +298,13 @@
             "minifigs": [
                 {
                     "blid": "sw0005b",
-                    "name": "Scout Trooper",
+                    "name": "Imperial Scout Trooper",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw0366",
-                    "name": "Stormtrooper",
+                    "name": "Imperial Stormtrooper",
                     "count": 1,
                     "unique": false
                 },
@@ -334,7 +334,7 @@
             "minifigs": [
                 {
                     "blid": "sw0438",
-                    "name": "Clone Sergeant",
+                    "name": "Clone Trooper Sergeant",
                     "count": 1,
                     "unique": true
                 },
@@ -430,13 +430,13 @@
             "minifigs": [
                 {
                     "blid": "sw0518",
-                    "name": "41st Elite Corps Clone Scout Trooper",
+                    "name": "Clone Scout Trooper, 41st Elite Corps",
                     "count": 2,
                     "unique": false
                 },
                 {
                     "blid": "sw0519",
-                    "name": "41st Elite Corps Clone Trooper",
+                    "name": "Clone Trooper, 41st Elite Corps",
                     "count": 2,
                     "unique": false
                 }
@@ -454,13 +454,13 @@
             "minifigs": [
                 {
                     "blid": "sw0522",
-                    "name": "212th Attack Battalion Clone Trooper",
+                    "name": "Clone Trooper, 212th Attack Battalion",
                     "count": 2,
                     "unique": true
                 },
                 {
                     "blid": "sw0523",
-                    "name": "212th Attack Battalion Airborne Trooper",
+                    "name": "Clone Airborne Trooper, 212th Attack Battalion",
                     "count": 2,
                     "unique": true
                 }
@@ -496,7 +496,7 @@
                 },
                 {
                     "blid": "sw0524",
-                    "name": "91st Mobile Reconnaissance Corps BARC Trooper",
+                    "name": "Clone BARC Trooper, 91st Mobile Reconnaissance Corps",
                     "count": 1,
                     "unique": true
                 }
@@ -514,13 +514,13 @@
             "minifigs": [
                 {
                     "blid": "sw0578",
-                    "name": "Stormtrooper",
+                    "name": "Imperial Stormtrooper",
                     "count": 2,
                     "unique": false
                 },
                 {
                     "blid": "sw0617",
-                    "name": "Stormtrooper",
+                    "name": "Imperial Stormtrooper",
                     "count": 2,
                     "unique": true
                 }
@@ -538,7 +538,7 @@
             "minifigs": [
                 {
                     "blid": "sw0603",
-                    "name": "Shadow Stormtrooper",
+                    "name": "Imperial Shadow Stormtrooper",
                     "count": 2,
                     "unique": true
                 },
@@ -586,13 +586,13 @@
             "minifigs": [
                 {
                     "blid": "sw0605",
-                    "name": "Geonosis Airborne Trooper",
+                    "name": "Clone Airborne Trooper - Geonosis Camouflage",
                     "count": 2,
                     "unique": true
                 },
                 {
                     "blid": "sw0606",
-                    "name": "Geonosis Clone Trooper",
+                    "name": "Clone Trooper - Geonosis Camouflage",
                     "count": 2,
                     "unique": true
                 }
@@ -652,7 +652,7 @@
                 },
                 {
                     "blid": "sw0671",
-                    "name": "First Order Crew Member",
+                    "name": "First Order Crew Member (Fleet Engineer / Gunner)",
                     "count": 1,
                     "unique": false
                 },
@@ -784,13 +784,13 @@
             "minifigs": [
                 {
                     "blid": "sw0585",
-                    "name": "Stormtrooper",
+                    "name": "Imperial Stormtrooper",
                     "count": 2,
                     "unique": false
                 },
                 {
                     "blid": "sw0807",
-                    "name": "Death Trooper",
+                    "name": "Imperial Death Trooper",
                     "count": 2,
                     "unique": false
                 }
@@ -820,7 +820,7 @@
                 },
                 {
                     "blid": "sw0832",
-                    "name": "Colonel Datoo",
+                    "name": "First Order Officer (Colonel Erich S. Datoo)",
                     "count": 1,
                     "unique": true
                 }
@@ -910,7 +910,7 @@
                 },
                 {
                     "blid": "sw0895",
-                    "name": "R3-T2",
+                    "name": "Astromech Droid, R3-T2",
                     "count": 1,
                     "unique": true
                 },
@@ -970,7 +970,7 @@
             "minifigs": [
                 {
                     "blid": "sw0912",
-                    "name": "Corporal Latt",
+                    "name": "Imperial Emigration Officer",
                     "count": 1,
                     "unique": true
                 },
@@ -1072,19 +1072,19 @@
             "minifigs": [
                 {
                     "blid": "sw0997b",
-                    "name": "Stormtrooper",
+                    "name": "Imperial Stormtrooper",
                     "count": 3,
                     "unique": false
                 },
                 {
                     "blid": "sw1031",
-                    "name": "Shadow Trooper",
+                    "name": "Imperial Shadow Trooper",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw1032",
-                    "name": "Han Solo",
+                    "name": "Han Solo, Blue Legs (20th Anniversary Torso)",
                     "count": 1,
                     "unique": true
                 }
@@ -1174,13 +1174,13 @@
                 },
                 {
                     "blid": "sw1093",
-                    "name": "501st Legion Jet Trooper",
+                    "name": "Clone Jet Trooper, 501st Legion",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw1094",
-                    "name": "501st Legion Clone Trooper",
+                    "name": "Clone Trooper, 501st Legion",
                     "count": 3,
                     "unique": false
                 }
@@ -1198,7 +1198,7 @@
             "minifigs": [
                 {
                     "blid": "sw1146",
-                    "name": "Clone Commander",
+                    "name": "Clone Trooper Commander",
                     "count": 1,
                     "unique": false
                 },
@@ -1270,7 +1270,7 @@
                 },
                 {
                     "blid": "sw1182",
-                    "name": "Hoth Scout Trooper",
+                    "name": "Imperial Scout Trooper, Hoth",
                     "count": 1,
                     "unique": true
                 }
@@ -1288,19 +1288,19 @@
             "minifigs": [
                 {
                     "blid": "sw1246",
-                    "name": "501st Legion Officer",
+                    "name": "Clone Trooper, 501st Legion",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw1247",
-                    "name": "501st Legion Heavy Trooper",
+                    "name": "Clone Heavy Trooper, 501st Legion",
                     "count": 2,
                     "unique": true
                 },
                 {
                     "blid": "sw1248",
-                    "name": "501st Legion Specialist",
+                    "name": "Clone Trooper Specialist, 501st Legion",
                     "count": 1,
                     "unique": true
                 }
@@ -1318,19 +1318,19 @@
             "minifigs": [
                 {
                     "blid": "sw1276",
-                    "name": "332nd Company Jet Trooper",
+                    "name": "Clone Trooper, 501st Legion, 332nd Company, Blue Jet Pack",
                     "count": 2,
                     "unique": true
                 },
                 {
                     "blid": "sw1277",
-                    "name": "Captain Vaughn",
+                    "name": "Clone Captain Vaughn",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw1278",
-                    "name": "332nd Company Clone Trooper",
+                    "name": "Clone Trooper, 501st Legion, 332nd Company",
                     "count": 1,
                     "unique": true
                 }
@@ -1347,12 +1347,6 @@
             "pieces": 215,
             "minifigs": [
                 {
-                    "blid": "sw1320",
-                    "name": "Battle Droid",
-                    "count": 1,
-                    "unique": true
-                },
-                {
                     "blid": "sw0001d",
                     "name": "Battle Droid",
                     "count": 1,
@@ -1360,13 +1354,19 @@
                 },
                 {
                     "blid": "sw1305",
-                    "name": "Shock Trooper",
+                    "name": "Clone Shock Trooper, Coruscant Guard",
                     "count": 1,
                     "unique": true
                 },
                 {
                     "blid": "sw1319",
                     "name": "Clone Trooper",
+                    "count": 1,
+                    "unique": true
+                },
+                {
+                    "blid": "sw1320",
+                    "name": "Battle Droid",
                     "count": 1,
                     "unique": true
                 },
