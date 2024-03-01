@@ -1,0 +1,134 @@
+{
+    "q01": {
+        "qText": "What's your favorite type of wood?",
+        "aText": "Oak",
+        "aScore": ["plains","swamp"],
+        "bText": "Spruce",
+        "bScore": ["snowy","taiga"],
+        "cText": "Jungle",
+        "cScore": ["desert","jungle"],
+        "dText": "Acacia",
+        "dScore": ["savanna"]
+    },
+    "q02": {
+        "qText": "What's your dream job?",
+        "aText": "Something in STEM",
+        "aScore": ["armorer","cartographer","fletcher","stone_mason","toolsmith","weaponsmith"],
+        "bText": "Service industry",
+        "bScore": ["butcher","cleric","librarian"],
+        "cText": "Agriculture",
+        "cScore": ["farmer","fisherman","leatherworker","shepherd"],
+        "dText": "To not work",
+        "dScore": ["nitwit","unemployed"]
+    },
+    "q03": {
+        "qText": "What's your favorite color?",
+        "aText": "Red",
+        "aScore": ["savanna","librarian"],
+        "bText": "Green",
+        "bScore": ["desert","jungle","nitwit"],
+        "cText": "Blue",
+        "cScore": ["snowy"],
+        "dText": "Purple",
+        "dScore": ["swamp","cleric"]
+    },
+    "q04": {
+        "qText": "What would you do in the apocalypse?",
+        "aText": "Hide in my bunker",
+        "aScore": ["butcher","fisherman","librarian","stone_mason"],
+        "bText": "Fend for myself",
+        "bScore": ["armorer","fletcher","toolsmith","weaponsmith"],
+        "cText": "Start a commune",
+        "cScore": ["cleric","farmer","shepherd"],
+        "dText": "Die",
+        "dScore": ["cartographer","leatherworker","nitwit","unemployed"]
+    },
+    "q05": {
+        "qText": "What's your favorite ice cream flavor?",
+        "aText": "Vanilla",
+        "aScore": ["plains","snowy","butcher","fisherman","shepherd"],
+        "bText": "Chocolate",
+        "bScore": ["jungle","cartographer","librarian","stone_mason","unemployed"],
+        "cText": "Strawberry",
+        "cScore": ["taiga","armorer","farmer","leatherworker"],
+        "dText": "Mint",
+        "dScore": ["cleric","fletcher","nitwit","toolsmith","weaponsmith"]
+    },
+    "q06": {
+        "qText": "Where would you rather live?",
+        "aText": "Florida",
+        "aScore": ["swamp","jungle","fisherman","nitwit"],
+        "bText": "California",
+        "bScore": ["savanna"],
+        "cText": "Texas",
+        "cScore": ["desert","plains","weaponsmith"],
+        "dText": "Wisconsin",
+        "dScore": ["snowy","taiga","farmer"]
+    },
+    "q07": {
+        "qText": "What's your favorite drink?",
+        "aText": "Water",
+        "aScore": ["armorer","shepherd","toolsmith","weaponsmith"],
+        "bText": "Soda",
+        "bScore": ["butcher","fletcher","nitwit"],
+        "cText": "Coffee or tea",
+        "cScore": ["cartographer","farmer","leatherworker","librarian"],
+        "dText": "Beer",
+        "dScore": ["cleric","fisherman","stone_mason","unemployed"]
+    },
+    "q08": {
+        "qText": "Do you have blue hair and pronouns?",
+        "aText": "Blue hair and pronouns",
+        "aScore": ["butcher","farmer","librarian","leatherworker"],
+        "bText": "Blue hair, but no pronouns",
+        "bScore": ["armorer","fletcher","toolsmith","weaponsmith"],
+        "cText": "Pronouns, but no blue hair",
+        "cScore": ["cartographer","fisherman","shepherd","unemployed"],
+        "dText": "No blue hair and no pronouns",
+        "dScore": ["cleric","nitwit","stone_mason"]
+    },
+    "q09": {
+        "qText": "What's your favorite season?",
+        "aText": "Winter",
+        "aScore": ["snowy","taiga"],
+        "bText": "Spring",
+        "bScore": ["plains","savanna"],
+        "cText": "Summer",
+        "cScore": ["desert","jungle"],
+        "dText": "Fall",
+        "dScore": ["swamp"]
+    },
+    "q10": {
+        "qText": "What do you like to do on a Friday night?",
+        "aText": "Go to the bar",
+        "aScore": ["fisherman","nitwit","stone_mason"],
+        "bText": "Hang out with friends",
+        "bScore": ["armorer","butcher","fletcher","librarian"],
+        "cText": "Watch TV",
+        "cScore": ["cartographer","toolsmith","unemployed","weaponsmith"],
+        "dText": "Work",
+        "dScore": ["cleric","farmer","leatherworker","shepherd"]
+    },
+    "q11": {
+        "qText": "What houseplant would you grow?",
+        "aText": "Flowers",
+        "aScore": ["plains","savanna","swamp"],
+        "bText": "Succulents",
+        "bScore": ["desert"],
+        "cText": "Bamboo",
+        "cScore": ["jungle"],
+        "dText": "They all just die",
+        "dScore": ["snowy","taiga"]
+    },
+    "q12": {
+        "qText": "What's for lunch?",
+        "aText": "Cheeseburger",
+        "aScore": ["butcher","farmer","nitwit","weaponsmith"],
+        "bText": "Pasta",
+        "bScore": ["armorer","fletcher","leatherworker","toolsmith"],
+        "cText": "Sushi",
+        "cScore": ["cartographer","fisherman","librarian"],
+        "dText": "Soup",
+        "dScore": ["cleric","shepherd","stone_mason","unemployed"]
+    }
+}
