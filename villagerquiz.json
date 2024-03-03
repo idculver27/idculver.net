@@ -1,134 +1,410 @@
 {
-    "q01": {
-        "qText": "What's your favorite type of wood?",
-        "aText": "Oak",
-        "aScore": ["plains","swamp"],
-        "bText": "Spruce",
-        "bScore": ["snowy","taiga"],
-        "cText": "Jungle",
-        "cScore": ["desert","jungle"],
-        "dText": "Acacia",
-        "dScore": ["savanna"]
-    },
-    "q02": {
-        "qText": "What's your dream job?",
-        "aText": "Something in STEM",
-        "aScore": ["armorer","cartographer","fletcher","stone_mason","toolsmith","weaponsmith"],
-        "bText": "Service industry",
-        "bScore": ["butcher","cleric","librarian"],
-        "cText": "Agriculture",
-        "cScore": ["farmer","fisherman","leatherworker","shepherd"],
-        "dText": "To not work",
-        "dScore": ["nitwit","unemployed"]
-    },
-    "q03": {
-        "qText": "What's your favorite color?",
-        "aText": "Red",
-        "aScore": ["savanna","librarian"],
-        "bText": "Green",
-        "bScore": ["desert","jungle","nitwit"],
-        "cText": "Blue",
-        "cScore": ["snowy"],
-        "dText": "Purple",
-        "dScore": ["swamp","cleric"]
-    },
-    "q04": {
-        "qText": "What would you do in the apocalypse?",
-        "aText": "Hide in my bunker",
-        "aScore": ["butcher","fisherman","librarian","stone_mason"],
-        "bText": "Fend for myself",
-        "bScore": ["armorer","fletcher","toolsmith","weaponsmith"],
-        "cText": "Start a commune",
-        "cScore": ["cleric","farmer","shepherd"],
-        "dText": "Die",
-        "dScore": ["cartographer","leatherworker","nitwit","unemployed"]
-    },
-    "q05": {
-        "qText": "What's your favorite ice cream flavor?",
-        "aText": "Vanilla",
-        "aScore": ["plains","snowy","butcher","fisherman","shepherd"],
-        "bText": "Chocolate",
-        "bScore": ["jungle","cartographer","librarian","stone_mason","unemployed"],
-        "cText": "Strawberry",
-        "cScore": ["taiga","armorer","farmer","leatherworker"],
-        "dText": "Mint",
-        "dScore": ["cleric","fletcher","nitwit","toolsmith","weaponsmith"]
-    },
-    "q06": {
-        "qText": "Where would you rather live?",
-        "aText": "Florida",
-        "aScore": ["swamp","jungle","fisherman","nitwit"],
-        "bText": "California",
-        "bScore": ["savanna"],
-        "cText": "Texas",
-        "cScore": ["desert","plains","weaponsmith"],
-        "dText": "Wisconsin",
-        "dScore": ["snowy","taiga","farmer"]
-    },
-    "q07": {
-        "qText": "What's your favorite drink?",
-        "aText": "Water",
-        "aScore": ["armorer","shepherd","toolsmith","weaponsmith"],
-        "bText": "Soda",
-        "bScore": ["butcher","fletcher","nitwit"],
-        "cText": "Coffee or tea",
-        "cScore": ["cartographer","farmer","leatherworker","librarian"],
-        "dText": "Beer",
-        "dScore": ["cleric","fisherman","stone_mason","unemployed"]
-    },
-    "q08": {
-        "qText": "Do you have blue hair and pronouns?",
-        "aText": "Blue hair and pronouns",
-        "aScore": ["butcher","farmer","librarian","leatherworker"],
-        "bText": "Blue hair, but no pronouns",
-        "bScore": ["armorer","fletcher","toolsmith","weaponsmith"],
-        "cText": "Pronouns, but no blue hair",
-        "cScore": ["cartographer","fisherman","shepherd","unemployed"],
-        "dText": "No blue hair and no pronouns",
-        "dScore": ["cleric","nitwit","stone_mason"]
-    },
-    "q09": {
-        "qText": "What's your favorite season?",
-        "aText": "Winter",
-        "aScore": ["snowy","taiga"],
-        "bText": "Spring",
-        "bScore": ["plains","savanna"],
-        "cText": "Summer",
-        "cScore": ["desert","jungle"],
-        "dText": "Fall",
-        "dScore": ["swamp"]
-    },
-    "q10": {
-        "qText": "What do you like to do on a Friday night?",
-        "aText": "Go to the bar",
-        "aScore": ["fisherman","nitwit","stone_mason"],
-        "bText": "Hang out with friends",
-        "bScore": ["armorer","butcher","fletcher","librarian"],
-        "cText": "Watch TV",
-        "cScore": ["cartographer","toolsmith","unemployed","weaponsmith"],
-        "dText": "Work",
-        "dScore": ["cleric","farmer","leatherworker","shepherd"]
-    },
-    "q11": {
-        "qText": "What houseplant would you grow?",
-        "aText": "Flowers",
-        "aScore": ["plains","savanna","swamp"],
-        "bText": "Succulents",
-        "bScore": ["desert"],
-        "cText": "Bamboo",
-        "cScore": ["jungle"],
-        "dText": "They all just die",
-        "dScore": ["snowy","taiga"]
-    },
-    "q12": {
-        "qText": "What's for lunch?",
-        "aText": "Cheeseburger",
-        "aScore": ["butcher","farmer","nitwit","weaponsmith"],
-        "bText": "Pasta",
-        "bScore": ["armorer","fletcher","leatherworker","toolsmith"],
-        "cText": "Sushi",
-        "cScore": ["cartographer","fisherman","librarian"],
-        "dText": "Soup",
-        "dScore": ["cleric","shepherd","stone_mason","unemployed"]
+    "bank": [
+        {
+            "text": "What's your favorite type of wood?",
+            "a": {
+                "text": "Oak",
+                "score": ["plains","swamp"]
+            },
+            "b": {
+                "text": "Spruce",
+                "score": ["snowy","taiga"]
+            },
+            "c": {
+                "text": "Jungle",
+                "score": ["desert","jungle"]
+            },
+            "d": {
+                "text": "Acacia",
+                "score": ["savanna"]
+            }
+        },
+        {
+            "text": "What's your dream job?",
+            "a": {
+                "text": "Something in STEM",
+                "score": ["armorer","cartographer","fletcher","stone_mason","toolsmith","weaponsmith"]
+            },
+            "b": {
+                "text": "Service industry",
+                "score": ["butcher","cleric","librarian"]
+            },
+            "c": {
+                "text": "Agriculture",
+                "score": ["farmer","fisherman","leatherworker","shepherd"]
+            },
+            "d": {
+                "text": "To not work",
+                "score": ["nitwit","unemployed"]
+            }
+        },
+        {
+            "text": "What's your favorite color?",
+            "a": {
+                "text": "Red",
+                "score": ["savanna","librarian"]
+            },
+            "b": {
+                "text": "Green",
+                "score": ["desert","jungle","nitwit"]
+            },
+            "c": {
+                "text": "Blue",
+                "score": ["snowy"]
+            },
+            "d": {
+                "text": "Purple",
+                "score": ["swamp","cleric"]
+            }
+        },
+        {
+            "text": "What would you do in the apocalypse?",
+            "a": {
+                "text": "Hide in my bunker",
+                "score": ["butcher","fisherman","librarian","stone_mason"]
+            },
+            "b": {
+                "text": "Fend for myself",
+                "score": ["armorer","fletcher","toolsmith","weaponsmith"]
+            },
+            "c": {
+                "text": "Start a commune",
+                "score": ["cleric","farmer","shepherd"]
+            },
+            "d": {
+                "text": "Die",
+                "score": ["cartographer","leatherworker","nitwit","unemployed"]
+            }
+        },
+        {
+            "text": "What's your favorite ice cream flavor?",
+            "a": {
+                "text": "Vanilla",
+                "score": ["plains","snowy","butcher","fisherman","shepherd"]
+            },
+            "b": {
+                "text": "Chocolate",
+                "score": ["jungle","cartographer","librarian","stone_mason","unemployed"]
+            },
+            "c": {
+                "text": "Strawberry",
+                "score": ["taiga","armorer","farmer","leatherworker"]
+            },
+            "d": {
+                "text": "Mint",
+                "score": ["cleric","fletcher","nitwit","toolsmith","weaponsmith"]
+            }
+        },
+        {
+            "text": "Where would you rather live?",
+            "a": {
+                "text": "Florida",
+                "score": ["swamp","jungle","fisherman","nitwit"]
+            },
+            "b": {
+                "text": "California",
+                "score": ["savanna"]
+            },
+            "c": {
+                "text": "Texas",
+                "score": ["desert","plains","weaponsmith"]
+            },
+            "d": {
+                "text": "Wisconsin",
+                "score": ["snowy","taiga","farmer"]
+            }
+        },
+        {
+            "text": "What's your favorite drink?",
+            "a": {
+                "text": "Water",
+                "score": ["armorer","shepherd","toolsmith","weaponsmith"]
+            },
+            "b": {
+                "text": "Soda",
+                "score": ["butcher","fletcher","nitwit"]
+            },
+            "c": {
+                "text": "Coffee or tea",
+                "score": ["cartographer","farmer","leatherworker","librarian"]
+            },
+            "d": {
+                "text": "Beer",
+                "score": ["cleric","fisherman","stone_mason","unemployed"]
+            }
+        },
+        {
+            "text": "Do you have blue hair and pronouns?",
+            "a": {
+                "text": "Blue hair and pronouns",
+                "score": ["butcher","farmer","librarian","leatherworker"]
+            },
+            "b": {
+                "text": "Blue hair, but no pronouns",
+                "score": ["armorer","fletcher","toolsmith","weaponsmith"]
+            },
+            "c": {
+                "text": "Pronouns, but no blue hair",
+                "score": ["cartographer","fisherman","shepherd","unemployed"]
+            },
+            "d": {
+                "text": "No blue hair and no pronouns",
+                "score": ["cleric","nitwit","stone_mason"]
+            }
+        },
+        {
+            "text": "What's your favorite season?",
+            "a": {
+                "text": "Winter",
+                "score": ["snowy"]
+            },
+            "b": {
+                "text": "Spring",
+                "score": ["plains","savanna"]
+            },
+            "c": {
+                "text": "Summer",
+                "score": ["desert","jungle","swamp"]
+            },
+            "d": {
+                "text": "Fall",
+                "score": ["taiga"]
+            }
+        },
+        {
+            "text": "What do you like to do on a Friday night?",
+            "a": {
+                "text": "Go to the bar",
+                "score": ["fisherman","nitwit","stone_mason"]
+            },
+            "b": {
+                "text": "Hang out with friends",
+                "score": ["armorer","butcher","fletcher","librarian"]
+            },
+            "c": {
+                "text": "Watch TV",
+                "score": ["cartographer","toolsmith","unemployed","weaponsmith"]
+            },
+            "d": {
+                "text": "Work",
+                "score": ["cleric","farmer","leatherworker","shepherd"]
+            }
+        },
+        {
+            "text": "What's for lunch?",
+            "a": {
+                "text": "Cheeseburger",
+                "score": ["butcher","farmer","nitwit","weaponsmith"]
+            },
+            "b": {
+                "text": "Pasta",
+                "score": ["armorer","fletcher","leatherworker","toolsmith"]
+            },
+            "c": {
+                "text": "Sushi",
+                "score": ["cartographer","fisherman","librarian"]
+            },
+            "d": {
+                "text": "Soup",
+                "score": ["cleric","shepherd","stone_mason","unemployed"]
+            }
+        },
+        {
+            "text": "What do you order at the Krusty Krab?",
+            "a": {
+                "text": "",
+                "score": []
+            },
+            "b": {
+                "text": "",
+                "score": []
+            },
+            "c": {
+                "text": "",
+                "score": []
+            },
+            "d": {
+                "text": "",
+                "score": []
+            }
+        },
+        {
+            "text": "You are Isekaied into a generic fantasy world. You wake up in a ",
+            "a": {
+                "text": "",
+                "score": []
+            },
+            "b": {
+                "text": "",
+                "score": []
+            },
+            "c": {
+                "text": "",
+                "score": []
+            },
+            "d": {
+                "text": "",
+                "score": []
+            }
+        },
+        {
+            "text": "unhinged hypothetical scenarios",
+            "a": {
+                "text": "",
+                "score": []
+            },
+            "b": {
+                "text": "",
+                "score": []
+            },
+            "c": {
+                "text": "",
+                "score": []
+            },
+            "d": {
+                "text": "",
+                "score": []
+            }
+        },
+        {
+            "text": "",
+            "a": {
+                "text": "",
+                "score": []
+            },
+            "b": {
+                "text": "",
+                "score": []
+            },
+            "c": {
+                "text": "",
+                "score": []
+            },
+            "d": {
+                "text": "",
+                "score": []
+            }
+        }
+    ],
+    "imgs": {
+        "desert": {
+            "armorer": "https://minecraft.wiki/images/Desert_Armorer.png?43024&format=original",
+            "butcher": "https://minecraft.wiki/images/Desert_Butcher.png?7afe6&format=original",
+            "cartographer": "https://minecraft.wiki/images/Desert_Cartographer.png?1a289&format=original",
+            "cleric": "https://minecraft.wiki/images/Desert_Cleric.png?78f26&format=original",
+            "farmer": "https://minecraft.wiki/images/Desert_Farmer.png?ce9f8&format=original",
+            "fisherman": "https://minecraft.wiki/images/Desert_Fisherman.png?d7057&format=original",
+            "fletcher": "https://minecraft.wiki/images/Desert_Fletcher.png?81259&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Desert_Leatherworker.png?a4c1a&format=original",
+            "librarian": "https://minecraft.wiki/images/Desert_Librarian.png?3f416&format=original",
+            "nitwit": "https://minecraft.wiki/images/Desert_Nitwit.png?08aa4&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Desert_Mason.png?06eff&format=original",
+            "shepherd": "https://minecraft.wiki/images/Desert_Shepherd.png?1f6ee&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Desert_Toolsmith.png?f32b0&format=original",
+            "unemployed": "https://minecraft.wiki/images/Desert_Villager_Base_JE2.png?744cf&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Desert_Weaponsmith.png?c4169&format=original"
+        },
+        "jungle": {
+            "armorer": "https://minecraft.wiki/images/Jungle_Armorer.png?4fc31&format=original",
+            "butcher": "https://minecraft.wiki/images/Jungle_Butcher.png?f03cd&format=original",
+            "cartographer": "https://minecraft.wiki/images/Jungle_Cartographer.png?b0c12&format=original",
+            "cleric": "https://minecraft.wiki/images/Jungle_Cleric.png?c7489&format=original",
+            "farmer": "https://minecraft.wiki/images/Jungle_Farmer.png?70c98&format=original",
+            "fisherman": "https://minecraft.wiki/images/Jungle_Fisherman.png?68956&format=original",
+            "fletcher": "https://minecraft.wiki/images/Jungle_Fletcher.png?8dc57&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Jungle_Leatherworker.png?fb90d&format=original",
+            "librarian": "https://minecraft.wiki/images/Jungle_Librarian.png?008da&format=original",
+            "nitwit": "https://minecraft.wiki/images/Jungle_Nitwit.png?422b3&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Jungle_Mason.png?cd112&format=original",
+            "shepherd": "https://minecraft.wiki/images/Jungle_Shepherd.png?e2334&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Jungle_Toolsmith.png?57e3b&format=original",
+            "unemployed": "https://minecraft.wiki/images/Jungle_Villager_Base_JE2.png?5869f&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Jungle_Weaponsmith.png?11927&format=original"
+        },
+        "plains": {
+            "armorer": "https://minecraft.wiki/images/Plains_Armorer.png?0dee1&format=original",
+            "butcher": "https://minecraft.wiki/images/Plains_Butcher.png?795c2&format=original",
+            "cartographer": "https://minecraft.wiki/images/Plains_Cartographer.png?f6b50&format=original",
+            "cleric": "https://minecraft.wiki/images/Plains_Cleric.png?817d6&format=original",
+            "farmer": "https://minecraft.wiki/images/Plains_Farmer.png?b8e42&format=original",
+            "fisherman": "https://minecraft.wiki/images/Plains_Fisherman.png?2e0a5&format=original",
+            "fletcher": "https://minecraft.wiki/images/Plains_Fletcher.png?cacd0&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Plains_Leatherworker.png?b6aae&format=original",
+            "librarian": "https://minecraft.wiki/images/Plains_Librarian.png?f9177&format=original",
+            "nitwit": "https://minecraft.wiki/images/Plains_Nitwit.png?01c04&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Plains_Mason.png?59e6b&format=original",
+            "shepherd": "https://minecraft.wiki/images/Plains_Shepherd.png?5b307&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Plains_Toolsmith.png?d03a0&format=original",
+            "unemployed": "https://minecraft.wiki/images/Plains_Villager_Base_JE2.png?a2fcc&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Plains_Weaponsmith.png?e38a6&format=original"
+        },
+        "savanna": {
+            "armorer": "https://minecraft.wiki/images/Savanna_Armorer.png?9447f&format=original",
+            "butcher": "https://minecraft.wiki/images/Savanna_Butcher.png?0aa07&format=original",
+            "cartographer": "https://minecraft.wiki/images/Savanna_Cartographer.png?de821&format=original",
+            "cleric": "https://minecraft.wiki/images/Savanna_Cleric.png?fa396&format=original",
+            "farmer": "https://minecraft.wiki/images/Savanna_Farmer.png?88933&format=original",
+            "fisherman": "https://minecraft.wiki/images/Savanna_Fisherman.png?80c84&format=original",
+            "fletcher": "https://minecraft.wiki/images/Savanna_Fletcher.png?7a6d5&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Savanna_Leatherworker.png?fc455&format=original",
+            "librarian": "https://minecraft.wiki/images/Savanna_Librarian.png?fe99d&format=original",
+            "nitwit": "https://minecraft.wiki/images/Savanna_Nitwit.png?84986&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Savanna_Mason.png?70b1e&format=original",
+            "shepherd": "https://minecraft.wiki/images/Savanna_Shepherd.png?69467&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Savanna_Toolsmith.png?e51bf&format=original",
+            "unemployed": "https://minecraft.wiki/images/Savanna_Villager_Base_JE2.png?80a98&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Savanna_Weaponsmith.png?a873a&format=original"
+        },
+        "snowy": {
+            "armorer": "https://minecraft.wiki/images/Snowy_Armorer.png?3f323&format=original",
+            "butcher": "https://minecraft.wiki/images/Snowy_Butcher.png?372e7&format=original",
+            "cartographer": "https://minecraft.wiki/images/Snowy_Cartographer.png?56beb&format=original",
+            "cleric": "https://minecraft.wiki/images/Snowy_Cleric.png?f4c8e&format=original",
+            "farmer": "https://minecraft.wiki/images/Snowy_Farmer.png?92453&format=original",
+            "fisherman": "https://minecraft.wiki/images/Snowy_Fisherman.png?2759a&format=original",
+            "fletcher": "https://minecraft.wiki/images/Snowy_Fletcher.png?50a56&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Snowy_Leatherworker.png?8c3c7&format=original",
+            "librarian": "https://minecraft.wiki/images/Snowy_Librarian.png?53371&format=original",
+            "nitwit": "https://minecraft.wiki/images/Snowy_Nitwit.png?d4cf7&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Snowy_Mason.png?2feba&format=original",
+            "shepherd": "https://minecraft.wiki/images/Snowy_Shepherd.png?c2562&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Snowy_Toolsmith.png?3b875&format=original",
+            "unemployed": "https://minecraft.wiki/images/Snowy_Villager_Base_JE2.png?b51b3&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Snowy_Weaponsmith.png?c9c43&format=original"
+        },
+        "swamp": {
+            "armorer": "https://minecraft.wiki/images/Swamp_Armorer.png?9fce5&format=original",
+            "butcher": "https://minecraft.wiki/images/Swamp_Butcher.png?c9dfb&format=original",
+            "cartographer": "https://minecraft.wiki/images/Swamp_Cartographer.png?d17b6&format=original",
+            "cleric": "https://minecraft.wiki/images/Swamp_Cleric.png?b2a19&format=original",
+            "farmer": "https://minecraft.wiki/images/Swamp_Farmer.png?e9719&format=original",
+            "fisherman": "https://minecraft.wiki/images/Swamp_Fisherman.png?3006e&format=original",
+            "fletcher": "https://minecraft.wiki/images/Swamp_Fletcher.png?26828&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Swamp_Leatherworker.png?d5824&format=original",
+            "librarian": "https://minecraft.wiki/images/Swamp_Librarian.png?c8124&format=original",
+            "nitwit": "https://minecraft.wiki/images/Swamp_Nitwit.png?039d3&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Swamp_Mason.png?96ad5&format=original",
+            "shepherd": "https://minecraft.wiki/images/Swamp_Shepherd.png?3fdbf&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Swamp_Toolsmith.png?0338a&format=original",
+            "unemployed": "https://minecraft.wiki/images/Swamp_Villager_Base_JE2.png?3f630&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Swamp_Weaponsmith.png?ebb60&format=original"
+        },
+        "taiga": {
+            "armorer": "https://minecraft.wiki/images/Taiga_Armorer.png?22f8a&format=original",
+            "butcher": "https://minecraft.wiki/images/Taiga_Butcher.png?9eb4d&format=original",
+            "cartographer": "https://minecraft.wiki/images/Taiga_Cartographer.png?23f36&format=original",
+            "cleric": "https://minecraft.wiki/images/Taiga_Cleric.png?8e397&format=original",
+            "farmer": "https://minecraft.wiki/images/Taiga_Farmer.png?cc709&format=original",
+            "fisherman": "https://minecraft.wiki/images/Taiga_Fisherman.png?62c66&format=original",
+            "fletcher": "https://minecraft.wiki/images/Taiga_Fletcher.png?49432&format=original",
+            "leatherworker": "https://minecraft.wiki/images/Taiga_Leatherworker.png?05bc0&format=original",
+            "librarian": "https://minecraft.wiki/images/Taiga_Librarian.png?c2011&format=original",
+            "nitwit": "https://minecraft.wiki/images/Taiga_Nitwit.png?e056a&format=original",
+            "stone_mason": "https://minecraft.wiki/images/Taiga_Mason.png?463f7&format=original",
+            "shepherd": "https://minecraft.wiki/images/Taiga_Shepherd.png?ce0d6&format=original",
+            "toolsmith": "https://minecraft.wiki/images/Taiga_Toolsmith.png?4c313&format=original",
+            "unemployed": "https://minecraft.wiki/images/Taiga_Villager_Base_JE2.png?c95f1&format=original",
+            "weaponsmith": "https://minecraft.wiki/images/Taiga_Weaponsmith.png?4fcd2&format=original"
+        }
     }
 }
