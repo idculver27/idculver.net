@@ -1,82 +1,6 @@
 {
     "bank": [
         {
-            "text": "What's your favorite type of wood?",
-            "a": {
-                "text": "Oak",
-                "score": ["plains","swamp"]
-            },
-            "b": {
-                "text": "Spruce",
-                "score": ["snowy","taiga"]
-            },
-            "c": {
-                "text": "Jungle",
-                "score": ["desert","jungle"]
-            },
-            "d": {
-                "text": "Acacia",
-                "score": ["savanna"]
-            }
-        },
-        {
-            "text": "What's your dream job?",
-            "a": {
-                "text": "Something in STEM",
-                "score": ["armorer","cartographer","fletcher","stone_mason","toolsmith","weaponsmith"]
-            },
-            "b": {
-                "text": "Service industry",
-                "score": ["butcher","cleric","librarian"]
-            },
-            "c": {
-                "text": "Agriculture",
-                "score": ["farmer","fisherman","leatherworker","shepherd"]
-            },
-            "d": {
-                "text": "To not work",
-                "score": ["nitwit","unemployed"]
-            }
-        },
-        {
-            "text": "What's your favorite color?",
-            "a": {
-                "text": "Red",
-                "score": ["savanna","librarian"]
-            },
-            "b": {
-                "text": "Green",
-                "score": ["desert","jungle","nitwit"]
-            },
-            "c": {
-                "text": "Blue",
-                "score": ["snowy"]
-            },
-            "d": {
-                "text": "Purple",
-                "score": ["swamp","cleric"]
-            }
-        },
-        {
-            "text": "What would you do in the apocalypse?",
-            "a": {
-                "text": "Hide in my bunker",
-                "score": ["butcher","fisherman","librarian","stone_mason"]
-            },
-            "b": {
-                "text": "Fend for myself",
-                "score": ["armorer","fletcher","toolsmith","weaponsmith"]
-            },
-            "c": {
-                "text": "Start a commune",
-                "score": ["cleric","farmer","shepherd"]
-            },
-            "d": {
-                "text": "Die",
-                "score": ["cartographer","leatherworker","nitwit","unemployed"]
-            }
-        },
-        {
             "text": "What's your favorite ice cream flavor?",
             "a": {
                 "text": "Vanilla",
@@ -98,58 +22,58 @@
         {
             "text": "Where would you rather live?",
             "a": {
-                "text": "Florida",
-                "score": ["swamp","jungle","fisherman","nitwit"]
+                "text": "Wisconsin",
+                "score": ["snowy","taiga","farmer"]
             },
             "b": {
-                "text": "California",
-                "score": ["savanna"]
-            },
-            "c": {
                 "text": "Texas",
                 "score": ["desert","plains","weaponsmith"]
             },
+            "c": {
+                "text": "Florida",
+                "score": ["swamp","jungle","fisherman","nitwit"]
+            },
             "d": {
-                "text": "Wisconsin",
-                "score": ["snowy","taiga","farmer"]
+                "text": "California",
+                "score": ["savanna"]
             }
         },
         {
-            "text": "What's your favorite drink?",
+            "text": "What's your dream job?",
             "a": {
-                "text": "Water",
-                "score": ["armorer","shepherd","toolsmith","weaponsmith"]
+                "text": "Something in STEM",
+                "score": ["armorer","cartographer","fletcher","stone_mason","toolsmith","weaponsmith"]
             },
             "b": {
-                "text": "Soda",
-                "score": ["butcher","fletcher","nitwit"]
+                "text": "Something in the service industry",
+                "score": ["butcher","cleric","librarian"]
             },
             "c": {
-                "text": "Coffee or tea",
-                "score": ["cartographer","farmer","leatherworker","librarian"]
+                "text": "Something in agriculture",
+                "score": ["farmer","fisherman","leatherworker","shepherd"]
             },
             "d": {
-                "text": "Beer",
-                "score": ["cleric","fisherman","stone_mason","unemployed"]
+                "text": "To not work",
+                "score": ["nitwit","unemployed"]
             }
         },
         {
-            "text": "Do you have blue hair and pronouns?",
+            "text": "What's your favorite type of pizza?",
             "a": {
-                "text": "Blue hair and pronouns",
-                "score": ["butcher","farmer","librarian","leatherworker"]
+                "text": "Pepperoni",
+                "score": ["leatherworker","stone_mason","toolsmith"]
             },
             "b": {
-                "text": "Blue hair, but no pronouns",
-                "score": ["armorer","fletcher","toolsmith","weaponsmith"]
+                "text": "Sausage",
+                "score": ["armorer","butcher","farmer","weaponsmith"]
             },
             "c": {
-                "text": "Pronouns, but no blue hair",
-                "score": ["cartographer","fisherman","shepherd","unemployed"]
+                "text": "Hawaiian",
+                "score": ["cartographer","fisherman","nitwit","unemployed"]
             },
             "d": {
-                "text": "No blue hair and no pronouns",
-                "score": ["cleric","nitwit","stone_mason"]
+                "text": "Just cheese",
+                "score": ["cleric","fletcher","librarian","shepherd"]
             }
         },
         {
@@ -191,98 +115,117 @@
             }
         },
         {
-            "text": "What's for lunch?",
+            "text": "What's you favorite dinosaur?",
             "a": {
-                "text": "Cheeseburger",
-                "score": ["butcher","farmer","nitwit","weaponsmith"]
+                "text": "T-Rex",
+                "score": ["butcher","leatherworker","nitwit","unemployed"]
             },
             "b": {
-                "text": "Pasta",
-                "score": ["armorer","fletcher","leatherworker","toolsmith"]
+                "text": "Stegosaurus",
+                "score": ["armorer","farmer","stone_mason","shepherd"]
             },
             "c": {
-                "text": "Sushi",
-                "score": ["cartographer","fisherman","librarian"]
+                "text": "Velociraptor",
+                "score": ["cleric","librarian","toolsmith","weaponsmith"]
             },
             "d": {
-                "text": "Soup",
-                "score": ["cleric","shepherd","stone_mason","unemployed"]
+                "text": "Pterodactyl",
+                "score": ["cartographer","fisherman","fletcher"]
             }
         },
         {
-            "text": "What do you order at the Krusty Krab?",
+            "text": "Where would you rather go on vacation?",
             "a": {
-                "text": "",
-                "score": []
+                "text": "South America",
+                "score": ["jungle","swamp"]
             },
             "b": {
-                "text": "",
-                "score": []
+                "text": "Africa",
+                "score": ["plains","savanna"]
             },
             "c": {
-                "text": "",
-                "score": []
+                "text": "Australia",
+                "score": ["desert"]
             },
             "d": {
-                "text": "",
-                "score": []
+                "text": "Antarctica",
+                "score": ["snowy","taiga"]
             }
         },
         {
-            "text": "You are Isekaied into a generic fantasy world. You wake up in a ",
+            "text": "What would you do in the zombie apocalypse?",
             "a": {
-                "text": "",
-                "score": []
+                "text": "Hide in my bunker",
+                "score": ["butcher","fisherman","librarian","stone_mason"]
             },
             "b": {
-                "text": "",
-                "score": []
+                "text": "Fend for myself",
+                "score": ["armorer","fletcher","toolsmith","weaponsmith"]
             },
             "c": {
-                "text": "",
-                "score": []
+                "text": "Start a commune",
+                "score": ["cleric","farmer","shepherd"]
             },
             "d": {
-                "text": "",
-                "score": []
+                "text": "Die",
+                "score": ["cartographer","leatherworker","nitwit","unemployed"]
             }
         },
         {
-            "text": "unhinged hypothetical scenarios",
+            "text": "Do you have blue hair and pronouns?",
             "a": {
-                "text": "",
-                "score": []
+                "text": "Blue hair and pronouns",
+                "score": ["butcher","farmer","librarian","leatherworker"]
             },
             "b": {
-                "text": "",
-                "score": []
+                "text": "Blue hair, but no pronouns",
+                "score": ["armorer","fletcher","toolsmith","weaponsmith"]
             },
             "c": {
-                "text": "",
-                "score": []
+                "text": "Pronouns, but no blue hair",
+                "score": ["cartographer","fisherman","shepherd","unemployed"]
             },
             "d": {
-                "text": "",
-                "score": []
+                "text": "No blue hair and no pronouns",
+                "score": ["cleric","nitwit","stone_mason"]
             }
         },
         {
-            "text": "",
+            "text": "You're hiking in a quiet, peaceful forest. Suddenly, you hear the sound of a twig snapping behind you. You turn around and see Bigfoot. Before you can react, it runs into the trees, and you quickly loose sight of it. What do you do?",
             "a": {
-                "text": "",
-                "score": []
+                "text": "Dedicate your life to trying to capture Bigfoot",
+                "score": ["butcher","fletcher","unemployed","weaponsmith"]
             },
             "b": {
-                "text": "",
-                "score": []
+                "text": "Pretend this never happened",
+                "score": ["farmer","fisherman","stone_mason","shepherd"]
             },
             "c": {
-                "text": "",
-                "score": []
+                "text": "Report this to the Department of Natural Resources",
+                "score": ["armorer","nitwit","toolsmith"]
             },
             "d": {
-                "text": "",
-                "score": []
+                "text": "See a therapist to treat your schizophrenia",
+                "score": ["cartographer","cleric","leatherworker","librarian"]
+            }
+        },
+        {
+            "text": "What's your favorite color?",
+            "a": {
+                "text": "Red",
+                "score": ["savanna","librarian"]
+            },
+            "b": {
+                "text": "Green",
+                "score": ["desert","jungle","nitwit"]
+            },
+            "c": {
+                "text": "Blue",
+                "score": ["snowy"]
+            },
+            "d": {
+                "text": "Purple",
+                "score": ["swamp","cleric"]
             }
         }
     ],

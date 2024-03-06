@@ -84,6 +84,8 @@ function finalResults() {
     let img = newElement("img");
     img.src = imgs[biome][profession];
     divMain.appendChild(img);
+
+    console.log(quizResults);
 }
 
 function findWinner(keys) {
