@@ -35,7 +35,7 @@
             },
             "d": {
                 "text": "California",
-                "score": ["savanna"]
+                "score": ["desert","savanna"]
             }
         },
         {
@@ -140,16 +140,16 @@
                 "score": ["jungle","swamp"]
             },
             "b": {
-                "text": "Africa",
-                "score": ["plains","savanna"]
+                "text": "Europe",
+                "score": ["plains","taiga"]
             },
             "c": {
                 "text": "Australia",
-                "score": ["desert"]
+                "score": ["desert","savanna"]
             },
             "d": {
                 "text": "Antarctica",
-                "score": ["snowy","taiga"]
+                "score": ["snowy"]
             }
         },
         {
@@ -191,7 +191,7 @@
             }
         },
         {
-            "text": "You're hiking in a quiet, peaceful forest. Suddenly, you hear the sound of a twig snapping behind you. You turn around and see Bigfoot. Before you can react, it runs into the trees, and you quickly loose sight of it. What do you do?",
+            "text": "You're hiking in a quiet, peaceful forest. Suddenly, you hear the sound of a twig snapping behind you. You turn around and see Bigfoot. Before you can react, it runs into the trees, and you quickly lose sight of it. What do you do?",
             "a": {
                 "text": "Dedicate your life to trying to capture Bigfoot",
                 "score": ["butcher","fletcher","unemployed","weaponsmith"]

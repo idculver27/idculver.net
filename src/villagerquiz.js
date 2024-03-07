@@ -37,23 +37,25 @@ fetch("../villagerquiz.json")
 var qIndex = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
-    btnStart.addEventListener("click", () => {
+    startButton.addEventListener("click", () => {
+        startDiv.setAttribute("hidden",true);
+        questionDiv.removeAttribute("hidden");
         displayQuestion();
     });
 });
 
 function displayQuestion() {
-    divMain.innerHTML = "";
+    questionDiv.innerHTML = "";
 
-    let p = newElement("p");
-    p.textContent = bank[qIndex].text;
-    divMain.appendChild(p);
-
-    let btn;
+    let h2 = newElement("h2");
+    h2.textContent = bank[qIndex].text;
+    questionDiv.appendChild(h2);
+    
+    let button;
     for(let answer of ["a","b","c","d"]) {
-        btn = newElement("button");
-        btn.textContent = bank[qIndex][answer].text;
-        btn.addEventListener("click", () => {
+        button = newElement("button","button");
+        button.textContent = bank[qIndex][answer].text;
+        button.addEventListener("click", () => {
             // add score to results
             for(let key of bank[qIndex][answer].score) {
                 quizResults[key]++;
@@ -67,24 +69,20 @@ function displayQuestion() {
                 finalResults();
             }
         });
-        divMain.appendChild(btn);
+        questionDiv.appendChild(button);
     }
 }
 
 function finalResults() {
-    divMain.innerHTML = "";
+    questionDiv.setAttribute("hidden",true);
+    resultsDiv.removeAttribute("hidden");
 
     let biome = findWinner(["desert","jungle","plains","savanna","snowy","swamp","taiga"]);
     let profession = findWinner(["armorer","butcher","cartographer","cleric","farmer","fisherman","fletcher","leatherworker","librarian","nitwit","stone_mason","shepherd","toolsmith","unemployed","weaponsmith"]);
 
-    let h2 = newElement("h2");
-    h2.textContent = textFormat(biome) + " " + textFormat(profession);
-    divMain.appendChild(h2);
-
-    let img = newElement("img");
-    img.src = imgs[biome][profession];
-    divMain.appendChild(img);
-
+    villagerName.textContent = textFormat(biome) + " " + textFormat(profession);
+    villagerImg.src = imgs[biome][profession];
+    
     console.log(quizResults);
 }
 
