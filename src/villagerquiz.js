@@ -124,3 +124,8 @@ function textFormat(raw) {
     }
     return words.join(" ");
 }
+
+function stressTest(runs) {
+    // generate X random cases
+    // return results in same format as quizResults
+}
