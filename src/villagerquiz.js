@@ -1,28 +1,28 @@
 var quizResults = {
     // biomes
-    desert: 0,
-    jungle: 0,
-    plains: 0,
-    savanna: 0,
-    snowy: 0,
-    swamp: 0,
-    taiga: 0,
+    b_desert: 0,
+    b_jungle: 0,
+    b_plains: 0,
+    b_savanna: 0,
+    b_snowy: 0,
+    b_swamp: 0,
+    b_taiga: 0,
     // professions
-    armorer: 0,
-    butcher: 0,
-    cartographer: 0,
-    cleric: 0,
-    farmer: 0,
-    fisherman: 0,
-    fletcher: 0,
-    leatherworker: 0,
-    librarian: 0,
-    nitwit: 0,
-    stone_mason: 0,
-    shepherd: 0,
-    toolsmith: 0,
-    unemployed: 0,
-    weaponsmith: 0
+    p_armorer: 0,
+    p_butcher: 0,
+    p_cartographer: 0,
+    p_cleric: 0,
+    p_farmer: 0,
+    p_fisherman: 0,
+    p_fletcher: 0,
+    p_leatherworker: 0,
+    p_librarian: 0,
+    p_nitwit: 0,
+    p_stone_mason: 0,
+    p_shepherd: 0,
+    p_toolsmith: 0,
+    p_unemployed: 0,
+    p_weaponsmith: 0
 }
 
 var bank;
@@ -41,6 +41,9 @@ window.addEventListener("DOMContentLoaded", () => {
         startDiv.setAttribute("hidden",true);
         questionDiv.removeAttribute("hidden");
         displayQuestion();
+    });
+    testButton.addEventListener("click", () => {
+        stressTest(10000);
     });
 });
 
@@ -77,8 +80,8 @@ function finalResults() {
     questionDiv.setAttribute("hidden",true);
     resultsDiv.removeAttribute("hidden");
 
-    let biome = findWinner(["desert","jungle","plains","savanna","snowy","swamp","taiga"]);
-    let profession = findWinner(["armorer","butcher","cartographer","cleric","farmer","fisherman","fletcher","leatherworker","librarian","nitwit","stone_mason","shepherd","toolsmith","unemployed","weaponsmith"]);
+    let biome = findWinner(["b_desert","b_jungle","b_plains","b_savanna","b_snowy","b_swamp","b_taiga"]);
+    let profession = findWinner(["p_armorer","p_butcher","p_cartographer","p_cleric","p_farmer","p_fisherman","p_fletcher","p_leatherworker","p_librarian","p_nitwit","p_stone_mason","p_shepherd","p_toolsmith","p_unemployed","p_weaponsmith"]);
 
     villagerName.textContent = textFormat(biome) + " " + textFormat(profession);
     villagerImg.src = imgs[biome][profession];
@@ -123,7 +126,29 @@ function textFormat(raw) {
     return words.join(" ");
 }
 
+// simulate X quizes with random answers and print summary of results
 function stressTest(runs) {
-    // generate X random cases
-    // return results in same format as quizResults
+    let testResults = Object.assign({},quizResults);
+    let answers = ["a","b","c","d"];
+
+    for(let i = 0; i < runs; i++) {
+        let runResults = Object.assign({},quizResults);
+
+        for(let question of bank) {
+            // random answer
+            let answer = answers[Math.ceil(Math.random() * 3)];
+            // add score to results
+            for(let key of question[answer].score) {
+                runResults[key]++;
+            }
+        }
+
+        let biome = findWinner(["b_desert","b_jungle","b_plains","b_savanna","b_snowy","b_swamp","b_taiga"]);
+        let profession = findWinner(["p_armorer","p_butcher","p_cartographer","p_cleric","p_farmer","p_fisherman","p_fletcher","p_leatherworker","p_librarian","p_nitwit","p_stone_mason","p_shepherd","p_toolsmith","p_unemployed","p_weaponsmith"]);
+
+        testResults[biome]++;
+        testResults[profession]++;
+    }
+
+    console.log(testResults);
 }
