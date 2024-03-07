@@ -39,10 +39,9 @@ img {
 }
 #main {
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
     max-width: 1000px;
-    overflow: scroll;
     text-align: center;
 }
 #header {
