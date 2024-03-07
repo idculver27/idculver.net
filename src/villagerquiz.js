@@ -45,6 +45,11 @@ window.addEventListener("DOMContentLoaded", () => {
     testButton.addEventListener("click", () => {
         stressTest(10000);
     });
+    shareButton.addEventListener("click", () => {
+        let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver27.github.io/villagerquiz.html" + "\n\n" + villagerImg.src;
+        navigator.clipboard.writeText(copyText);
+        //navigator.clipboard.writeText("test hello");
+    });
 });
 
 function displayQuestion() {
