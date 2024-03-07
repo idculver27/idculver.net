@@ -89,6 +89,7 @@ function finalResults() {
     let profession = findWinner(["p_armorer","p_butcher","p_cartographer","p_cleric","p_farmer","p_fisherman","p_fletcher","p_leatherworker","p_librarian","p_nitwit","p_stone_mason","p_shepherd","p_toolsmith","p_unemployed","p_weaponsmith"]);
 
     villagerName.textContent = textFormat(biome) + " " + textFormat(profession);
+    villagerImg.alt = villagerName.textContent + " picture";
     villagerImg.src = imgs[biome][profession];
     
     console.log(quizResults);
