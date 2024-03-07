@@ -6,15 +6,16 @@ body {
 }
 h1 {
     color: white;
-    font-size: 30pt;
     margin: 0px;
-    padding: 40px;
+    padding: 30px;
+    padding-top: 20px;
     text-align: center;
+    max-width: 100%;
 }
 h2 {
-    font-size: 22pt;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 img {
     height: 60vh;
@@ -25,10 +26,10 @@ img {
     border-image: url(../images/buttongray.png) 10 stretch;
     color: #4c4c4c;
     font-family: Helvetica;
-    font-size: 15pt;
-    margin-top: 30px;
+    font-size: 12pt;
+    margin: 10px;
     max-width: 700px;
-    padding: 30px;
+    padding: 20px;
     width: 80vw;
 }
 .button:hover {
@@ -40,10 +41,11 @@ img {
     background-color: white;
     height: 100vh;
     margin: auto;
-    max-width: 1080px;
+    max-width: 1000px;
+    overflow: scroll;
     text-align: center;
 }
 #header {
     background-color: black;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }

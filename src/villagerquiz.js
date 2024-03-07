@@ -119,7 +119,7 @@ function newElement(childType, className="") {
 }
 
 function textFormat(raw) {
-    let words = raw.split("_");
+    let words = raw.substring(2).split("_");
     for(let i = 0; i < words.length; i++) {
         words[i] = words[i][0].toUpperCase() + words[i].substring(1);
     }
