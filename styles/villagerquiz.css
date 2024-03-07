@@ -1,0 +1,47 @@
+body {
+    background-image: url(../images/darkdirt.png);
+    font-family: Helvetica;
+    margin: 0px;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 30pt;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+h2 {
+    font-size: 20pt;
+}
+img {
+    height: 60vh;
+}
+.button {
+    background-color: #c6c6c6;
+    border: 10px solid transparent;
+    border-image: url(../images/buttongray.png) 10 stretch;
+    color: #4c4c4c;
+    font-family: Helvetica;
+    font-size: 14pt;
+    margin-top: 30px;
+    max-width: 800px;
+    padding: 30px;
+    width: 80vw;
+}
+.button:hover {
+    background-color: #218306;
+    border-image: url(../images/buttongreen.png) 10 stretch;
+    color: #ffffff;
+}
+#main {
+    background-color: white;
+    height: 100vh;
+    margin: auto;
+    max-width: 1080px;
+    text-align: center;
+}
+#header {
+    background-color: black;
+    margin-bottom: 50px;
+}

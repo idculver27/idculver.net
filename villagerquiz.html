@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Villager Are You? | Isaac's Amazing Website</title>
+    <title>Which Minecraft Villager Are You? | Isaac's Amazing Website</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/villagerquiz.css">
     <script src="src/villagerquiz.js" type="module"></script>
 </head>
 <body>
-    <a href="https://idculver27.github.io">Home</a>
-    <h1>What Villager Are You? (WIP)</h1>
-    <hr>
-    <div id="divMain">
-        <button id="btnStart">Start</button>
+    <div id="main">
+        <div id="header">
+            <div style="text-align: left;">
+                <a href="https://idculver27.github.io">Home</a>
+            </div>
+            <h1>Which Minecraft Villager Are You?</h1>
+        </div>
+        <div id="startDiv">
+            <button id="startButton" class="button">Start</button>
+        </div>
+        <div id="questionDiv" hidden>
+            <h2>This is a question?</h2>
+            <button id="aButton" class="button">This is a button</button>
+            <button id="bButton" class="button">Dear god</button>
+            <button id="cButton" class="button">There's more</button>
+            <button id="dButton" class="button">No</button>
+        </div>
+        <div id="resultsDiv" hidden>
+            <h3>You are:</h3>
+            <h2 id="villagerName">Minecraft Villager</h2>
+            <img id="villagerImg" src="https://minecraft.wiki/images/Plains_Villager_Base_JE2.png?a2fcc&format=original">
+        </div>
     </div>
 </body>
 </html>
