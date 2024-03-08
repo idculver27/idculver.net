@@ -1,3 +1,6 @@
+a:link, a:visited {
+    color: #218306;
+}
 body {
     background-image: url(../images/darkdirt.png);
     font-family: Helvetica;
@@ -47,4 +50,9 @@ img {
 #header {
     background-color: black;
     margin-bottom: 50px;
+}
+#home {
+    padding: 8px;
+    padding-bottom: 0px;
+    text-align: left;
 }
