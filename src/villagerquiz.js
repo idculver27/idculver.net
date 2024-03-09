@@ -48,7 +48,6 @@ window.addEventListener("DOMContentLoaded", () => {
     shareButton.addEventListener("click", () => {
         let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver27.github.io/villagerquiz.html" + "\n\n" + villagerImg.src;
         navigator.clipboard.writeText(copyText);
-        //navigator.clipboard.writeText("test hello");
     });
 });
 
@@ -85,6 +84,7 @@ function finalResults() {
     questionDiv.setAttribute("hidden",true);
     resultsDiv.removeAttribute("hidden");
 
+    // probably could do this better
     let biome = findWinner(["b_desert","b_jungle","b_plains","b_savanna","b_snowy","b_swamp","b_taiga"]);
     let profession = findWinner(["p_armorer","p_butcher","p_cartographer","p_cleric","p_farmer","p_fisherman","p_fletcher","p_leatherworker","p_librarian","p_nitwit","p_stone_mason","p_shepherd","p_toolsmith","p_unemployed","p_weaponsmith"]);
 

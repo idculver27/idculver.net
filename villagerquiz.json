@@ -15,7 +15,7 @@
                 "score": ["b_taiga","p_armorer","p_farmer","p_leatherworker"]
             },
             "d": {
-                "text": "Mint",
+                "text": "Mint chocolate chip",
                 "score": ["p_cleric","p_fletcher","p_nitwit","p_toolsmith","p_weaponsmith"]
             }
         },
@@ -69,11 +69,11 @@
             },
             "c": {
                 "text": "Hawaiian",
-                "score": ["p_cartographer","p_fisherman","p_nitwit","p_unemployed"]
+                "score": ["p_cartographer","p_fisherman","p_nitwit"]
             },
             "d": {
                 "text": "Just cheese",
-                "score": ["p_cleric","p_fletcher","p_librarian","p_shepherd"]
+                "score": ["p_cleric","p_fletcher","p_librarian","p_shepherd","p_unemployed"]
             }
         },
         {
@@ -115,22 +115,22 @@
             }
         },
         {
-            "text": "What's you favorite dinosaur?",
+            "text": "What's your favorite dinosaur?",
             "a": {
                 "text": "T-Rex",
-                "score": ["p_butcher","p_leatherworker","p_nitwit","p_unemployed"]
+                "score": ["p_butcher","p_nitwit","p_unemployed","p_weaponsmith"]
             },
             "b": {
                 "text": "Stegosaurus",
-                "score": ["p_armorer","p_farmer","p_stone_mason","p_shepherd"]
+                "score": ["p_cartographer","p_leatherworker","p_stone_mason"]
             },
             "c": {
                 "text": "Velociraptor",
-                "score": ["p_cleric","p_librarian","p_toolsmith","p_weaponsmith"]
+                "score": ["p_cleric","p_fisherman","p_fletcher","p_librarian","p_toolsmith"]
             },
             "d": {
-                "text": "Pterodactyl",
-                "score": ["p_cartographer","p_fisherman","p_fletcher"]
+                "text": "Triceratops",
+                "score": ["p_armorer","p_farmer","p_shepherd"]
             }
         },
         {
@@ -229,6 +229,30 @@
             }
         }
     ],
+    "bios": {
+        "b_desert": "",
+        "b_jungle": "",
+        "b_plains": "",
+        "b_savanna": "",
+        "b_snowy": "",
+        "b_swamp": "",
+        "b_taiga": "",
+        "p_armorer": "",
+        "p_butcher": "",
+        "p_cartographer": "",
+        "p_cleric": "",
+        "p_farmer": "",
+        "p_fisherman": "",
+        "p_fletcher": "",
+        "p_leatherworker": "",
+        "p_librarian": "",
+        "p_nitwit": "",
+        "p_stone_mason": "",
+        "p_shepherd": "",
+        "p_toolsmith": "",
+        "p_unemployed": "",
+        "p_weaponsmith": ""
+    },
     "imgs": {
         "b_desert": {
             "p_armorer": "https://minecraft.wiki/images/Desert_Armorer.png?43024&format=original",
