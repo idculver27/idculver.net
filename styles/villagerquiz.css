@@ -21,7 +21,8 @@ h2 {
     padding-bottom: 10px;
 }
 img {
-    height: 60vh;
+    height: 50vh;
+    max-height: 825px;
 }
 .button {
     background-color: #c6c6c6;
