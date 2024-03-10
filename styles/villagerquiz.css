@@ -3,7 +3,7 @@ a:link, a:visited {
 }
 body {
     background-image: url(../images/darkdirt.png);
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     margin: 0px;
     text-align: center;
 }
@@ -29,7 +29,7 @@ img {
     border: 10px solid transparent;
     border-image: url(../images/buttongray.png) 10 stretch;
     color: #4c4c4c;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     font-size: 12pt;
     margin: 10px;
     max-width: 700px;

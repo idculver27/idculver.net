@@ -1,7 +1,7 @@
 body {   
     background-color: black;
     color: white;
-    font-family: "Helvetica";
+    font-family: "Helvetica", sans-serif;
 }
 tr,th,td {
     /*border: 1px solid white;*/
