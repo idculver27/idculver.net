@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Aurebesh";
+    src: url("../fonts/Aurebesh.ttf");
+}
 body {
     background-color: #121218;
     color: white;
     font-family: "Helvetica", sans-serif;
+}
+.aurebesh {
+    font-family: "Aurebesh", monospace;
 }
