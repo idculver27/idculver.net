@@ -3,7 +3,6 @@ var nameIndex = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
     isaacDiv.addEventListener("click", () => {
-        console.log(isaacDiv.children);
         if(firstClick) {
             firstClick = false;
         } else {
