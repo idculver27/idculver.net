@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Builder | Isaac's Amazing Website</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/chords.css">
+    <script src="src/chords.js" type="module"></script>
+</head>
+<body>
+    <a href="https://idculver27.github.io">Home</a>
+    <h1>Chord Builder (WIP)</h1>
+    <hr>
+    <!--TO DO: make divs float-->
+    <div id="input">
+        <p>Root</p>
+    <table>
+        <tr>
+            <td class="rootButton" pitch="10">C𝄫</td>
+            <td class="rootButton" pitch="0" style="background-color: #ccccff;">D𝄫</td>
+            <td class="rootButton" pitch="2">E𝄫</td>
+            <td class="rootButton" pitch="3">F𝄫</td>
+            <td class="rootButton" pitch="5">G𝄫</td>
+            <td class="rootButton" pitch="7">A𝄫</td>
+            <td class="rootButton" pitch="9">B𝄫</td>
+        </tr>
+        <tr>
+            <td class="rootButton" pitch="11">C♭</td>
+            <td class="rootButton" pitch="1">D♭</td>
+            <td class="rootButton" pitch="3">E♭</td>
+            <td class="rootButton" pitch="4">F♭</td>
+            <td class="rootButton" pitch="6">G♭</td>
+            <td class="rootButton" pitch="8">A♭</td>
+            <td class="rootButton" pitch="10">B♭</td>
+        </tr>
+        <tr>
+            <td class="rootButton" pitch="0" style="background-color: #0000ff;">C♮</td>
+            <td class="rootButton" pitch="2">D♮</td>
+            <td class="rootButton" pitch="4">E♮</td>
+            <td class="rootButton" pitch="5">F♮</td>
+            <td class="rootButton" pitch="7">G♮</td>
+            <td class="rootButton" pitch="9">A♮</td>
+            <td class="rootButton" pitch="11">B♮</td>
+        </tr>
+        <tr>
+            <td class="rootButton" pitch="1">C♯</td>
+            <td class="rootButton" pitch="3">D♯</td>
+            <td class="rootButton" pitch="5">E♯</td>
+            <td class="rootButton" pitch="6">F♯</td>
+            <td class="rootButton" pitch="8">G♯</td>
+            <td class="rootButton" pitch="10">A♯</td>
+            <td class="rootButton" pitch="0" style="background-color: #ccccff;">B♯</td>
+        </tr>
+        <tr>
+            <td class="rootButton" pitch="2">C𝄪</td>
+            <td class="rootButton" pitch="4">D𝄪</td>
+            <td class="rootButton" pitch="6">E𝄪</td>
+            <td class="rootButton" pitch="7">F𝄪</td>
+            <td class="rootButton" pitch="9">G𝄪</td>
+            <td class="rootButton" pitch="11">A𝄪</td>
+            <td class="rootButton" pitch="1">B𝄪</td>
+        </tr>
+    </table>
+    <p>Seventh?</p>
+    <table>
+        <tr>
+            <td id="yes7" style="background-color: #0000ff;">Yes</td>
+            <td id="no7">No</td>
+        </tr>
+    </table>
+    <p>Interval qualities</p>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>third</th>
+            <th>3</th>
+            <th>third</th>
+            <th>5</th>
+            <th class="7th">third</th>
+            <th class="7th">7</th>
+        </tr>
+        <tr>
+            <td id="root" rowspan="2">C</td>
+            <td class="qualityButton 1_3">minor</td>
+            <td id="three" rowspan="2">E</td>
+            <td class="qualityButton 3_5" style="background-color: #0000ff;">minor</td>
+            <td id="five" rowspan="2">G</td>
+            <td class="qualityButton 5_7 7th" style="background-color: #0000ff;">minor</td>
+            <td id="seven" class="7th" rowspan="2">B♭</td>
+        </tr>
+        <tr>
+            <td class="qualityButton 1_3" style="background-color: #0000ff;">major</td>
+            <td class="qualityButton 3_5" >major</td>
+            <td class="qualityButton 5_7 7th">major</td>
+        <tr>
+            <th id="fifthQuality" colspan="5">perfect fifth</td>
+        </tr>
+        <tr class="7th">
+            <th id="seventhQuality" colspan="7" style="border-top: 0px;">minor seventh</td>
+        </tr>
+    </table>
+    <p id="illegalWarning" style="color: red;" hidden>This chord is impossible! The notes in red do not exist. Try an enharmonic root note (light blue).</p>
+    </div>
+    <div id="output">
+        <p>Name</p>
+        <p id="chordName">C7</p>
+    </div>
+</body>
+</html>
+
+<!--
+display chord name
+display sheet music
+display intervals of 5th and 7th
+display piano notes
+play chord? - would just need <24 wavs i guess, or synth? :eyes:
+-->
+
+<!--
+    <svg width="564px" height="204px">
+        <rect width="564" height="204"></rect>
+        <rect id="C" class="pianoKey white" x="3" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="D" class="pianoKey white" x="83" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="E" class="pianoKey white" x="163" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="F" class="pianoKey white" x="243" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="G" class="pianoKey white" x="323" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="A" class="pianoKey white" x="403" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="B" class="pianoKey white" x="483" y="3" width="78" height="198" fill="white"></rect>
+        <rect id="C#" class="pianoKey black" x="53" y="3" width="58" height="118" fill="black"></rect>
+        <rect id="D#" class="pianoKey black" x="133" y="3" width="58" height="118" fill="black"></rect>
+        <rect id="F#" class="pianoKey black" x="293" y="3" width="58" height="118" fill="black"></rect>
+        <rect id="G#" class="pianoKey black" x="373" y="3" width="58" height="118" fill="black"></rect>
+        <rect id="A#" class="pianoKey black" x="453" y="3" width="58" height="118" fill="black"></rect>
+    </svg>
+-->
