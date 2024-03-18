@@ -153,7 +153,19 @@ function calcChord() {
     chordName.textContent = chordNames[chordNameDictKey].replaceAll("R",chord.root.replace("♮",""));
 
     // keyboard
-    // sheet music?
+    // undo wrapping
+    if(threePitch < rootPitch) threePitch += 12;
+    if(fivePitch < rootPitch) fivePitch += 12;
+    if(sevenPitch < rootPitch) sevenPitch += 12;
+    // tickle the ivories
+    let pianoKeys = document.getElementsByClassName("pianoKey");
+    for(let pianoKey of pianoKeys) {
+        pianoKey.setAttribute("fill",pianoKey.classList[0]);
+        let pitch = parseInt(pianoKey.getAttribute("pitch"));
+        if([rootPitch,threePitch,fivePitch,sevenPitch].includes(pitch)) {
+            pianoKey.setAttribute("fill",selectedColor);
+        }
+    }
 }
 
 function noteSpeller(pitch,letter) {
