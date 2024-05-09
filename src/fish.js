@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-    for(let input of [selectLocation,selectSeason,selectBundle]) {
+    for(let input of [selectLocation,selectSeason,selectWeather,selectBundle]) {
         input.addEventListener("input", () => {
             filter();
         });
@@ -34,6 +34,20 @@ function filter() {
             // hide non-matching seasons
             if(tr.cells[4].textContent == "Any") continue;
             if(!tr.cells[4].textContent.includes(season)) {
+                tr.setAttribute("hidden",true);
+            }
+        }
+    }
+
+    // weather
+    const weather = selectWeather.value;
+    if(weather != "Any") {
+        for(let tr of fishTable.rows) {
+            // skip headers
+            if(tr.cells[1].textContent == "Name") continue;
+            // hide non-matching seasons
+            if(tr.cells[5].textContent == "Any") continue;
+            if(!tr.cells[5].textContent.includes(weather)) {
                 tr.setAttribute("hidden",true);
             }
         }
