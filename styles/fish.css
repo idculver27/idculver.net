@@ -15,3 +15,6 @@ th, tr, td {
 body {
     text-align: center;
 }
+.right {
+    text-align: right;
+}

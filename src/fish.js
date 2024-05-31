@@ -1,10 +1,54 @@
 window.addEventListener("DOMContentLoaded", () => {
+    buildTable();
+
     for(let input of [selectLocation,selectSeason,selectWeather,selectBundle]) {
         input.addEventListener("input", () => {
             filter();
         });
     }
 });
+
+function buildTable() {
+    fetch("../data/fish.json")
+        .then((response) => response.json())
+        .then((json) => {
+            json.forEach(fish => {
+                let tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td><img src="images/fish/${fish.name.replace(" ","_")}.png"></td>
+                    <td>${fish.name}</td>
+                    <td>${fish.description}</td>
+                    <td class="right">
+                        ${fish.price}g<br>
+                        <img src="images/fish/Silver_Quality.png"> ${Math.floor(fish.price*1.25)}g<br>
+                        <img src="images/fish/Gold_Quality.png"> ${Math.floor(fish.price*1.5)}g<br>
+                        <img src="images/fish/Iridium_Quality.png"> ${fish.price*2}g
+                    </td>
+                    <td class="right">
+                        ${Math.floor(fish.price*1.25)}g<br>
+                        <img src="images/fish/Silver_Quality.png"> ${Math.floor(Math.floor(fish.price*1.25)*1.25)}g<br>
+                        <img src="images/fish/Gold_Quality.png"> ${Math.floor(Math.floor(fish.price*1.5)*1.25)}g<br>
+                        <img src="images/fish/Iridium_Quality.png"> ${Math.floor(fish.price*2*1.25)}g
+                    </td>
+                    <td class="right">
+                        ${Math.floor(fish.price*1.5)}g<br>
+                        <img src="images/fish/Silver_Quality.png"> ${Math.floor(Math.floor(fish.price*1.25)*1.5)}g<br>
+                        <img src="images/fish/Gold_Quality.png"> ${Math.floor(Math.floor(fish.price*1.5)*1.5)}g<br>
+                        <img src="images/fish/Iridium_Quality.png"> ${Math.floor(fish.price*2*1.5)}g
+                    </td>
+                    <td>${fish.locations.join("<br>")}</td>
+                    <td>${fish.seasons.join("<br>")}</td>
+                    <td>${fish.weathers.join("<br>")}</td>
+                    <td>${fish.time}</td>
+                    <td>${fish.difficulty}</td>
+                    <td>${fish.behavior}</td>
+                    <td>${fish.xp}</td>
+                    <td>${fish.uses.join("<br>")}</td>
+                `
+                fishTable.appendChild(tr);
+            });
+        });
+}
 
 function filter() {
     // unhide all rows
