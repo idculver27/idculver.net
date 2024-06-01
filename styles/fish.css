@@ -1,26 +1,36 @@
-table {
-    border-collapse: collapse;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+body {
+    background-color: #965C3A;
+    font-family: Helvetica;
 }
-th, tr, td {
-    border: 1px solid black;
-    padding: 6px;
-}
-.padding {
-    padding-top: 20px;
-}
-.right {
-    text-align: right;
-}
-.filters {
-    text-align: center;
+select {
+    font-family: Helvetica;
 }
 span {
     padding: 20px;
 }
-.desc {
-    max-width: 300px;
+table {
+    background-color: #F9BA66;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+}
+td, th, tr {
+    border: 1px solid #5B2B2A;
+    padding: 6px;
+}
+th {
+    text-align: center;
+}
+.innerheader {
+    background-color: #F9BA66;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border: 1px solid #5B2B2A;
+}
+.outerheader {
+    margin-top: 20px;
+    text-align: center;
 }

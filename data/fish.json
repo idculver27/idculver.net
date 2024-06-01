@@ -380,7 +380,7 @@
         "name": "Legend",
         "description": "The king of all fish! They said he'd never be caught.",
         "price": 5000,
-        "locations": ["Mountain Lake near the log","<i>Requires fishing lvl 10</i>"],
+        "locations": ["Mountain Lake log","<i>Requires fishing lvl 10</i>"],
         "seasons": ["Spring"],
         "weathers": ["Rain"],
         "time": "",
