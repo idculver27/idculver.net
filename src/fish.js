@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     buildTable();
 
-    for(let input of [selectLocation,selectSeason,selectWeather,selectBundle]) {
+    for(let input of [selectLocation,selectSeason,onlyBundles]) {
         input.addEventListener("input", () => {
             filter();
         });
@@ -17,7 +17,7 @@ function buildTable() {
                 tr.innerHTML = `
                     <td><img src="images/fish/${fish.name.replace(" ","_")}.png"></td>
                     <td>${fish.name}</td>
-                    <td>${fish.description}</td>
+                    <td style="max-width: 300px;">${fish.description}</td>
                     <td class="right">
                         ${fish.price}g<br>
                         <img src="images/fish/Silver_Quality.png"> ${Math.floor(fish.price*1.25)}g<br>
@@ -37,7 +37,7 @@ function buildTable() {
                         <img src="images/fish/Iridium_Quality.png"> ${Math.floor(fish.price*2*1.5)}g
                     </td>
                     <td>${fish.locations.join("<br>")}</td>
-                    <td>${fish.seasons.join("<br>")}</td>
+                    <td style="max-width: 180px;">${fish.seasons.join("<br>")}</td>
                     <td>${fish.weathers.join("<br>")}</td>
                     <td>${fish.time}</td>
                     <td>${fish.difficulty}</td>
@@ -63,7 +63,7 @@ function filter() {
             // skip headers
             if(tr.cells[1].textContent == "Name") continue;
             // hide non-matching locations
-            if(!tr.cells[3].textContent.includes(location)) {
+            if(!tr.cells[6].textContent.includes(location)) {
                 tr.setAttribute("hidden",true);
             }
         }
@@ -76,35 +76,20 @@ function filter() {
             // skip headers
             if(tr.cells[1].textContent == "Name") continue;
             // hide non-matching seasons
-            if(tr.cells[4].textContent == "Any") continue;
-            if(!tr.cells[4].textContent.includes(season)) {
-                tr.setAttribute("hidden",true);
-            }
-        }
-    }
-
-    // weather
-    const weather = selectWeather.value;
-    if(weather != "Any") {
-        for(let tr of fishTable.rows) {
-            // skip headers
-            if(tr.cells[1].textContent == "Name") continue;
-            // hide non-matching seasons
-            if(tr.cells[5].textContent == "Any") continue;
-            if(!tr.cells[5].textContent.includes(weather)) {
+            if(tr.cells[7].textContent == "Any") continue;
+            if(!tr.cells[7].textContent.includes(season)) {
                 tr.setAttribute("hidden",true);
             }
         }
     }
 
     // bundle
-    const bundle = selectBundle.value;
-    if(bundle != "Any") {
+    if(onlyBundles.checked) {
         for(let tr of fishTable.rows) {
             // skip headers
             if(tr.children[1].textContent == "Name") continue;
             // hide non-matching bundles
-            if(!tr.children[7].textContent.includes(bundle)) {
+            if(!tr.children[13].textContent.includes("Bundle")) {
                 tr.setAttribute("hidden",true);
             }
         }

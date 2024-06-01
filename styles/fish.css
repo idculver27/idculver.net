@@ -7,14 +7,20 @@ table {
 }
 th, tr, td {
     border: 1px solid black;
-    padding: 5px;
+    padding: 6px;
 }
 .padding {
     padding-top: 20px;
 }
-body {
-    text-align: center;
-}
 .right {
     text-align: right;
+}
+.filters {
+    text-align: center;
+}
+span {
+    padding: 20px;
+}
+.desc {
+    max-width: 300px;
 }
