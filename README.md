@@ -1,1 +1,1 @@
-idculver27.github.io
+idculver.net

@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
         stressTest(10000);
     });
     shareButton.addEventListener("click", () => {
-        let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver27.github.io/villagerquiz.html" + "\n\n" + villagerImg.src;
+        let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver.net/villagerquiz.html" + "\n\n" + villagerImg.src;
         navigator.clipboard.writeText(copyText);
     });
 });
