@@ -1379,6 +1379,36 @@
             ],
             "rrp": 29.99,
             "current": null
+        },
+        {
+            "id": "46",
+            "number": "75373-1",
+            "name": "Ambush on Mandalore Battle Pack",
+            "subtheme": "The Mandalorian",
+            "year": 2024,
+            "pieces": 109,
+            "minifigs": [
+                {
+                    "blid": "sw1346",
+                    "name": "Imperial Commando",
+                    "count": 2,
+                    "unique": true
+                },
+                {
+                    "blid": "sw1344",
+                    "name": "Mandalorian Nite Owl",
+                    "count": 1,
+                    "unique": true
+                },
+                {
+                    "blid": "sw1345",
+                    "name": "Mandalorian Warrior",
+                    "count": 1,
+                    "unique": true
+                }
+            ],
+            "rrp": 19.99,
+            "current": null
         }
     ]
 }
