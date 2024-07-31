@@ -12,7 +12,7 @@ export default class FlagMaker {
         this.yellow = "#ffcc00";
         this.blue = "#000080";
         this.flag = null;
-    } // eventually make w, h, colors controlled by html inputs
+    }
 
     make(char) {
         // I hate "this"
