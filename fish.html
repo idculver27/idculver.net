@@ -13,38 +13,103 @@
     <div class="outerheader">
         <div class="innerheader">
             <h1>Stardew Valley Fish Cheat Sheet</h1>
-            <span>
-                <label for="selectSeason">Season</label>
-                <select id="selectSeason" autocomplete="off">
-                    <option value="Any">Any</option>
-                    <option value="Spring">Spring</option>
-                    <option value="Summer">Summer</option>
-                    <option value="Fall">Fall</option>
-                    <option value="Winter">Winter</option>
-                </select>
-            </span>
-            <span>
-                <label for="onlyBundles">Only show needed for bundles</label>
-                <input id="onlyBundles" type="checkbox" autocomplete="off">
-            </span>
         </div>
     </div>
-    <table id="fishTable">
+    <table id="springTable">
         <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Fisher<br>(+25%)</th>
-            <th>Angler<br>(+50%)</th>
-            <th>Location</th>
-            <th>Season</th>
-            <th>Weather</th>
-            <th>Time</th>
-            <th>Difficulty</th>
-            <th>Behavior</th>
-            <th>XP</th>
-            <th>Uses</th>
+            <th rowspan="2">Fish</th>
+            <th rowspan="2">Bundle</th>
+            <th rowspan="2">Base Price</th>
+            <th colspan="7">Locations</th>
+            <th colspan="20">Time</th>
+        </tr>
+        <tr>
+            <th class="sideways">Ocean</th>
+            <th class="sideways">Forest River</th>
+            <th class="sideways">Town River</th>
+            <th class="sideways">Forest Pond</th>
+            <th class="sideways">Mountain Lake</th>
+            <th class="sideways">Secret Woods Pond</th>
+            <th class="sideways">Forest Waterfalls</th>
+            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th></tr>
+    </table>
+    <table id="summerTable">
+        <tr>
+            <th rowspan="2">Fish</th>
+            <th rowspan="2">Bundle</th>
+            <th rowspan="2">Base Price</th>
+            <th colspan="7">Locations</th>
+            <th colspan="20">Time</th>
+        </tr>
+        <tr>
+            <th class="sideways">Ocean</th>
+            <th class="sideways">Forest River</th>
+            <th class="sideways">Town River</th>
+            <th class="sideways">Forest Pond</th>
+            <th class="sideways">Mountain Lake</th>
+            <th class="sideways">Secret Woods Pond</th>
+            <th class="sideways">Forest Waterfalls</th>
+            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th></tr>
+        </tr>
+    </table>
+    <table id="fallTable">
+        <tr>
+            <th rowspan="2">Fish</th>
+            <th rowspan="2">Bundle</th>
+            <th rowspan="2">Base Price</th>
+            <th colspan="7">Locations</th>
+            <th colspan="20">Time</th>
+        </tr>
+        <tr>
+            <th class="sideways">Ocean</th>
+            <th class="sideways">Forest River</th>
+            <th class="sideways">Town River</th>
+            <th class="sideways">Forest Pond</th>
+            <th class="sideways">Mountain Lake</th>
+            <th class="sideways">Secret Woods Pond</th>
+            <th class="sideways">Forest Waterfalls</th>
+            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th></tr>
+        </tr>
+    </table>
+    <table id="winterTable">
+        <tr>
+            <th rowspan="2">Fish</th>
+            <th rowspan="2">Bundle</th>
+            <th rowspan="2">Base Price</th>
+            <th colspan="7">Locations</th>
+            <th colspan="20">Time</th>
+        </tr>
+        <tr>
+            <th class="sideways">Ocean</th>
+            <th class="sideways">Forest River</th>
+            <th class="sideways">Town River</th>
+            <th class="sideways">Forest Pond</th>
+            <th class="sideways">Mountain Lake</th>
+            <th class="sideways">Secret Woods Pond</th>
+            <th class="sideways">Forest Waterfalls</th>
+            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th></tr>
+        </tr>
+    </table>
+    <table id="specialTable">
+        <tr>
+            <th rowspan="2">Fish</th>
+            <th rowspan="2">Bundle</th>
+            <th rowspan="2">Base Price</th>
+            <th colspan="7">Locations</th>
+            <th colspan="20">Time</th>
+        </tr>
+        <tr>
+            <th class="sideways">Ginger Island Ocean</th>
+            <th class="sideways">Ginger Island River</th>
+            <th class="sideways">Ginger Island Pond</th>
+            <th class="sideways">Mines</th>
+            <th class="sideways">Sewer</th>
+            <th class="sideways">Witch's Swamp</th>
+            <th class="sideways">Volcano Caldera</th>
+            <th class="sideways">Desert</th>
+            <th class="sideways">Mutant Bug Lair</th>
+            <th class="sideways">Pirate Cove</th>
+            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>1</th></tr>
         </tr>
     </table>
 </body>

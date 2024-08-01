@@ -1,11 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
     buildTable();
-
-    for(let input of [selectSeason,onlyBundles]) {
-        input.addEventListener("input", () => {
-            filter();
-        });
-    }
 });
 
 function buildTable() {
@@ -13,73 +7,72 @@ function buildTable() {
         .then((response) => response.json())
         .then((json) => {
             json.forEach(fish => {
-                let tr = document.createElement("tr");
-                tr.innerHTML = `
-                    <td><img src="images/fish/${fish.name.replace(" ","_")}.png"></td>
-                    <td>${fish.name}</td>
-                    <td style="max-width: 300px;">${fish.description}</td>
-                    <td style="text-align: right;">
-                        ${fish.price}g<br>
-                        <img src="images/fish/Silver_Quality.png"> ${Math.floor(fish.price*1.25)}g<br>
-                        <img src="images/fish/Gold_Quality.png"> ${Math.floor(fish.price*1.5)}g<br>
-                        <img src="images/fish/Iridium_Quality.png"> ${fish.price*2}g
-                    </td>
-                    <td style="text-align: right;">
-                        ${Math.floor(fish.price*1.25)}g<br>
-                        <img src="images/fish/Silver_Quality.png"> ${Math.floor(Math.floor(fish.price*1.25)*1.25)}g<br>
-                        <img src="images/fish/Gold_Quality.png"> ${Math.floor(Math.floor(fish.price*1.5)*1.25)}g<br>
-                        <img src="images/fish/Iridium_Quality.png"> ${Math.floor(fish.price*2*1.25)}g
-                    </td>
-                    <td style="text-align: right;">
-                        ${Math.floor(fish.price*1.5)}g<br>
-                        <img src="images/fish/Silver_Quality.png"> ${Math.floor(Math.floor(fish.price*1.25)*1.5)}g<br>
-                        <img src="images/fish/Gold_Quality.png"> ${Math.floor(Math.floor(fish.price*1.5)*1.5)}g<br>
-                        <img src="images/fish/Iridium_Quality.png"> ${Math.floor(fish.price*2*1.5)}g
-                    </td>
-                    <td style="max-width: 180px;">${fish.locations.join("<br>")}</td>
-                    <td style="max-width: 180px;">${fish.seasons.join("<br>")}</td>
-                    <td>${fish.weathers.join("<br>")}</td>
-                    <td>${fish.time}</td>
-                    <td>${fish.difficulty}</td>
-                    <td>${fish.behavior}</td>
-                    <td>${fish.xp}</td>
-                    <td>${fish.uses.join("<br>")}</td>
-                `
-                fishTable.appendChild(tr);
+                if (fish.seasons.includes("Spring")) {
+                    springTable.appendChild(buildRow(fish));
+                } else if (fish.seasons.includes("Summer")) {
+                    summerTable.appendChild(buildRow(fish));
+                } else if (fish.seasons.includes("Fall")) {
+                    fallTable.appendChild(buildRow(fish));
+                } else if (fish.seasons.includes("Winter")) {
+                    winterTable.appendChild(buildRow(fish));
+                } else if (fish.seasons.includes("Special")) {
+                    specialTable.appendChild(buildRow(fish, true));
+                }
             });
         });
 }
 
-function filter() {
-    // unhide all rows
-    for(let tr of fishTable.rows) {
-        tr.removeAttribute("hidden");
-    }
-
-    // season
-    const season = selectSeason.value;
-    if(season != "Any") {
-        for(let tr of fishTable.rows) {
-            // skip headers
-            if(tr.cells[1].textContent == "Name") continue;
-            // hide non-matching seasons
-            if(tr.cells[7].textContent == "") continue;
-            if(tr.cells[7].textContent.includes("Any")) continue;
-            if(!tr.cells[7].textContent.includes(season)) {
-                tr.setAttribute("hidden",true);
-            }
-        }
-    }
+function buildRow(fish, special=false) {
+    let tr = document.createElement("tr");
+    
+    // fish
+    tr.innerHTML = `<td><img src="images/fish/${fish.name.replace(" ", "_")}.png"> ${fish.name}</td>`;
 
     // bundle
-    if(onlyBundles.checked) {
-        for(let tr of fishTable.rows) {
-            // skip headers
-            if(tr.children[1].textContent == "Name") continue;
-            // hide non-matching bundles
-            if(!tr.children[13].textContent.includes("Bundle")) {
-                tr.setAttribute("hidden",true);
-            }
-        }
+    if (fish.bundle != "") tr.innerHTML += `<td style="text-align: center;"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png"></td>`;
+    else tr.innerHTML += "<td></td>";
+    
+    // base price
+    tr.innerHTML += `<td style="text-align: right;">${fish.basePrice}g</td>`;
+
+    // locations
+    if (special) {
+        tr.innerHTML += inLocation(fish.locations, "Ginger Island Ocean");
+        tr.innerHTML += inLocation(fish.locations, "Ginger Island River");
+        tr.innerHTML += inLocation(fish.locations, "Ginger Island Pond");
+        tr.innerHTML += inLocation(fish.locations, "Mines"); // fix
+        tr.innerHTML += inLocation(fish.locations, "Sewer");
+        tr.innerHTML += inLocation(fish.locations, "Witch's Swamp");
+        tr.innerHTML += inLocation(fish.locations, "Volcano Caldera");
+        tr.innerHTML += inLocation(fish.locations, "Desert");
+        tr.innerHTML += inLocation(fish.locations, "Mutant Bug Lair");
+        tr.innerHTML += inLocation(fish.locations, "Pirate Cove");
+    } else {
+        tr.innerHTML += inLocation(fish.locations, "Ocean");
+        tr.innerHTML += inLocation(fish.locations, "Forest River");
+        tr.innerHTML += inLocation(fish.locations, "Town River");
+        tr.innerHTML += inLocation(fish.locations, "Forest Pond");
+        tr.innerHTML += inLocation(fish.locations, "Mountain Lake");
+        tr.innerHTML += inLocation(fish.locations, "Secret Woods Pond");
+        tr.innerHTML += inLocation(fish.locations, "Forest Waterfalls");
     }
+    
+    // time
+    if (fish.time === "") {
+        // fill whole row
+    } else if (fish.time.length === 5) {
+        // one bar
+    } else if (fish.time.length === 11) {
+        // two bars
+    }
+    if (fish.weather != "") {
+        // add weather
+    }
+    
+    return tr;
+}
+
+function inLocation(locations, location) {
+    if (locations.includes(location)) return '<td style="text-align: center;">X</td>';
+    else return "<td></td>";
 }

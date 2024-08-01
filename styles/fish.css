@@ -2,12 +2,6 @@ body {
     background-color: #965C3A;
     font-family: Helvetica;
 }
-select {
-    font-family: Helvetica;
-}
-span {
-    padding: 20px;
-}
 table {
     background-color: #F9BA66;
     border-collapse: collapse;
@@ -33,4 +27,8 @@ th {
 .outerheader {
     margin-top: 20px;
     text-align: center;
+}
+.sideways {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
 }
