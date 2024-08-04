@@ -112,7 +112,7 @@
         "basePrice": 45,
         "bundle": "Specialty Fish Bundle",
         "seasons": ["Special"],
-        "locations": ["Mines 20F & 60F"],
+        "locations": ["Mines 20F/60F"],
         "time": "",
         "weather": ""
     },

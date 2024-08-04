@@ -31,4 +31,5 @@ th {
 .sideways {
     transform: rotate(180deg);
     writing-mode: vertical-lr;
+    min-width: 20px;
 }

@@ -7,17 +7,11 @@ function buildTable() {
         .then((response) => response.json())
         .then((json) => {
             json.forEach(fish => {
-                if (fish.seasons.includes("Spring")) {
-                    springTable.appendChild(buildRow(fish));
-                } else if (fish.seasons.includes("Summer")) {
-                    summerTable.appendChild(buildRow(fish));
-                } else if (fish.seasons.includes("Fall")) {
-                    fallTable.appendChild(buildRow(fish));
-                } else if (fish.seasons.includes("Winter")) {
-                    winterTable.appendChild(buildRow(fish));
-                } else if (fish.seasons.includes("Special")) {
-                    specialTable.appendChild(buildRow(fish, true));
-                }
+                if (fish.seasons.includes("Spring")) springTable.appendChild(buildRow(fish));
+                if (fish.seasons.includes("Summer")) summerTable.appendChild(buildRow(fish));
+                if (fish.seasons.includes("Fall")) fallTable.appendChild(buildRow(fish));
+                if (fish.seasons.includes("Winter")) winterTable.appendChild(buildRow(fish));
+                if (fish.seasons.includes("Special")) specialTable.appendChild(buildRow(fish, true));
             });
         });
 }
@@ -37,24 +31,24 @@ function buildRow(fish, special=false) {
 
     // locations
     if (special) {
-        tr.innerHTML += inLocation(fish.locations, "Ginger Island Ocean");
-        tr.innerHTML += inLocation(fish.locations, "Ginger Island River");
-        tr.innerHTML += inLocation(fish.locations, "Ginger Island Pond");
         tr.innerHTML += inLocation(fish.locations, "Mines"); // fix
         tr.innerHTML += inLocation(fish.locations, "Sewer");
         tr.innerHTML += inLocation(fish.locations, "Witch's Swamp");
-        tr.innerHTML += inLocation(fish.locations, "Volcano Caldera");
-        tr.innerHTML += inLocation(fish.locations, "Desert");
         tr.innerHTML += inLocation(fish.locations, "Mutant Bug Lair");
+        tr.innerHTML += inLocation(fish.locations, "Desert");
+        tr.innerHTML += inLocation(fish.locations, "Ginger Island Ocean");
+        tr.innerHTML += inLocation(fish.locations, "Ginger Island River");
+        tr.innerHTML += inLocation(fish.locations, "Ginger Island Pond");
         tr.innerHTML += inLocation(fish.locations, "Pirate Cove");
+        tr.innerHTML += inLocation(fish.locations, "Volcano Caldera");
     } else {
         tr.innerHTML += inLocation(fish.locations, "Ocean");
+        tr.innerHTML += inLocation(fish.locations, "Mountain Lake");
+        tr.innerHTML += inLocation(fish.locations, "Forest Pond");
         tr.innerHTML += inLocation(fish.locations, "Forest River");
         tr.innerHTML += inLocation(fish.locations, "Town River");
-        tr.innerHTML += inLocation(fish.locations, "Forest Pond");
-        tr.innerHTML += inLocation(fish.locations, "Mountain Lake");
-        tr.innerHTML += inLocation(fish.locations, "Secret Woods Pond");
         tr.innerHTML += inLocation(fish.locations, "Forest Waterfalls");
+        tr.innerHTML += inLocation(fish.locations, "Secret Woods Pond");
     }
     
     // time
@@ -73,6 +67,17 @@ function buildRow(fish, special=false) {
 }
 
 function inLocation(locations, location) {
-    if (locations.includes(location)) return '<td style="text-align: center;">X</td>';
-    else return "<td></td>";
+    if (location === "Mines") {
+        for (let loc of locations) {
+            if (loc.startsWith("Mines ")) {
+                return `<td style="text-align: center;">${loc.substring(6)}</td>`;
+            }
+        }
+        return "<td></td>";
+    } else if (locations.includes(location)) {
+        return '<td style="text-align: center;">X</td>';
+    }
+    else {
+        return "<td></td>";
+    }
 }
