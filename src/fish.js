@@ -23,7 +23,7 @@ function buildRow(fish, special=false) {
     tr.innerHTML = `<td><img src="images/fish/${fish.name.replace(" ", "_")}.png"> ${fish.name}</td>`;
 
     // bundle
-    if (fish.bundle != "") tr.innerHTML += `<td style="text-align: center;"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png"></td>`;
+    if (fish.bundle != "") tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png"></td>`;
     else tr.innerHTML += "<td></td>";
     
     // base price
@@ -51,17 +51,8 @@ function buildRow(fish, special=false) {
         tr.innerHTML += inLocation(fish.locations, "Secret Woods Pond");
     }
     
-    // time
-    if (fish.time === "") {
-        // fill whole row
-    } else if (fish.time.length === 5) {
-        // one bar
-    } else if (fish.time.length === 11) {
-        // two bars
-    }
-    if (fish.weather != "") {
-        // add weather
-    }
+    // time and weather
+    tr.innerHTML += buildTimeBar(fish.time, fish.weather);
     
     return tr;
 }
@@ -70,14 +61,53 @@ function inLocation(locations, location) {
     if (location === "Mines") {
         for (let loc of locations) {
             if (loc.startsWith("Mines ")) {
-                return `<td style="text-align: center;">${loc.substring(6)}</td>`;
+                return `<td class="centered">${loc.substring(6)}</td>`;
             }
         }
         return "<td></td>";
     } else if (locations.includes(location)) {
-        return '<td style="text-align: center;">X</td>';
+        return '<td class="centered">X</td>';
     }
     else {
         return "<td></td>";
     }
+}
+
+function buildTimeBar(timeRange, weather) {
+    if (weather === "") weather = "any";
+    let title = "Any weather";
+    if (weather === "rain") title = "Rain only";
+    else if (weather === "sun") title = "Sun only";
+    else if (weather === "sunorwind") title = "Sun or wind only";
+
+    let barLeft = `<td class="barleft ${weather}" title="${title}"></td>`;
+    let barMiddle = `<td class="barleft barright ${weather}" title="${title}"></td>`;
+    let barRight = `<td class="barright ${weather}" title="${title}"></td>`;
+    let barEmpty = "<td></td>";
+    let bar = "";
+
+    if (timeRange === "") timeRange = "06-02";
+    let rangeStart = timeWrap(parseInt(timeRange.substring(0, 2)) - 6);
+    let rangeEnd = timeWrap(parseInt(timeRange.substring(3, 5)) - 7);
+    let range2Start = -1;
+    let range2End = -1;
+    if (timeRange.length === 11) {
+        // 2 ranges
+        range2Start = timeWrap(parseInt(timeRange.substring(6, 8)) - 6);
+        range2End = timeWrap(parseInt(timeRange.substring(9, 11)) - 7);        
+    }
+    
+    for (let i = 0; i < 20; i++) {
+        if (i === rangeStart || i === range2Start) bar += barLeft;
+        else if ((i > rangeStart && i < rangeEnd) || (i > range2Start && i < range2End)) bar += barMiddle;
+        else if (i === rangeEnd || i === range2End) bar += barRight;
+        else bar += barEmpty;
+    }
+
+    return bar;
+}
+
+function timeWrap(hourNumber) {
+    if (hourNumber < 0) hourNumber += 24;
+    return hourNumber;
 }

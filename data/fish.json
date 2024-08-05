@@ -60,7 +60,7 @@
         "seasons": ["Spring", "Fall", "Winter", "Special"],
         "locations": ["Forest River", "Town River", "Secret Woods Pond", "Witch's Swamp"],
         "time": "06-00",
-        "weather": "Rain"
+        "weather": "rain"
     },
     {
         "name": "Catfish",
@@ -69,7 +69,7 @@
         "seasons": ["Summer", "Special"],
         "locations": ["Secret Woods Pond", "Witch's Swamp"],
         "time": "06-00",
-        "weather": "Rain"
+        "weather": "rain"
     },
     {
         "name": "Chub",
@@ -96,7 +96,7 @@
         "seasons": ["Spring", "Fall"],
         "locations": ["Ocean"],
         "time": "16-02",
-        "weather": "Rain"
+        "weather": "rain"
     },
     {
         "name": "Flounder",
@@ -231,7 +231,7 @@
         "seasons": ["Summer", "Special"],
         "locations": ["Ocean", "Ginger Island Ocean"],
         "time": "12-16",
-        "weather": "Sun"
+        "weather": "sun"
     },
     {
         "name": "Rainbow Trout",
@@ -240,7 +240,7 @@
         "seasons": ["Summer"],
         "locations": ["Town River", "Forest River", "Mountain Lake"],
         "time": "06-19",
-        "weather": "Sun"
+        "weather": "sun"
     },
     {
         "name": "Red Mullet",
@@ -258,7 +258,7 @@
         "seasons": ["Summer", "Fall", "Winter"],
         "locations": ["Ocean"],
         "time": "06-19",
-        "weather": "Rain"
+        "weather": "rain"
     },
     {
         "name": "Salmon",
@@ -312,7 +312,7 @@
         "seasons": ["Spring", "Summer", "Fall"],
         "locations": ["Forest River", "Town River"],
         "time": "09-02",
-        "weather": "Rain"
+        "weather": "rain"
     },
     {
         "name": "Slimejack",
@@ -375,7 +375,7 @@
         "seasons": ["Spring", "Summer"],
         "locations": ["Forest River", "Town River"],
         "time": "06-19",
-        "weather": "Sun or Wind"
+        "weather": "sunorwind"
     },
     {
         "name": "Super Cucumber",
@@ -429,7 +429,7 @@
         "seasons": ["Fall", "Winter"],
         "locations": ["Forest River", "Town River", "Forest Pond", "Mountain Lake"],
         "time": "12-02",
-        "weather": "Rain"
+        "weather": "rain"
     },
     {
         "name": "Woodskip",

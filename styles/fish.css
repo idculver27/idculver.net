@@ -2,6 +2,11 @@ body {
     background-color: #965C3A;
     font-family: Helvetica;
 }
+svg {
+    height: 1px;
+    overflow: visible;
+    width: 1px;
+}
 table {
     background-color: #F9BA66;
     border-collapse: collapse;
@@ -15,21 +20,45 @@ td, th, tr {
     padding: 6px;
 }
 th {
+    min-width: 20px;
+    text-align: center;
+}
+.any {
+    background-color: #80EAFF;
+}
+.barleft {
+    border-right: none;
+}
+.barright {
+    border-left: none;
+}
+.centered {
     text-align: center;
 }
 .innerheader {
     background-color: #F9BA66;
+    border: 1px solid #5B2B2A;
     margin: auto;
     padding-bottom: 30px;
     padding-top: 10px;
-    border: 1px solid #5B2B2A;
 }
 .outerheader {
     margin-top: 20px;
     text-align: center;
 }
+.rain {
+    background-color: #8388FD;
+}
 .sideways {
     transform: rotate(180deg);
     writing-mode: vertical-lr;
-    min-width: 20px;
+}
+.svgholder {
+    position: relative;
+}
+.sun {
+    background-color: #FEFF00;
+}
+.sunorwind {
+    background-color: #FF9200;
 }
