@@ -2,6 +2,9 @@ body {
     background-color: #965C3A;
     font-family: Helvetica;
 }
+h2 {
+    text-align: center;
+}
 svg {
     height: 1px;
     overflow: visible;
