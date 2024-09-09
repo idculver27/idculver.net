@@ -5,6 +5,10 @@ body {
 h2 {
     text-align: center;
 }
+img {
+    image-rendering: pixelated;
+    width: 32px;
+}
 svg {
     height: 1px;
     overflow: visible;
