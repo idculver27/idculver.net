@@ -2,11 +2,76 @@
     font-family: "Aurebesh";
     src: url("../fonts/Aurebesh.ttf");
 }
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
 body {
-    background-color: #121218;
-    color: white;
     font-family: "Helvetica", sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+hr {
+    color: #777777;
+}
+img {
+    min-height: 64px;
+    max-height: 100%;
+    max-width: 100%;
 }
 .aurebesh {
     font-family: "Aurebesh", monospace;
+}
+.icon {
+    height: 32px;
+    min-height: auto;
+}
+.main {
+    margin: auto;
+    max-width: 1500px;
+}
+.pixel {
+    image-rendering: pixelated;
+}
+.thumb {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 150px;
+}
+.tile {
+    border: 1px solid #777777;
+    border-radius: 10px;
+    float: left;
+    height: 150px;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+}
+.tinytile {
+    border: 1px solid #777777;
+    border-radius: 10px;
+    float: left;
+    margin: 15px;
+    padding: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#isaacDiv {
+    height: 80px;
+    text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+    a:link, a:visited {
+        color: white;
+    }
+    body {
+        background-color: black;
+        color: white;
+    }
 }
