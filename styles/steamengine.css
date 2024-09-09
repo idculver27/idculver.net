@@ -13,6 +13,7 @@ table {
 }
 img {
     display: block;
+    height: 150px;
 }
 svg {
     display: block;
