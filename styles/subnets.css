@@ -1,26 +1,30 @@
+a:link,
+a:visited {
+	color: #00ff77;
+	text-decoration: none;
+}
+
 body {
 	background-color: black;
 	color: #00ff77;
 	font-family: "Courier New", Courier, monospace;
 }
 
-table {
-	border-collapse: collapse;
-	text-align: center;
-}
-
-tr,
-td {
+button {
+	background-color: black;
 	border: 1px solid #00ff77;
-	height: 50px;
-	padding-left: 20px;
-	padding-right: 20px;
+	color: #00ff77;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
-a:link,
-a:visited {
-	color: #00ff77;
-	text-decoration: none;
+button:hover,
+.mode-activated {
+	background-color: #00ff77;
+	color: black;
 }
 
 div {
@@ -28,16 +32,38 @@ div {
 }
 
 input {
-	font-family: "Courier New", Courier, monospace;
 	background-color: #00ff77;
-	color: black;
 	border: 1px solid #00ff77;
+	color: black;
+	font-family: "Courier New", Courier, monospace;
 	font-size: 100%;
-	margin-bottom: 10px;
-	width: 160px;
+	margin-bottom: 12px;
 	padding: 4px;
 	padding-left: 8px;
 	padding-right: 8px;
+	width: 160px;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td,
+tr {
+	border: 1px solid #00ff77;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+textarea {
+	background-color: #00ff77;
+	border: 1px solid #00ff77;
+	color: black;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	resize: none;
 }
 
 .cidr {
@@ -48,35 +74,26 @@ input {
 	float: left;
 }
 
-button {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 100%;
-	background-color: black;
-	border: 1px solid #00ff77;
-	color: #00ff77;
-	padding: 4px;
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
-.mode-activated,
-button:hover {
-	color: black;
-	background-color: #00ff77;
+.nofloat {
+	clear: left;
 }
 
 .red {
 	color: red;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+#modes {
+	height: 180px;
 }
 
-/* Firefox */
+/* hide number input buttons in Chrome, Safari, Edge, Opera */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* hide number input buttons in Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }

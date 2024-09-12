@@ -39,10 +39,10 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function update() {
-	warnAddr.setAttribute("hidden", true);
+	warnAddress.setAttribute("hidden", true);
 	const host = dec2bin(addressInput.value);
 	if (!host) {
-		warnAddr.removeAttribute("hidden");
+		warnAddress.removeAttribute("hidden");
 		return;
 	}
 
