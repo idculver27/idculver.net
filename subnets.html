@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subnet Calculator | idculver.net</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/subnets.css">
-    <script src="src/subnets.js" type="module"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Subnet/Supernet Calculator | idculver.net</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/subnets.css">
+	<script src="src/subnets.js" type="module"></script>
 </head>
+
 <body>
-    <a href="https://idculver.net">Home</a>
-    <h1>Subnet Calculator</h1>
-    <label>Address:</label>
-    <input id="inAddr" type="text" value="192.168.1.1" autocomplete="off">
-    <label id="warnAddr" class="red" hidden>Invalid</label>
-    <br>
-    <label>CIDR: /</label>
-    <input id="inCIDR" type="number" value="24" min="0" max="32" autocomplete="off">
-    <br>
-    <label>or subnet mask:</label>
-    <input id="inMask" type="text" value="255.255.255.0" autocomplete="off">
-    <label id="warnMask" class="red" hidden>Invalid</label>
-    <br><br>
-    <table>
-        <tr>
-            <th></th>
-            <th>Decimal</th>
-            <th>Binary</th>
-        </tr>
-        <tr>
-            <td>Network address</td>
-            <td id="tdNetwDec"></td>
-            <td id="tdNetwBin"></td>
-        </tr>
-        <tr>
-            <td rowspan="2">Usable host range</td>
-            <td id="tdFirstUsableDec"></td>
-            <td id="tdFirstUsableBin"></td>
-        </tr>
-        <tr>
-            <td id="tdLastUsableDec"></td>
-            <td id="tdLastUsableBin"></td>
-        </tr>
-        <tr>
-            <td>Broadcast address</td>
-            <td id="tdBroadcastDec"></td>
-            <td id="tdBroadcastBin"></td>
-        </tr>
-        <tr>
-            <td>CIDR</td>
-            <td id="tdCIDR"></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Subnet mask</td>
-            <td id="tdSubnetMaskDec"></td>
-            <td id="tdSubnetMaskBin"></td>
-        </tr>
-        <tr>
-            <td>Wildcard mask</td>
-            <td id="tdWildcardMaskDec"></td>
-            <td id="tdWildcardMaskBin"></td>
-        </tr>
-        <tr>
-            <td>Total hosts</td>
-            <td id="tdTotalHosts"></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Usable hosts</td>
-            <td ID="tdUsableHosts"></td>
-            <td></td>
-        </tr>
-    </table>
+	<a href="/">HOME</a>
+	<br>
+	<div class="float">
+		<p>mode:</p>
+		<button id="subnetModeButton" class="mode-activated">subnet calculator</button>
+		<br>
+		<br>
+		<button id="supernetModeButton">supernet calculator</button>
+	</div>
+	<div id="subnetModeInputs" class="float">
+		<p>SUBNET CALCULATOR</p>
+		<label for="addressInput">address:</label>
+		<input id="addressInput" type="text" value="192.168.1.1" maxlength="15" autocomplete="off">
+		<label for="cidrInput">/</label>
+		<input id="cidrInput" class="cidr" type="number" value="24" min="0" max="32" autocomplete="off">
+		<button id="incrementCidrButton">+</button>
+		<button id="decrementCidrButton">-</button>
+		<label id="warnAddr" for="addressInput" class="red" hidden>invalid</label>
+		<br>
+		<label>or subnet mask:</label>
+		<input id="maskInput" type="text" value="255.255.255.0" maxlength="15" autocomplete="off">
+		<label id="warnMask" class="red" hidden>invalid</label>
+		<br>
+		<button id="previousButton">previous subnet</button>
+		<button id="nextButton">next subnet</button>
+	</div>
+	<div id="supernetModeInputs" class="float" hidden>
+		<h1>Supernet Calculator</h1>
+		<label>Address:</label>
+		<input id="inAddr" type="text" value="192.168.1.1" autocomplete="off">
+		<label id="warnAddr" class="red" hidden>Invalid</label>
+		<br>
+		<label>CIDR: /</label>
+		<input id="inCIDR" type="number" value="24" min="0" max="32" autocomplete="off">
+		<br>
+		<label>or subnet mask:</label>
+		<input id="inMask" type="text" value="255.255.255.0" autocomplete="off">
+		<label id="warnMask" class="red" hidden>Invalid</label>
+	</div>
+	<div style="clear: left;">
+		<table>
+			<tr>
+				<td>network address</td>
+				<td id="tdNetwDec" width="160px"></td>
+				<td id="tdNetwBin"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">usable host range</td>
+				<td id="tdFirstUsableDec"></td>
+				<td id="tdFirstUsableBin"></td>
+			</tr>
+			<tr>
+				<td id="tdLastUsableDec"></td>
+				<td id="tdLastUsableBin"></td>
+			</tr>
+			<tr>
+				<td>broadcast address</td>
+				<td id="tdBroadcastDec"></td>
+				<td id="tdBroadcastBin"></td>
+			</tr>
+			<tr>
+				<td>CIDR</td>
+				<td id="tdCidr"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>subnet mask</td>
+				<td id="tdSubnetMaskDec"></td>
+				<td id="tdSubnetMaskBin"></td>
+			</tr>
+			<tr>
+				<td>wildcard mask</td>
+				<td id="tdWildcardMaskDec"></td>
+				<td id="tdWildcardMaskBin"></td>
+			</tr>
+			<tr>
+				<td>total addresses</td>
+				<td id="tdTotalAddresses"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>usable hosts</td>
+				<td ID="tdUsableHosts"></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
 </body>
+
 </html>
