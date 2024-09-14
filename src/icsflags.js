@@ -1,4 +1,4 @@
-import FlagMaker from "./flagmaker.js";
+import FlagMaker from "./FlagMaker.js";
 
 const flagMaker = new FlagMaker();
 var useSubs = null;
