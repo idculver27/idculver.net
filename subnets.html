@@ -32,7 +32,7 @@
 		<br>
 		<label>or subnet mask:</label>
 		<input id="maskInput" type="text" value="255.255.255.0" maxlength="15" autocomplete="off">
-		<label id="warnMask" class="red" hidden>invalid</label>
+		<label id="warnMask" for="maskInput" class="red" hidden>invalid</label>
 		<br>
 		<button id="previousButton">previous subnet</button>
 		<button id="nextButton">next subnet</button>
@@ -43,28 +43,29 @@
 		<label id="warnAddresses" for="addressesInput" class="red" hidden>invalid</label>
 		<br>
 		<br>
-		<textarea id="addressesInput" autocomplete="off" rows="4" cols="31">192.168.1.0/24&#013;&#010;192.168.2.0/24&#013;&#010;192.168.3.0 255.255.255.0</textarea>
+		<textarea id="addressesInput" autocomplete="off" rows="4"
+			cols="31">192.168.1.0/24&#013;&#010;192.168.2.0/24&#013;&#010;192.168.3.0 255.255.255.0</textarea>
 	</div>
 	<div class="nofloat">
 		<table>
 			<tr>
 				<td>network address</td>
-				<td id="tdNetwDec" width="160px"></td>
-				<td id="tdNetwBin"></td>
+				<td id="tdNetworkAddressDec" width="160px"></td>
+				<td id="tdNetworkAddressBin"></td>
 			</tr>
 			<tr>
 				<td rowspan="2">usable host range</td>
-				<td id="tdFirstUsableDec"></td>
-				<td id="tdFirstUsableBin"></td>
+				<td id="tdFirstUsableHostDec"></td>
+				<td id="tdFirstUsableHostBin"></td>
 			</tr>
 			<tr>
-				<td id="tdLastUsableDec"></td>
-				<td id="tdLastUsableBin"></td>
+				<td id="tdLastUsableHostDec"></td>
+				<td id="tdLastUsableHostBin"></td>
 			</tr>
 			<tr>
 				<td>broadcast address</td>
-				<td id="tdBroadcastDec"></td>
-				<td id="tdBroadcastBin"></td>
+				<td id="tdBroadcastAddressDec"></td>
+				<td id="tdBroadcastAddressBin"></td>
 			</tr>
 			<tr>
 				<td>CIDR</td>
