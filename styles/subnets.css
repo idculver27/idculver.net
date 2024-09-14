@@ -1,21 +1,99 @@
+a:link,
+a:visited {
+	color: #00ff77;
+	text-decoration: none;
+}
+
 body {
-    background-color: black;
-    color: #00ff77;
-    font-family: "Courier New", monospace;
+	background-color: black;
+	color: #00ff77;
+	font-family: "Courier New", Courier, monospace;
 }
+
+button {
+	background-color: black;
+	border: 1px solid #00ff77;
+	color: #00ff77;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+button:hover,
+.mode-activated {
+	background-color: #00ff77;
+	color: black;
+}
+
+div {
+	margin: 20px;
+}
+
+input {
+	background-color: #00ff77;
+	border: 1px solid #00ff77;
+	color: black;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	margin-bottom: 12px;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 160px;
+}
+
 table {
-    border-collapse: collapse;
-    text-align: center;
+	border-collapse: collapse;
+	text-align: center;
 }
-tr,th,td {
-    border: 1px solid #00ff77;
-    height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+
+td,
+tr {
+	border: 1px solid #00ff77;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
-.dec {
-    width: 150px;
+
+textarea {
+	background-color: #00ff77;
+	border: 1px solid #00ff77;
+	color: black;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	resize: none;
 }
+
+.cidr {
+	width: auto;
+}
+
+.float {
+	float: left;
+}
+
+.nofloat {
+	clear: left;
+}
+
 .red {
-    color: red;
+	color: red;
+}
+
+#modes {
+	height: 180px;
+}
+
+/* hide number input buttons in Chrome, Safari, Edge, Opera */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* hide number input buttons in Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
 }

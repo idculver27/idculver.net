@@ -1,137 +1,210 @@
-window.addEventListener("DOMContentLoaded", () => {
-    update();
+import IpAddress from "./IpAddress.js";
 
-    inAddr.addEventListener("input", () => {
-        update();
-    });
-    inCIDR.addEventListener("input", () => {
-        clampCIDR();
-        updateMask();
-    });
-    inMask.addEventListener("input", () => {
-        updateCIDR();
-    });
+var ip;
+
+window.addEventListener("DOMContentLoaded", () => {
+	ip = new IpAddress(addressInput.value, cidrInput.value);
+
+	update();
+
+	// mode buttons
+	subnetModeButton.addEventListener("click", () => {
+		activateSubnetMode();
+	});
+	supernetModeButton.addEventListener("click", () => {
+		activateSupernetMode();
+	});
+
+	// subnet calculator inputs
+	addressInput.addEventListener("input", () => {
+		update();
+	});
+	cidrInput.addEventListener("input", () => {
+		updateMask();
+	});
+	maskInput.addEventListener("input", () => {
+		updateCidr();
+	});
+	incrementCidrButton.addEventListener("click", () => {
+		cidrInput.stepUp();
+		updateMask();
+	});
+	decrementCidrButton.addEventListener("click", () => {
+		cidrInput.stepDown();
+		updateMask();
+	});
+	previousButton.addEventListener("click", () => {
+		previousSubnet();
+	});
+	nextButton.addEventListener("click", () => {
+		nextSubnet();
+	});
+
+	// supernet calculator input
+	addressesInput.addEventListener("input", () => {
+		update();
+	});
 });
 
 function update() {
-    warnAddr.setAttribute("hidden",true);
-    let host = dec2bin(inAddr.value);
-    if(!host) {
-        warnAddr.removeAttribute("hidden");
-        return;
-    }
+	// subnet
+	if (subnetModeButton.className === "mode-activated") {
+		// warning
+		warnAddress.setAttribute("hidden", true);
+		try {
+			ip.address = addressInput.value;
+			ip.cidr = cidrInput.value;
+		} catch (e) {
+			if (e.message !== "Invalid IP address.") throw e;
+			warnAddress.removeAttribute("hidden");
+			return;
+		}
+	}
+	// supernet
+	else if (supernetModeButton.className === "mode-activated") {
+		// warning
+		warnAddresses.setAttribute("hidden", true);
+		try {
+			ip = parseAddresses();
+		} catch (e) {
+			if (e.message in ["Invalid IP address.", "Invalid CIDR.", "Invalid subnet mask."]) throw e;
+			warnAddresses.removeAttribute("hidden");
+			return;
+		}
+	}
 
-    // calculations
-    let cidr = inCIDR.value;
-    let netw = host.substring(0,cidr) + "0".repeat(32-cidr);
-    let firstUsable = netw.substring(0,31) + "1";
-    let broadcast = netw.substring(0,cidr) + "1".repeat(32-cidr);
-    let lastUsable = broadcast.substring(0,31) + "0";
-    let subnetMask = dec2bin(inMask.value);
-    let wildcardMask = "0".repeat(cidr) + "1".repeat(32-cidr);
-    let totalHosts = 2 ** (32 - cidr);
-    let usableHosts = totalHosts - 2;
+	// output
+	tdNetworkAddressDec.textContent = IpAddress.bin2dec(ip.networkAddress);
+	tdNetworkAddressBin.textContent = IpAddress.spaceOutBin(ip.networkAddress);
+	tdFirstUsableHostDec.textContent = IpAddress.bin2dec(ip.firstUsableHost);
+	tdFirstUsableHostBin.textContent = IpAddress.spaceOutBin(ip.firstUsableHost);
+	tdLastUsableHostDec.textContent = IpAddress.bin2dec(ip.lastUsableHost);
+	tdLastUsableHostBin.textContent = IpAddress.spaceOutBin(ip.lastUsableHost);
+	tdBroadcastAddressDec.textContent = IpAddress.bin2dec(ip.broadcastAddress);
+	tdBroadcastAddressBin.textContent = IpAddress.spaceOutBin(ip.broadcastAddress);
+	tdCidr.textContent = "/" + ip.cidr;
+	tdSubnetMaskDec.textContent = IpAddress.bin2dec(ip.subnetMask);
+	tdSubnetMaskBin.textContent = IpAddress.spaceOutBin(ip.subnetMask);
+	tdWildcardMaskDec.textContent = IpAddress.bin2dec(ip.wildcardMask);
+	tdWildcardMaskBin.textContent = IpAddress.spaceOutBin(ip.wildcardMask);
+	tdTotalAddresses.textContent = ip.totalAddresses;
+	tdUsableHosts.textContent = ip.usableHosts;
 
-    // output
-    tdNetwDec.textContent = bin2dec(netw);
-    tdNetwBin.textContent = dotted(netw);
-    tdFirstUsableDec.textContent = bin2dec(firstUsable);
-    tdFirstUsableBin.textContent = dotted(firstUsable);
-    tdLastUsableDec.textContent = bin2dec(lastUsable);
-    tdLastUsableBin.textContent = dotted(lastUsable);
-    tdBroadcastDec.textContent = bin2dec(broadcast);
-    tdBroadcastBin.textContent = dotted(broadcast);
-    tdCIDR.textContent = "/" + cidr;
-    tdSubnetMaskDec.textContent = bin2dec(subnetMask);
-    tdSubnetMaskBin.textContent = dotted(subnetMask);
-    tdWildcardMaskDec.textContent = bin2dec(wildcardMask);
-    tdWildcardMaskBin.textContent = dotted(wildcardMask);
-    tdTotalHosts.textContent = totalHosts;
-    tdUsableHosts.textContent = usableHosts;
+	// special cases
+	if (ip.cidr > 30) {
+		tdFirstUsableHostDec.textContent = "";
+		tdFirstUsableHostBin.textContent = "";
+		tdLastUsableHostDec.textContent = "";
+		tdLastUsableHostBin.textContent = "";
+	}
+	if (ip.cidr === 32) {
+		tdBroadcastAddressDec.textContent = "";
+		tdBroadcastAddressBin.textContent = "";
+	}
+}
 
-    // special cases
-    if(cidr > 30) {
-        tdFirstUsableDec.textContent = "";
-        tdFirstUsableBin.textContent = "";
-        tdLastUsableDec.textContent = "";
-        tdLastUsableBin.textContent = "";
-        tdUsableHosts.textContent = 0;
-    }
+function activateSubnetMode() {
+	if (subnetModeButton.className === "mode-activated") return;
+	subnetModeButton.className = "mode-activated";
+	supernetModeButton.className = "";
+	subnetModeInputs.removeAttribute("hidden");
+	supernetModeInputs.setAttribute("hidden", true);
+	update();
+}
+
+function activateSupernetMode() {
+	if (supernetModeButton.className === "mode-activated") return;
+	subnetModeButton.className = "";
+	supernetModeButton.className = "mode-activated";
+	subnetModeInputs.setAttribute("hidden", true);
+	supernetModeInputs.removeAttribute("hidden");
+	update();
 }
 
 function updateMask() {
-    let maskBin = "1".repeat(inCIDR.value) + "0".repeat(32-inCIDR.value);
-    inMask.value = bin2dec(maskBin);
-    update()
+	// clamp
+	if (cidrInput.value < 0) {
+		cidrInput.value = 0;
+	} else if (cidrInput.value > 32) {
+		cidrInput.value = 32;
+	}
+	ip.cidr = cidrInput.value;
+	maskInput.value = IpAddress.bin2dec(ip.subnetMask);
+	update();
 }
 
-function updateCIDR() {
-    warnMask.setAttribute("hidden",true);
-    
-    let mask = dec2bin(inMask.value);
-    if(!mask) {
-        warnMask.removeAttribute("hidden");
-        return;
-    }
-
-    let i = 0;
-    while(i < 32) {
-        if(mask.charAt(i) != "1") break;
-        i++;
-    }
-    let count1 = i;
-    
-    i = 31;
-    while(i > -1) {
-        if(mask.charAt(i) != "0") break;
-        i--;
-    }
-    let count0 = 31 - i;
-    
-    console.log(count1 + " " + count0);
-
-    if(count1 + count0 != 32) {
-        warnMask.removeAttribute("hidden");
-        return;
-    }
-    
-    inCIDR.value = count1;
-
-    update();
+function updateCidr() {
+	warnMask.setAttribute("hidden", true);
+	try {
+		ip.subnetMask = maskInput.value;
+	} catch (e) {
+		if (e.message !== "Invalid subnet mask.") throw e;
+		warnMask.removeAttribute("hidden");
+		return;
+	}
+	cidrInput.value = ip.cidr;
+	update();
 }
 
-function dec2bin(addrStr) {
-    let bin = ""
-    addrStr.split(".").forEach(octetStr => {
-        let octet = parseInt(octetStr);
-        if(octet < 0 || octet > 255) return false;
-        if(isNaN(octet)) octet = 0;
-        bin += octet.toString(2).padStart(8,"0");
-    });
-    if(bin.length != 32) return false;
-    return bin;
+function previousSubnet() {
+	let networkBits = ip.address.substring(0, ip.cidr);
+	if (!networkBits.includes("1")) return; // already lowest
+	networkBits = (parseInt(networkBits, 2) - 1).toString(2).padStart(ip.cidr, "0"); // decrement network bits
+	addressInput.value = IpAddress.bin2dec(networkBits + ip.address.substring(ip.cidr));
+	update();
 }
 
-function bin2dec(bin) {
-    let dec = parseInt(bin.substring(0,8),2);
-    dec += "." + parseInt(bin.substring(8,16),2);
-    dec += "." + parseInt(bin.substring(16,24),2);
-    dec += "." + parseInt(bin.substring(24),2);
-    return dec;
+function nextSubnet() {
+	let networkBits = ip.address.substring(0, ip.cidr);
+	if (!networkBits.includes("0")) return; // already highest
+	networkBits = (parseInt(networkBits, 2) + 1).toString(2).padStart(ip.cidr, "0"); // increment network bits
+	addressInput.value = IpAddress.bin2dec(networkBits + ip.address.substring(ip.cidr));
+	update();
 }
 
-function dotted(str) {
-    let out = str.substring(0,8);
-    out += "." + str.substring(8,16);
-    out += "." + str.substring(16,24);
-    out += "." + str.substring(24);
-    return out;
-}
+function parseAddresses() {
+	// build list of IpAddresses
+	let addressStrings = addressesInput.value.trim().split("\n");
+	let addresses = [];
+	for (let addressString of addressStrings) {
+		let address;
+		let cidr = 0;
+		let subnetMask;
+		let split;
 
-function clampCIDR() {
-    if(inCIDR.value < 0) {
-        inCIDR.value = 0;
-    } else if (inCIDR.value > 32) {
-        inCIDR.value = 32;
-    }
+		if (addressString.includes("/")) { // cidr
+			split = addressString.indexOf("/");
+			cidr = parseInt(addressString.substring(split + 1));
+		} else if (addressString.includes(" ")) { // subnet mask
+			split = addressString.indexOf(" ");
+			subnetMask = addressString.substring(split);
+		} else {
+			throw new Error("Invalid IP address.");
+		}
+
+		address = addressString.substring(0, split);
+		let newIp = new IpAddress(address, cidr);
+		if (subnetMask) newIp.subnetMask = subnetMask;
+
+		addresses.push(newIp);
+	}
+
+	// find first and last addresses
+	let first = 2 ** 32 - 1;
+	let last = 0;
+	for (let ip of addresses) {
+		if (parseInt(ip.networkAddress, 2) < first) first = parseInt(ip.networkAddress, 2);
+		if (parseInt(ip.broadcastAddress, 2) > last) last = parseInt(ip.broadcastAddress, 2);
+	}
+	first = first.toString(2).padStart(32, "0");
+	last = last.toString(2).padStart(32, "0");
+
+	// find common prefix
+	let summaryCidr = 0;
+	while (summaryCidr < 32) {
+		if (first.charAt(summaryCidr) !== last.charAt(summaryCidr)) break;
+		summaryCidr++;
+	}
+
+	return new IpAddress(IpAddress.bin2dec(first), summaryCidr);
 }
