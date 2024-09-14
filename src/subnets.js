@@ -64,13 +64,13 @@ function update() {
 	else if (supernetModeButton.className === "mode-activated") {
 		// warning
 		warnAddresses.setAttribute("hidden", true);
-		addressesList = parseAddresses();
-		if (!addressesList) {
+		try {
+			ip = parseAddresses();
+		} catch (e) {
+			if (e.message in ["Invalid IP address.", "Invalid CIDR.", "Invalid subnet mask."]) throw e;
 			warnAddresses.removeAttribute("hidden");
+			return;
 		}
-
-		// calculations
-
 	}
 
 	// output
@@ -163,19 +163,48 @@ function nextSubnet() {
 }
 
 function parseAddresses() {
-	let addresses = addressesInput.value.trim().split("\n");
-	let max = 0;
-	console.log(parseInt("11111111111111111111111111111111", 2));
+	// build list of IpAddresses
+	let addressStrings = addressesInput.value.trim().split("\n");
+	let addresses = [];
+	for (let addressString of addressStrings) {
+		let address;
+		let cidr = 0;
+		let subnetMask;
+		let split;
 
-	// find first address
-	let min = 4294967295;
+		if (addressString.includes("/")) { // cidr
+			split = addressString.indexOf("/");
+			cidr = parseInt(addressString.substring(split + 1));
+		} else if (addressString.includes(" ")) { // subnet mask
+			split = addressString.indexOf(" ");
+			subnetMask = addressString.substring(split);
+		} else {
+			throw new Error("Invalid IP address.");
+		}
 
-	for (let address of addresses) {
-		if (dec2bin(address)) pass;
+		address = addressString.substring(0, split);
+		let newIp = new IpAddress(address, cidr);
+		if (subnetMask) newIp.subnetMask = subnetMask;
 
+		addresses.push(newIp);
 	}
 
-	console.log(rawList);
+	// find first and last addresses
+	let first = 2 ** 32 - 1;
+	let last = 0;
+	for (let ip of addresses) {
+		if (parseInt(ip.networkAddress, 2) < first) first = parseInt(ip.networkAddress, 2);
+		if (parseInt(ip.broadcastAddress, 2) > last) last = parseInt(ip.broadcastAddress, 2);
+	}
+	first = first.toString(2).padStart(32, "0");
+	last = last.toString(2).padStart(32, "0");
 
-	return null;
+	// find common prefix
+	let summaryCidr = 0;
+	while (summaryCidr < 32) {
+		if (first.charAt(summaryCidr) !== last.charAt(summaryCidr)) break;
+		summaryCidr++;
+	}
+
+	return new IpAddress(IpAddress.bin2dec(first), summaryCidr);
 }

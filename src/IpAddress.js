@@ -5,8 +5,8 @@ export default class IpAddress {
 	 * @param {number} cidr - Number, 0-32.
 	 */
 	constructor(address, cidr) {
-		this._address = address;
-		this._cidr = cidr;
+		this.address = address;
+		this.cidr = cidr;
 	}
 
 	get address() {
@@ -43,8 +43,11 @@ export default class IpAddress {
 	 * @param {string} dec - Dotted decimal string, e.g. "255.255.255.0".
 	 */
 	set subnetMask(dec) {
+		let e = new Error("Invalid subnet mask.");
+		
 		const subnetMask = IpAddress.dec2bin(dec);
-
+		if (!subnetMask) throw e;
+		
 		// parse subnet mask into cidr
 
 		let countOf1 = 0;
@@ -60,7 +63,7 @@ export default class IpAddress {
 		}
 		countOf0 = 31 - countOf0;
 
-		if (countOf1 + countOf0 !== 32) throw new Error("Invalid subnet mask.");
+		if (countOf1 + countOf0 !== 32) throw e;
 		this._cidr = countOf1;
 	}
 
@@ -110,7 +113,7 @@ export default class IpAddress {
 
 	/**
 	 * Convert a binary string to dotted decimal.
-	 * @param {string} bin - 64-bit binary string. 
+	 * @param {string} bin - 32-bit binary string. 
 	 */
 	static bin2dec(bin) {
 		return `${parseInt(bin.substring(0, 8), 2)}.${parseInt(bin.substring(8, 16), 2)}.${parseInt(bin.substring(16, 24), 2)}.${parseInt(bin.substring(24), 2)}`;
@@ -118,7 +121,7 @@ export default class IpAddress {
 
 	/**
 	 * Insert spaces between every byte of a 64-bit binary string for readability.
-	 * @param {string} bin - 64-bit binary string. 
+	 * @param {string} bin - 32-bit binary string. 
 	 */
 	static spaceOutBin(bin) {
 		return `${bin.substring(0, 8)} ${bin.substring(8, 16)} ${bin.substring(16, 24)} ${bin.substring(24)} `;
