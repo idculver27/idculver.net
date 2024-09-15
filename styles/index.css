@@ -1,81 +1,106 @@
 @font-face {
-    font-family: "Aurebesh";
-    src: url("../fonts/Aurebesh.ttf");
+	font-family: "Aurebesh";
+	src: url("../fonts/Aurebesh.ttf");
 }
-a:link, a:visited {
-    color: black;
-    text-decoration: none;
+
+a:link,
+a:visited {
+	color: black;
+	text-decoration: none;
 }
+
 body {
-    font-family: "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 }
-h1, h2 {
-    text-align: center;
+
+h1,
+h2 {
+	text-align: center;
 }
+
 hr {
-    color: #777777;
+	color: #777777;
 }
+
 img {
-    min-height: 64px;
-    max-height: 100%;
-    max-width: 100%;
+	min-height: 64px;
+	max-height: 100%;
+	max-width: 100%;
 }
+
 .aurebesh {
-    font-family: "Aurebesh", monospace;
+	font-family: "Aurebesh", monospace;
 }
+
+.clearfloat {
+	clear: left;
+}
+
 .icon {
-    height: 32px;
-    min-height: auto;
+	height: 32px;
+	min-height: auto;
 }
+
 .main {
-    margin: auto;
-    max-width: 1500px;
+	margin: auto;
+	max-width: 1500px;
 }
+
 .pixel {
-    image-rendering: pixelated;
+	image-rendering: pixelated;
 }
+
 .thumb {
-    align-items: center;
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 30px;
-    overflow: hidden;
-    width: 150px;
+	align-items: center;
+	display: flex;
+	height: 100px;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 150px;
 }
+
 .tile {
-    border: 1px solid #777777;
-    border-radius: 10px;
-    float: left;
-    height: 150px;
-    margin: 15px;
-    padding: 30px;
-    text-align: center;
+	border: 1px solid #777777;
+	border-radius: 10px;
+	float: left;
+	height: 150px;
+	margin: 15px;
+	padding: 30px;
+	text-align: center;
 }
+
 .tinytile {
-    border: 1px solid #777777;
-    border-radius: 10px;
-    float: left;
-    margin: 15px;
-    padding: 25px;
-    padding-bottom: 10px;
-    text-align: center;
+	border: 1px solid #777777;
+	border-radius: 10px;
+	float: left;
+	margin: 15px;
+	padding: 25px;
+	padding-bottom: 10px;
+	text-align: center;
 }
-.tile:hover, .tinytile:hover {
-    background-color: #777777;
-    transition: 0.2s;
+
+.tile:hover,
+.tinytile:hover {
+	background-color: #777777;
+	transition: 0.2s;
 }
+
 #isaacDiv {
-    height: 80px;
-    text-align: center;
+	min-height: 80px;
+	text-align: center;
 }
+
 @media (prefers-color-scheme: dark) {
-    a:link, a:visited {
-        color: white;
-    }
-    body {
-        background-color: black;
-        color: white;
-    }
+
+	a:link,
+	a:visited {
+		color: white;
+	}
+
+	body {
+		background-color: black;
+		color: white;
+	}
 }
