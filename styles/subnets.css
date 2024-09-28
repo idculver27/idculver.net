@@ -1,15 +1,12 @@
-a:link,
-a:visited {
+a:link, a:visited {
 	color: #00ff77;
 	text-decoration: none;
 }
-
 body {
 	background-color: black;
 	color: #00ff77;
 	font-family: "Courier New", Courier, monospace;
 }
-
 button {
 	background-color: black;
 	border: 1px solid #00ff77;
@@ -20,17 +17,13 @@ button {
 	padding-left: 8px;
 	padding-right: 8px;
 }
-
-button:hover,
-.mode-activated {
+button:hover, .mode-activated {
 	background-color: #00ff77;
 	color: black;
 }
-
 div {
 	margin: 20px;
 }
-
 input {
 	background-color: #00ff77;
 	border: 1px solid #00ff77;
@@ -43,20 +36,16 @@ input {
 	padding-right: 8px;
 	width: 160px;
 }
-
 table {
 	border-collapse: collapse;
 	text-align: center;
 }
-
-td,
-tr {
+td, tr {
 	border: 1px solid #00ff77;
 	height: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 textarea {
 	background-color: #00ff77;
 	border: 1px solid #00ff77;
@@ -65,34 +54,26 @@ textarea {
 	font-size: 100%;
 	resize: none;
 }
-
 .cidr {
 	width: auto;
 }
-
 .float {
 	float: left;
 }
-
 .nofloat {
 	clear: left;
 }
-
 .red {
 	color: red;
 }
-
 #modes {
 	height: 180px;
 }
-
 /* hide number input buttons in Chrome, Safari, Edge, Opera */
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
-
 /* hide number input buttons in Firefox */
 input[type=number] {
 	-moz-appearance: textfield;

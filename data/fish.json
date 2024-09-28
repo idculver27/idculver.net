@@ -1,443 +1,443 @@
 [
-    {
-        "name": "Albacore",
-        "basePrice": 75,
-        "bundle": "",
-        "seasons": ["Fall", "Winter"],
-        "locations": ["Ocean"],
-        "time": "06-11,18-02",
-        "weather": ""
-    },
-    {
-        "name": "Anchovy",
-        "basePrice": 30,
-        "bundle": "",
-        "seasons": ["Spring", "Fall"],
-        "locations": ["Ocean"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Blue Discus",
-        "basePrice": 120,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Ginger Island Pond", "Ginger Island River"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Bream",
-        "basePrice": 45,
-        "bundle": "Night Fishing Bundle",
-        "seasons": ["Spring", "Summer", "Fall", "Winter"],
-        "locations": ["Forest River", "Town River"],
-        "time": "18-02",
-        "weather": ""
-    },
-    {
-        "name": "Bullhead",
-        "basePrice": 75,
-        "bundle": "Lake Fish Bundle",
-        "seasons": ["Spring", "Summer", "Fall", "Winter"],
-        "locations": ["Mountain Lake"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Carp",
-        "basePrice": 30,
-        "bundle": "Lake Fish Bundle",
-        "seasons": ["Spring", "Summer", "Fall", "Winter", "Special"],
-        "locations": ["Mountain Lake", "Secret Woods Pond", "Sewer"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Catfish",
-        "basePrice": 200,
-        "bundle": "River Fish Bundle",
-        "seasons": ["Spring", "Fall", "Winter", "Special"],
-        "locations": ["Forest River", "Town River", "Secret Woods Pond", "Witch's Swamp"],
-        "time": "06-00",
-        "weather": "rain"
-    },
-    {
-        "name": "Catfish",
-        "basePrice": 200,
-        "bundle": "River Fish Bundle",
-        "seasons": ["Summer", "Special"],
-        "locations": ["Secret Woods Pond", "Witch's Swamp"],
-        "time": "06-00",
-        "weather": "rain"
-    },
-    {
-        "name": "Chub",
-        "basePrice": 50,
-        "bundle": "Field Research Bundle",
-        "seasons": ["Spring", "Summer", "Fall", "Winter"],
-        "locations": ["Forest River", "Mountain Lake"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Dorado",
-        "basePrice": 100,
-        "bundle": "",
-        "seasons": ["Summer"],
-        "locations": ["Forest River"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Eel",
-        "basePrice": 85,
-        "bundle": "Night Fishing Bundle",
-        "seasons": ["Spring", "Fall"],
-        "locations": ["Ocean"],
-        "time": "16-02",
-        "weather": "rain"
-    },
-    {
-        "name": "Flounder",
-        "basePrice": 100,
-        "bundle": "",
-        "seasons": ["Spring", "Summer", "Special"],
-        "locations": ["Ocean", "Ginger Island Ocean"],
-        "time": "06-20",
-        "weather": ""
-    },
-    {
-        "name": "Ghostfish",
-        "basePrice": 45,
-        "bundle": "Specialty Fish Bundle",
-        "seasons": ["Special"],
-        "locations": ["Mines 20F/60F"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Goby",
-        "basePrice": 150,
-        "bundle": "",
-        "seasons": ["Spring", "Summer", "Fall", "Winter"],
-        "locations": ["Forest Waterfalls"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Halibut",
-        "basePrice": 80,
-        "bundle": "",
-        "seasons": ["Spring", "Summer", "Winter"],
-        "locations": ["Ocean"],
-        "time": "06-11,19-02",
-        "weather": ""
-    },
-    {
-        "name": "Herring",
-        "basePrice": 30,
-        "bundle": "",
-        "seasons": ["Spring", "Winter"],
-        "locations": ["Ocean"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Ice Pip",
-        "basePrice": 500,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Mines 60F"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Largemouth Bass",
-        "basePrice": 100,
-        "bundle": "Lake Fish Bundle",
-        "seasons": ["Spring", "Summer", "Fall", "Winter"],
-        "locations": ["Mountain Lake"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Lava Eel",
-        "basePrice": 700,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Mines 100F", "Volcano Caldera"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Lingcod",
-        "basePrice": 120,
-        "bundle": "",
-        "seasons": ["Winter"],
-        "locations": ["Forest River", "Town River", "Mountain Lake"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Lionfish",
-        "basePrice": 100,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Ginger Island Ocean"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Midnight Carp",
-        "basePrice": 150,
-        "bundle": "",
-        "seasons": ["Fall", "Winter", "Special"],
-        "locations": ["Mountain Lake", "Forest Pond", "Ginger Island Pond", "Ginger Island River"],
-        "time": "22-02",
-        "weather": ""
-    },
-    {
-        "name": "Octopus",
-        "basePrice": 150,
-        "bundle": "",
-        "seasons": ["Summer", "Special"],
-        "locations": ["Ocean", "Ginger Island Ocean"],
-        "time": "06-13",
-        "weather": ""
-    },
-    {
-        "name": "Perch",
-        "basePrice": 55,
-        "bundle": "",
-        "seasons": ["Winter"],
-        "locations": ["Town River", "Forest River", "Forest Pond", "Mountain Lake"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Pike",
-        "basePrice": 100,
-        "bundle": "",
-        "seasons": ["Summer", "Winter"],
-        "locations": ["Town River", "Forest River", "Forest Pond"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Pufferfish",
-        "basePrice": 200,
-        "bundle": "Specialty Fish Bundle",
-        "seasons": ["Summer", "Special"],
-        "locations": ["Ocean", "Ginger Island Ocean"],
-        "time": "12-16",
-        "weather": "sun"
-    },
-    {
-        "name": "Rainbow Trout",
-        "basePrice": 65,
-        "bundle": "",
-        "seasons": ["Summer"],
-        "locations": ["Town River", "Forest River", "Mountain Lake"],
-        "time": "06-19",
-        "weather": "sun"
-    },
-    {
-        "name": "Red Mullet",
-        "basePrice": 75,
-        "bundle": "",
-        "seasons": ["Summer", "Winter"],
-        "locations": ["Ocean"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Red Snapper",
-        "basePrice": 50,
-        "bundle": "Ocean Fish Bundle",
-        "seasons": ["Summer", "Fall", "Winter"],
-        "locations": ["Ocean"],
-        "time": "06-19",
-        "weather": "rain"
-    },
-    {
-        "name": "Salmon",
-        "basePrice": 75,
-        "bundle": "",
-        "seasons": ["Fall"],
-        "locations": ["Forest River", "Town River", "Forest Waterfalls"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Sandfish",
-        "basePrice": 75,
-        "bundle": "Specialty Fish Bundle",
-        "seasons": ["Special"],
-        "locations": ["Desert"],
-        "time": "06-20",
-        "weather": ""
-    },
-    {
-        "name": "Sardine",
-        "basePrice": 40,
-        "bundle": "Ocean Fish Bundle",
-        "seasons": ["Spring", "Fall", "Winter"],
-        "locations": ["Ocean"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Scorpion Carp",
-        "basePrice": 150,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Desert"],
-        "time": "06-20",
-        "weather": ""
-    },
-    {
-        "name": "Sea Cucumber",
-        "basePrice": 75,
-        "bundle": "",
-        "seasons": ["Fall", "Winter"],
-        "locations": ["Ocean"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Shad",
-        "basePrice": 60,
-        "bundle": "River Fish Bundle",
-        "seasons": ["Spring", "Summer", "Fall"],
-        "locations": ["Forest River", "Town River"],
-        "time": "09-02",
-        "weather": "rain"
-    },
-    {
-        "name": "Slimejack",
-        "basePrice": 100,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Mutant Bug Lair"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Smallmouth Bass",
-        "basePrice": 50,
-        "bundle": "",
-        "seasons": ["Spring", "Fall"],
-        "locations": ["Town River", "Forest Pond"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Squid",
-        "basePrice": 80,
-        "bundle": "",
-        "seasons": ["Winter"],
-        "locations": ["Ocean"],
-        "time": "18-02",
-        "weather": ""
-    },
-    {
-        "name": "Stingray",
-        "basePrice": 180,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Pirate Cove"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Stonefish",
-        "basePrice": 300,
-        "bundle": "",
-        "seasons": ["Special"],
-        "locations": ["Mines 20F"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Sturgeon",
-        "basePrice": 200,
-        "bundle": "Lake Fish Bundle",
-        "seasons": ["Summer", "Winter"],
-        "locations": ["Mountain Lake"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Sunfish",
-        "basePrice": 30,
-        "bundle": "River Fish Bundle",
-        "seasons": ["Spring", "Summer"],
-        "locations": ["Forest River", "Town River"],
-        "time": "06-19",
-        "weather": "sunorwind"
-    },
-    {
-        "name": "Super Cucumber",
-        "basePrice": 250,
-        "bundle": "",
-        "seasons": ["Summer", "Fall", "Special"],
-        "locations": ["Ocean", "Ginger Island Ocean"],
-        "time": "18-02",
-        "weather": ""
-    },
-    {
-        "name": "Tiger Trout",
-        "basePrice": 150,
-        "bundle": "River Fish Bundle",
-        "seasons": ["Fall", "Winter"],
-        "locations": ["Forest River", "Town River"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Tilapia",
-        "basePrice": 75,
-        "bundle": "Ocean Fish Bundle",
-        "seasons": ["Summer", "Fall", "Special"],
-        "locations": ["Ocean", "Ginger Island River"],
-        "time": "06-14",
-        "weather": ""
-    },
-    {
-        "name": "Tuna",
-        "basePrice": 100,
-        "bundle": "Ocean Fish Bundle",
-        "seasons": ["Summer", "Winter", "Special"],
-        "locations": ["Ocean", "Ginger Island Ocean"],
-        "time": "06-19",
-        "weather": ""
-    },
-    {
-        "name": "Void Salmon",
-        "basePrice": 150,
-        "bundle": "The Missing Bundle",
-        "seasons": ["Special"],
-        "locations": ["Witch's Swamp"],
-        "time": "",
-        "weather": ""
-    },
-    {
-        "name": "Walleye",
-        "basePrice": 105,
-        "bundle": "Night Fishing Bundle",
-        "seasons": ["Fall", "Winter"],
-        "locations": ["Forest River", "Town River", "Forest Pond", "Mountain Lake"],
-        "time": "12-02",
-        "weather": "rain"
-    },
-    {
-        "name": "Woodskip",
-        "basePrice": 75,
-        "bundle": "Specialty Fish Bundle",
-        "seasons": ["Spring", "Summer", "Fall", "Winter"],
-        "locations": ["Secret Woods Pond"],
-        "time": "",
-        "weather": ""
-    }
+	{
+		"name": "Albacore",
+		"basePrice": 75,
+		"bundle": "",
+		"seasons": ["Fall", "Winter"],
+		"locations": ["Ocean"],
+		"time": "06-11,18-02",
+		"weather": ""
+	},
+	{
+		"name": "Anchovy",
+		"basePrice": 30,
+		"bundle": "",
+		"seasons": ["Spring", "Fall"],
+		"locations": ["Ocean"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Blue Discus",
+		"basePrice": 120,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Ginger Island Pond", "Ginger Island River"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Bream",
+		"basePrice": 45,
+		"bundle": "Night Fishing Bundle",
+		"seasons": ["Spring", "Summer", "Fall", "Winter"],
+		"locations": ["Forest River", "Town River"],
+		"time": "18-02",
+		"weather": ""
+	},
+	{
+		"name": "Bullhead",
+		"basePrice": 75,
+		"bundle": "Lake Fish Bundle",
+		"seasons": ["Spring", "Summer", "Fall", "Winter"],
+		"locations": ["Mountain Lake"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Carp",
+		"basePrice": 30,
+		"bundle": "Lake Fish Bundle",
+		"seasons": ["Spring", "Summer", "Fall", "Winter", "Special"],
+		"locations": ["Mountain Lake", "Secret Woods Pond", "Sewer"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Catfish",
+		"basePrice": 200,
+		"bundle": "River Fish Bundle",
+		"seasons": ["Spring", "Fall", "Winter", "Special"],
+		"locations": ["Forest River", "Town River", "Secret Woods Pond", "Witch's Swamp"],
+		"time": "06-00",
+		"weather": "rain"
+	},
+	{
+		"name": "Catfish",
+		"basePrice": 200,
+		"bundle": "River Fish Bundle",
+		"seasons": ["Summer", "Special"],
+		"locations": ["Secret Woods Pond", "Witch's Swamp"],
+		"time": "06-00",
+		"weather": "rain"
+	},
+	{
+		"name": "Chub",
+		"basePrice": 50,
+		"bundle": "Field Research Bundle",
+		"seasons": ["Spring", "Summer", "Fall", "Winter"],
+		"locations": ["Forest River", "Mountain Lake"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Dorado",
+		"basePrice": 100,
+		"bundle": "",
+		"seasons": ["Summer"],
+		"locations": ["Forest River"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Eel",
+		"basePrice": 85,
+		"bundle": "Night Fishing Bundle",
+		"seasons": ["Spring", "Fall"],
+		"locations": ["Ocean"],
+		"time": "16-02",
+		"weather": "rain"
+	},
+	{
+		"name": "Flounder",
+		"basePrice": 100,
+		"bundle": "",
+		"seasons": ["Spring", "Summer", "Special"],
+		"locations": ["Ocean", "Ginger Island Ocean"],
+		"time": "06-20",
+		"weather": ""
+	},
+	{
+		"name": "Ghostfish",
+		"basePrice": 45,
+		"bundle": "Specialty Fish Bundle",
+		"seasons": ["Special"],
+		"locations": ["Mines 20F/60F"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Goby",
+		"basePrice": 150,
+		"bundle": "",
+		"seasons": ["Spring", "Summer", "Fall", "Winter"],
+		"locations": ["Forest Waterfalls"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Halibut",
+		"basePrice": 80,
+		"bundle": "",
+		"seasons": ["Spring", "Summer", "Winter"],
+		"locations": ["Ocean"],
+		"time": "06-11,19-02",
+		"weather": ""
+	},
+	{
+		"name": "Herring",
+		"basePrice": 30,
+		"bundle": "",
+		"seasons": ["Spring", "Winter"],
+		"locations": ["Ocean"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Ice Pip",
+		"basePrice": 500,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Mines 60F"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Largemouth Bass",
+		"basePrice": 100,
+		"bundle": "Lake Fish Bundle",
+		"seasons": ["Spring", "Summer", "Fall", "Winter"],
+		"locations": ["Mountain Lake"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Lava Eel",
+		"basePrice": 700,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Mines 100F", "Volcano Caldera"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Lingcod",
+		"basePrice": 120,
+		"bundle": "",
+		"seasons": ["Winter"],
+		"locations": ["Forest River", "Town River", "Mountain Lake"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Lionfish",
+		"basePrice": 100,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Ginger Island Ocean"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Midnight Carp",
+		"basePrice": 150,
+		"bundle": "",
+		"seasons": ["Fall", "Winter", "Special"],
+		"locations": ["Mountain Lake", "Forest Pond", "Ginger Island Pond", "Ginger Island River"],
+		"time": "22-02",
+		"weather": ""
+	},
+	{
+		"name": "Octopus",
+		"basePrice": 150,
+		"bundle": "",
+		"seasons": ["Summer", "Special"],
+		"locations": ["Ocean", "Ginger Island Ocean"],
+		"time": "06-13",
+		"weather": ""
+	},
+	{
+		"name": "Perch",
+		"basePrice": 55,
+		"bundle": "",
+		"seasons": ["Winter"],
+		"locations": ["Town River", "Forest River", "Forest Pond", "Mountain Lake"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Pike",
+		"basePrice": 100,
+		"bundle": "",
+		"seasons": ["Summer", "Winter"],
+		"locations": ["Town River", "Forest River", "Forest Pond"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Pufferfish",
+		"basePrice": 200,
+		"bundle": "Specialty Fish Bundle",
+		"seasons": ["Summer", "Special"],
+		"locations": ["Ocean", "Ginger Island Ocean"],
+		"time": "12-16",
+		"weather": "sun"
+	},
+	{
+		"name": "Rainbow Trout",
+		"basePrice": 65,
+		"bundle": "",
+		"seasons": ["Summer"],
+		"locations": ["Town River", "Forest River", "Mountain Lake"],
+		"time": "06-19",
+		"weather": "sun"
+	},
+	{
+		"name": "Red Mullet",
+		"basePrice": 75,
+		"bundle": "",
+		"seasons": ["Summer", "Winter"],
+		"locations": ["Ocean"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Red Snapper",
+		"basePrice": 50,
+		"bundle": "Ocean Fish Bundle",
+		"seasons": ["Summer", "Fall", "Winter"],
+		"locations": ["Ocean"],
+		"time": "06-19",
+		"weather": "rain"
+	},
+	{
+		"name": "Salmon",
+		"basePrice": 75,
+		"bundle": "",
+		"seasons": ["Fall"],
+		"locations": ["Forest River", "Town River", "Forest Waterfalls"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Sandfish",
+		"basePrice": 75,
+		"bundle": "Specialty Fish Bundle",
+		"seasons": ["Special"],
+		"locations": ["Desert"],
+		"time": "06-20",
+		"weather": ""
+	},
+	{
+		"name": "Sardine",
+		"basePrice": 40,
+		"bundle": "Ocean Fish Bundle",
+		"seasons": ["Spring", "Fall", "Winter"],
+		"locations": ["Ocean"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Scorpion Carp",
+		"basePrice": 150,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Desert"],
+		"time": "06-20",
+		"weather": ""
+	},
+	{
+		"name": "Sea Cucumber",
+		"basePrice": 75,
+		"bundle": "",
+		"seasons": ["Fall", "Winter"],
+		"locations": ["Ocean"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Shad",
+		"basePrice": 60,
+		"bundle": "River Fish Bundle",
+		"seasons": ["Spring", "Summer", "Fall"],
+		"locations": ["Forest River", "Town River"],
+		"time": "09-02",
+		"weather": "rain"
+	},
+	{
+		"name": "Slimejack",
+		"basePrice": 100,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Mutant Bug Lair"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Smallmouth Bass",
+		"basePrice": 50,
+		"bundle": "",
+		"seasons": ["Spring", "Fall"],
+		"locations": ["Town River", "Forest Pond"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Squid",
+		"basePrice": 80,
+		"bundle": "",
+		"seasons": ["Winter"],
+		"locations": ["Ocean"],
+		"time": "18-02",
+		"weather": ""
+	},
+	{
+		"name": "Stingray",
+		"basePrice": 180,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Pirate Cove"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Stonefish",
+		"basePrice": 300,
+		"bundle": "",
+		"seasons": ["Special"],
+		"locations": ["Mines 20F"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Sturgeon",
+		"basePrice": 200,
+		"bundle": "Lake Fish Bundle",
+		"seasons": ["Summer", "Winter"],
+		"locations": ["Mountain Lake"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Sunfish",
+		"basePrice": 30,
+		"bundle": "River Fish Bundle",
+		"seasons": ["Spring", "Summer"],
+		"locations": ["Forest River", "Town River"],
+		"time": "06-19",
+		"weather": "sunorwind"
+	},
+	{
+		"name": "Super Cucumber",
+		"basePrice": 250,
+		"bundle": "",
+		"seasons": ["Summer", "Fall", "Special"],
+		"locations": ["Ocean", "Ginger Island Ocean"],
+		"time": "18-02",
+		"weather": ""
+	},
+	{
+		"name": "Tiger Trout",
+		"basePrice": 150,
+		"bundle": "River Fish Bundle",
+		"seasons": ["Fall", "Winter"],
+		"locations": ["Forest River", "Town River"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Tilapia",
+		"basePrice": 75,
+		"bundle": "Ocean Fish Bundle",
+		"seasons": ["Summer", "Fall", "Special"],
+		"locations": ["Ocean", "Ginger Island River"],
+		"time": "06-14",
+		"weather": ""
+	},
+	{
+		"name": "Tuna",
+		"basePrice": 100,
+		"bundle": "Ocean Fish Bundle",
+		"seasons": ["Summer", "Winter", "Special"],
+		"locations": ["Ocean", "Ginger Island Ocean"],
+		"time": "06-19",
+		"weather": ""
+	},
+	{
+		"name": "Void Salmon",
+		"basePrice": 150,
+		"bundle": "The Missing Bundle",
+		"seasons": ["Special"],
+		"locations": ["Witch's Swamp"],
+		"time": "",
+		"weather": ""
+	},
+	{
+		"name": "Walleye",
+		"basePrice": 105,
+		"bundle": "Night Fishing Bundle",
+		"seasons": ["Fall", "Winter"],
+		"locations": ["Forest River", "Town River", "Forest Pond", "Mountain Lake"],
+		"time": "12-02",
+		"weather": "rain"
+	},
+	{
+		"name": "Woodskip",
+		"basePrice": 75,
+		"bundle": "Specialty Fish Bundle",
+		"seasons": ["Spring", "Summer", "Fall", "Winter"],
+		"locations": ["Secret Woods Pond"],
+		"time": "",
+		"weather": ""
+	}
 ]

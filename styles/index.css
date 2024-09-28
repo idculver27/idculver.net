@@ -2,54 +2,41 @@
 	font-family: "Aurebesh";
 	src: url("../fonts/Aurebesh.ttf");
 }
-
-a:link,
-a:visited {
+a:link, a:visited {
 	color: black;
 	text-decoration: none;
 }
-
 body {
 	font-family: "Helvetica", sans-serif;
 }
-
-h1,
-h2 {
+h1, h2 {
 	text-align: center;
 }
-
 hr {
 	color: #777777;
 }
-
 img {
-	min-height: 64px;
 	max-height: 100%;
 	max-width: 100%;
+	min-height: 64px;
 }
-
 .aurebesh {
 	font-family: "Aurebesh", monospace;
 }
-
 .clearfloat {
 	clear: left;
 }
-
 .icon {
 	height: 32px;
 	min-height: auto;
 }
-
 .main {
 	margin: auto;
 	max-width: 1500px;
 }
-
 .pixel {
 	image-rendering: pixelated;
 }
-
 .thumb {
 	align-items: center;
 	display: flex;
@@ -60,7 +47,6 @@ img {
 	overflow: hidden;
 	width: 150px;
 }
-
 .tile {
 	border: 1px solid #777777;
 	border-radius: 10px;
@@ -70,7 +56,6 @@ img {
 	padding: 30px;
 	text-align: center;
 }
-
 .tinytile {
 	border: 1px solid #777777;
 	border-radius: 10px;
@@ -80,25 +65,18 @@ img {
 	padding-bottom: 10px;
 	text-align: center;
 }
-
-.tile:hover,
-.tinytile:hover {
+.tile:hover, .tinytile:hover {
 	background-color: #777777;
 	transition: 0.2s;
 }
-
 #isaacDiv {
 	min-height: 80px;
 	text-align: center;
 }
-
 @media (prefers-color-scheme: dark) {
-
-	a:link,
-	a:visited {
+	a:link, a:visited {
 		color: white;
 	}
-
 	body {
 		background-color: black;
 		color: white;

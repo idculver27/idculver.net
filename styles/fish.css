@@ -1,71 +1,71 @@
 body {
-    background-color: #965C3A;
-    font-family: Helvetica;
+	background-color: #965C3A;
+	font-family: Helvetica;
 }
 h2 {
-    text-align: center;
+	text-align: center;
 }
 img {
-    image-rendering: pixelated;
-    width: 32px;
+	image-rendering: pixelated;
+	width: 32px;
 }
 svg {
-    height: 1px;
-    overflow: visible;
-    width: 1px;
+	height: 1px;
+	overflow: visible;
+	width: 1px;
 }
 table {
-    background-color: #F9BA66;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    text-align: left;
+	background-color: #F9BA66;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	text-align: left;
 }
 td, th, tr {
-    border: 1px solid #5B2B2A;
-    padding: 6px;
+	border: 1px solid #5B2B2A;
+	padding: 6px;
 }
 th {
-    min-width: 20px;
-    text-align: center;
+	min-width: 20px;
+	text-align: center;
 }
 .any {
-    background-color: #80EAFF;
+	background-color: #80EAFF;
 }
 .barleft {
-    border-right: none;
+	border-right: none;
 }
 .barright {
-    border-left: none;
+	border-left: none;
 }
 .centered {
-    text-align: center;
+	text-align: center;
 }
 .innerheader {
-    background-color: #F9BA66;
-    border: 1px solid #5B2B2A;
-    margin: auto;
-    padding-bottom: 30px;
-    padding-top: 10px;
+	background-color: #F9BA66;
+	border: 1px solid #5B2B2A;
+	margin: auto;
+	padding-bottom: 30px;
+	padding-top: 10px;
 }
 .outerheader {
-    margin-top: 20px;
-    text-align: center;
+	margin-top: 20px;
+	text-align: center;
 }
 .rain {
-    background-color: #8388FD;
+	background-color: #8388FD;
 }
 .sideways {
-    transform: rotate(180deg);
-    writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	writing-mode: vertical-lr;
 }
 .svgholder {
-    position: relative;
+	position: relative;
 }
 .sun {
-    background-color: #FEFF00;
+	background-color: #FEFF00;
 }
 .sunorwind {
-    background-color: #FF9200;
+	background-color: #FF9200;
 }

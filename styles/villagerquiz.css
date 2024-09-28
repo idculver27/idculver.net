@@ -1,59 +1,59 @@
 a:link, a:visited {
-    color: #218306;
+	color: #218306;
 }
 body {
-    background-image: url("../images/darkdirt.png");
-    font-family: Helvetica, sans-serif;
-    margin: 0px;
-    text-align: center;
+	background-image: url("../images/darkdirt.png");
+	font-family: Helvetica, sans-serif;
+	margin: 0px;
+	text-align: center;
 }
 h1 {
-    color: white;
-    margin: 0px;
-    padding: 30px;
-    padding-top: 20px;
-    text-align: center;
-    max-width: 100%;
+	color: white;
+	margin: 0px;
+	max-width: 100%;
+	padding: 30px;
+	padding-top: 20px;
+	text-align: center;
 }
 h2 {
-    padding: 20px;
-    padding-top: 0px;
-    padding-bottom: 10px;
+	padding: 20px;
+	padding-bottom: 10px;
+	padding-top: 0px;
 }
 img {
-    height: 50vh;
-    max-height: 825px;
+	height: 50vh;
+	max-height: 825px;
 }
 .button {
-    background-color: #c6c6c6;
-    border: 10px solid transparent;
-    border-image: url("../images/buttongray.png") 10 stretch;
-    color: #4c4c4c;
-    font-family: Helvetica, sans-serif;
-    font-size: 12pt;
-    margin: 10px;
-    max-width: 700px;
-    padding: 20px;
-    width: 80vw;
+	background-color: #c6c6c6;
+	border: 10px solid transparent;
+	border-image: url("../images/buttongray.png") 10 stretch;
+	color: #4c4c4c;
+	font-family: Helvetica, sans-serif;
+	font-size: 12pt;
+	margin: 10px;
+	max-width: 700px;
+	padding: 20px;
+	width: 80vw;
 }
 .button:hover {
-    background-color: #218306;
-    border-image: url("../images/buttongreen.png") 10 stretch;
-    color: #ffffff;
-}
-#main {
-    background-color: white;
-    min-height: 100vh;
-    margin: auto;
-    max-width: 1000px;
-    text-align: center;
+	background-color: #218306;
+	border-image: url("../images/buttongreen.png") 10 stretch;
+	color: #ffffff;
 }
 #header {
-    background-color: black;
-    margin-bottom: 50px;
+	background-color: black;
+	margin-bottom: 50px;
 }
 #home {
-    padding: 8px;
-    padding-bottom: 0px;
-    text-align: left;
+	padding: 8px;
+	padding-bottom: 0px;
+	text-align: left;
+}
+#main {
+	background-color: white;
+	margin: auto;
+	min-height: 100vh;
+	max-width: 1000px;
+	text-align: center;
 }

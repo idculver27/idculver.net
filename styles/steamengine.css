@@ -1,50 +1,50 @@
 body {   
-    background-color: black;
-    color: white;
-    font-family: "Helvetica", sans-serif;
-}
-tr,th,td {
-    /*border: 1px solid white;*/
-    padding: 10px;
-    padding-top: 0px;
-}
-table {
-    border-collapse: collapse;
-}
-img {
-    display: block;
-    height: 150px;
-}
-svg {
-    display: block;
+	background-color: black;
+	color: white;
+	font-family: "Helvetica", sans-serif;
 }
 button {
-    font-family: inherit;
+	font-family: inherit;
 }
-.rangeSlider {
-    width: 500px;
+img {
+	display: block;
+	height: 150px;
+}
+svg {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+}
+td, th, tr {
+	/*border: 1px solid white;*/
+	padding: 10px;
+	padding-top: 0px;
 }
 .blaze {
-    padding: 0px;
-}
-.optimizeButtons {
-    padding: 20px;
-    text-align: center;
-    border: 1px solid white;
-}
-.notOptimal {
-    color: red;
-}
-.outerTd {
-    vertical-align: top;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.diagramLabel {
-    text-align: right;
-    padding-bottom: 0px;
+	padding: 0px;
 }
 .diagramBar {
-    border: 1px solid white;
-    padding: 0px;
+	border: 1px solid white;
+	padding: 0px;
+}
+.diagramLabel {
+	padding-bottom: 0px;
+	text-align: right;
+}
+.notOptimal {
+	color: red;
+}
+.optimizeButtons {
+	border: 1px solid white;
+	padding: 20px;
+	text-align: center;	
+}
+.outerTd {
+	padding-left: 40px;
+	padding-right: 40px;
+	vertical-align: top;
+}
+.rangeSlider {
+	width: 500px;
 }
