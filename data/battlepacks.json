@@ -1,7 +1,6 @@
 {
 	"sets": [
 		{
-			"id": "00",
 			"number": "7654-1",
 			"name": "Droids Battle Pack",
 			"subtheme": "Ep. III",
@@ -11,21 +10,21 @@
 				{
 					"blid": "sw0001b",
 					"name": "Battle Droid",
+					"spec": "Tan, Angled Arms",
 					"count": 4,
 					"unique": false
 				},
 				{
 					"blid": "sw0092",
 					"name": "Super Battle Droid",
+					"spec": "Pearl Dark Gray, Wide Head",
 					"count": 3,
 					"unique": false
 				}
 			],
-			"rrp": 9.99,
-			"current": 37
+			"rrp": 9.99
 		},
 		{
-			"id": "01",
 			"number": "7655-1",
 			"name": "Clone Troopers Battle Pack",
 			"subtheme": "Ep. III",
@@ -34,28 +33,29 @@
 			"minifigs": [
 				{
 					"blid": "sw0091",
-					"name": "Clone Shock Trooper, Coruscant Guard",
+					"name": "Clone Shock Trooper",
+					"spec": "Coruscant Guard (Phase 2) - Black Head",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0126",
 					"name": "Clone Trooper",
+					"spec": "(Phase 2) - Black Head, Continuous Mouth",
 					"count": 2,
 					"unique": false
 				},
 				{
 					"blid": "sw0128a",
 					"name": "Clone Trooper, 327th Star Corps",
+					"spec": "(Phase 2) - Black Head",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 9.99,
-			"current": 47
+			"rrp": 9.99
 		},
 		{
-			"id": "02",
 			"number": "7667-1",
 			"name": "Imperial Dropship",
 			"subtheme": "Misc",
@@ -65,21 +65,21 @@
 				{
 					"blid": "sw0166a",
 					"name": "Imperial Shadow Trooper",
+					"spec": "Short Line on Back",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0188",
 					"name": "Imperial Stormtrooper",
+					"spec": "Black Head, Dotted Mouth Helmet",
 					"count": 3,
 					"unique": false
 				}
 			],
-			"rrp": 9.99,
-			"current": 20
+			"rrp": 9.99
 		},
 		{
-			"id": "03",
 			"number": "7668-1",
 			"name": "Rebel Scout Speeder",
 			"subtheme": "Ep. IV",
@@ -88,16 +88,15 @@
 			"minifigs": [
 				{
 					"blid": "sw0187",
-					"name": "Rebel Fleet Trooper",
+					"name": "Rebel Fleet Trooper / Rebel Scout Trooper",
+					"spec": "Plain Vest, Frown",
 					"count": 4,
 					"unique": false
 				}
 			],
-			"rrp": 9.99,
-			"current": 19
+			"rrp": 9.99
 		},
 		{
-			"id": "04",
 			"number": "8014-1",
 			"name": "Clone Walker Battle Pack",
 			"subtheme": "Clone Wars",
@@ -106,28 +105,29 @@
 			"minifigs": [
 				{
 					"blid": "sw0223",
-					"name": "Clone Trooper - Black Visor, Pauldron, and Kama",
+					"name": "Clone Trooper",
+					"spec": "(Phase 1) - Black Visor, Pauldron, and Kama, Large Eyes",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0201",
 					"name": "Clone Trooper",
+					"spec": "(Phase 1) - Large Eyes",
 					"count": 2,
 					"unique": false
 				},
 				{
 					"blid": "sw0221",
 					"name": "Clone Trooper Gunner",
+					"spec": "(Phase 1) - Large Eyes",
 					"count": 1,
 					"unique": false
 				}
 			],
-			"rrp": 11.99,
-			"current": 39
+			"rrp": 11.99
 		},
 		{
-			"id": "05",
 			"number": "8015-1",
 			"name": "Assassin Droids Battle Pack",
 			"subtheme": "Clone Wars",
@@ -137,21 +137,21 @@
 				{
 					"blid": "sw0229",
 					"name": "Assassin Droid",
+					"spec": "(Silver)",
 					"count": 3,
 					"unique": true
 				},
 				{
 					"blid": "sw0222",
 					"name": "Assassin Droid Elite",
+					"spec": "(Black)",
 					"count": 2,
 					"unique": false
 				}
 			],
-			"rrp": 11.99,
-			"current": 11
+			"rrp": 11.99
 		},
 		{
-			"id": "06",
 			"number": "8083-1",
 			"name": "Rebel Trooper Battle Pack",
 			"subtheme": "Ep. V",
@@ -161,27 +161,28 @@
 				{
 					"blid": "sw0258",
 					"name": "Hoth Officer",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0259",
 					"name": "Hoth Rebel Trooper",
+					"spec": "(Orange Chin Dimple)",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw0260",
 					"name": "Zev Senesca",
+					"spec": "",
 					"count": 1,
 					"unique": false
 				}
 			],
-			"rrp": 11.99,
-			"current": 13
+			"rrp": 11.99
 		},
 		{
-			"id": "07",
 			"number": "8084-1",
 			"name": "Snowtrooper Battle Pack",
 			"subtheme": "Ep. V",
@@ -189,29 +190,30 @@
 			"pieces": 74,
 			"minifigs": [
 				{
-					"blid": "sw0115",
-					"name": "Snowtrooper",
-					"count": 2,
+					"blid": "sw0262",
+					"name": "AT-AT Driver",
+					"spec": "Red Imperial Logo, Bluish Grays, Black Head, Stormtrooper Type 2 Helmet",
+					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0261",
 					"name": "Imperial Officer with Battle Armor",
+					"spec": "(Captain / Commandant / Commander) - Dark Bluish Gray Legs, Smirk",
 					"count": 1,
 					"unique": true
 				},
 				{
-					"blid": "sw0262",
-					"name": "AT-AT Driver",
-					"count": 1,
+					"blid": "sw0115",
+					"name": "Snowtrooper",
+					"spec": "Light Bluish Gray Hips, White Hands (Hoth Stormtrooper)",
+					"count": 2,
 					"unique": false
 				}
 			],
-			"rrp": 11.99,
-			"current": 13
+			"rrp": 11.99
 		},
 		{
-			"id": "08",
 			"number": "7913-1",
 			"name": "Clone Trooper Battle Pack",
 			"subtheme": "Clone Wars",
@@ -221,27 +223,28 @@
 				{
 					"blid": "sw0297",
 					"name": "Clone ARF Trooper Razor / Stak, 91st Mobile Reconnaissance Corps Lightning Squadron",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw0298",
-					"name": "Clone Trooper, Horn Company",
+					"spec": "(Phase 1) - Large Eyes",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0299",
 					"name": "Clone Bomb Squad Trooper",
+					"spec": "(Phase 1) - Large Eyes",
 					"count": 2,
+					"unique": true
+				},
+				{
+					"blid": "sw0298",
+					"name": "Clone Trooper, Horn Company",
+					"spec": "(Phase 1) - Sand Green and Lime Markings, Large Eyes",
+					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 32
+			"rrp": 12.99
 		},
 		{
-			"id": "09",
 			"number": "7914-1",
 			"name": "Mandalorian Battle Pack",
 			"subtheme": "Clone Wars",
@@ -251,15 +254,14 @@
 				{
 					"blid": "sw0296",
 					"name": "Mandalorian Death Watch Warrior",
+					"spec": "",
 					"count": 4,
 					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 23
+			"rrp": 12.99
 		},
 		{
-			"id": "10",
 			"number": "9488-1",
 			"name": "Elite Clone Trooper & Commando Droid Battle Pack",
 			"subtheme": "Clone Wars",
@@ -267,29 +269,30 @@
 			"pieces": 98,
 			"minifigs": [
 				{
-					"blid": "sw0359",
-					"name": "Commando Droid",
-					"count": 2,
-					"unique": false
-				},
-				{
 					"blid": "sw0377",
 					"name": "Clone ARC Trooper Hammer, Rancor Battalion",
+					"spec": "(Phase 2) - Dark Red Cloth Pauldron, Black Cloth Kama, Large Eyes",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0378",
 					"name": "Clone ARF Trooper, Rancor Battalion",
+					"spec": "(Phase 1) - Large Eyes",
 					"count": 1,
 					"unique": true
+				},
+				{
+					"blid": "sw0359",
+					"name": "Commando Droid",
+					"spec": "",
+					"count": 2,
+					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 49
+			"rrp": 12.99
 		},
 		{
-			"id": "11",
 			"number": "9489-1",
 			"name": "Endor Rebel Trooper & Imperial Trooper Battle Pack",
 			"subtheme": "Ep. VI",
@@ -297,35 +300,37 @@
 			"pieces": 77,
 			"minifigs": [
 				{
-					"blid": "sw0005b",
-					"name": "Imperial Scout Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw0366",
-					"name": "Imperial Stormtrooper",
-					"count": 1,
-					"unique": false
-				},
-				{
 					"blid": "sw0367",
 					"name": "Endor Rebel Commando",
+					"spec": "Dark Tan Vest",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0368",
 					"name": "Endor Rebel Commando",
+					"spec": "Stubble",
 					"count": 1,
 					"unique": true
+				},
+				{
+					"blid": "sw0005b",
+					"name": "Imperial Scout Trooper",
+					"spec": "Printed Black Head, Dark Bluish Gray Torso Print",
+					"count": 1,
+					"unique": true
+				},
+				{
+					"blid": "sw0366",
+					"name": "Imperial Stormtrooper",
+					"spec": "Printed Black Head, Dotted Mouth Helmet, Detailed Armor",
+					"count": 1,
+					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 17
+			"rrp": 12.99
 		},
 		{
-			"id": "12",
 			"number": "75000-1",
 			"name": "Clone Troopers vs. Droidekas",
 			"subtheme": "Ep. II",
@@ -333,29 +338,30 @@
 			"pieces": 124,
 			"minifigs": [
 				{
+					"blid": "sw0442",
+					"name": "Clone Trooper",
+					"spec": "(Phase 1) - Scowl",
+					"count": 1,
+					"unique": false
+				},
+				{
 					"blid": "sw0438",
 					"name": "Clone Trooper Sergeant",
+					"spec": "(Phase 1) - Scowl",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0441",
 					"name": "Droideka",
+					"spec": "(Destroyer Droid) - Pearl Dark Gray Arms Mechanical",
 					"count": 2,
 					"unique": true
-				},
-				{
-					"blid": "sw0442",
-					"name": "Clone Trooper",
-					"count": 1,
-					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 25
+			"rrp": 12.99
 		},
 		{
-			"id": "13",
 			"number": "75001-1",
 			"name": "Republic Troopers vs. Sith Troopers",
 			"subtheme": "The Old Republic",
@@ -363,35 +369,37 @@
 			"pieces": 63,
 			"minifigs": [
 				{
-					"blid": "sw0436",
-					"name": "Sith Trooper",
+					"blid": "sw0444",
+					"name": "Republic Trooper",
+					"spec": "(Cheek Lines)",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0440",
 					"name": "Republic Trooper",
+					"spec": "(Smirk)",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0443",
 					"name": "Sith Trooper",
+					"spec": "Black Armor with Printed Legs",
 					"count": 1,
 					"unique": false
 				},
 				{
-					"blid": "sw0444",
-					"name": "Republic Trooper",
+					"blid": "sw0436",
+					"name": "Sith Trooper",
+					"spec": "Dark Red Armor",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 26
+			"rrp": 12.99
 		},
 		{
-			"id": "14",
 			"number": "75034-1",
 			"name": "Death Star Troopers",
 			"subtheme": "Ep. VI",
@@ -399,29 +407,30 @@
 			"pieces": 102,
 			"minifigs": [
 				{
+					"blid": "sw0529",
+					"name": "Imperial Gunner",
+					"spec": "Helmet with Silver Imperial Logo, Light Nougat Head, Closed Mouth",
+					"count": 1,
+					"unique": false
+				},
+				{
 					"blid": "sw0520",
 					"name": "Imperial Gunner",
+					"spec": "Helmet with Silver Imperial Logo, Light Nougat Head, Open Mouth",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0521",
 					"name": "Royal Guard",
+					"spec": "Dark Red Arms and Hands",
 					"count": 2,
-					"unique": false
-				},
-				{
-					"blid": "sw0529",
-					"name": "Imperial Gunner",
-					"count": 1,
 					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 15
+			"rrp": 12.99
 		},
 		{
-			"id": "15",
 			"number": "75035-1",
 			"name": "Kashyyyk Troopers",
 			"subtheme": "Ep. III",
@@ -431,21 +440,21 @@
 				{
 					"blid": "sw0518",
 					"name": "Clone Scout Trooper, 41st Elite Corps",
+					"spec": "(Phase 2) - Kashyyyk Camouflage, Scowl",
 					"count": 2,
 					"unique": false
 				},
 				{
 					"blid": "sw0519",
 					"name": "Clone Trooper, 41st Elite Corps",
+					"spec": "(Phase 2) - Kashyyyk Camouflage, Scowl",
 					"count": 2,
 					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 55
+			"rrp": 12.99
 		},
 		{
-			"id": "16",
 			"number": "75036-1",
 			"name": "Utapau Troopers",
 			"subtheme": "Ep. III",
@@ -453,23 +462,23 @@
 			"pieces": 83,
 			"minifigs": [
 				{
-					"blid": "sw0522",
-					"name": "Clone Trooper, 212th Attack Battalion",
+					"blid": "sw0523",
+					"name": "Clone Airborne Trooper, 212th Attack Battalion",
+					"spec": "(Phase 2) - Orange Arm, Dirt Stains, Light Bluish Gray Cloth Kama, Scowl",
 					"count": 2,
 					"unique": true
 				},
 				{
-					"blid": "sw0523",
-					"name": "Clone Airborne Trooper, 212th Attack Battalion",
+					"blid": "sw0522",
+					"name": "Clone Trooper, 212th Attack Battalion",
+					"spec": "(Phase 2) - Orange Arms, Dirt Stains, Scowl",
 					"count": 2,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 61
+			"rrp": 12.99
 		},
 		{
-			"id": "17",
 			"number": "75037-1",
 			"name": "Battle on Saleucami",
 			"subtheme": "Ep. III",
@@ -477,35 +486,37 @@
 			"pieces": 183,
 			"minifigs": [
 				{
-					"blid": "sw0001b",
-					"name": "Battle Droid",
-					"count": 1,
-					"unique": false
-				},
-				{
 					"blid": "sw0001c",
 					"name": "Battle Droid",
+					"spec": "Tan, Angled Arm and Straight Arm",
 					"count": 1,
 					"unique": false
 				},
 				{
-					"blid": "sw0092",
-					"name": "Super Battle Droid",
-					"count": 2,
+					"blid": "sw0001b",
+					"name": "Battle Droid",
+					"spec": "Tan, Angled Arms",
+					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0524",
 					"name": "Clone BARC Trooper, 91st Mobile Reconnaissance Corps",
+					"spec": "(Phase 2) - Scowl",
 					"count": 1,
 					"unique": true
+				},
+				{
+					"blid": "sw0092",
+					"name": "Super Battle Droid",
+					"spec": "Pearl Dark Gray, Wide Head",
+					"count": 2,
+					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 38
+			"rrp": 14.99
 		},
 		{
-			"id": "18",
 			"number": "75078-1",
 			"name": "Imperial Troop Transport",
 			"subtheme": "Rebels",
@@ -515,21 +526,21 @@
 				{
 					"blid": "sw0578",
 					"name": "Imperial Stormtrooper",
+					"spec": "Printed Legs, Dark Azure Helmet Vents",
 					"count": 2,
 					"unique": false
 				},
 				{
 					"blid": "sw0617",
 					"name": "Imperial Stormtrooper",
+					"spec": "Printed Legs, Dark Azure Helmet Vents, Frown",
 					"count": 2,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 21
+			"rrp": 12.99
 		},
 		{
-			"id": "19",
 			"number": "75079-1",
 			"name": "Shadow Troopers",
 			"subtheme": "Battlefront",
@@ -539,21 +550,21 @@
 				{
 					"blid": "sw0603",
 					"name": "Imperial Shadow Stormtrooper",
+					"spec": "",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw0604",
 					"name": "Shadow Guard",
+					"spec": "",
 					"count": 2,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 19
+			"rrp": 12.99
 		},
 		{
-			"id": "20",
 			"number": "75088-1",
 			"name": "Senate Commando Troops",
 			"subtheme": "Clone Wars",
@@ -561,23 +572,23 @@
 			"pieces": 106,
 			"minifigs": [
 				{
-					"blid": "sw0613",
-					"name": "Senate Commando Captain",
-					"count": 1,
+					"blid": "sw0614",
+					"name": "Senate Commando",
+					"spec": "Printed Legs",
+					"count": 3,
 					"unique": true
 				},
 				{
-					"blid": "sw0614",
-					"name": "Senate Commando",
-					"count": 3,
+					"blid": "sw0613",
+					"name": "Senate Commando Captain",
+					"spec": "Printed Legs",
+					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 28
+			"rrp": 12.99
 		},
 		{
-			"id": "21",
 			"number": "75089-1",
 			"name": "Geonosis Troopers",
 			"subtheme": "Misc",
@@ -586,22 +597,22 @@
 			"minifigs": [
 				{
 					"blid": "sw0605",
-					"name": "Clone Airborne Trooper - Geonosis Camouflage",
+					"name": "Clone Airborne Trooper",
+					"spec": "(Phase 2) - Geonosis Camouflage, Smirk",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw0606",
-					"name": "Clone Trooper - Geonosis Camouflage",
+					"name": "Clone Trooper",
+					"spec": "(Phase 2) - Geonosis Camouflage, Scowl",
 					"count": 2,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 38
+			"rrp": 12.99
 		},
 		{
-			"id": "22",
 			"number": "75131-1",
 			"name": "Resistance Trooper Battle Pack",
 			"subtheme": "Ep. VII",
@@ -609,35 +620,37 @@
 			"pieces": 112,
 			"minifigs": [
 				{
-					"blid": "sw0696",
-					"name": "Resistance Trooper",
+					"blid": "sw0699",
+					"name": "Resistance Officer",
+					"spec": "Headset",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0697",
 					"name": "Resistance Trooper",
+					"spec": "Dark Tan Jacket, Frown, Furrowed Eyebrows",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0698",
 					"name": "Resistance Trooper",
+					"spec": "Tan Jacket, Frown, Cheek Lines",
 					"count": 1,
 					"unique": true
 				},
 				{
-					"blid": "sw0699",
-					"name": "Resistance Officer",
+					"blid": "sw0696",
+					"name": "Resistance Trooper",
+					"spec": "Tan Jacket, Moustache",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 12
+			"rrp": 12.99
 		},
 		{
-			"id": "23",
 			"number": "75132-1",
 			"name": "First Order Battle Pack",
 			"subtheme": "Ep. VII",
@@ -645,35 +658,37 @@
 			"pieces": 88,
 			"minifigs": [
 				{
-					"blid": "sw0667",
-					"name": "First Order Stormtrooper",
+					"blid": "sw0694",
+					"name": "First Order Crew Member",
+					"spec": "Cap with Insignia",
 					"count": 1,
-					"unique": false
+					"unique": true
 				},
 				{
 					"blid": "sw0671",
-					"name": "First Order Crew Member (Fleet Engineer / Gunner)",
+					"name": "First Order Crew Member",
+					"spec": "(Fleet Engineer / Gunner) - Light Nougat Head",
 					"count": 1,
 					"unique": false
-				},
-				{
-					"blid": "sw0694",
-					"name": "First Order Crew Member",
-					"count": 1,
-					"unique": true
 				},
 				{
 					"blid": "sw0695",
 					"name": "First Order Heavy Assault Stormtrooper",
+					"spec": "(Rounded Mouth Pattern)",
 					"count": 1,
 					"unique": true
+				},
+				{
+					"blid": "sw0667",
+					"name": "First Order Stormtrooper",
+					"spec": "(Rounded Mouth Pattern)",
+					"count": 1,
+					"unique": false
 				}
 			],
-			"rrp": 12.99,
-			"current": 11
+			"rrp": 12.99
 		},
 		{
-			"id": "24",
 			"number": "75133-1",
 			"name": "Rebel Alliance Battle Pack",
 			"subtheme": "Battlefront",
@@ -681,35 +696,37 @@
 			"pieces": 101,
 			"minifigs": [
 				{
-					"blid": "sw0687",
-					"name": "Rodian Alliance Fighter",
+					"blid": "sw0689",
+					"name": "Duros Alliance Fighter",
+					"spec": "Jet Pack",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0688",
 					"name": "Rebel Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw0689",
-					"name": "Duros Alliance Fighter",
+					"spec": "Goggles, Dark Tan Helmet",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0690",
 					"name": "Rebel Trooper",
+					"spec": "Rebel Helmet, Jet Pack",
+					"count": 1,
+					"unique": true
+				},
+				{
+					"blid": "sw0687",
+					"name": "Rodian Alliance Fighter",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 21
+			"rrp": 12.99
 		},
 		{
-			"id": "25",
 			"number": "75134-1",
 			"name": "Galactic Empire Battle Pack",
 			"subtheme": "Battlefront",
@@ -717,29 +734,30 @@
 			"pieces": 109,
 			"minifigs": [
 				{
+					"blid": "sw0693",
+					"name": "Imperial Crew",
+					"spec": "Black Cap, Closed Mouth",
+					"count": 1,
+					"unique": true
+				},
+				{
 					"blid": "sw0691",
 					"name": "Imperial Jet Pack Trooper",
+					"spec": "(Jumptrooper)",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw0692",
 					"name": "Imperial Shock Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw0693",
-					"name": "Imperial Crew",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 12.99,
-			"current": 32
+			"rrp": 12.99
 		},
 		{
-			"id": "26",
 			"number": "75164-1",
 			"name": "Rebel Trooper Battle Pack",
 			"subtheme": "Rogue One",
@@ -747,35 +765,37 @@
 			"pieces": 120,
 			"minifigs": [
 				{
-					"blid": "sw0803",
-					"name": "Rebel Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw0804",
-					"name": "Rebel Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
 					"blid": "sw0805",
 					"name": "Rebel Trooper",
+					"spec": "Light Nougat Head, Helmet with Pearl Dark Gray Band (Private Calfor)",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0806",
 					"name": "Rebel Trooper",
+					"spec": "Reddish Brown Head, Helmet with Pearl Dark Gray Band (Corporal Tonc)",
+					"count": 1,
+					"unique": true
+				},
+				{
+					"blid": "sw0803",
+					"name": "Rebel Trooper",
+					"spec": "White Goggles, Dark Bluish Gray Helmet, Black Beard (Private Kappehl)",
+					"count": 1,
+					"unique": true
+				},
+				{
+					"blid": "sw0804",
+					"name": "Rebel Trooper",
+					"spec": "White Goggles, Dark Tan Helmet, Medium Nougat Beard (Corporal Rostok)",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 22
+			"rrp": 14.99
 		},
 		{
-			"id": "27",
 			"number": "75165-1",
 			"name": "Imperial Trooper Battle Pack",
 			"subtheme": "Rogue One",
@@ -783,23 +803,23 @@
 			"pieces": 112,
 			"minifigs": [
 				{
-					"blid": "sw0585",
-					"name": "Imperial Stormtrooper",
+					"blid": "sw0807",
+					"name": "Imperial Death Trooper",
+					"spec": "",
 					"count": 2,
 					"unique": false
 				},
 				{
-					"blid": "sw0807",
-					"name": "Imperial Death Trooper",
+					"blid": "sw0585",
+					"name": "Imperial Stormtrooper",
+					"spec": "Printed Legs, Dark Blue Helmet Vents",
 					"count": 2,
 					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 36
+			"rrp": 14.99
 		},
 		{
-			"id": "28",
 			"number": "75166-1",
 			"name": "First Order Transport Speeder Battle Pack",
 			"subtheme": "Ep. VII",
@@ -809,27 +829,28 @@
 				{
 					"blid": "sw0666",
 					"name": "First Order Flametrooper",
+					"spec": "",
 					"count": 1,
-					"unique": false
-				},
-				{
-					"blid": "sw0667",
-					"name": "First Order Stormtrooper",
-					"count": 2,
 					"unique": false
 				},
 				{
 					"blid": "sw0832",
-					"name": "First Order Officer (Colonel Erich S. Datoo)",
+					"name": "First Order Officer",
+					"spec": "(Colonel Erich S. Datoo)",
 					"count": 1,
 					"unique": true
+				},
+				{
+					"blid": "sw0667",
+					"name": "First Order Stormtrooper",
+					"spec": "(Rounded Mouth Pattern)",
+					"count": 2,
+					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 16
+			"rrp": 14.99
 		},
 		{
-			"id": "29",
 			"number": "75167-1",
 			"name": "Bounty Hunter Speeder Bike Battle Pack",
 			"subtheme": "Ep. V",
@@ -837,35 +858,37 @@
 			"pieces": 125,
 			"minifigs": [
 				{
-					"blid": "sw0751",
-					"name": "Dengar",
+					"blid": "sw0830",
+					"name": "4-LOM",
+					"spec": "",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0828",
 					"name": "Bossk",
+					"spec": "Olive Green",
 					"count": 1,
 					"unique": true
 				},
 				{
-					"blid": "sw0830",
-					"name": "4-LOM",
+					"blid": "sw0751",
+					"name": "Dengar",
+					"spec": "(White Torso)",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0831a",
 					"name": "IG-88",
+					"spec": "with Round 1 x 1 Plate",
 					"count": 1,
 					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 28
+			"rrp": 14.99
 		},
 		{
-			"id": "30",
 			"number": "75197-1",
 			"name": "First Order Specialists Battle Pack",
 			"subtheme": "Ep. VIII",
@@ -875,27 +898,28 @@
 				{
 					"blid": "sw0671",
 					"name": "First Order Crew Member",
+					"spec": "(Fleet Engineer / Gunner) - Light Nougat Head",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0871",
 					"name": "First Order Shuttle Pilot",
+					"spec": "",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0886",
 					"name": "First Order Stormtrooper Executioner",
+					"spec": "",
 					"count": 2,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 20
+			"rrp": 14.99
 		},
 		{
-			"id": "31",
 			"number": "75198-1",
 			"name": "Tatooine Battle Pack",
 			"subtheme": "Ep. IV",
@@ -903,35 +927,37 @@
 			"pieces": 97,
 			"minifigs": [
 				{
-					"blid": "sw0620",
-					"name": "Tusken Raider",
-					"count": 1,
-					"unique": false
-				},
-				{
 					"blid": "sw0895",
 					"name": "Astromech Droid, R3-T2",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0896",
 					"name": "Jawa",
+					"spec": "Straps with Black Stains",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0897",
 					"name": "Jawa",
+					"spec": "Tattered Shirt",
+					"count": 1,
+					"unique": false
+				},
+				{
+					"blid": "sw0620",
+					"name": "Tusken Raider",
+					"spec": "Head Spikes, Crossed Belts",
 					"count": 1,
 					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 19
+			"rrp": 14.99
 		},
 		{
-			"id": "32",
 			"number": "75206-1",
 			"name": "Jedi and Clone Troopers Battle Pack",
 			"subtheme": "Ep. II",
@@ -941,27 +967,28 @@
 				{
 					"blid": "sw0909",
 					"name": "Barriss Offee",
+					"spec": "Skirt",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0910",
 					"name": "Clone Trooper",
+					"spec": "(Phase 1) - Printed Legs, Scowl",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw0911",
 					"name": "Ki-Adi-Mundi",
+					"spec": "(Printed Legs)",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 31
+			"rrp": 14.99
 		},
 		{
-			"id": "33",
 			"number": "75207-1",
 			"name": "Imperial Patrol Battle Pack",
 			"subtheme": "Solo",
@@ -971,27 +998,28 @@
 				{
 					"blid": "sw0912",
 					"name": "Imperial Emigration Officer",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw0913",
-					"name": "Imperial Recruitment Officer",
+					"spec": "(Imperial Navy Trooper - Corporal Zuzanu Latt)",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0914",
 					"name": "Imperial Patrol Trooper",
+					"spec": "Male, Light Nougat Head, Scowl",
 					"count": 2,
+					"unique": true
+				},
+				{
+					"blid": "sw0913",
+					"name": "Imperial Recruitment Officer",
+					"spec": "(Chief / Navy Captain)",
+					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 25
+			"rrp": 14.99
 		},
 		{
-			"id": "34",
 			"number": "75225-1",
 			"name": "Elite Praetorian Guard Battle Pack",
 			"subtheme": "Ep. VIII",
@@ -999,35 +1027,37 @@
 			"pieces": 109,
 			"minifigs": [
 				{
-					"blid": "sw0905",
-					"name": "First Order Stormtrooper",
-					"count": 1,
-					"unique": false
-				},
-				{
 					"blid": "sw0989",
 					"name": "Elite Praetorian Guard",
+					"spec": "Flat Helmet",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw0990",
 					"name": "Elite Praetorian Guard",
+					"spec": "Pointed Helmet, Legs",
+					"count": 1,
+					"unique": false
+				},
+				{
+					"blid": "sw0905",
+					"name": "First Order Stormtrooper",
+					"spec": "(Pointed Mouth Pattern)",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw0998",
 					"name": "Praetorian Training Droid",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 19
+			"rrp": 14.99
 		},
 		{
-			"id": "35",
 			"number": "75226-1",
 			"name": "Inferno Squad Battle Pack",
 			"subtheme": "Battlefront",
@@ -1035,35 +1065,37 @@
 			"pieces": 118,
 			"minifigs": [
 				{
-					"blid": "sw0986",
-					"name": "Inferno Squad Agent",
+					"blid": "sw1000",
+					"name": "Iden Versio",
+					"spec": "(Inferno Squad Commander)",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0987",
 					"name": "Inferno Squad Agent",
+					"spec": "(Frown, Sunken Eyes)",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw0988",
 					"name": "Inferno Squad Agent",
+					"spec": "(Open Mouth, Grimacing)",
 					"count": 1,
 					"unique": true
 				},
 				{
-					"blid": "sw1000",
-					"name": "Iden Versio",
+					"blid": "sw0986",
+					"name": "Inferno Squad Agent",
+					"spec": "Utility Belt (Frown)",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 37
+			"rrp": 14.99
 		},
 		{
-			"id": "36",
 			"number": "75262-1",
 			"name": "Imperial Dropship – 20th Anniversary Edition",
 			"subtheme": "Misc",
@@ -1071,29 +1103,30 @@
 			"pieces": 125,
 			"minifigs": [
 				{
-					"blid": "sw0997b",
-					"name": "Imperial Stormtrooper",
-					"count": 3,
-					"unique": false
+					"blid": "sw1032",
+					"name": "Han Solo",
+					"spec": "Blue Legs (20th Anniversary Torso)",
+					"count": 1,
+					"unique": true
 				},
 				{
 					"blid": "sw1031",
 					"name": "Imperial Shadow Trooper",
+					"spec": "Male, Dual Molded Helmet, Light Nougat Head, Scowl",
 					"count": 1,
 					"unique": true
 				},
 				{
-					"blid": "sw1032",
-					"name": "Han Solo, Blue Legs (20th Anniversary Torso)",
-					"count": 1,
-					"unique": true
+					"blid": "sw0997b",
+					"name": "Imperial Stormtrooper",
+					"spec": "Male, Dual Molded Helmet with Light Bluish Gray Panels on Back, Light Nougat Head, Scowl",
+					"count": 3,
+					"unique": false
 				}
 			],
-			"rrp": 19.99,
-			"current": 29
+			"rrp": 19.99
 		},
 		{
-			"id": "37",
 			"number": "75266-1",
 			"name": "Sith Troopers Battle Pack",
 			"subtheme": "Ep. IX",
@@ -1101,29 +1134,30 @@
 			"pieces": 105,
 			"minifigs": [
 				{
-					"blid": "sw1065",
-					"name": "Sith Trooper",
+					"blid": "sw1076",
+					"name": "Sith Fleet Officer",
+					"spec": "",
 					"count": 1,
-					"unique": false
+					"unique": true
 				},
 				{
 					"blid": "sw1075",
 					"name": "Sith Jet Trooper",
+					"spec": "",
 					"count": 2,
 					"unique": true
 				},
 				{
-					"blid": "sw1076",
-					"name": "Sith Fleet Officer",
+					"blid": "sw1065",
+					"name": "Sith Trooper",
+					"spec": "Episode 9",
 					"count": 1,
-					"unique": true
+					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 12
+			"rrp": 14.99
 		},
 		{
-			"id": "38",
 			"number": "75267-1",
 			"name": "Mandalorian Battle Pack",
 			"subtheme": "The Mandalorian",
@@ -1133,33 +1167,35 @@
 				{
 					"blid": "sw1077",
 					"name": "Mandalorian Tribe Warrior",
+					"spec": "Female, Black Cape, Light Bluish Gray Helmet with Antenna / Rangefinder",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1078",
 					"name": "Mandalorian Tribe Warrior",
+					"spec": "Female, Dark Brown Cape, Green Helmet with Antenna / Rangefinder",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw1079",
 					"name": "Mandalorian Tribe Warrior",
+					"spec": "Male, Dark Brown Cape, Dark Orange Helmet",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1080",
 					"name": "Mandalorian Tribe Warrior",
+					"spec": "Male, Olive Green Cape, Dark Azure Helmet",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": 17
+			"rrp": 14.99
 		},
 		{
-			"id": "39",
 			"number": "75280-1",
 			"name": "501st Legion Clone Troopers",
 			"subtheme": "Clone Wars",
@@ -1169,27 +1205,28 @@
 				{
 					"blid": "sw0001c",
 					"name": "Battle Droid",
+					"spec": "Tan, Angled Arm and Straight Arm",
 					"count": 2,
 					"unique": false
 				},
 				{
 					"blid": "sw1093",
 					"name": "Clone Jet Trooper, 501st Legion",
+					"spec": "(Phase 2) - Nougat Head",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1094",
 					"name": "Clone Trooper, 501st Legion",
+					"spec": "(Phase 2) - White Arms, Nougat Head",
 					"count": 3,
 					"unique": false
 				}
 			],
-			"rrp": 29.99,
-			"current": 30
+			"rrp": 29.99
 		},
 		{
-			"id": "40",
 			"number": "40558-1",
 			"name": "Clone Trooper Command Station",
 			"subtheme": "Ep. II",
@@ -1197,23 +1234,23 @@
 			"pieces": 66,
 			"minifigs": [
 				{
-					"blid": "sw1146",
-					"name": "Clone Trooper Commander",
-					"count": 1,
-					"unique": false
-				},
-				{
 					"blid": "sw1189",
 					"name": "Clone Trooper",
+					"spec": "(Phase 1) - Nougat Head, Printed Legs and Boots",
 					"count": 2,
 					"unique": true
+				},
+				{
+					"blid": "sw1146",
+					"name": "Clone Trooper Commander",
+					"spec": "(Phase 1) - Bright Light Orange Arms, Nougat Head",
+					"count": 1,
+					"unique": false
 				}
 			],
-			"rrp": 14.99,
-			"current": 19
+			"rrp": 14.99
 		},
 		{
-			"id": "41",
 			"number": "40557-1",
 			"name": "Defense of Hoth",
 			"subtheme": "Ep. V",
@@ -1221,29 +1258,30 @@
 			"pieces": 64,
 			"minifigs": [
 				{
-					"blid": "sw1186",
-					"name": "Hoth Rebel Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
 					"blid": "sw1187",
 					"name": "Hoth Rebel Trooper",
+					"spec": "Dark Tan Uniform and Helmet, White Legs",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1188",
 					"name": "Hoth Rebel Trooper",
+					"spec": "White Uniform, Dark Tan Helmet, Female",
+					"count": 1,
+					"unique": true
+				},
+				{
+					"blid": "sw1186",
+					"name": "Hoth Rebel Trooper",
+					"spec": "White Uniform, Dark Tan Helmet, Reddish Brown Head",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 14.99,
-			"current": null
+			"rrp": 14.99
 		},
 		{
-			"id": "42",
 			"number": "75320-1",
 			"name": "Snowtrooper Battle Pack",
 			"subtheme": "Ep. V",
@@ -1251,35 +1289,37 @@
 			"pieces": 105,
 			"minifigs": [
 				{
+					"blid": "sw1182",
+					"name": "Imperial Scout Trooper",
+					"spec": "Hoth - Female, Dual Molded Helmet, Nougat Head, Smirk",
+					"count": 1,
+					"unique": true
+				},
+				{
 					"blid": "sw1178",
 					"name": "Snowtrooper",
+					"spec": "Female, Printed Legs, Dark Tan Hands, Light Nougat Head, Angry Smile",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw1179",
 					"name": "Snowtrooper",
+					"spec": "Male, Printed Legs, Dark Tan Hands, Reddish Brown Head, Grimace",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw1181",
 					"name": "Snowtrooper",
+					"spec": "Printed Legs, Dark Tan Hands, Cheek Lines, Lopsided Grin",
 					"count": 1,
 					"unique": false
-				},
-				{
-					"blid": "sw1182",
-					"name": "Imperial Scout Trooper, Hoth",
-					"count": 1,
-					"unique": true
 				}
 			],
-			"rrp": 19.99,
-			"current": null
+			"rrp": 19.99
 		},
 		{
-			"id": "43",
 			"number": "75345-1",
 			"name": "501st Clone Troopers Battle Pack",
 			"subtheme": "Clone Wars",
@@ -1287,29 +1327,30 @@
 			"pieces": 119,
 			"minifigs": [
 				{
-					"blid": "sw1246",
-					"name": "Clone Trooper, 501st Legion",
-					"count": 1,
+					"blid": "sw1247",
+					"name": "Clone Heavy Trooper, 501st Legion",
+					"spec": "(Phase 2) - White Arms, Blue Visor, Backpack, Nougat Head, Helmet with Holes",
+					"count": 2,
 					"unique": true
 				},
 				{
-					"blid": "sw1247",
-					"name": "Clone Heavy Trooper, 501st Legion",
-					"count": 2,
+					"blid": "sw1246",
+					"name": "Clone Trooper, 501st Legion",
+					"spec": "(Phase 2) - White Arms, Blue Rangefinder, Nougat Head, Helmet with Holes",
+					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1248",
 					"name": "Clone Trooper Specialist, 501st Legion",
+					"spec": "(Phase 2) - Blue Arms, Macrobinoculars, Nougat Head, Helmet with Holes",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 19.99,
-			"current": null
+			"rrp": 19.99
 		},
 		{
-			"id": "44",
 			"number": "75359-1",
 			"name": "332nd Ahsoka's Clone Trooper Battle Pack",
 			"subtheme": "Clone Wars",
@@ -1317,29 +1358,30 @@
 			"pieces": 108,
 			"minifigs": [
 				{
-					"blid": "sw1276",
-					"name": "Clone Trooper, 501st Legion, 332nd Company, Blue Jet Pack",
-					"count": 2,
-					"unique": true
-				},
-				{
 					"blid": "sw1277",
-					"name": "Clone Captain Vaughn",
+					"name": "Clone Captain Vaughn, 501st Legion, 332nd Company",
+					"spec": "(Phase 2) - Helmet with Holes and Togruta Markings, Orange Visor",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1278",
 					"name": "Clone Trooper, 501st Legion, 332nd Company",
+					"spec": "(Phase 2) - Helmet with Holes and Togruta Markings",
 					"count": 1,
+					"unique": true
+				},
+				{
+					"blid": "sw1276",
+					"name": "Clone Trooper, 501st Legion, 332nd Company",
+					"spec": "(Phase 2) - Helmet with Holes and Togruta Markings, Blue Jet Pack",
+					"count": 2,
 					"unique": true
 				}
 			],
-			"rrp": 19.99,
-			"current": null
+			"rrp": 19.99
 		},
 		{
-			"id": "45",
 			"number": "75372-1",
 			"name": "Clone Trooper & Battle Droid Battle Pack",
 			"subtheme": "Clone Wars",
@@ -1347,41 +1389,44 @@
 			"pieces": 215,
 			"minifigs": [
 				{
+					"blid": "sw1320",
+					"name": "Battle Droid",
+					"spec": "Tan, Angled Arms, Light Bluish Gray Clip on Back",
+					"count": 1,
+					"unique": true
+				},
+				{
 					"blid": "sw0001d",
 					"name": "Battle Droid",
+					"spec": "Tan, Straight Arms",
 					"count": 1,
 					"unique": false
 				},
 				{
 					"blid": "sw1305",
 					"name": "Clone Shock Trooper, Coruscant Guard",
+					"spec": "(Phase 2) - Nougat Head",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1319",
 					"name": "Clone Trooper",
-					"count": 1,
-					"unique": true
-				},
-				{
-					"blid": "sw1320",
-					"name": "Battle Droid",
+					"spec": "(Phase 2) - Nougat Head",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1321",
 					"name": "Super Battle Droid",
+					"spec": "Pearl Dark Gray, Narrow Head, Chest Light Indent",
 					"count": 3,
 					"unique": true
 				}
 			],
-			"rrp": 29.99,
-			"current": null
+			"rrp": 29.99
 		},
 		{
-			"id": "46",
 			"number": "75373-1",
 			"name": "Ambush on Mandalore Battle Pack",
 			"subtheme": "The Mandalorian",
@@ -1391,24 +1436,26 @@
 				{
 					"blid": "sw1346",
 					"name": "Imperial Commando",
+					"spec": "",
 					"count": 2,
 					"unique": true
 				},
 				{
 					"blid": "sw1344",
 					"name": "Mandalorian Nite Owl",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				},
 				{
 					"blid": "sw1345",
 					"name": "Mandalorian Warrior",
+					"spec": "",
 					"count": 1,
 					"unique": true
 				}
 			],
-			"rrp": 19.99,
-			"current": null
+			"rrp": 19.99
 		}
 	]
 }

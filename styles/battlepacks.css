@@ -1,48 +1,56 @@
+a {
+	text-align: center;
+	text-decoration: none;
+}
 body {
-	background-color: #121218;
-	color: white;
 	font-family: "Helvetica", sans-serif;
 }
-.bpdiv {
-	padding: 40px;
-}
-.bph3 {
-	margin: 0;
-}
-.bpheadertd {
-	border: 1px solid gray;
-	margin-bottom: 0;
+div {
 	padding: 10px;
 }
-.bpimg {
-	max-width: 500px;
-}
-.bplabeltd {
-	border: 1px solid gray;
-	padding-right: 10px;
-	text-align: right;
-}
-.bpleftlinkimg {
-	margin-right: 20px;
-}
-.bpminifigimg {
-	height: 200px;
-}
-.bpp {
-	margin: 5px;
-}
-.bpstatstd {
-	border: 1px solid gray;
-	padding-left: 10px;
-}
-.bptable {
-	border-collapse: collapse;
-}
-.bptd {
+h1 {
 	text-align: center;
-	padding: 10px;
 }
-.bppunique {
-	margin: 5px;
-	color: gold;
+hr {
+	clear: left;
+}
+i {
+	font-size: 0.9em;
+}
+p {
+	margin-bottom: 10px;
+}
+table {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+table, td, tr {
+	padding: 5px;
+	vertical-align: top;
+}
+.info {
+	float: left;
+	min-height: 350px;
+}
+.minifig {
+	float: left;
+	text-align: center;
+}
+.minifig-pic {
+	max-width: 100px;
+}
+.set {
+	float: left;
+	min-height: 350px;
+}
+.set-pic {
+	margin-bottom: 20px;
+	max-width: 400px;
+}
+.spacer {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.unique {
+	font-weight: bold;
 }
