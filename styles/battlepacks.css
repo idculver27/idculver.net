@@ -54,3 +54,9 @@ table, td, tr {
 .unique {
 	font-weight: bold;
 }
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+}
