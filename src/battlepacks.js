@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	fetch("../data/battlepacks.json")
 		.then((response) => response.json())
 		.then((json) => {
-			json.sets.forEach(set => {
+			json.forEach(set => {
 				buildListing(set);
 			});
 		});
