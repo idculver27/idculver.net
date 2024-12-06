@@ -3,7 +3,7 @@
 		"number": "7654-1",
 		"name": "Droids Battle Pack",
 		"year": 2007,
-		"subtheme": "Ep. III",
+		"source": "Ep. III",
 		"pieces": 102,
 		"rrp": 9.99,
 		"minifigs": [
@@ -27,7 +27,7 @@
 		"number": "7655-1",
 		"name": "Clone Troopers Battle Pack",
 		"year": 2007,
-		"subtheme": "Ep. III",
+		"source": "Ep. III",
 		"pieces": 58,
 		"rrp": 9.99,
 		"minifigs": [
@@ -58,7 +58,7 @@
 		"number": "7667-1",
 		"name": "Imperial Dropship",
 		"year": 2008,
-		"subtheme": "Legends",
+		"source": "Legends",
 		"pieces": 81,
 		"rrp": 9.99,
 		"minifigs": [
@@ -82,7 +82,7 @@
 		"number": "7668-1",
 		"name": "Rebel Scout Speeder",
 		"year": 2008,
-		"subtheme": "Ep. IV",
+		"source": "Ep. IV",
 		"pieces": 82,
 		"rrp": 9.99,
 		"minifigs": [
@@ -99,7 +99,7 @@
 		"number": "8014-1",
 		"name": "Clone Walker Battle Pack",
 		"year": 2009,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 72,
 		"rrp": 11.99,
 		"minifigs": [
@@ -130,7 +130,7 @@
 		"number": "8015-1",
 		"name": "Assassin Droids Battle Pack",
 		"year": 2009,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 94,
 		"rrp": 11.99,
 		"minifigs": [
@@ -154,7 +154,7 @@
 		"number": "8083-1",
 		"name": "Rebel Trooper Battle Pack",
 		"year": 2010,
-		"subtheme": "Ep. V",
+		"source": "Ep. V",
 		"pieces": 79,
 		"rrp": 11.99,
 		"minifigs": [
@@ -185,7 +185,7 @@
 		"number": "8084-1",
 		"name": "Snowtrooper Battle Pack",
 		"year": 2010,
-		"subtheme": "Ep. V",
+		"source": "Ep. V",
 		"pieces": 74,
 		"rrp": 11.99,
 		"minifigs": [
@@ -216,7 +216,7 @@
 		"number": "7913-1",
 		"name": "Clone Trooper Battle Pack",
 		"year": 2011,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 85,
 		"rrp": 12.99,
 		"minifigs": [
@@ -247,7 +247,7 @@
 		"number": "7914-1",
 		"name": "Mandalorian Battle Pack",
 		"year": 2011,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 68,
 		"rrp": 12.99,
 		"minifigs": [
@@ -264,7 +264,7 @@
 		"number": "9488-1",
 		"name": "Elite Clone Trooper & Commando Droid Battle Pack",
 		"year": 2012,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 98,
 		"rrp": 12.99,
 		"minifigs": [
@@ -295,7 +295,7 @@
 		"number": "9489-1",
 		"name": "Endor Rebel Trooper & Imperial Trooper Battle Pack",
 		"year": 2012,
-		"subtheme": "Ep. VI",
+		"source": "Ep. VI",
 		"pieces": 77,
 		"rrp": 12.99,
 		"minifigs": [
@@ -333,7 +333,7 @@
 		"number": "75000-1",
 		"name": "Clone Troopers vs. Droidekas",
 		"year": 2013,
-		"subtheme": "Ep. II",
+		"source": "Ep. II",
 		"pieces": 124,
 		"rrp": 12.99,
 		"minifigs": [
@@ -364,7 +364,7 @@
 		"number": "75001-1",
 		"name": "Republic Troopers vs. Sith Troopers",
 		"year": 2013,
-		"subtheme": "The Old Republic",
+		"source": "The Old Republic",
 		"pieces": 63,
 		"rrp": 12.99,
 		"minifigs": [
@@ -402,7 +402,7 @@
 		"number": "75034-1",
 		"name": "Death Star Troopers",
 		"year": 2014,
-		"subtheme": "Ep. VI",
+		"source": "Ep. VI",
 		"pieces": 102,
 		"rrp": 12.99,
 		"minifigs": [
@@ -433,7 +433,7 @@
 		"number": "75035-1",
 		"name": "Kashyyyk Troopers",
 		"year": 2014,
-		"subtheme": "Ep. III",
+		"source": "Ep. III",
 		"pieces": 99,
 		"rrp": 12.99,
 		"minifigs": [
@@ -457,7 +457,7 @@
 		"number": "75036-1",
 		"name": "Utapau Troopers",
 		"year": 2014,
-		"subtheme": "Ep. III",
+		"source": "Ep. III",
 		"pieces": 83,
 		"rrp": 12.99,
 		"minifigs": [
@@ -481,7 +481,7 @@
 		"number": "75037-1",
 		"name": "Battle on Saleucami",
 		"year": 2014,
-		"subtheme": "Ep. III",
+		"source": "Ep. III",
 		"pieces": 183,
 		"rrp": 14.99,
 		"minifigs": [
@@ -519,7 +519,7 @@
 		"number": "75078-1",
 		"name": "Imperial Troop Transport",
 		"year": 2015,
-		"subtheme": "Rebels",
+		"source": "Rebels",
 		"pieces": 141,
 		"rrp": 12.99,
 		"minifigs": [
@@ -543,7 +543,7 @@
 		"number": "75079-1",
 		"name": "Shadow Troopers",
 		"year": 2015,
-		"subtheme": "The Force Unleashed",
+		"source": "The Force Unleashed",
 		"pieces": 95,
 		"rrp": 12.99,
 		"minifigs": [
@@ -567,7 +567,7 @@
 		"number": "75088-1",
 		"name": "Senate Commando Troops",
 		"year": 2015,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 106,
 		"rrp": 12.99,
 		"minifigs": [
@@ -591,7 +591,7 @@
 		"number": "75089-1",
 		"name": "Geonosis Troopers",
 		"year": 2015,
-		"subtheme": "Legends",
+		"source": "Legends",
 		"pieces": 105,
 		"rrp": 12.99,
 		"minifigs": [
@@ -615,7 +615,7 @@
 		"number": "75131-1",
 		"name": "Resistance Trooper Battle Pack",
 		"year": 2016,
-		"subtheme": "Ep. VII",
+		"source": "Ep. VII",
 		"pieces": 112,
 		"rrp": 12.99,
 		"minifigs": [
@@ -653,7 +653,7 @@
 		"number": "75132-1",
 		"name": "First Order Battle Pack",
 		"year": 2016,
-		"subtheme": "Ep. VII",
+		"source": "Ep. VII",
 		"pieces": 88,
 		"rrp": 12.99,
 		"minifigs": [
@@ -691,7 +691,7 @@
 		"number": "75133-1",
 		"name": "Rebel Alliance Battle Pack",
 		"year": 2016,
-		"subtheme": "Battlefront",
+		"source": "Battlefront",
 		"pieces": 101,
 		"rrp": 12.99,
 		"minifigs": [
@@ -729,7 +729,7 @@
 		"number": "75134-1",
 		"name": "Galactic Empire Battle Pack",
 		"year": 2016,
-		"subtheme": "Battlefront",
+		"source": "Battlefront",
 		"pieces": 109,
 		"rrp": 12.99,
 		"minifigs": [
@@ -760,7 +760,7 @@
 		"number": "75164-1",
 		"name": "Rebel Trooper Battle Pack",
 		"year": 2017,
-		"subtheme": "Rogue One",
+		"source": "Rogue One",
 		"pieces": 120,
 		"rrp": 14.99,
 		"minifigs": [
@@ -798,7 +798,7 @@
 		"number": "75165-1",
 		"name": "Imperial Trooper Battle Pack",
 		"year": 2017,
-		"subtheme": "Rogue One",
+		"source": "Rogue One",
 		"pieces": 112,
 		"rrp": 14.99,
 		"minifigs": [
@@ -822,7 +822,7 @@
 		"number": "75166-1",
 		"name": "First Order Transport Speeder Battle Pack",
 		"year": 2017,
-		"subtheme": "Ep. VII",
+		"source": "Ep. VII",
 		"pieces": 117,
 		"rrp": 14.99,
 		"minifigs": [
@@ -853,7 +853,7 @@
 		"number": "75167-1",
 		"name": "Bounty Hunter Speeder Bike Battle Pack",
 		"year": 2017,
-		"subtheme": "Ep. V",
+		"source": "Ep. V",
 		"pieces": 125,
 		"rrp": 14.99,
 		"minifigs": [
@@ -891,7 +891,7 @@
 		"number": "75197-1",
 		"name": "First Order Specialists Battle Pack",
 		"year": 2018,
-		"subtheme": "Ep. VIII",
+		"source": "Ep. VIII",
 		"pieces": 108,
 		"rrp": 14.99,
 		"minifigs": [
@@ -922,7 +922,7 @@
 		"number": "75198-1",
 		"name": "Tatooine Battle Pack",
 		"year": 2018,
-		"subtheme": "Ep. IV",
+		"source": "Ep. IV",
 		"pieces": 97,
 		"rrp": 14.99,
 		"minifigs": [
@@ -960,7 +960,7 @@
 		"number": "75206-1",
 		"name": "Jedi and Clone Troopers Battle Pack",
 		"year": 2018,
-		"subtheme": "Ep. II",
+		"source": "Ep. II",
 		"pieces": 102,
 		"rrp": 14.99,
 		"minifigs": [
@@ -991,7 +991,7 @@
 		"number": "75207-1",
 		"name": "Imperial Patrol Battle Pack",
 		"year": 2018,
-		"subtheme": "Solo",
+		"source": "Solo",
 		"pieces": 99,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1022,7 +1022,7 @@
 		"number": "75225-1",
 		"name": "Elite Praetorian Guard Battle Pack",
 		"year": 2019,
-		"subtheme": "Ep. VIII",
+		"source": "Ep. VIII",
 		"pieces": 109,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1060,7 +1060,7 @@
 		"number": "75226-1",
 		"name": "Inferno Squad Battle Pack",
 		"year": 2019,
-		"subtheme": "Battlefront",
+		"source": "Battlefront",
 		"pieces": 118,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1098,7 +1098,7 @@
 		"number": "75262-1",
 		"name": "Imperial Dropship – 20th Anniversary Edition",
 		"year": 2019,
-		"subtheme": "Legends",
+		"source": "Legends",
 		"pieces": 125,
 		"rrp": 19.99,
 		"minifigs": [
@@ -1129,7 +1129,7 @@
 		"number": "75266-1",
 		"name": "Sith Troopers Battle Pack",
 		"year": 2020,
-		"subtheme": "Ep. IX",
+		"source": "Ep. IX",
 		"pieces": 105,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1160,7 +1160,7 @@
 		"number": "75267-1",
 		"name": "Mandalorian Battle Pack",
 		"year": 2020,
-		"subtheme": "The Mandalorian",
+		"source": "The Mandalorian",
 		"pieces": 102,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1198,7 +1198,7 @@
 		"number": "75280-1",
 		"name": "501st Legion Clone Troopers",
 		"year": 2020,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 285,
 		"rrp": 29.99,
 		"minifigs": [
@@ -1229,7 +1229,7 @@
 		"number": "40558-1",
 		"name": "Clone Trooper Command Station",
 		"year": 2022,
-		"subtheme": "Ep. II",
+		"source": "Ep. II",
 		"pieces": 66,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1253,7 +1253,7 @@
 		"number": "40557-1",
 		"name": "Defense of Hoth",
 		"year": 2022,
-		"subtheme": "Ep. V",
+		"source": "Ep. V",
 		"pieces": 64,
 		"rrp": 14.99,
 		"minifigs": [
@@ -1284,7 +1284,7 @@
 		"number": "75320-1",
 		"name": "Snowtrooper Battle Pack",
 		"year": 2022,
-		"subtheme": "Ep. V",
+		"source": "Ep. V",
 		"pieces": 105,
 		"rrp": 19.99,
 		"minifigs": [
@@ -1322,7 +1322,7 @@
 		"number": "75345-1",
 		"name": "501st Clone Troopers Battle Pack",
 		"year": 2023,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 119,
 		"rrp": 19.99,
 		"minifigs": [
@@ -1353,7 +1353,7 @@
 		"number": "75359-1",
 		"name": "332nd Ahsoka's Clone Trooper Battle Pack",
 		"year": 2023,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 108,
 		"rrp": 19.99,
 		"minifigs": [
@@ -1384,7 +1384,7 @@
 		"number": "75372-1",
 		"name": "Clone Trooper & Battle Droid Battle Pack",
 		"year": 2024,
-		"subtheme": "Clone Wars",
+		"source": "Clone Wars",
 		"pieces": 215,
 		"rrp": 29.99,
 		"minifigs": [
@@ -1429,7 +1429,7 @@
 		"number": "75373-1",
 		"name": "Ambush on Mandalore Battle Pack",
 		"year": 2024,
-		"subtheme": "The Mandalorian",
+		"source": "The Mandalorian",
 		"pieces": 109,
 		"rrp": 19.99,
 		"minifigs": [

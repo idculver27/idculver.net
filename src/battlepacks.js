@@ -21,7 +21,7 @@ function buildListing(set) {
 					</tr>
 					<tr>
 						<td>Source:</td>
-						<td>${set.subtheme}</td>
+						<td>${set.source}</td>
 					</tr>
 					<tr>
 						<td>Pieces:</td>
