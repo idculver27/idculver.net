@@ -7,17 +7,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	update();
 
-	// subnet calculator inputs
+	// inputs
 	inputAddress.addEventListener("input", () => {
 		update();
 	});
 	buttonCidrIncr.addEventListener("click", () => {
-		cidrInput.stepUp();
-		updateMask();
+		incrementCidr();
 	});
 	buttonCidrDecr.addEventListener("click", () => {
-		cidrInput.stepDown();
-		updateMask();
+		decrementCidr();
 	});
 	buttonPrevious.addEventListener("click", () => {
 		previousSubnet();
@@ -33,7 +31,7 @@ function update() {
 	try {
 		ip.address = inputAddress.value;
 	} catch (e) {
-		if (e.message !== "Invalid IP address.") throw e;
+		if (e.message !== "Error while parsing IP address.") throw e;
 		warning.removeAttribute("hidden");
 		return;
 	}
@@ -50,28 +48,34 @@ function update() {
 	tdSubnetMask.textContent = ip.subnetMask;
 	tdWildcardMask.textContent = ip.wildcardMask;
 	tdSubnetType.textContent = ip.subnetType;
-	
-	// special cases
-	if (ip.cidr > 30) {
-		tdUsableRange.textContent = "";
-	}
-	if (ip.cidr === 32) {
-		tdBroadcastAddress.textContent = "";
-	}
+}
+
+function incrementCidr() {
+	if (ip.cidr === 32) return;
+	ip.cidr = ip.cidr + 1;
+	inputAddress.value = ip.address + "/" + ip.cidr;
+	update();
+}
+
+function decrementCidr() {
+	if (ip.cidr === 0) return;
+	ip.cidr = ip.cidr - 1;
+	inputAddress.value = ip.address + "/" + ip.cidr;
+	update();
 }
 
 function previousSubnet() {
-	let networkBits = ip.address.substring(0, ip.cidr);
+	let networkBits = IpAddress.dec2bin(ip.address).substring(0, ip.cidr);
 	if (!networkBits.includes("1")) return; // already lowest
 	networkBits = (parseInt(networkBits, 2) - 1).toString(2).padStart(ip.cidr, "0"); // decrement network bits
-	addressInput.value = IpAddress.bin2dec(networkBits + ip.address.substring(ip.cidr));
+	inputAddress.value = IpAddress.bin2dec(networkBits + IpAddress.dec2bin(ip.address).substring(ip.cidr)) + "/" + ip.cidr;
 	update();
 }
 
 function nextSubnet() {
-	let networkBits = ip.address.substring(0, ip.cidr);
+	let networkBits = IpAddress.dec2bin(ip.address).substring(0, ip.cidr);
 	if (!networkBits.includes("0")) return; // already highest
 	networkBits = (parseInt(networkBits, 2) + 1).toString(2).padStart(ip.cidr, "0"); // increment network bits
-	addressInput.value = IpAddress.bin2dec(networkBits + ip.address.substring(ip.cidr));
+	inputAddress.value = IpAddress.bin2dec(networkBits + IpAddress.dec2bin(ip.address).substring(ip.cidr)) + "/" + ip.cidr;
 	update();
 }

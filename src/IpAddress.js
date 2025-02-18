@@ -114,6 +114,7 @@ export default class IpAddress {
 	}
 
 	get broadcastAddress() {
+		if (this.cidr > 30) return "";
 		return IpAddress.bin2dec(this.addressBin.substring(0, this.cidr) + "1".repeat(32 - this.cidr));
 	}
 
@@ -122,7 +123,8 @@ export default class IpAddress {
 	}
 
 	get usableHosts() {
-		return this.cidr > 30 ? 0 : 2 ** (32 - this.cidr) - 2;
+		if (this.cidr > 30) return "";
+		return 2 ** (32 - this.cidr) - 2;
 	}
 
 	get subnetMask() {
@@ -152,8 +154,14 @@ export default class IpAddress {
 			types.push("Public");
 		}
 
+		/*
+		this doesn't really work because it doesn't consider what the subnet contains
+		e.g. it thinks 223.255.255.0/4 is public even tho it contains multicast addresses
+		*/
+
+		console.log(types);
 		if (types.length === 1) return types[0];
-		else return;
+		else return "";
 	}
 
 	/**
