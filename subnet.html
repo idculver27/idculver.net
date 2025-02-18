@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calculate IPv4 subnets - network address, broadcast address, address range, CIDR, subnet mask">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Subnet Calculator | idculver.net</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/subnet.css">
+	<script src="src/subnet.js" type="module"></script>
+</head>
+<body>
+	<a href="/">Home</a>
+	<a href="/subnet.html">Subnet Calculator</a>
+	<a href="/supernet.html">Supernet Calculator</a>
+	<br>
+	<div id="input">
+		<label for="inputAddress">IP address with CIDR or mask:</label>
+		<br>
+		<input id="inputAddress" type="text" value="192.168.1.1/24" maxlength="100">
+		<br>
+		<label id="warning" for="inputAddress" class="red" hidden>Invalid input</label>
+		<br>
+		<button id="buttonCidrIncr">CIDR +</button>
+		<button id="buttonPrevious">Previous Subnet</button>
+		<br>
+		<button id="buttonCidrDecr">CIDR -</button>
+		<button id="buttonNext">Next Subnet</button>
+	</div>
+	<div id="output" class="nofloat">
+		<table>
+			<tr>
+				<td>IPv4 Address:</td>
+				<td id="tdIpAddress"></td>
+			</tr>
+			<tr>
+				<td>Network Address:</td>
+				<td id="tdNetworkAddress"></td>
+			</tr>
+			<tr>
+				<td>Usable Host Address Range:</td>
+				<td id="tdUsableRange"></td>
+			</tr>
+			<tr>
+				<td>Broadcast Address:</td>
+				<td id="tdBroadcastAddress"></td>
+			</tr>
+			<tr>
+				<td>Total Addresses:</td>
+				<td id="tdTotalAddresses"></td>
+			</tr>
+			<tr>
+				<td>Subnet Mask:</td>
+				<td id="tdSubnetMask"></td>
+			</tr>
+			<tr>
+				<td>Wildcard Mask:</td>
+				<td id="tdWildcardMask"></td>
+			</tr>
+			<tr>
+				<td>Subnet Type:</td>
+				<td id="tdSubnetType"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

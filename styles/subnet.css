@@ -1,0 +1,55 @@
+a:link, a:visited {
+	color: #00ff77;
+}
+body {
+	background-color: black;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+button {
+	background-color: black;
+	border: 1px solid #00ff77;
+	color: #00ff77;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+button:hover, .mode-activated {
+	background-color: #00ff77;
+	color: black;
+}
+div {
+	margin: 20px;
+}
+input {
+	background-color: black;
+	border: 1px solid white;
+	color: magenta;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	margin-bottom: 12px;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 330px;
+}
+table {
+	border-collapse: collapse;
+}
+td, tr {
+	border: 1px solid #00ff77;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.float {
+	float: left;
+}
+.nofloat {
+	clear: left;
+}
+.red {
+	color: red;
+}
