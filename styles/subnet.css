@@ -47,6 +47,13 @@ td, tr {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+textarea {
+	background-color: black;
+	border: 1px solid white;
+	color: #00ff00;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+}
 .tab {
 	border-bottom: 1px solid gray;
 	padding: 16px;

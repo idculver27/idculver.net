@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calculate IPv4 supernets (route summarization) - ...">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supernet Calculator | idculver.net</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/subnet.css">
+	<script src="src/supernet.js" type="module"></script>
+</head>
+<body>
+	<div id="header">
+		<span id="homeTab" class="tab">
+			<a href="/">Home</a>
+		</span>
+		<span id="subnetTab" class="tab">
+			<a href="/subnet.html">Subnet Calculator</a>
+		</span>
+		<span id="supernetTab" class="tab tabSelected">
+			<a href="/supernet.html">Supernet Calculator</a>
+		</span>
+	</div>
+	<div id="input">
+		<label for="inputAddresses">Addresses:</label>
+		<br>
+		<textarea id="inputAddresses" autocomplete="off" rows="4" cols="31">192.168.1.0/24&#013;&#010;192.168.2.0/24&#013;&#010;192.168.3.0 255.255.255.0</textarea>
+		<br>
+		<span id="warning" for="addressesInput" hidden>Invalid input</span>
+		<br>
+		<button id="buttonStrict" title="don't include more stuff y'know">Strict?</button>
+	</div>
+	<div id="output">
+		<table>
+
+		</table>
+	</div>
+</body>
+</html>
