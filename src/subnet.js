@@ -43,7 +43,7 @@ function update() {
 	if (ip.usableHosts) tdTotalAddresses.textContent += ` (${ip.usableHosts} usable)`;
 	tdSubnetMask.textContent = ip.subnetMask;
 	tdWildcardMask.textContent = ip.wildcardMask;
-	tdSubnetType.textContent = ip.subnetType;
+	tdSubnetType.innerHTML = ip.subnetType.toString().replaceAll(",", "<br>");
 }
 
 function incrementCidr() {

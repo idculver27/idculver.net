@@ -137,19 +137,19 @@ export default class IpAddress {
 
 	get subnetType() {
 		const ranges = [
-			{ type: "Public", start: "0.0.0.0", end: "9.255.255.255" },
-			{ type: "Private", start: "10.0.0.0", end: "10.255.255.255" }, // 10.0.0.0/8
-			{ type: "Public", start: "11.0.0.0", end: "126.255.255.255" },
-			{ type: "Loopback", start: "127.0.0.0", end: "127.255.255.255" }, // 127.0.0.0/8
-			{ type: "Public", start: "128.0.0.0", end: "169.253.255.255" },
-			{ type: "Link-Local", start: "169.254.0.0", end: "169.254.255.255" }, // 169.254.0.0/16
-			{ type: "Public", start: "169.255.0.0", end: "172.15.255.255" },
-			{ type: "Private", start: "172.16.0.0", end: "172.31.255.255" }, // 172.16.0.0/12
-			{ type: "Public", start: "172.32.0.0", end: "192.167.255.255" },
-			{ type: "Private", start: "192.168.0.0", end: "192.168.255.255" }, // 192.168.0.0/16
-			{ type: "Public", start: "192.169.0.0", end: "223.255.255.255" },
-			{ type: "Multicast", start: "224.0.0.0", end: "239.255.255.255" }, // 224.0.0.0/4
-			{ type: "Reserved", start: "240.0.0.0", end: "255.255.255.255" } // 240.0.0.0/4
+			{ start: "0.0.0.0", end: "9.255.255.255", type: "Public" },
+			{ start: "10.0.0.0", end: "10.255.255.255", type: "Private (10.0.0.0/8)" },
+			{ start: "11.0.0.0", end: "126.255.255.255", type: "Public" },
+			{ start: "127.0.0.0", end: "127.255.255.255", type: "Loopback (127.0.0.0/8)" },
+			{ start: "128.0.0.0", end: "169.253.255.255", type: "Public" },
+			{ start: "169.254.0.0", end: "169.254.255.255", type: "Link-Local (169.254.0.0/16)" },
+			{ start: "169.255.0.0", end: "172.15.255.255", type: "Public" },
+			{ start: "172.16.0.0", end: "172.31.255.255", type: "Private (172.16.0.0/12)" },
+			{ start: "172.32.0.0", end: "192.167.255.255", type: "Public" },
+			{ start: "192.168.0.0", end: "192.168.255.255", type: "Private (192.168.0.0/16)" },
+			{ start: "192.169.0.0", end: "223.255.255.255", type: "Public" },
+			{ start: "224.0.0.0", end: "239.255.255.255", type: "Multicast (224.0.0.0/4)" },
+			{ start: "240.0.0.0", end: "255.255.255.255", type: "Reserved (240.0.0.0/4)" }
 		]
 		let thisStart = parseInt(IpAddress.dec2bin(this.networkAddress), 2);
 		let thisEnd = parseInt(IpAddress.dec2bin(this.broadcastAddress), 2);
@@ -165,7 +165,7 @@ export default class IpAddress {
 			}
 		}
 
-		return types.toString().replaceAll(",", ", ");
+		return types;
 	}
 
 	/**
@@ -176,7 +176,7 @@ export default class IpAddress {
 	static dec2bin(dec) {
 		let bin = "";
 		dec.split(".").forEach((octet) => {
-			bin += parseInt(octet).toString(2).padStart(8, "0");
+			bin += parseInt(octet).toString(2).padStart(8, "0"); // for i?
 		});
 		return bin;
 	}
