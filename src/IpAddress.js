@@ -24,7 +24,7 @@ export default class IpAddress {
 			let newAddress = regex.groups.address;
 			let newCidr = regex.groups.cidr;
 			let newMask = regex.groups.mask;
-			
+
 			// validate IP address
 			newAddress.split(".").forEach((octet) => {
 				let octetInt = parseInt(octet);
@@ -32,7 +32,7 @@ export default class IpAddress {
 					throw new Error();
 				}
 			});
-			
+
 			// validate CIDR
 			if (newCidr && newMask) throw new Error();
 			if (!newCidr && !newMask) newCidr = "/32";
@@ -105,15 +105,16 @@ export default class IpAddress {
 	}
 
 	get firstUsableHost() {
+		if (this.cidr > 30) return this.networkAddress;
 		return IpAddress.bin2dec(IpAddress.dec2bin(this.networkAddress).substring(0, 31) + "1");
 	}
 
 	get lastUsableHost() {
+		if (this.cidr > 30) return this.broadcastAddress;
 		return IpAddress.bin2dec(IpAddress.dec2bin(this.broadcastAddress).substring(0, 31) + "0");
 	}
 
 	get broadcastAddress() {
-		if (this.cidr > 30) return "";
 		return IpAddress.bin2dec(this.addressBin.substring(0, this.cidr) + "1".repeat(32 - this.cidr));
 	}
 
@@ -122,7 +123,7 @@ export default class IpAddress {
 	}
 
 	get usableHosts() {
-		if (this.cidr > 30) return "";
+		if (this.cidr > 30) return 0;
 		return 2 ** (32 - this.cidr) - 2;
 	}
 
@@ -134,33 +135,37 @@ export default class IpAddress {
 		return IpAddress.bin2dec("0".repeat(this.cidr) + "1".repeat(32 - this.cidr));
 	}
 
-	get subnetType() { // WIP
-		let binAddress = IpAddress.dec2bin(this.address);
-		let firstOctet = parseInt(this.address.split(".")[0]);
+	get subnetType() {
+		const ranges = [
+			{ type: "Public", start: "0.0.0.0", end: "9.255.255.255" },
+			{ type: "Private", start: "10.0.0.0", end: "10.255.255.255" }, // 10.0.0.0/8
+			{ type: "Public", start: "11.0.0.0", end: "126.255.255.255" },
+			{ type: "Loopback", start: "127.0.0.0", end: "127.255.255.255" }, // 127.0.0.0/8
+			{ type: "Public", start: "128.0.0.0", end: "169.253.255.255" },
+			{ type: "Link-Local", start: "169.254.0.0", end: "169.254.255.255" }, // 169.254.0.0/16
+			{ type: "Public", start: "169.255.0.0", end: "172.15.255.255" },
+			{ type: "Private", start: "172.16.0.0", end: "172.31.255.255" }, // 172.16.0.0/12
+			{ type: "Public", start: "172.32.0.0", end: "192.167.255.255" },
+			{ type: "Private", start: "192.168.0.0", end: "192.168.255.255" }, // 192.168.0.0/16
+			{ type: "Public", start: "192.169.0.0", end: "223.255.255.255" },
+			{ type: "Multicast", start: "224.0.0.0", end: "239.255.255.255" }, // 224.0.0.0/4
+			{ type: "Reserved", start: "240.0.0.0", end: "255.255.255.255" } // 240.0.0.0/4
+		]
+		let thisStart = parseInt(IpAddress.dec2bin(this.networkAddress), 2);
+		let thisEnd = parseInt(IpAddress.dec2bin(this.broadcastAddress), 2);
 		let types = [];
 
-		if (binAddress.startsWith("00001010") || binAddress.startsWith("101011000001") || binAddress.startsWith("1100000010101000")) {
-			types.push("Private");
-		} else if (firstOctet == 127) {
-			types.push("Loopback");
-		} else if (this.address.startsWith("169.254.")) {
-			types.push("APIPA");
-		} else if (firstOctet >= 224 && firstOctet <= 239) {
-			types.push("Multicast");
-		} else if (firstOctet >= 240) {
-			types.push("Reserved");
-		} else {
-			types.push("Public");
+		// check for overlap with each range
+		for (let i = 0; i < ranges.length; i++) {
+			let rangeStart = parseInt(IpAddress.dec2bin(ranges[i].start), 2);
+			let rangeEnd = parseInt(IpAddress.dec2bin(ranges[i].end), 2);
+
+			if (!types.includes(ranges[i].type) && !(thisEnd < rangeStart || thisStart > rangeEnd)) {
+				types.push(ranges[i].type);
+			}
 		}
 
-		/*
-		this doesn't really work because it doesn't consider what the subnet contains
-		e.g. it thinks 223.255.255.0/4 is public even tho it contains multicast addresses
-		*/
-
-		console.log(types);
-		if (types.length === 1) return types[0];
-		else return "";
+		return types.toString().replaceAll(",", ", ");
 	}
 
 	/**

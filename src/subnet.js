@@ -35,10 +35,10 @@ function update() {
 	}
 
 	// output
-	tdIpAddress.textContent = `${ip.address}/${ip.cidr}`;
-	tdNetworkAddress.textContent = ip.networkAddress;
-	tdUsableRange.textContent = `${ip.firstUsableHost} - ${ip.lastUsableHost}`;
-	tdBroadcastAddress.textContent = ip.broadcastAddress;
+	tdIpAddress.textContent = ip.address;
+	tdNetworkAddress.textContent = `${ip.networkAddress}/${ip.cidr}`;
+	tdUsableRange.textContent = ip.cidr === 32 ? ip.address : `${ip.firstUsableHost} - ${ip.lastUsableHost}`;
+	tdBroadcastAddress.textContent = ip.cidr <= 30 ? ip.broadcastAddress : "";
 	tdTotalAddresses.textContent = ip.totalAddresses;
 	if (ip.usableHosts) tdTotalAddresses.textContent += ` (${ip.usableHosts} usable)`;
 	tdSubnetMask.textContent = ip.subnetMask;
