@@ -76,7 +76,6 @@ export default class IpAddress {
 				if (countOf1 + countOf0 !== 32) throw new Error();
 				newCidr = countOf1;
 			}
-
 			this._address = newAddress;
 			this.cidr = newCidr;
 		} catch {
