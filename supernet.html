@@ -10,7 +10,7 @@
 	<script src="src/supernet.js" type="module"></script>
 </head>
 <body>
-	<div id="header">
+	<div id="header"> <!-- TODO: make the whole span clickable -->
 		<span id="homeTab" class="tab">
 			<a href="/">Home</a>
 		</span>
@@ -31,8 +31,32 @@
 		<button id="buttonStrict" title="don't include more stuff y'know">Strict?</button>
 	</div>
 	<div id="output">
+		<span>Summary address(es):</span>
+		<br>
+		<div id="outputAddresses">192.168.0.0/22</div>
+		<br>
 		<table>
-
+			<tr id="trNetworkAddress">
+				<td>Network Address:</td>
+			</tr>
+			<tr id="trUsableRange">
+				<td>Host Address Range:</td>
+			</tr>
+			<tr id="trBroadcastAddress">
+				<td>Broadcast Address:</td>
+			</tr>
+			<tr id="trTotalAddresses">
+				<td>Total Addresses:</td>
+			</tr>
+			<tr id="trSubnetMask">
+				<td>Subnet Mask:</td>
+			</tr>
+			<tr id="trWildcardMask">
+				<td>Wildcard Mask:</td>
+			</tr>
+			<tr id="trSubnetType">
+				<td>Subnet Type:</td>
+			</tr>
 		</table>
 	</div>
 </body>
