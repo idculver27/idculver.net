@@ -36,18 +36,11 @@ export default class IpAddress {
 			// validate CIDR
 			if (newCidr && newMask) throw new Error();
 			if (!newCidr && !newMask) newCidr = "/32";
-			newCidr = parseInt(newCidr.substring(1));
+			if (newCidr) newCidr = parseInt(newCidr.substring(1));
 
 			// validate mask
 			if (newMask) {
-				let binaryMask = "";
-				newMask.split(".").forEach((octet) => {
-					let octetInt = parseInt(octet);
-					if (octetInt < 0 || octetInt > 255) {
-						throw new Error();
-					}
-					binaryMask += octet.toString(2).padStart(8, "0");
-				});
+				let binaryMask = IpAddress.dec2bin(newMask);
 
 				// convert wildcard mask to subnet mask
 				if (binaryMask.startsWith("0")) {
@@ -76,6 +69,7 @@ export default class IpAddress {
 				if (countOf1 + countOf0 !== 32) throw new Error();
 				newCidr = countOf1;
 			}
+
 			this._address = newAddress;
 			this.cidr = newCidr;
 		} catch {
