@@ -10,8 +10,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	inputAddresses.addEventListener("input", () => {
 		update();
 	});
-	buttonStrict.addEventListener("click", () => {
-		console.log("click");
+	checkboxStrict.addEventListener("input", () => {
+		update();
 	});
 });
 
@@ -55,7 +55,7 @@ function parseAddresses() {
 	});
 
 	// loose mode
-	if (false) {
+	if (!checkboxStrict.checked) {
 		// find first and last addresses
 		let first = parseInt(IpAddress.dec2bin("255.255.255.255"), 2);
 		let last = 0;
