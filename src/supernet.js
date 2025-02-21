@@ -29,7 +29,6 @@ function update() {
 	outputAddresses.textContent = "";
 	Array.from(document.getElementsByTagName("tr")).forEach((tr) => {
 		while (tr.childElementCount > 1) {
-			console.log("deleting child");
 			tr.removeChild(tr.lastChild);
 		}
 	});
@@ -92,11 +91,18 @@ function parseAddresses() {
 		// sort ranges
 		ranges.sort((a, b) => (a[0] - b[0]) || (a[1] - b[1]));
 		
-		// merge adjacent/overlapping ranges
+		// merge contiguous/overlapping ranges
 		let rangesMerged = [];
 		ranges.forEach((range) => {
-			
+			if (rangesMerged.length === 0 || rangesMerged[rangesMerged.length - 1][1] < range[0] - 1) {
+				rangesMerged.push(range);
+			} else {
+				rangesMerged[rangesMerged.length - 1][1] = Math.max(rangesMerged[rangesMerged.length - 1][1], range[1]);
+			}
 		});
+
+		// convert ranges to IpAddresses
+		// TODO
 
 		return [new IpAddress("192.168.0.1/24")];
 	}

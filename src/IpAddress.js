@@ -160,14 +160,14 @@ export default class IpAddress {
 		let thisStart = parseInt(IpAddress.dec2bin(this.networkAddress), 2);
 		let thisEnd = parseInt(IpAddress.dec2bin(this.broadcastAddress), 2);
 		let types = [];
-		for (let i = 0; i < ranges.length; i++) {
-			let rangeStart = parseInt(IpAddress.dec2bin(ranges[i].start), 2);
-			let rangeEnd = parseInt(IpAddress.dec2bin(ranges[i].end), 2);
+		ranges.forEach((range) => {
+			let rangeStart = parseInt(IpAddress.dec2bin(range.start), 2);
+			let rangeEnd = parseInt(IpAddress.dec2bin(range.end), 2);
 
-			if (!types.includes(ranges[i].type) && !(thisEnd < rangeStart || thisStart > rangeEnd)) {
-				types.push(ranges[i].type);
+			if (!types.includes(range.type) && !(thisEnd < rangeStart || thisStart > rangeEnd)) {
+				types.push(range.type);
 			}
-		}
+		});
 
 		return types;
 	}
