@@ -155,11 +155,11 @@ export default class IpAddress {
 			{ start: "233.252.1.0", end: "239.255.255.255", type: "Multicast (224.0.0.0/4)" },
 			{ start: "240.0.0.0", end: "255.255.255.255", type: "Reserved (240.0.0.0/4)" }
 		]
+
+		// check input against each range
 		let thisStart = parseInt(IpAddress.dec2bin(this.networkAddress), 2);
 		let thisEnd = parseInt(IpAddress.dec2bin(this.broadcastAddress), 2);
 		let types = [];
-
-		// check for overlap with each range
 		for (let i = 0; i < ranges.length; i++) {
 			let rangeStart = parseInt(IpAddress.dec2bin(ranges[i].start), 2);
 			let rangeEnd = parseInt(IpAddress.dec2bin(ranges[i].end), 2);

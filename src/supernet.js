@@ -56,7 +56,7 @@ function parseAddresses() {
 	});
 
 	// non-strict mode
-	if (true) {
+	if (false) {
 		// find first and last addresses
 		let first = parseInt(IpAddress.dec2bin("255.255.255.255"), 2);
 		let last = 0;
@@ -80,5 +80,27 @@ function parseAddresses() {
 	}
 
 	// strict mode
+	else {
+		// build list of ranges
+		let ranges = [];
+		inputIps.forEach((ip) => {
+			let rangeStart = parseInt(IpAddress.dec2bin(ip.networkAddress), 2);
+			let rangeEnd = parseInt(IpAddress.dec2bin(ip.broadcastAddress), 2);
+			ranges.push([rangeStart, rangeEnd]);
+		});
 
+		// sort ranges
+		ranges.sort((a, b) => (a[0] - b[0]) || (a[1] - b[1]));
+		
+		// merge adjacent/overlapping ranges
+		let rangesMerged = [];
+		ranges.forEach((range) => {
+			
+		});
+
+		return [new IpAddress("192.168.0.1/24")];
+	}
+
+	// build ranges like in the subnettype method
+	// for each range, do the non-strict mode method
 }
