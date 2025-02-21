@@ -35,7 +35,7 @@ function update() {
 
 	// output
 	ips.forEach((ip) => {
-		outputAddresses.textContent += `${ip.networkAddress}/${ip.cidr}\n`;
+		outputAddresses.innerHTML += `${ip.networkAddress}/${ip.cidr}<br>`;
 
 		trNetworkAddress.innerHTML += `<td>${ip.networkAddress}/${ip.cidr}</td>`;
 		trUsableRange.innerHTML += ip.cidr === 32 ? `<td>${ip.address}</td>` : `<td>${ip.firstUsableHost} - ${ip.lastUsableHost}</td>`;
@@ -90,7 +90,7 @@ function parseAddresses() {
 
 		// sort ranges
 		ranges.sort((a, b) => (a[0] - b[0]) || (a[1] - b[1]));
-		
+
 		// merge contiguous/overlapping ranges
 		let rangesMerged = [];
 		ranges.forEach((range) => {
@@ -102,11 +102,28 @@ function parseAddresses() {
 		});
 
 		// convert ranges to IpAddresses
-		// TODO
+		let outputIps = [];
+		for (let i = 0; i < rangesMerged.length; i++) {
+			// find largest possible network for this prefix
+			let prefix = rangesMerged[i][0].toString(2).padStart(32, "0");
+			let cidr = prefix.lastIndexOf("1") + 1;
+			let ip = new IpAddress(`${IpAddress.bin2dec(prefix)}/${cidr}`);
 
-		return [new IpAddress("192.168.0.1/24")];
+			// increment CIDR until the network fits in the range
+			while (parseInt(IpAddress.dec2bin(ip.broadcastAddress), 2) > rangesMerged[i][1]) {
+				console.log(`${ip.broadcastAddress}/${ip.cidr} > ${IpAddress.bin2dec(rangesMerged[i][1].toString(2))}`);
+				ip.cidr++;
+			}
+
+			// if we undershot the end of the range, move the start of the range to after the end of our result and do it again
+			if (parseInt(IpAddress.dec2bin(ip.broadcastAddress), 2) < rangesMerged[i][1]) {
+				rangesMerged[i][0] = parseInt(IpAddress.dec2bin(ip.broadcastAddress), 2) + 1;
+				i--;
+			}
+
+			outputIps.push(ip);
+		}
+
+		return outputIps;
 	}
-
-	// build ranges like in the subnettype method
-	// for each range, do the non-strict mode method
 }

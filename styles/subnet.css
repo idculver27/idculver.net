@@ -28,6 +28,9 @@ label {
 	display: inline-block;
 	padding: 10px;
 }
+span {
+	padding: 10px;
+}
 table {
 	border-collapse: collapse;
 }
