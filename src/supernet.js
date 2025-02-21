@@ -54,7 +54,7 @@ function parseAddresses() {
 		inputIps.push(new IpAddress(addressString));
 	});
 
-	// non-strict mode
+	// loose mode
 	if (false) {
 		// find first and last addresses
 		let first = parseInt(IpAddress.dec2bin("255.255.255.255"), 2);

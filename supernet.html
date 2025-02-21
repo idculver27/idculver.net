@@ -24,11 +24,11 @@
 	<div id="input">
 		<label for="inputAddresses">Addresses:</label>
 		<br>
-		<textarea id="inputAddresses" rows="4" cols="31">192.168.1.0/24&#013;&#010;192.168.2.0/24&#013;&#010;192.168.3.0 255.255.255.0</textarea>
+		<textarea id="inputAddresses" rows="5">192.168.1.0/24&#013;&#010;192.168.2.0/24&#013;&#010;192.168.3.0 255.255.255.0</textarea>
 		<br>
+		<label for="checkboxStrict" title="Loose: Summarize to one supernet.&#013;&#010;Strict: Summary address(es) don't include address space that isn't included in the input addresses. This usually results in multiple supernets.">Strict?</label>
+		<input id="checkboxStrict" type="checkbox">
 		<span id="warning" for="addressesInput" hidden>Invalid input</span>
-		<br>
-		<button id="buttonStrict" title="don't include more stuff y'know">Strict?</button>
 	</div>
 	<div id="output">
 		<span>Summary address(es):</span>

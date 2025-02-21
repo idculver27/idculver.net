@@ -17,22 +17,12 @@ button {
 	margin-top: 10px;
 	padding: 10px;
 }
-button:hover {
+button:active, button:hover {
 	background-color: #00ff00;
 	color: black;
 }
 div {
 	margin: 20px;
-}
-input {
-	background-color: black;
-	border: 1px solid white;
-	color: #00ff00;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 100%;
-	margin-bottom: 12px;
-	padding: 10px;
-	width: 330px;
 }
 label {
 	display: inline-block;
@@ -53,6 +43,10 @@ textarea {
 	color: #00ff00;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 100%;
+	margin-bottom: 12px;
+	padding: 10px;
+	white-space: nowrap;
+	width: 330px;
 }
 .tab {
 	border-bottom: 1px solid gray;
@@ -70,8 +64,26 @@ textarea {
 .wideButton {
 	width: 180px;
 }
+#checkboxStrict {
+	accent-color: #00ff00;
+	margin-left: 0px;
+	margin-right: 50px;
+}
 #header {
 	margin-top: 25px;
+}
+#inputAddress {
+	background-color: black;
+	border: 1px solid white;
+	color: #00ff00;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	margin-bottom: 12px;
+	padding: 10px;
+	width: 330px;
+}
+#outputAddresses {
+	color: #00ff00;
 }
 #warning {
 	color: red;
