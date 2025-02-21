@@ -46,6 +46,7 @@ textarea {
 	color: #00ff00;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 100%;
+	margin-top: 0px;
 	margin-bottom: 12px;
 	padding: 10px;
 	white-space: nowrap;
