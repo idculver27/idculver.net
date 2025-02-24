@@ -111,7 +111,6 @@ function parseAddresses() {
 
 			// increment CIDR until the network fits in the range
 			while (parseInt(IpAddress.dec2bin(ip.broadcastAddress), 2) > rangesMerged[i][1]) {
-				console.log(`${ip.broadcastAddress}/${ip.cidr} > ${IpAddress.bin2dec(rangesMerged[i][1].toString(2))}`);
 				ip.cidr++;
 			}
 
