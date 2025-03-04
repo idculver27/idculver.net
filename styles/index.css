@@ -1,3 +1,14 @@
+a {
+	display: flex;
+	border: 1px solid #777777;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+}
+a:hover {
+	background-color: #777777;
+	transition: 0.2s;
+}
 a:link, a:visited {
 	color: black;
 	text-decoration: none;
@@ -6,8 +17,12 @@ body {
 	font-family: Verdana, Tahoma, sans-serif;
 	margin: 0px;
 }
-h1, h2 {
-	text-align: center;
+h1 {
+	margin: 0px;
+	margin-left: 20px;
+}
+h2 {
+	margin-left: 50px;
 }
 header {
 	align-items: center;
@@ -17,67 +32,27 @@ header {
 	height: 64px;
 	padding: 15px;
 	padding-left: 20px;
+	position: sticky;
+	top: 0px;
 }
 hr {
 	color: #777777;
-}
-img {
-	max-height: 100%;
-	max-width: 100%;
-	min-height: 64px;
-}
-.clearfloat {
-	clear: left;
-}
-.float {
-	float: left;
-}
-.icon {
-	height: 32px;
-	min-height: auto;
 }
 .pixel {
 	image-rendering: pixelated;
 }
 .thumb {
-	align-items: center;
 	display: flex;
-	height: 100px;
+	height: 64px;
 	justify-content: center;
-	margin: auto;
-	margin-bottom: 10px;
-	overflow: hidden;
-	width: 150px;
+	width: 64px;
 }
-.tile {
-	border: 1px solid #777777;
-	border-radius: 10px;
-	float: left;
-	height: 150px;
-	margin: 15px;
-	padding: 30px;
-	text-align: center;
-}
-.tinytile {
-	border: 1px solid #777777;
-	border-radius: 10px;
-	float: left;
-	margin: 15px;
-	padding: 25px;
-	padding-bottom: 10px;
-	text-align: center;
-}
-.tile:hover, .tinytile:hover {
-	background-color: #777777;
-	transition: 0.2s;
+#icon {
+	width: 64px;
 }
 #main {
 	margin: auto;
 	max-width: 1500px;
-}
-#name {
-	margin: 0px;
-	margin-left: 20px;
 }
 @media (prefers-color-scheme: dark) {
 	a:link, a:visited {
