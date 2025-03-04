@@ -1,16 +1,22 @@
-@font-face {
-	font-family: "Aurebesh";
-	src: url("../fonts/Aurebesh.ttf");
-}
 a:link, a:visited {
 	color: black;
 	text-decoration: none;
 }
 body {
-	font-family: "Helvetica", sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
 }
 h1, h2 {
 	text-align: center;
+}
+header {
+	align-items: center;
+	background-color: white;
+	color: black;
+	display: flex;
+	height: 64px;
+	padding: 15px;
+	padding-left: 20px;
 }
 hr {
 	color: #777777;
@@ -20,19 +26,15 @@ img {
 	max-width: 100%;
 	min-height: 64px;
 }
-.aurebesh {
-	font-family: "Aurebesh", monospace;
-}
 .clearfloat {
 	clear: left;
+}
+.float {
+	float: left;
 }
 .icon {
 	height: 32px;
 	min-height: auto;
-}
-.main {
-	margin: auto;
-	max-width: 1500px;
 }
 .pixel {
 	image-rendering: pixelated;
@@ -69,9 +71,13 @@ img {
 	background-color: #777777;
 	transition: 0.2s;
 }
-#isaacDiv {
-	min-height: 80px;
-	text-align: center;
+#main {
+	margin: auto;
+	max-width: 1500px;
+}
+#name {
+	margin: 0px;
+	margin-left: 20px;
 }
 @media (prefers-color-scheme: dark) {
 	a:link, a:visited {
