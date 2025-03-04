@@ -1,106 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="32mm"
-   height="32mm"
-   viewBox="0 0 32 32"
-   version="1.1"
-   id="svg1"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
-   sodipodi:docname="favicon.svg"
-   inkscape:export-filename="favicon_48.png"
-   inkscape:export-xdpi="38.099998"
-   inkscape:export-ydpi="38.099998"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="true"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="-5.6568543"
-     inkscape:cy="88.211572"
-     inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
-    <inkscape:grid
-       id="grid1"
-       units="mm"
-       originx="0"
-       originy="0"
-       spacingx="0.99999997"
-       spacingy="0.99999997"
-       empcolor="#0099e5"
-       empopacity="0.30196078"
-       color="#0099e5"
-       opacity="0.14901961"
-       empspacing="2"
-       dotted="false"
-       gridanglex="30"
-       gridanglez="30"
-       visible="true" />
-  </sodipodi:namedview>
-  <defs
-     id="defs1" />
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       id="rect16"
-       style="display:inline;opacity:1;fill:#000000"
-       inkscape:label="feathers"
-       d="m 16.000057,11.999784 v 20.00033 l 3.124874,-1.785421 V 11.999784 Z m 3.625102,0 v 17.928622 l 3.124874,-1.785421 V 11.999784 Z m 3.624585,0 v 15.857947 l 3.12539,-1.785937 v -14.07201 z m 3.625101,0 v 13.786239 l 3.125391,-1.785938 V 11.999784 Z" />
-    <path
-       id="path20"
-       style="display:inline;fill:#000000;stroke-linejoin:bevel"
-       d="m 15.999999,11.999999 h 14 v 4 l -14,7.999999 z"
-       sodipodi:nodetypes="ccccc"
-       inkscape:label="black" />
-    <path
-       id="path16"
-       style="display:inline;fill:#ffc864;stroke-linejoin:bevel"
-       d="m 15.999999,7.9999997 h 14 V 12 l -14,7.999999 z"
-       sodipodi:nodetypes="ccccc"
-       inkscape:label="yellow" />
-    <path
-       id="rect2"
-       style="display:inline;fill:#ff2c00;stroke-linejoin:bevel"
-       d="m 15.999999,0 14,7.9999997 -14,7.9999993 z"
-       sodipodi:nodetypes="cccc"
-       inkscape:label="red" />
-    <path
-       id="path17"
-       style="display:inline;fill:#000000;stroke-linejoin:bevel"
-       d="m 1.9999995,23.999999 14.0000005,8 -10e-7,-8 -13.9999991,-8 z"
-       sodipodi:nodetypes="ccccc"
-       inkscape:label="c bottom" />
-    <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.87082;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       id="rect17"
-       width="6.9999995"
-       height="15.999999"
-       x="1.9999999"
-       y="7.9999995"
-       inkscape:label="c left" />
-    <path
-       id="rect3"
-       style="display:inline;fill:#000000;stroke-linejoin:bevel"
-       d="M 1.9999997,7.9999992 16,-5.4313166e-8 15.999999,7.9999997 1.9999999,15.999999 Z"
-       sodipodi:nodetypes="ccccc"
-       inkscape:label="c top" />
-  </g>
+<svg width="32mm" height="32mm" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<path id="feather4" d="M 26.875,16 30,16 30,24 26.875,25.785714 Z" fill="black" />
+	<path id="feather3" d="M 23.25,16 26.375,16 26.375,26.071429 23.25,27.857143 Z" fill="black" />
+	<path id="feather2" d="M 19.625,20 22.75,20 22.75,28.142857 19.625,29.928571 Z" fill="black" />
+	<path id="feather1" d="M 16,20 19.125,20 19.125,30.214286 16,32 Z" fill="black" />
+	<path id="cBottom" d="M 2,16 16,24 17,24 16,32 2,24 Z" fill="black" />
+	<rect id="cLeft" x="2" y="8" width="7" height="16" fill="black" />
+	<path id="cTop" d="M 2,8 16,0 17,8 16,8 2,16 Z" fill="black" />
+	<path id="black" d="M 16,20 30,12 30,16 16,24 Z" fill="black" />
+	<path id="yellow" d="M 16,16 30,8 30,12 16,20 Z" fill="#ffc864" />
+	<path id="red" d="M 16,0 30,8 16,16 Z" fill="#ff2c00" />
 </svg>
