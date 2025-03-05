@@ -51,6 +51,10 @@ span {
 .pixel {
 	image-rendering: pixelated;
 }
+.section {
+	float: left;
+	margin: 20px;
+}
 .thumb {
 	height: 64px;
 	width: 64px;
@@ -75,8 +79,8 @@ span {
 	width: 64px;
 }
 #main {
-	margin: auto;
-	max-width: 1500px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 @media (prefers-color-scheme: dark) {
 	a:link, a:visited {
