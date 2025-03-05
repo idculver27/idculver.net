@@ -17,10 +17,12 @@ a:hover {
 	transition: 0.2s;
 }
 a:link, a:visited {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 body {
+	background-color: black;
+	color: white;
 	font-family: Verdana, Tahoma, sans-serif;
 	margin: 0px;
 }
@@ -82,13 +84,4 @@ span {
 	margin-left: 25px;
 	margin-right: 25px;
 	overflow-y: scroll;
-}
-@media (prefers-color-scheme: dark) {
-	a:link, a:visited {
-		color: white;
-	}
-	body {
-		background-color: black;
-		color: white;
-	}
 }
