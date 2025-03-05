@@ -1,77 +1,87 @@
-@font-face {
-	font-family: "Aurebesh";
-	src: url("../fonts/Aurebesh.ttf");
+:root {
+	--gray: #777777;
+}
+a {
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	border: 1px solid var(--gray);
+	border-radius: 10px;
+	height: 89px;
+	margin: 16px;
+	margin-left: 0px;
+	padding: 15px;
+}
+a:hover {
+	background-color: var(--gray);
+	transition: 0.2s;
 }
 a:link, a:visited {
 	color: black;
 	text-decoration: none;
 }
 body {
-	font-family: "Helvetica", sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
 }
-h1, h2 {
-	text-align: center;
+h1 {
+	margin: 0px;
+	margin-left: 20px;
+}
+h2 {
+	margin-bottom: 5px;
+}
+header {
+	align-items: center;
+	background-color: white;
+	color: black;
+	display: flex;
+	height: 64px;
+	padding: 15px;
+	padding-left: 20px;
+	position: sticky;
+	top: 0px;
 }
 hr {
-	color: #777777;
+	color: var(--gray);
 }
-img {
-	max-height: 100%;
-	max-width: 100%;
-	min-height: 64px;
-}
-.aurebesh {
-	font-family: "Aurebesh", monospace;
-}
-.clearfloat {
-	clear: left;
-}
-.icon {
-	height: 32px;
-	min-height: auto;
-}
-.main {
-	margin: auto;
-	max-width: 1500px;
+span {
+	padding: 20px;
 }
 .pixel {
 	image-rendering: pixelated;
 }
+.section {
+	float: left;
+	margin: 20px;
+}
 .thumb {
-	align-items: center;
+	height: 64px;
+	width: 64px;
+}
+.tree {
 	display: flex;
-	height: 100px;
-	justify-content: center;
-	margin: auto;
-	margin-bottom: 10px;
-	overflow: hidden;
-	width: 150px;
 }
-.tile {
-	border: 1px solid #777777;
-	border-radius: 10px;
-	float: left;
-	height: 150px;
-	margin: 15px;
-	padding: 30px;
-	text-align: center;
+.treeBranch, .treeBranchTop {
+	border-bottom: 1px solid var(--gray);
+	border-left: 1px solid var(--gray);
+	box-sizing: border-box;
+	height: 105px;
+	width: 50px;
 }
-.tinytile {
-	border: 1px solid #777777;
-	border-radius: 10px;
-	float: left;
-	margin: 15px;
-	padding: 25px;
-	padding-bottom: 10px;
-	text-align: center;
+.treeBranchTop {
+	height: 61px;
 }
-.tile:hover, .tinytile:hover {
-	background-color: #777777;
-	transition: 0.2s;
+.treeTrunk {
+	margin-left: 25px;
 }
-#isaacDiv {
-	min-height: 80px;
-	text-align: center;
+#icon {
+	width: 64px;
+}
+#main {
+	margin-left: 25px;
+	margin-right: 25px;
+	overflow-y: scroll;
 }
 @media (prefers-color-scheme: dark) {
 	a:link, a:visited {
