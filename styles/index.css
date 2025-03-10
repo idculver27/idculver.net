@@ -29,6 +29,8 @@ body {
 h1 {
 	margin: 0px;
 	margin-left: 20px;
+	overflow-x: hidden;
+	white-space: nowrap;
 }
 h2 {
 	margin-bottom: 5px;
@@ -84,4 +86,33 @@ span {
 	margin-left: 25px;
 	margin-right: 25px;
 	overflow-y: scroll;
+}
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 150%;
+		margin-left: 15px;
+	}
+	h2 {
+		font-size: 120%;
+		margin: 0px;
+	}
+	header {
+		height: 32px;
+	}
+	span {
+		font-size: 90%;
+	}
+	.thumb {
+		height: 32px;
+		width: 32px;
+	}
+	.treeBranch, .treeBranchTop {
+		width: 15px;
+	}
+	#icon {
+		width: 32px;
+	}
+	#main {
+		margin: 0px;
+	}
 }
