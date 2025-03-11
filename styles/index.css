@@ -33,15 +33,16 @@ h1 {
 	white-space: nowrap;
 }
 h2 {
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 header {
 	align-items: center;
 	background-color: white;
+	box-shadow: 0px 0px 5px black;
 	color: black;
 	display: flex;
 	height: 64px;
-	padding: 15px;
+	padding: 12px;
 	padding-left: 20px;
 	position: sticky;
 	top: 0px;
@@ -58,6 +59,7 @@ span {
 .section {
 	float: left;
 	margin: 20px;
+	margin-top: 5px;
 }
 .thumb {
 	height: 64px;
@@ -77,7 +79,7 @@ span {
 	height: 61px;
 }
 .treeTrunk {
-	margin-left: 12px;
+	margin-left: 10px;
 }
 #icon {
 	width: 64px;
@@ -94,7 +96,6 @@ span {
 	}
 	h2 {
 		font-size: 120%;
-		margin: 0px;
 	}
 	header {
 		height: 32px;
