@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="32mm" height="32mm" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<circle id="circle" cx="16" cy="16" r="16" fill="white" />
+	<polygon id="bg" points="12,0 20,0 32,7 32,25 20,32 12,32 0,25 0,7" fill="white" />
 	<polygon id="feather4" points="26.875,16 30,16 30,24 26.875,25.785714" fill="black" />
 	<polygon id="feather3" points="23.25,16 26.375,16 26.375,26.071429 23.25,27.857143" fill="black" />
 	<polygon id="feather2" points="19.625,20 22.75,20 22.75,28.142857 19.625,29.928571" fill="black" />
