@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32mm" height="32mm" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<circle id="circle" cx="16" cy="16" r="16" fill="white" />
+	<polygon id="feather4" points="26.875,16 30,16 30,24 26.875,25.785714" fill="black" />
+	<polygon id="feather3" points="23.25,16 26.375,16 26.375,26.071429 23.25,27.857143" fill="black" />
+	<polygon id="feather2" points="19.625,20 22.75,20 22.75,28.142857 19.625,29.928571" fill="black" />
+	<polygon id="feather1" points="16,20 19.125,20 19.125,30.214286 16,32" fill="black" />
+	<polygon id="cBottom" points="2,16 16,24 17,24 16,32 2,24" fill="black" />
+	<rect id="cLeft" x="2" y="8" width="7" height="16" fill="black" />
+	<polygon id="cTop" points="2,8 16,0 17,8 16,8 2,16" fill="black" />
+	<polygon id="black" points="16,20 30,12 30,16 16,24" fill="black" />
+	<polygon id="yellow" points="16,16 30,8 30,12 16,20" fill="#ffc864" />
+	<polygon id="red" points="16,0 30,8 16,16" fill="#ff2c00" />
+</svg>

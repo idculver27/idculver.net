@@ -1,16 +1,34 @@
 body {
-	background-color: #121218;
+	background-color: #b89869;
 	color: white;
-	font-family: "Helvetica", sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
+}
+h1 {
+	font-size: 130%;
+	margin: 0px;
+}
+h2 {
+	font-size: 110%;
+	margin: 0px;
+}
+header {
+	background-color: black;
+	box-shadow: 0px 0px 5px black;
+	position: sticky;
+	top: 0px;
+}
+img {
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 32px;
 }
 .flagdiv {
-	background-color: #b89869;
-	height: 100vh;
-	overflow: auto;
+	overflow-x: scroll;
 	width: 100%;
 }
 .flaginput {
-	font-family: "Helvetica";
+	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 100%;
 }
 .flagoptionsheadertd {
@@ -20,18 +38,24 @@ body {
 	padding: 10px;
 	text-align: right;
 }
-.flagpadcol {
-	width: 100px;
-}
 .flagsfield {
 	padding: 20px;
 }
 .flagtd {
 	padding: 10px;
 }
-.flagtitletd {
-	vertical-align: top;
-}
 .flagtoptable {
-	padding: 20px;
+	padding: 30px;
+	padding-top: 0px;
+}
+#padCol {
+	width: 60px;
+}
+@media (prefers-color-scheme: light) {
+	body {
+		color: black;
+	}
+	header {
+		background-color: white;
+	}
 }

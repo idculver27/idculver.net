@@ -27,7 +27,7 @@ function getAndSetSettings() {
 	flagMaker.w = Math.min(Math.max(wInput.value, 20), 2000);
 	flagMaker.h = Math.min(Math.max(hInput.value, 20), 2000);
 	useSubs = subInput.checked;
-	flagdiv.style.backgroundColor = bgInput.value;
+	Array.from(document.getElementsByTagName("body"))[0].style.backgroundColor = bgInput.value;
 	flagMaker.black = blackInput.value;
 	flagMaker.white = whiteInput.value;
 	flagMaker.red = redInput.value;
