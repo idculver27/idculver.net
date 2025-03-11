@@ -1,3 +1,7 @@
+:root {
+	--green: #00ff00;
+	--gray: #777777;
+}
 a:link, a:visited {
 	color: white;
 	padding: 20px;
@@ -10,15 +14,15 @@ body {
 }
 button {
 	background-color: black;
-	border: 1px solid #00ff00;
-	color: #00ff00;
+	border: 1px solid var(--green);
+	color: var(--green);
 	font-family: "Courier New", Courier, monospace;
 	font-size: 100%;
 	margin-top: 10px;
 	padding: 10px;
 }
 button:active, button:hover {
-	background-color: #00ff00;
+	background-color: var(--green);
 	color: black;
 }
 div {
@@ -43,7 +47,7 @@ td, tr {
 textarea {
 	background-color: black;
 	border: 1px solid white;
-	color: #00ff00;
+	color: var(--green);
 	font-family: "Courier New", Courier, monospace;
 	font-size: 100%;
 	margin-top: 0px;
@@ -53,7 +57,7 @@ textarea {
 	width: 330px;
 }
 .tab {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid var(--gray);
 	padding: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -69,7 +73,7 @@ textarea {
 	width: 180px;
 }
 #checkboxStrict {
-	accent-color: #00ff00;
+	accent-color: var(--green);
 	margin-left: 0px;
 	margin-right: 50px;
 }
@@ -79,7 +83,7 @@ textarea {
 #inputAddress {
 	background-color: black;
 	border: 1px solid white;
-	color: #00ff00;
+	color: var(--green);
 	font-family: "Courier New", Courier, monospace;
 	font-size: 100%;
 	margin-bottom: 12px;
@@ -87,7 +91,7 @@ textarea {
 	width: 330px;
 }
 #outputAddresses {
-	color: #00ff00;
+	color: var(--green);
 }
 #warning {
 	color: red;
