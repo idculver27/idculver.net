@@ -18,11 +18,6 @@ header {
 	position: sticky;
 	top: 0px;
 }
-img {
-	margin-left: 5px;
-	margin-top: 5px;
-	width: 32px;
-}
 .flagdiv {
 	overflow-x: scroll;
 	width: 100%;
@@ -47,6 +42,11 @@ img {
 .flagtoptable {
 	padding: 30px;
 	padding-top: 0px;
+}
+#icon {
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 32px;
 }
 #padCol {
 	width: 60px;
