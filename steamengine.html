@@ -10,8 +10,12 @@
 	<script src="src/steamengine.js" type="module"></script>
 </head>
 <body>
-	<a href="https://idculver.net">Home</a>
-	<h1>Minecraft Create Mod Steam Engine Simulator</h1>
+	<header>
+		<a href="https://idculver.net">
+			<img id="icon" src="images/icon_circle.svg" alt="Home">
+		</a>
+		<h1>Minecraft Create Mod Steam Engine Simulator</h1>
+	</header>
 	<hr>
 	<table height="520px">
 		<tr>
@@ -26,7 +30,7 @@
 							<input type="radio" id="footprint3x3" name="footprint">
 							<label for="2x2">3x3</label>
 						</td>
-						<td width="550px">
+						<td width="560px">
 							<p id="heightDisplay">Height: 0 blocks</p>
 							1 <input type="range" id="heightRange" class="rangeSlider" min="1" max="16" value="1"> 16
 						</td>
@@ -47,7 +51,7 @@
 							<input type="radio" id="pumps2" name="pumps">
 							<label for="pumps2">2</label>
 						</td>
-						<td width="550px">
+						<td width="560px">
 							<p id="rpmDisplay">Pump speed: 0 RPM</p>
 							0 <input type="range" id="rpmRange" class="rangeSlider" min="0" max="26" value="0"> 256
 						</td>

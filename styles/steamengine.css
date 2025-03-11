@@ -1,10 +1,25 @@
+:root {
+	--gray: #777777;
+}
 body {   
 	background-color: black;
 	color: white;
-	font-family: "Helvetica", sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
 }
 button {
 	font-family: inherit;
+}
+h1 {
+	margin: 10px;
+	text-align: center;
+	width: 75vw;
+}
+hr {
+	color: var(--gray);
+}
+header {
+	display: flex;
 }
 img {
 	display: block;
@@ -47,4 +62,18 @@ td, th, tr {
 }
 .rangeSlider {
 	width: 500px;
+}
+#icon {
+	display: inline-block;
+	height: 32px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: white;
+		color: black;
+	}
+	.diagramBar {
+		border: 1px solid black;
 }
