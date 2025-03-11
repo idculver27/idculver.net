@@ -1,9 +1,6 @@
-a:link, a:visited {
-	color: #218306;
-}
 body {
 	background-image: url("../images/darkdirt.png");
-	font-family: Helvetica, sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
 	margin: 0px;
 	text-align: center;
 }
@@ -29,7 +26,7 @@ img {
 	border: 10px solid transparent;
 	border-image: url("../images/buttongray.png") 10 stretch;
 	color: #4c4c4c;
-	font-family: Helvetica, sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 12pt;
 	margin: 10px;
 	max-width: 700px;
@@ -46,9 +43,12 @@ img {
 	margin-bottom: 50px;
 }
 #home {
-	padding: 8px;
-	padding-bottom: 0px;
 	text-align: left;
+}
+#icon {
+	height: 32px;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 #main {
 	background-color: white;

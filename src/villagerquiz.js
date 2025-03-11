@@ -36,16 +36,22 @@ fetch("../data/villagerquiz.json")
 
 var qIndex = 0;
 
+var audio = new Audio("sounds/click_stereo.ogg");
+audio.volume = 0.3;
+
 window.addEventListener("DOMContentLoaded", () => {
 	startButton.addEventListener("click", () => {
+		audio.play();
 		startDiv.setAttribute("hidden",true);
 		questionDiv.removeAttribute("hidden");
 		displayQuestion();
 	});
 	testButton.addEventListener("click", () => {
+		audio.play();
 		stressTest(10000);
 	});
 	shareButton.addEventListener("click", () => {
+		audio.play();
 		let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver.net/villagerquiz.html" + "\n\n" + villagerImg.src;
 		navigator.clipboard.writeText(copyText);
 	});
@@ -63,6 +69,8 @@ function displayQuestion() {
 		button = newElement("button","button");
 		button.textContent = bank[qIndex][answer].text;
 		button.addEventListener("click", () => {
+			audio.play();
+
 			// add score to results
 			for(let key of bank[qIndex][answer].score) {
 				quizResults[key]++;
