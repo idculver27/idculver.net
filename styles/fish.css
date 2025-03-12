@@ -1,6 +1,15 @@
+:root {
+	--darktan: #965C3A;
+	--rain: #8388FD;
+	--sky: #80EAFF;
+	--sun: #FEFF00;
+	--tan: #F9BA66;
+	--verydarktan: #5B2B2A;
+	--wind: #FF9200; 
+}
 body {
-	background-color: #965C3A;
-	font-family: Helvetica;
+	background-color: var(--darktan);
+	font-family: Verdana, Tahoma, sans-serif;
 }
 h2 {
 	text-align: center;
@@ -15,7 +24,7 @@ svg {
 	width: 1px;
 }
 table {
-	background-color: #F9BA66;
+	background-color: var(--tan);
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
@@ -23,7 +32,7 @@ table {
 	text-align: left;
 }
 td, th, tr {
-	border: 1px solid #5B2B2A;
+	border: 1px solid var(--verydarktan);
 	padding: 6px;
 }
 th {
@@ -31,7 +40,7 @@ th {
 	text-align: center;
 }
 .any {
-	background-color: #80EAFF;
+	background-color: var(--sky);
 }
 .barleft {
 	border-right: none;
@@ -43,8 +52,8 @@ th {
 	text-align: center;
 }
 .innerheader {
-	background-color: #F9BA66;
-	border: 1px solid #5B2B2A;
+	background-color: var(--tan);
+	border: 1px solid var(--verydarktan);
 	margin: auto;
 	padding-bottom: 30px;
 	padding-top: 10px;
@@ -54,7 +63,7 @@ th {
 	text-align: center;
 }
 .rain {
-	background-color: #8388FD;
+	background-color: var(--rain);
 }
 .sideways {
 	transform: rotate(180deg);
@@ -64,8 +73,8 @@ th {
 	position: relative;
 }
 .sun {
-	background-color: #FEFF00;
+	background-color: var(--sun);
 }
 .sunorwind {
-	background-color: #FF9200;
+	background-color: var(--wind);
 }
