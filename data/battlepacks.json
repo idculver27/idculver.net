@@ -1226,61 +1226,6 @@
 		]
 	},
 	{
-		"number": "40558-1",
-		"name": "Clone Trooper Command Station",
-		"year": 2022,
-		"source": "Ep. II",
-		"pieces": 66,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw1189",
-				"name": "Clone Trooper",
-				"spec": "(Phase 1) - Nougat Head, Printed Legs and Boots",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw1146",
-				"name": "Clone Trooper Commander",
-				"spec": "(Phase 1) - Bright Light Orange Arms, Nougat Head",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "40557-1",
-		"name": "Defense of Hoth",
-		"year": 2022,
-		"source": "Ep. V",
-		"pieces": 64,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw1187",
-				"name": "Hoth Rebel Trooper",
-				"spec": "Dark Tan Uniform and Helmet, White Legs",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1188",
-				"name": "Hoth Rebel Trooper",
-				"spec": "White Uniform, Dark Tan Helmet, Female",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1186",
-				"name": "Hoth Rebel Trooper",
-				"spec": "White Uniform, Dark Tan Helmet, Reddish Brown Head",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
 		"number": "75320-1",
 		"name": "Snowtrooper Battle Pack",
 		"year": 2022,
