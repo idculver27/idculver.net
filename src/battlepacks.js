@@ -54,7 +54,7 @@ function buildListing(set) {
 				</a>
 			</div>
 			<div class="set">
-				<img class="set-pic" src="https://www.bricklink.com/SL/${set.number}.jpg" alt="${set.name}">
+				<img class="set-pic" src="https://img.bricklink.com/ItemImage/ON/0/${set.number}.png" alt="${set.name}">
 			</div>
 			<div class="minifig">
 				<table>
