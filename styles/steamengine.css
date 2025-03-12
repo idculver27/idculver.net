@@ -11,9 +11,8 @@ button {
 	font-family: inherit;
 }
 h1 {
-	margin: 10px;
-	text-align: center;
-	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 hr {
 	color: var(--gray);
@@ -32,7 +31,6 @@ table {
 	border-collapse: collapse;
 }
 td, th, tr {
-	/*border: 1px solid white;*/
 	padding: 10px;
 	padding-top: 0px;
 }
@@ -46,6 +44,13 @@ td, th, tr {
 .diagramLabel {
 	padding-bottom: 0px;
 	text-align: right;
+}
+.icon {
+	display: inline-block;
+	height: 40px;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 40px;
 }
 .notOptimal {
 	color: red;
@@ -62,12 +67,6 @@ td, th, tr {
 }
 .rangeSlider {
 	width: 500px;
-}
-#icon {
-	display: inline-block;
-	height: 32px;
-	margin-left: 5px;
-	margin-top: 5px;
 }
 @media (prefers-color-scheme: light) {
 	body {

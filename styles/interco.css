@@ -43,10 +43,10 @@ header {
 	padding: 30px;
 	padding-top: 0px;
 }
-#icon {
+.icon {
 	margin-left: 5px;
 	margin-top: 5px;
-	width: 32px;
+	width: 40px;
 }
 #padCol {
 	width: 60px;

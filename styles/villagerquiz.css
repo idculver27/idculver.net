@@ -6,16 +6,20 @@ body {
 }
 h1 {
 	color: white;
-	margin: 0px;
-	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 30px;
-	padding-top: 20px;
 	text-align: center;
 }
 h2 {
 	padding: 20px;
 	padding-bottom: 10px;
 	padding-top: 0px;
+}
+header {
+	background-color: black;
+	display: flex;
+	text-align: left;
 }
 img {
 	height: 50vh;
@@ -38,17 +42,14 @@ img {
 	border-image: url("../images/buttongreen.png") 10 stretch;
 	color: #ffffff;
 }
-#header {
-	background-color: black;
-	margin-bottom: 50px;
+.icon {
+	height: 40px;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 40px;
 }
 #home {
 	text-align: left;
-}
-#icon {
-	height: 32px;
-	margin-left: 5px;
-	margin-top: 5px;
 }
 #main {
 	background-color: white;
