@@ -1,9 +1,13 @@
+:root {
+	--gray: #777777;
+}
 a {
 	text-align: center;
 	text-decoration: none;
 }
 body {
-	font-family: "Helvetica", sans-serif;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
 }
 div {
 	padding: 10px;
@@ -13,6 +17,7 @@ h1 {
 }
 hr {
 	clear: left;
+	color: var(--gray);
 }
 i {
 	font-size: 0.9em;
@@ -53,6 +58,11 @@ table, td, tr {
 }
 .unique {
 	font-weight: bold;
+}
+#icon {
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 32px;
 }
 @media (prefers-color-scheme: dark) {
 	body {
