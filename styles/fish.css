@@ -10,9 +10,21 @@
 body {
 	background-color: var(--darktan);
 	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
+}
+h1 {
+	margin-left: auto;
+	margin-right: auto;
 }
 h2 {
+	margin-top: 30px;
 	text-align: center;
+}
+header {
+	background-color: var(--tan);
+	border: 1px solid var(--verydarktan);
+	display: flex;
+	margin: 10px;
 }
 img {
 	image-rendering: pixelated;
@@ -51,16 +63,12 @@ th {
 .centered {
 	text-align: center;
 }
-.innerheader {
-	background-color: var(--tan);
-	border: 1px solid var(--verydarktan);
-	margin: auto;
-	padding-bottom: 30px;
-	padding-top: 10px;
-}
-.outerheader {
-	margin-top: 20px;
-	text-align: center;
+.icon {
+	height: 40px;
+	image-rendering: auto;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 40px;
 }
 .rain {
 	background-color: var(--rain);

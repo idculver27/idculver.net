@@ -23,7 +23,7 @@ function buildRow(fish, special=false) {
 	tr.innerHTML = `<td><img src="images/fish/${fish.name.replace(" ", "_")}.png"> ${fish.name}</td>`;
 
 	// bundle
-	if (fish.bundle != "") tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png"></td>`;
+	if (fish.bundle != "") tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 	else tr.innerHTML += "<td></td>";
 	
 	// base price
