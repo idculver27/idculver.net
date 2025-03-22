@@ -55,6 +55,10 @@ window.addEventListener("DOMContentLoaded", () => {
 		let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver.net/villagerquiz.html" + "\n\n" + villagerImg.src;
 		navigator.clipboard.writeText(copyText);
 	});
+	restartButton.addEventListener("click", () => {
+		audio.play();
+		location.reload();
+	});
 });
 
 function displayQuestion() {
@@ -100,7 +104,7 @@ function finalResults() {
 	villagerImg.alt = villagerName.textContent + " picture";
 	villagerImg.src = imgs[biome][profession];
 	
-	console.log(quizResults);
+	//console.log(quizResults);
 }
 
 function findWinner(keys) {
