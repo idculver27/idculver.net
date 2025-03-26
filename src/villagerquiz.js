@@ -27,7 +27,7 @@ var quizResults = {
 
 var bank;
 var imgs;
-fetch("../data/villagerquiz.json")
+fetch("../databases/villagerquiz.json")
 	.then((response) => response.json())
 	.then((json) => {
 		bank = json.bank;

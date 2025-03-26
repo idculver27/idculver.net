@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-	fetch("../data/battlepacks.json")
+	fetch("../databases/battlepacks.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json.forEach(set => {

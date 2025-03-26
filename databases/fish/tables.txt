@@ -1,0 +1,36 @@
+create table bundles (
+	bundleName varchar(50),
+	primary key(bundleName)
+);
+create table fish (
+	fishID int auto_increment,
+	fishName varchar(50) not null,
+	basePrice int not null,
+	bundleName varchar(50),
+	time varchar(50),
+	weather varchar(50),
+	primary key(fishID),
+	foreign key(bundleName) references bundles(bundleName)
+);
+create table seasons (
+	seasonName varchar(50) not null,
+	primary key(seasonName)
+);
+create table fishSeasons (
+	fishID int,
+	seasonName varchar(50),
+	primary key(fishID, seasonName),
+	foreign key(fishID) references fish(fishID),
+	foreign key(seasonName) references seasons(seasonName)
+);
+create table locations (
+	locationName varchar(50) not null,
+	primary key(locationName)
+);
+create table fishLocations (
+	fishID int,
+	locationName varchar(50),
+	primary key(fishID, locationName),
+	foreign key(fishID) references fish(fishID),
+	foreign key(locationName) references locations(locationName)
+);

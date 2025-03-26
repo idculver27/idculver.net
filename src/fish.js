@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function buildTable() {
-	fetch("../data/fish.json")
+	fetch("../databases/fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json.forEach(fish => {
