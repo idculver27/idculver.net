@@ -3,7 +3,7 @@ create table bundles (
 	primary key(bundleName)
 );
 create table fish (
-	fishID int auto_increment,
+	fishID int,
 	fishName varchar(50) not null,
 	basePrice int not null,
 	bundleName varchar(50),
@@ -13,7 +13,7 @@ create table fish (
 	foreign key(bundleName) references bundles(bundleName)
 );
 create table seasons (
-	seasonName varchar(50) not null,
+	seasonName varchar(50),
 	primary key(seasonName)
 );
 create table fishSeasons (
@@ -24,7 +24,7 @@ create table fishSeasons (
 	foreign key(seasonName) references seasons(seasonName)
 );
 create table locations (
-	locationName varchar(50) not null,
+	locationName varchar(50),
 	primary key(locationName)
 );
 create table fishLocations (

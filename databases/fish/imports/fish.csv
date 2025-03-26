@@ -1,49 +1,49 @@
-1,Albacore,75,,06-11,18-02,
-2,Anchovy,30,,,
-3,Blue Discus,120,,,
-4,Bream,45,Night Fishing Bundle,18-02,
-5,Bullhead,75,Lake Fish Bundle,,
-6,Carp,30,Lake Fish Bundle,,
+1,Albacore,75,\N,06-11,18-02,\N
+2,Anchovy,30,\N,\N,\N
+3,Blue Discus,120,\N,\N,\N
+4,Bream,45,Night Fishing Bundle,18-02,\N
+5,Bullhead,75,Lake Fish Bundle,\N,\N
+6,Carp,30,Lake Fish Bundle,\N,\N
 7,Catfish,200,River Fish Bundle,06-00,rain
 8,Catfish,200,River Fish Bundle,06-00,rain
-9,Chub,50,Field Research Bundle,,
-10,Dorado,100,,06-19,
+9,Chub,50,Field Research Bundle,\N,\N
+10,Dorado,100,\N,06-19,\N
 11,Eel,85,Night Fishing Bundle,16-02,rain
-12,Flounder,100,,06-20,
-13,Ghostfish,45,Specialty Fish Bundle,,
-14,Goby,150,,,
-15,Halibut,80,,06-11,19-02,
-16,Herring,30,,,
-17,Ice Pip,500,,,
-18,Largemouth Bass,100,Lake Fish Bundle,06-19,
-19,Lava Eel,700,,,
-20,Lingcod,120,,,
-21,Lionfish,100,,,
-22,Midnight Carp,150,,22-02,
-23,Octopus,150,,06-13,
-24,Perch,55,,,
-25,Pike,100,,,
+12,Flounder,100,\N,06-20,\N
+13,Ghostfish,45,Specialty Fish Bundle,\N,\N
+14,Goby,150,\N,\N,\N
+15,Halibut,80,\N,06-11,19-02,\N
+16,Herring,30,\N,\N,\N
+17,Ice Pip,500,\N,\N,\N
+18,Largemouth Bass,100,Lake Fish Bundle,06-19,\N
+19,Lava Eel,700,\N,\N,\N
+20,Lingcod,120,\N,\N,\N
+21,Lionfish,100,\N,\N,\N
+22,Midnight Carp,150,\N,22-02,\N
+23,Octopus,150,\N,06-13,\N
+24,Perch,55,\N,\N,\N
+25,Pike,100,\N,\N,\N
 26,Pufferfish,200,Specialty Fish Bundle,12-16,sun
-27,Rainbow Trout,65,,06-19,sun
-28,Red Mullet,75,,06-19,
+27,Rainbow Trout,65,\N,06-19,sun
+28,Red Mullet,75,\N,06-19,\N
 29,Red Snapper,50,Ocean Fish Bundle,06-19,rain
-30,Salmon,75,,06-19,
-31,Sandfish,75,Specialty Fish Bundle,06-20,
-32,Sardine,40,Ocean Fish Bundle,06-19,
-33,Scorpion Carp,150,,06-20,
-34,Sea Cucumber,75,,06-19,
+30,Salmon,75,\N,06-19,\N
+31,Sandfish,75,Specialty Fish Bundle,06-20,\N
+32,Sardine,40,Ocean Fish Bundle,06-19,\N
+33,Scorpion Carp,150,\N,06-20,\N
+34,Sea Cucumber,75,\N,06-19,\N
 35,Shad,60,River Fish Bundle,09-02,rain
-36,Slimejack,100,,,
-37,Smallmouth Bass,50,,,
-38,Squid,80,,18-02,
-39,Stingray,180,,,
-40,Stonefish,300,,,
-41,Sturgeon,200,Lake Fish Bundle,06-19,
+36,Slimejack,100,\N,\N,\N
+37,Smallmouth Bass,50,\N,\N,\N
+38,Squid,80,\N,18-02,\N
+39,Stingray,180,\N,\N,\N
+40,Stonefish,300,\N,\N,\N
+41,Sturgeon,200,Lake Fish Bundle,06-19,\N
 42,Sunfish,30,River Fish Bundle,06-19,sunorwind
-43,Super Cucumber,250,,18-02,
-44,Tiger Trout,150,River Fish Bundle,06-19,
-45,Tilapia,75,Ocean Fish Bundle,06-14,
-46,Tuna,100,Ocean Fish Bundle,06-19,
-47,Void Salmon,150,The Missing Bundle,,
+43,Super Cucumber,250,\N,18-02,\N
+44,Tiger Trout,150,River Fish Bundle,06-19,\N
+45,Tilapia,75,Ocean Fish Bundle,06-14,\N
+46,Tuna,100,Ocean Fish Bundle,06-19,\N
+47,Void Salmon,150,The Missing Bundle,\N,\N
 48,Walleye,105,Night Fishing Bundle,12-02,rain
-49,Woodskip,75,Specialty Fish Bundle,,
+49,Woodskip,75,Specialty Fish Bundle,\N,\N
