@@ -44,13 +44,16 @@ SSLCertificateChainFile /etc/pki/tls/certs/idculver_net.ca-bundle
 ### point namecheap dns to my webserver
 
 ## API Setup
-1. Install NPM
-https://robert-drummond.com/2013/05/08/how-to-build-a-restful-web-api-on-a-raspberry-pi-in-javascript/
+1. Install Node.js
+
+2. Set up Node.js
 ```bash
 npm init
-npm install express --save
-npm install connect --save
+npm install express
 ```
+
+99. Start app server with pm2
+`pm2 start api.js`
 
 ## api setup
 ### nginx
