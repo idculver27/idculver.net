@@ -44,7 +44,7 @@ SSLCertificateChainFile /etc/pki/tls/certs/idculver_net.ca-bundle
 ### point namecheap dns to my webserver
 
 ## API Setup
-1. Install npm
+1. Install NPM
 https://robert-drummond.com/2013/05/08/how-to-build-a-restful-web-api-on-a-raspberry-pi-in-javascript/
 ```bash
 npm init
