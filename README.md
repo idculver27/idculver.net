@@ -27,6 +27,8 @@ DocumentRoot /var/www/idculver.net/
 ```
 
 4. get cert files
+https://ap.www.namecheap.com/ProductList/SslCertificates
+`ssl/`
 
 5. Edit `/etc/apache2/sites-available/default-ssl.conf`
 ```
@@ -41,7 +43,11 @@ SSLCertificateChainFile /etc/pki/tls/certs/idculver_net.ca-bundle
 6. Restart Apache
 `sudo systemctl restart apache2`
 
-### point namecheap dns to my webserver
+7. Set up port forwarding on your router
+...
+
+8. Point Namecheap DNS to your router
+https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns
 
 ## API Setup
 1. Install Node.js
@@ -50,6 +56,16 @@ SSLCertificateChainFile /etc/pki/tls/certs/idculver_net.ca-bundle
 ```bash
 npm init
 npm install express
+npm install mysql
+npm install dotenv
+```
+
+3. Configure environment variables
+Create file .env like the following:
+```
+PORT=3000
+DB_USERNAME=idc_ro
+DB_PASSWORD=password123
 ```
 
 99. Start app server with pm2
@@ -72,36 +88,35 @@ Take the default value for all prompts except "Change the root password? [Y/n]".
 3. Log in to the database as root
 `sudo mysql -u root -p`
 
-4. Create an example database
-`CREATE DATABASE exampledb;`
+4. Create the read-only user
+```sql
+create user 'idc_ro'@'localhost' identified by 'password123';
+grant select on idculver.* to 'idc_ro'@'localhost';
+flush privileges;
+```
 
-5. Create a new user
-`CREATE USER 'idculver27'@'localhost' IDENTIFIED BY 'password123';`
+5. Create the database
+```sql
+create database idculver;
+use idculver;
+```
 
-6. Give the new user all privileges
-`GRANT ALL PRIVILEGES ON exampledb.* TO 'exampleuser'@'localhost';`
-
-7. Flush the privilege table to allow the new user to access the database
-`FLUSH PRIVILEGES;`
-
-8. Create Fish database
-`CREATE DATABASE fish;`
-`USE fish;`
-Paste in the contents of "idculver.net/databases/fish/tables.txt"
+6. Create tables
+Paste in the contents of `idculver.net/databases/tables.txt`
 
 9. Import data
 `cp ~/idculver.net/databases/fish/imports/* /tmp`
-```
-LOAD DATA INFILE '/tmp/bundles.csv' INTO TABLE bundles FIELDS TERMINATED BY ',';
-LOAD DATA INFILE '/tmp/fish.csv' INTO TABLE fish FIELDS TERMINATED BY ',';
-LOAD DATA INFILE '/tmp/seasons.csv' INTO TABLE seasons FIELDS TERMINATED BY ',';
-LOAD DATA INFILE '/tmp/fishSeasons.csv' INTO TABLE fishSeasons FIELDS TERMINATED BY ',';
-LOAD DATA INFILE '/tmp/locations.csv' INTO TABLE locations FIELDS TERMINATED BY ',';
-LOAD DATA INFILE '/tmp/fishLocations.csv' INTO TABLE fishLocations FIELDS TERMINATED BY ',';
+```sql
+load data infile '/tmp/bundles.csv' into table bundles fields terminated by ',';
+load data infile '/tmp/fish.csv' into table fish fields terminated by ',';
+load data infile '/tmp/seasons.csv' into table seasons fields terminated by ',';
+load data infile '/tmp/fishSeasons.csv' into table fishSeasons fields terminated by ',';
+load data infile '/tmp/locations.csv' into table locations fields terminated by ',';
+load data infile '/tmp/fishLocations.csv' into table fishLocations fields terminated by ',';
 ```
 
 Example query
-```
-SELECT fishName, basePrice, bundleName, time, weather FROM fish
-LEFT JOIN fishLocations USING ?;
+```sql
+select fishName, basePrice, bundleName, time, weather from fish
+left join fishLocations using ?;
 ```
