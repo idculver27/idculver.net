@@ -1,4 +1,4 @@
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
 const fs = require("fs");
 const https = require("https");
@@ -34,18 +34,26 @@ db.connect((err) => {
 });
 
 // status endpoint
-app.get("/", (request, response) => {
+app.get("/", (req, res) => {
 	const status = {
 		"status": "Running"
 	};
-	response.send(status);
+	res.send(status);
 });
 
 // test endpoint
-app.get("/api", (request, response) => {
+app.get("/api", (req, res) => {
 	query = "SELECT * FROM seasons";
 	db.query(query, (err, result) => {
 		if (err) throw err;
-		response.send(result);	
+		res.send(result);	
+	});
+});
+
+app.get("/battlepacks", (req, res) => {
+	query = "select * from battlepacks";
+	db.query(query, (err, result) => {
+		if (err) throw err;
+		res.send(result);
 	});
 });
