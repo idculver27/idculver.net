@@ -13,7 +13,6 @@ const options = {
 	key: fs.readFileSync("ssl/domain.key", "utf8"),
 	cert: fs.readFileSync("ssl/domain.crt", "utf8")
 };
-console.log(options);
 const server = https.createServer(options, app);
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
@@ -43,17 +42,43 @@ app.get("/", (req, res) => {
 
 // test endpoint
 app.get("/api", (req, res) => {
-	query = "SELECT * FROM seasons";
+	query = "SELECT * FROM fish";
 	db.query(query, (err, result) => {
 		if (err) throw err;
 		res.send(result);	
 	});
 });
 
+// battlepacks endpoint
 app.get("/battlepacks", (req, res) => {
-	query = "select * from battlepacks";
+	query = `
+		SELECT set_id, set_name, release_year, short_title AS source_short_title, piece_count, msrp,
+			(
+				SELECT JSON_ARRAYAGG(
+					JSON_OBJECT(
+						'bl_id', bl_id,
+						'minifig_name', minifig_name,
+						'specification', specification,
+						'count', count,
+						'is_unique', is_unique
+					)
+				)
+				FROM bp_battle_pack_has_minifig
+				JOIN bp_minifig USING (bl_id)
+				WHERE bp_battle_pack.set_id = bp_battle_pack_has_minifig.set_id 
+			) AS minifigs
+		FROM bp_battle_pack
+		JOIN bp_source USING (source_id)
+		ORDER BY release_year, set_id;
+	`;
 	db.query(query, (err, result) => {
 		if (err) throw err;
+
+		// parse json
+		for (set of result) {
+			set.minifigs = JSON.parse(set.minifigs);
+		}
+		
 		res.send(result);
 	});
 });

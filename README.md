@@ -96,27 +96,4 @@ flush privileges;
 ```
 
 5. Create the database
-```sql
-create database idculver;
-use idculver;
-```
-
-6. Create tables
-Paste in the contents of `idculver.net/databases/tables.txt`
-
-9. Import data
-`cp ~/idculver.net/databases/fish/imports/* /tmp`
-```sql
-load data infile '/tmp/bundles.csv' into table bundles fields terminated by ',';
-load data infile '/tmp/fish.csv' into table fish fields terminated by ',';
-load data infile '/tmp/seasons.csv' into table seasons fields terminated by ',';
-load data infile '/tmp/fishSeasons.csv' into table fishSeasons fields terminated by ',';
-load data infile '/tmp/locations.csv' into table locations fields terminated by ',';
-load data infile '/tmp/fishLocations.csv' into table fishLocations fields terminated by ',';
-```
-
-Example query
-```sql
-select fishName, basePrice, bundleName, time, weather from fish
-left join fishLocations using ?;
-```
+use `databases/idculver.sql`
