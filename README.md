@@ -14,39 +14,74 @@ sudo git clone git@github.com:idculver27/idculver.net.git
 2. Make a symlink from your home directory for convenience
 `ln -s /var/www/idculver.net/ ~/idculver.net`
 
-## Webserver Setup
-1. Install apache
-
-2. Edit `/etc/apache2/apache2.conf`
-Change `<Directory /var/www/>` to `</Directory /var/www/idculver.net/>`
-
-3. Edit `/etc/apache2/sites-available/000-default.conf`
+## Web Proxy Setup
+1. Edit `/etc/nginx/sites-available/default`
+Change `root /var/www/html;` to `root /var/www/idculver.net;`
+Replace the location with these:
 ```
-ServerAdmin idculver27@gmail.com
-DocumentRoot /var/www/idculver.net/
-```
-
-4. get cert files
-https://ap.www.namecheap.com/ProductList/SslCertificates
-`ssl/`
-
-5. Edit `/etc/apache2/sites-available/default-ssl.conf`
-```
-ServerAdmin idculver27@gmail.com
-DocumentRoot /var/www/idculver.net/
-
-SSLCertificateFile /etc/pki/tls/certs/idculver_net.crt
-SSLCertificateKeyFile /etc/pki/tls/private/culverpi.key
-SSLCertificateChainFile /etc/pki/tls/certs/idculver_net.ca-bundle
+# idculver.net
+	location / {
+		try_files $uri $uri/ /index.html =404;
+	}
+	# API
+	location /api {
+		proxy_pass https://localhost:3000;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection 'upgrade';
+		proxy_set_header Host $host;
+		proxy_cache_bypass $http_upgrade;
+}
 ```
 
-6. Restart Apache
-`sudo systemctl restart apache2`
+2. Get SSL files
+Follow the instructions at https://ap.www.namecheap.com/ProductList/SslCertificates to get the files
+Put the cert in `/etc/pki/tls/certs/`
+Put the key in `/etc/pki/tls/private/`
 
-7. Set up port forwarding on your router
+3. Edit `/etc/apache2/apache2.conf`
+```
+# redirect to HTTPS
+server {
+	listen 80;
+	server_name idculver.net;
+	return 301 https://idculver.net$request_uri;
+}
+
+# idculver.net
+server {
+	listen 443 ssl default_server;
+	server_name idculver.net;
+	ssl_certificate /etc/pki/tls/certs/idculver_net.crt;
+	ssl_certificate_key /etc/pki/tls/private/culverpi.key;
+
+	root /var/www/idculver.net;
+	index index.html index.htm index.nginx-debian.html;
+
+	# idculver.net
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	# API
+	location /api {
+		proxy_pass https://localhost:3000;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection 'upgrade';
+		proxy_set_header Host $host;
+		proxy_cache_bypass $http_upgrade;
+	}
+}
+
+```
+
+4. Restart nginx
+`sudo systemctl restart nginx`
+
+5. Set up port forwarding on your router
 ...
 
-8. Point Namecheap DNS to your router
+6. Point Namecheap DNS to your router
 https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns
 
 ## API Setup
@@ -63,19 +98,12 @@ npm install dotenv
 3. Configure environment variables
 Create file .env like the following:
 ```
-PORT=3000
 DB_USERNAME=idc_ro
 DB_PASSWORD=password123
 ```
 
 99. Start app server with pm2
 `pm2 start api.js`
-
-## api setup
-### nginx
-### node.js
-
-
 
 ## Database Setup
 1. Install MariaDB

@@ -1,1404 +1,1404 @@
 [
-	{
-		"number": "7654-1",
-		"name": "Droids Battle Pack",
-		"year": 2007,
-		"source": "Ep. III",
-		"pieces": 102,
-		"rrp": 9.99,
-		"minifigs": [
-			{
-				"blid": "sw0001b",
-				"name": "Battle Droid",
-				"spec": "Tan, Angled Arms",
-				"count": 4,
-				"unique": false
-			},
-			{
-				"blid": "sw0092",
-				"name": "Super Battle Droid",
-				"spec": "Pearl Dark Gray, Wide Head",
-				"count": 3,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "7655-1",
-		"name": "Clone Troopers Battle Pack",
-		"year": 2007,
-		"source": "Ep. III",
-		"pieces": 58,
-		"rrp": 9.99,
-		"minifigs": [
-			{
-				"blid": "sw0091",
-				"name": "Clone Shock Trooper",
-				"spec": "Coruscant Guard (Phase 2) - Black Head",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0126",
-				"name": "Clone Trooper",
-				"spec": "(Phase 2) - Black Head, Continuous Mouth",
-				"count": 2,
-				"unique": false
-			},
-			{
-				"blid": "sw0128a",
-				"name": "Clone Trooper, 327th Star Corps",
-				"spec": "(Phase 2) - Black Head",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "7667-1",
-		"name": "Imperial Dropship",
-		"year": 2008,
-		"source": "Legends",
-		"pieces": 81,
-		"rrp": 9.99,
-		"minifigs": [
-			{
-				"blid": "sw0166a",
-				"name": "Imperial Shadow Trooper",
-				"spec": "Short Line on Back",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0188",
-				"name": "Imperial Stormtrooper",
-				"spec": "Black Head, Dotted Mouth Helmet",
-				"count": 3,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "7668-1",
-		"name": "Rebel Scout Speeder",
-		"year": 2008,
-		"source": "Ep. IV",
-		"pieces": 82,
-		"rrp": 9.99,
-		"minifigs": [
-			{
-				"blid": "sw0187",
-				"name": "Rebel Fleet Trooper / Rebel Scout Trooper",
-				"spec": "Plain Vest, Frown",
-				"count": 4,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "8014-1",
-		"name": "Clone Walker Battle Pack",
-		"year": 2009,
-		"source": "Clone Wars",
-		"pieces": 72,
-		"rrp": 11.99,
-		"minifigs": [
-			{
-				"blid": "sw0223",
-				"name": "Clone Trooper",
-				"spec": "(Phase 1) - Black Visor, Pauldron, and Kama, Large Eyes",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0201",
-				"name": "Clone Trooper",
-				"spec": "(Phase 1) - Large Eyes",
-				"count": 2,
-				"unique": false
-			},
-			{
-				"blid": "sw0221",
-				"name": "Clone Trooper Gunner",
-				"spec": "(Phase 1) - Large Eyes",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "8015-1",
-		"name": "Assassin Droids Battle Pack",
-		"year": 2009,
-		"source": "Clone Wars",
-		"pieces": 94,
-		"rrp": 11.99,
-		"minifigs": [
-			{
-				"blid": "sw0229",
-				"name": "Assassin Droid",
-				"spec": "(Silver)",
-				"count": 3,
-				"unique": true
-			},
-			{
-				"blid": "sw0222",
-				"name": "Assassin Droid Elite",
-				"spec": "(Black)",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "8083-1",
-		"name": "Rebel Trooper Battle Pack",
-		"year": 2010,
-		"source": "Ep. V",
-		"pieces": 79,
-		"rrp": 11.99,
-		"minifigs": [
-			{
-				"blid": "sw0258",
-				"name": "Hoth Officer",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0259",
-				"name": "Hoth Rebel Trooper",
-				"spec": "(Orange Chin Dimple)",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0260",
-				"name": "Zev Senesca",
-				"spec": "",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "8084-1",
-		"name": "Snowtrooper Battle Pack",
-		"year": 2010,
-		"source": "Ep. V",
-		"pieces": 74,
-		"rrp": 11.99,
-		"minifigs": [
-			{
-				"blid": "sw0262",
-				"name": "AT-AT Driver",
-				"spec": "Red Imperial Logo, Bluish Grays, Black Head, Stormtrooper Type 2 Helmet",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0261",
-				"name": "Imperial Officer with Battle Armor",
-				"spec": "(Captain / Commandant / Commander) - Dark Bluish Gray Legs, Smirk",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0115",
-				"name": "Snowtrooper",
-				"spec": "Light Bluish Gray Hips, White Hands (Hoth Stormtrooper)",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "7913-1",
-		"name": "Clone Trooper Battle Pack",
-		"year": 2011,
-		"source": "Clone Wars",
-		"pieces": 85,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0297",
-				"name": "Clone ARF Trooper Razor / Stak, 91st Mobile Reconnaissance Corps Lightning Squadron",
-				"spec": "(Phase 1) - Large Eyes",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0299",
-				"name": "Clone Bomb Squad Trooper",
-				"spec": "(Phase 1) - Large Eyes",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0298",
-				"name": "Clone Trooper, Horn Company",
-				"spec": "(Phase 1) - Sand Green and Lime Markings, Large Eyes",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "7914-1",
-		"name": "Mandalorian Battle Pack",
-		"year": 2011,
-		"source": "Clone Wars",
-		"pieces": 68,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0296",
-				"name": "Mandalorian Death Watch Warrior",
-				"spec": "",
-				"count": 4,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "9488-1",
-		"name": "Elite Clone Trooper & Commando Droid Battle Pack",
-		"year": 2012,
-		"source": "Clone Wars",
-		"pieces": 98,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0377",
-				"name": "Clone ARC Trooper Hammer, Rancor Battalion",
-				"spec": "(Phase 2) - Dark Red Cloth Pauldron, Black Cloth Kama, Large Eyes",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0378",
-				"name": "Clone ARF Trooper, Rancor Battalion",
-				"spec": "(Phase 1) - Large Eyes",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0359",
-				"name": "Commando Droid",
-				"spec": "",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "9489-1",
-		"name": "Endor Rebel Trooper & Imperial Trooper Battle Pack",
-		"year": 2012,
-		"source": "Ep. VI",
-		"pieces": 77,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0367",
-				"name": "Endor Rebel Commando",
-				"spec": "Dark Tan Vest",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0368",
-				"name": "Endor Rebel Commando",
-				"spec": "Stubble",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0005b",
-				"name": "Imperial Scout Trooper",
-				"spec": "Printed Black Head, Dark Bluish Gray Torso Print",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0366",
-				"name": "Imperial Stormtrooper",
-				"spec": "Printed Black Head, Dotted Mouth Helmet, Detailed Armor",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75000-1",
-		"name": "Clone Troopers vs. Droidekas",
-		"year": 2013,
-		"source": "Ep. II",
-		"pieces": 124,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0442",
-				"name": "Clone Trooper",
-				"spec": "(Phase 1) - Scowl",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0438",
-				"name": "Clone Trooper Sergeant",
-				"spec": "(Phase 1) - Scowl",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0441",
-				"name": "Droideka",
-				"spec": "(Destroyer Droid) - Pearl Dark Gray Arms Mechanical",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75001-1",
-		"name": "Republic Troopers vs. Sith Troopers",
-		"year": 2013,
-		"source": "The Old Republic",
-		"pieces": 63,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0444",
-				"name": "Republic Trooper",
-				"spec": "(Cheek Lines)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0440",
-				"name": "Republic Trooper",
-				"spec": "(Smirk)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0443",
-				"name": "Sith Trooper",
-				"spec": "Black Armor with Printed Legs",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0436",
-				"name": "Sith Trooper",
-				"spec": "Dark Red Armor",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75034-1",
-		"name": "Death Star Troopers",
-		"year": 2014,
-		"source": "Ep. VI",
-		"pieces": 102,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0529",
-				"name": "Imperial Gunner",
-				"spec": "Helmet with Silver Imperial Logo, Light Nougat Head, Closed Mouth",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0520",
-				"name": "Imperial Gunner",
-				"spec": "Helmet with Silver Imperial Logo, Light Nougat Head, Open Mouth",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0521",
-				"name": "Royal Guard",
-				"spec": "Dark Red Arms and Hands",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75035-1",
-		"name": "Kashyyyk Troopers",
-		"year": 2014,
-		"source": "Ep. III",
-		"pieces": 99,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0518",
-				"name": "Clone Scout Trooper, 41st Elite Corps",
-				"spec": "(Phase 2) - Kashyyyk Camouflage, Scowl",
-				"count": 2,
-				"unique": false
-			},
-			{
-				"blid": "sw0519",
-				"name": "Clone Trooper, 41st Elite Corps",
-				"spec": "(Phase 2) - Kashyyyk Camouflage, Scowl",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75036-1",
-		"name": "Utapau Troopers",
-		"year": 2014,
-		"source": "Ep. III",
-		"pieces": 83,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0523",
-				"name": "Clone Airborne Trooper, 212th Attack Battalion",
-				"spec": "(Phase 2) - Orange Arm, Dirt Stains, Light Bluish Gray Cloth Kama, Scowl",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0522",
-				"name": "Clone Trooper, 212th Attack Battalion",
-				"spec": "(Phase 2) - Orange Arms, Dirt Stains, Scowl",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75037-1",
-		"name": "Battle on Saleucami",
-		"year": 2014,
-		"source": "Ep. III",
-		"pieces": 183,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0001c",
-				"name": "Battle Droid",
-				"spec": "Tan, Angled Arm and Straight Arm",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0001b",
-				"name": "Battle Droid",
-				"spec": "Tan, Angled Arms",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0524",
-				"name": "Clone BARC Trooper, 91st Mobile Reconnaissance Corps",
-				"spec": "(Phase 2) - Scowl",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0092",
-				"name": "Super Battle Droid",
-				"spec": "Pearl Dark Gray, Wide Head",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75078-1",
-		"name": "Imperial Troop Transport",
-		"year": 2015,
-		"source": "Rebels",
-		"pieces": 141,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0578",
-				"name": "Imperial Stormtrooper",
-				"spec": "Printed Legs, Dark Azure Helmet Vents",
-				"count": 2,
-				"unique": false
-			},
-			{
-				"blid": "sw0617",
-				"name": "Imperial Stormtrooper",
-				"spec": "Printed Legs, Dark Azure Helmet Vents, Frown",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75079-1",
-		"name": "Shadow Troopers",
-		"year": 2015,
-		"source": "The Force Unleashed",
-		"pieces": 95,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0603",
-				"name": "Imperial Shadow Stormtrooper",
-				"spec": "",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0604",
-				"name": "Shadow Guard",
-				"spec": "",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75088-1",
-		"name": "Senate Commando Troops",
-		"year": 2015,
-		"source": "Clone Wars",
-		"pieces": 106,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0614",
-				"name": "Senate Commando",
-				"spec": "Printed Legs",
-				"count": 3,
-				"unique": true
-			},
-			{
-				"blid": "sw0613",
-				"name": "Senate Commando Captain",
-				"spec": "Printed Legs",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75089-1",
-		"name": "Geonosis Troopers",
-		"year": 2015,
-		"source": "Legends",
-		"pieces": 105,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0605",
-				"name": "Clone Airborne Trooper",
-				"spec": "(Phase 2) - Geonosis Camouflage, Smirk",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0606",
-				"name": "Clone Trooper",
-				"spec": "(Phase 2) - Geonosis Camouflage, Scowl",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75131-1",
-		"name": "Resistance Trooper Battle Pack",
-		"year": 2016,
-		"source": "Ep. VII",
-		"pieces": 112,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0699",
-				"name": "Resistance Officer",
-				"spec": "Headset",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0697",
-				"name": "Resistance Trooper",
-				"spec": "Dark Tan Jacket, Frown, Furrowed Eyebrows",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0698",
-				"name": "Resistance Trooper",
-				"spec": "Tan Jacket, Frown, Cheek Lines",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0696",
-				"name": "Resistance Trooper",
-				"spec": "Tan Jacket, Moustache",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75132-1",
-		"name": "First Order Battle Pack",
-		"year": 2016,
-		"source": "Ep. VII",
-		"pieces": 88,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0694",
-				"name": "First Order Crew Member",
-				"spec": "Cap with Insignia",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0671",
-				"name": "First Order Crew Member",
-				"spec": "(Fleet Engineer / Gunner) - Light Nougat Head",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0695",
-				"name": "First Order Heavy Assault Stormtrooper",
-				"spec": "(Rounded Mouth Pattern)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0667",
-				"name": "First Order Stormtrooper",
-				"spec": "(Rounded Mouth Pattern)",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75133-1",
-		"name": "Rebel Alliance Battle Pack",
-		"year": 2016,
-		"source": "Battlefront",
-		"pieces": 101,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0689",
-				"name": "Duros Alliance Fighter",
-				"spec": "Jet Pack",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0688",
-				"name": "Rebel Trooper",
-				"spec": "Goggles, Dark Tan Helmet",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0690",
-				"name": "Rebel Trooper",
-				"spec": "Rebel Helmet, Jet Pack",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0687",
-				"name": "Rodian Alliance Fighter",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75134-1",
-		"name": "Galactic Empire Battle Pack",
-		"year": 2016,
-		"source": "Battlefront",
-		"pieces": 109,
-		"rrp": 12.99,
-		"minifigs": [
-			{
-				"blid": "sw0693",
-				"name": "Imperial Crew",
-				"spec": "Black Cap, Closed Mouth",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0691",
-				"name": "Imperial Jet Pack Trooper",
-				"spec": "(Jumptrooper)",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0692",
-				"name": "Imperial Shock Trooper",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75164-1",
-		"name": "Rebel Trooper Battle Pack",
-		"year": 2017,
-		"source": "Rogue One",
-		"pieces": 120,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0805",
-				"name": "Rebel Trooper",
-				"spec": "Light Nougat Head, Helmet with Pearl Dark Gray Band (Private Calfor)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0806",
-				"name": "Rebel Trooper",
-				"spec": "Reddish Brown Head, Helmet with Pearl Dark Gray Band (Corporal Tonc)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0803",
-				"name": "Rebel Trooper",
-				"spec": "White Goggles, Dark Bluish Gray Helmet, Black Beard (Private Kappehl)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0804",
-				"name": "Rebel Trooper",
-				"spec": "White Goggles, Dark Tan Helmet, Medium Nougat Beard (Corporal Rostok)",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75165-1",
-		"name": "Imperial Trooper Battle Pack",
-		"year": 2017,
-		"source": "Rogue One",
-		"pieces": 112,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0807",
-				"name": "Imperial Death Trooper",
-				"spec": "",
-				"count": 2,
-				"unique": false
-			},
-			{
-				"blid": "sw0585",
-				"name": "Imperial Stormtrooper",
-				"spec": "Printed Legs, Dark Blue Helmet Vents",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75166-1",
-		"name": "First Order Transport Speeder Battle Pack",
-		"year": 2017,
-		"source": "Ep. VII",
-		"pieces": 117,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0666",
-				"name": "First Order Flametrooper",
-				"spec": "",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0832",
-				"name": "First Order Officer",
-				"spec": "(Colonel Erich S. Datoo)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0667",
-				"name": "First Order Stormtrooper",
-				"spec": "(Rounded Mouth Pattern)",
-				"count": 2,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75167-1",
-		"name": "Bounty Hunter Speeder Bike Battle Pack",
-		"year": 2017,
-		"source": "Ep. V",
-		"pieces": 125,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0830",
-				"name": "4-LOM",
-				"spec": "",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0828",
-				"name": "Bossk",
-				"spec": "Olive Green",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0751",
-				"name": "Dengar",
-				"spec": "(White Torso)",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0831a",
-				"name": "IG-88",
-				"spec": "with Round 1 x 1 Plate",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75197-1",
-		"name": "First Order Specialists Battle Pack",
-		"year": 2018,
-		"source": "Ep. VIII",
-		"pieces": 108,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0671",
-				"name": "First Order Crew Member",
-				"spec": "(Fleet Engineer / Gunner) - Light Nougat Head",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0871",
-				"name": "First Order Shuttle Pilot",
-				"spec": "",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0886",
-				"name": "First Order Stormtrooper Executioner",
-				"spec": "",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75198-1",
-		"name": "Tatooine Battle Pack",
-		"year": 2018,
-		"source": "Ep. IV",
-		"pieces": 97,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0895",
-				"name": "Astromech Droid, R3-T2",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0896",
-				"name": "Jawa",
-				"spec": "Straps with Black Stains",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0897",
-				"name": "Jawa",
-				"spec": "Tattered Shirt",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0620",
-				"name": "Tusken Raider",
-				"spec": "Head Spikes, Crossed Belts",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75206-1",
-		"name": "Jedi and Clone Troopers Battle Pack",
-		"year": 2018,
-		"source": "Ep. II",
-		"pieces": 102,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0909",
-				"name": "Barriss Offee",
-				"spec": "Skirt",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0910",
-				"name": "Clone Trooper",
-				"spec": "(Phase 1) - Printed Legs, Scowl",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0911",
-				"name": "Ki-Adi-Mundi",
-				"spec": "(Printed Legs)",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75207-1",
-		"name": "Imperial Patrol Battle Pack",
-		"year": 2018,
-		"source": "Solo",
-		"pieces": 99,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0912",
-				"name": "Imperial Emigration Officer",
-				"spec": "(Imperial Navy Trooper - Corporal Zuzanu Latt)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0914",
-				"name": "Imperial Patrol Trooper",
-				"spec": "Male, Light Nougat Head, Scowl",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0913",
-				"name": "Imperial Recruitment Officer",
-				"spec": "(Chief / Navy Captain)",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75225-1",
-		"name": "Elite Praetorian Guard Battle Pack",
-		"year": 2019,
-		"source": "Ep. VIII",
-		"pieces": 109,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw0989",
-				"name": "Elite Praetorian Guard",
-				"spec": "Flat Helmet",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw0990",
-				"name": "Elite Praetorian Guard",
-				"spec": "Pointed Helmet, Legs",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0905",
-				"name": "First Order Stormtrooper",
-				"spec": "(Pointed Mouth Pattern)",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw0998",
-				"name": "Praetorian Training Droid",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75226-1",
-		"name": "Inferno Squad Battle Pack",
-		"year": 2019,
-		"source": "Battlefront",
-		"pieces": 118,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw1000",
-				"name": "Iden Versio",
-				"spec": "(Inferno Squad Commander)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0987",
-				"name": "Inferno Squad Agent",
-				"spec": "(Frown, Sunken Eyes)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0988",
-				"name": "Inferno Squad Agent",
-				"spec": "(Open Mouth, Grimacing)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0986",
-				"name": "Inferno Squad Agent",
-				"spec": "Utility Belt (Frown)",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75262-1",
-		"name": "Imperial Dropship – 20th Anniversary Edition",
-		"year": 2019,
-		"source": "Legends",
-		"pieces": 125,
-		"rrp": 19.99,
-		"minifigs": [
-			{
-				"blid": "sw1032",
-				"name": "Han Solo",
-				"spec": "Blue Legs (20th Anniversary Torso)",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1031",
-				"name": "Imperial Shadow Trooper",
-				"spec": "Male, Dual Molded Helmet, Light Nougat Head, Scowl",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0997b",
-				"name": "Imperial Stormtrooper",
-				"spec": "Male, Dual Molded Helmet with Light Bluish Gray Panels on Back, Light Nougat Head, Scowl",
-				"count": 3,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75266-1",
-		"name": "Sith Troopers Battle Pack",
-		"year": 2020,
-		"source": "Ep. IX",
-		"pieces": 105,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw1076",
-				"name": "Sith Fleet Officer",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1075",
-				"name": "Sith Jet Trooper",
-				"spec": "",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw1065",
-				"name": "Sith Trooper",
-				"spec": "Episode 9",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75267-1",
-		"name": "Mandalorian Battle Pack",
-		"year": 2020,
-		"source": "The Mandalorian",
-		"pieces": 102,
-		"rrp": 14.99,
-		"minifigs": [
-			{
-				"blid": "sw1077",
-				"name": "Mandalorian Tribe Warrior",
-				"spec": "Female, Black Cape, Light Bluish Gray Helmet with Antenna / Rangefinder",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1078",
-				"name": "Mandalorian Tribe Warrior",
-				"spec": "Female, Dark Brown Cape, Green Helmet with Antenna / Rangefinder",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw1079",
-				"name": "Mandalorian Tribe Warrior",
-				"spec": "Male, Dark Brown Cape, Dark Orange Helmet",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1080",
-				"name": "Mandalorian Tribe Warrior",
-				"spec": "Male, Olive Green Cape, Dark Azure Helmet",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75280-1",
-		"name": "501st Legion Clone Troopers",
-		"year": 2020,
-		"source": "Clone Wars",
-		"pieces": 285,
-		"rrp": 29.99,
-		"minifigs": [
-			{
-				"blid": "sw0001c",
-				"name": "Battle Droid",
-				"spec": "Tan, Angled Arm and Straight Arm",
-				"count": 2,
-				"unique": false
-			},
-			{
-				"blid": "sw1093",
-				"name": "Clone Jet Trooper, 501st Legion",
-				"spec": "(Phase 2) - Nougat Head",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1094",
-				"name": "Clone Trooper, 501st Legion",
-				"spec": "(Phase 2) - White Arms, Nougat Head",
-				"count": 3,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75320-1",
-		"name": "Snowtrooper Battle Pack",
-		"year": 2022,
-		"source": "Ep. V",
-		"pieces": 105,
-		"rrp": 19.99,
-		"minifigs": [
-			{
-				"blid": "sw1182",
-				"name": "Imperial Scout Trooper",
-				"spec": "Hoth - Female, Dual Molded Helmet, Nougat Head, Smirk",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1178",
-				"name": "Snowtrooper",
-				"spec": "Female, Printed Legs, Dark Tan Hands, Light Nougat Head, Angry Smile",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw1179",
-				"name": "Snowtrooper",
-				"spec": "Male, Printed Legs, Dark Tan Hands, Reddish Brown Head, Grimace",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw1181",
-				"name": "Snowtrooper",
-				"spec": "Printed Legs, Dark Tan Hands, Cheek Lines, Lopsided Grin",
-				"count": 1,
-				"unique": false
-			}
-		]
-	},
-	{
-		"number": "75345-1",
-		"name": "501st Clone Troopers Battle Pack",
-		"year": 2023,
-		"source": "Clone Wars",
-		"pieces": 119,
-		"rrp": 19.99,
-		"minifigs": [
-			{
-				"blid": "sw1247",
-				"name": "Clone Heavy Trooper, 501st Legion",
-				"spec": "(Phase 2) - White Arms, Blue Visor, Backpack, Nougat Head, Helmet with Holes",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw1246",
-				"name": "Clone Trooper, 501st Legion",
-				"spec": "(Phase 2) - White Arms, Blue Rangefinder, Nougat Head, Helmet with Holes",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1248",
-				"name": "Clone Trooper Specialist, 501st Legion",
-				"spec": "(Phase 2) - Blue Arms, Macrobinoculars, Nougat Head, Helmet with Holes",
-				"count": 1,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75359-1",
-		"name": "332nd Ahsoka's Clone Trooper Battle Pack",
-		"year": 2023,
-		"source": "Clone Wars",
-		"pieces": 108,
-		"rrp": 19.99,
-		"minifigs": [
-			{
-				"blid": "sw1277",
-				"name": "Clone Captain Vaughn, 501st Legion, 332nd Company",
-				"spec": "(Phase 2) - Helmet with Holes and Togruta Markings, Orange Visor",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1278",
-				"name": "Clone Trooper, 501st Legion, 332nd Company",
-				"spec": "(Phase 2) - Helmet with Holes and Togruta Markings",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1276",
-				"name": "Clone Trooper, 501st Legion, 332nd Company",
-				"spec": "(Phase 2) - Helmet with Holes and Togruta Markings, Blue Jet Pack",
-				"count": 2,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75372-1",
-		"name": "Clone Trooper & Battle Droid Battle Pack",
-		"year": 2024,
-		"source": "Clone Wars",
-		"pieces": 215,
-		"rrp": 29.99,
-		"minifigs": [
-			{
-				"blid": "sw1320",
-				"name": "Battle Droid",
-				"spec": "Tan, Angled Arms, Light Bluish Gray Clip on Back",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw0001d",
-				"name": "Battle Droid",
-				"spec": "Tan, Straight Arms",
-				"count": 1,
-				"unique": false
-			},
-			{
-				"blid": "sw1305",
-				"name": "Clone Shock Trooper, Coruscant Guard",
-				"spec": "(Phase 2) - Nougat Head",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1319",
-				"name": "Clone Trooper",
-				"spec": "(Phase 2) - Nougat Head",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1321",
-				"name": "Super Battle Droid",
-				"spec": "Pearl Dark Gray, Narrow Head, Chest Light Indent",
-				"count": 3,
-				"unique": true
-			}
-		]
-	},
-	{
-		"number": "75373-1",
-		"name": "Ambush on Mandalore Battle Pack",
-		"year": 2024,
-		"source": "The Mandalorian",
-		"pieces": 109,
-		"rrp": 19.99,
-		"minifigs": [
-			{
-				"blid": "sw1346",
-				"name": "Imperial Commando",
-				"spec": "",
-				"count": 2,
-				"unique": true
-			},
-			{
-				"blid": "sw1344",
-				"name": "Mandalorian Nite Owl",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			},
-			{
-				"blid": "sw1345",
-				"name": "Mandalorian Warrior",
-				"spec": "",
-				"count": 1,
-				"unique": true
-			}
-		]
-	}
+    {
+        "set_id": 7654,
+        "set_name": "Droids Battle Pack",
+        "release_year": 2007,
+        "source_short_title": "Ep. III",
+        "piece_count": 102,
+        "msrp": 9.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0001b",
+                "minifig_name": "Battle Droid",
+                "specification": null,
+                "count": 4,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0092",
+                "minifig_name": "Super Battle Droid",
+                "specification": null,
+                "count": 3,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 7655,
+        "set_name": "Clone Troopers Battle Pack",
+        "release_year": 2007,
+        "source_short_title": "Ep. III",
+        "piece_count": 58,
+        "msrp": 9.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0091",
+                "minifig_name": "Clone Shock Trooper",
+                "specification": "Coruscant Guard",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0126",
+                "minifig_name": "Clone Trooper",
+                "specification": "Phase II",
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0128a",
+                "minifig_name": "Clone Trooper",
+                "specification": "327th Star Corps",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 7667,
+        "set_name": "Imperial Dropship",
+        "release_year": 2008,
+        "source_short_title": "Legends",
+        "piece_count": 81,
+        "msrp": 9.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0166a",
+                "minifig_name": "Shadow Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0188",
+                "minifig_name": "Stormtrooper",
+                "specification": null,
+                "count": 3,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 7668,
+        "set_name": "Rebel Scout Speeder",
+        "release_year": 2008,
+        "source_short_title": "Ep. IV",
+        "piece_count": 82,
+        "msrp": 9.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0187",
+                "minifig_name": "Rebel Trooper",
+                "specification": "Fleet Trooper",
+                "count": 4,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 8014,
+        "set_name": "Clone Walker Battle Pack",
+        "release_year": 2009,
+        "source_short_title": "Clone Wars",
+        "piece_count": 72,
+        "msrp": 11.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0201",
+                "minifig_name": "Clone Trooper",
+                "specification": "Phase I",
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0221",
+                "minifig_name": "Clone Gunner",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0223",
+                "minifig_name": "Clone Commander",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 8015,
+        "set_name": "Assassin Droids Battle Pack",
+        "release_year": 2009,
+        "source_short_title": "Clone Wars",
+        "piece_count": 94,
+        "msrp": 11.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0222",
+                "minifig_name": "Elite Assassin Droid",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0229",
+                "minifig_name": "Assassin Droid",
+                "specification": null,
+                "count": 3,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 8083,
+        "set_name": "Rebel Trooper Battle Pack",
+        "release_year": 2010,
+        "source_short_title": "Ep. V",
+        "piece_count": 79,
+        "msrp": 11.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0258",
+                "minifig_name": "Hoth Officer",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0259",
+                "minifig_name": "Hoth Rebel Trooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0260",
+                "minifig_name": "Zev Senesca",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 8084,
+        "set_name": "Snowtrooper Battle Pack",
+        "release_year": 2010,
+        "source_short_title": "Ep. V",
+        "piece_count": 74,
+        "msrp": 11.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0115",
+                "minifig_name": "Snowtrooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0261",
+                "minifig_name": "Imperial Officer",
+                "specification": "Battle Armor",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0262",
+                "minifig_name": "AT-AT Driver",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 7913,
+        "set_name": "Clone Trooper Battle Pack",
+        "release_year": 2011,
+        "source_short_title": "Clone Wars",
+        "piece_count": 85,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0297",
+                "minifig_name": "ARF Trooper",
+                "specification": "91st Mobile Reconnaissance Corps, Lightning Squadron",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0298",
+                "minifig_name": "Clone Trooper",
+                "specification": "Horn Company",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0299",
+                "minifig_name": "Bomb Squad Trooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 7914,
+        "set_name": "Mandalorian Battle Pack",
+        "release_year": 2011,
+        "source_short_title": "Clone Wars",
+        "piece_count": 68,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0296",
+                "minifig_name": "Mandalorian Death Watch Warrior",
+                "specification": null,
+                "count": 4,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 9488,
+        "set_name": "Elite Clone Trooper & Commando Droid Battle Pack",
+        "release_year": 2012,
+        "source_short_title": "Clone Wars",
+        "piece_count": 98,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0359",
+                "minifig_name": "Commando Droid",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0377",
+                "minifig_name": "ARC Trooper",
+                "specification": "Rancor Battalion",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0378",
+                "minifig_name": "ARF Trooper",
+                "specification": "Rancor Battalion",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 9489,
+        "set_name": "Endor Rebel Trooper & Imperial Trooper Battle Pack",
+        "release_year": 2012,
+        "source_short_title": "Ep. VI",
+        "piece_count": 77,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0005b",
+                "minifig_name": "Scout Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0366",
+                "minifig_name": "Stormtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0367",
+                "minifig_name": "Endor Rebel Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0368",
+                "minifig_name": "Endor Rebel Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75000,
+        "set_name": "Clone Troopers vs. Droidekas",
+        "release_year": 2013,
+        "source_short_title": "Ep. II",
+        "piece_count": 124,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0438",
+                "minifig_name": "Clone Sergeant",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0441",
+                "minifig_name": "Droideka",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0442",
+                "minifig_name": "Clone Trooper",
+                "specification": "Phase I",
+                "count": 1,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75001,
+        "set_name": "Republic Troopers vs. Sith Troopers",
+        "release_year": 2013,
+        "source_short_title": "The Old Republic",
+        "piece_count": 63,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0436",
+                "minifig_name": "Sith Trooper",
+                "specification": "Red Armor",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0440",
+                "minifig_name": "Republic Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0443",
+                "minifig_name": "Sith Trooper",
+                "specification": "Black Armor",
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0444",
+                "minifig_name": "Republic Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75034,
+        "set_name": "Death Star Troopers",
+        "release_year": 2014,
+        "source_short_title": "Ep. VI",
+        "piece_count": 102,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0520",
+                "minifig_name": "Imperial Gunner",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0521",
+                "minifig_name": "Royal Guard",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0529",
+                "minifig_name": "Imperial Gunner",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75035,
+        "set_name": "Kashyyyk Troopers",
+        "release_year": 2014,
+        "source_short_title": "Ep. III",
+        "piece_count": 99,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0518",
+                "minifig_name": "Clone Scout Trooper",
+                "specification": "41st Elite Corps, Kashyyyk Camo",
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0519",
+                "minifig_name": "Clone Trooper",
+                "specification": "41st Elite Corps, Kashyyyk Camo",
+                "count": 2,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75036,
+        "set_name": "Utapau Troopers",
+        "release_year": 2014,
+        "source_short_title": "Ep. III",
+        "piece_count": 83,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0522",
+                "minifig_name": "Clone Trooper",
+                "specification": "212th Attack Battalion",
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0523",
+                "minifig_name": "Airborne Trooper",
+                "specification": "212th Attack Battalion",
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75037,
+        "set_name": "Battle on Saleucami",
+        "release_year": 2014,
+        "source_short_title": "Ep. III",
+        "piece_count": 183,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0001b",
+                "minifig_name": "Battle Droid",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0001c",
+                "minifig_name": "Battle Droid",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0092",
+                "minifig_name": "Super Battle Droid",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0524",
+                "minifig_name": "BARC Trooper",
+                "specification": "91st Mobile Reconnaissance Corps",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75078,
+        "set_name": "Imperial Trooper Transport",
+        "release_year": 2015,
+        "source_short_title": "Rebels",
+        "piece_count": 141,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0578",
+                "minifig_name": "Stormtrooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0617",
+                "minifig_name": "Stormtrooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75079,
+        "set_name": "Shadow Troopers",
+        "release_year": 2015,
+        "source_short_title": "Force Unleashed",
+        "piece_count": 95,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0603",
+                "minifig_name": "Shadow Stormtrooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0604",
+                "minifig_name": "Shadow Guard",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75088,
+        "set_name": "Senate Commando Troops",
+        "release_year": 2015,
+        "source_short_title": "Clone Wars",
+        "piece_count": 106,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0613",
+                "minifig_name": "Senate Commando Captain",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0614",
+                "minifig_name": "Senate Commando",
+                "specification": null,
+                "count": 3,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75089,
+        "set_name": "Geonosis Troopers",
+        "release_year": 2015,
+        "source_short_title": "Legends",
+        "piece_count": 105,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0605",
+                "minifig_name": "Airborne Trooper",
+                "specification": "Geonosis Camo",
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0606",
+                "minifig_name": "Clone Trooper",
+                "specification": "Geonosis Camo",
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75131,
+        "set_name": "Resistance Trooper Battle Pack",
+        "release_year": 2016,
+        "source_short_title": "Ep. VII",
+        "piece_count": 112,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0696",
+                "minifig_name": "Resistance Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0697",
+                "minifig_name": "Resistance Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0698",
+                "minifig_name": "Resistance Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0699",
+                "minifig_name": "Resistance Officer",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75132,
+        "set_name": "First Order Battle Pack",
+        "release_year": 2016,
+        "source_short_title": "Ep. VII",
+        "piece_count": 88,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0667",
+                "minifig_name": "First Order Stormtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0671",
+                "minifig_name": "First Order Fleet Engineer",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0694",
+                "minifig_name": "First Order Crewman",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0695",
+                "minifig_name": "First Order Heavy Assault Stormtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75133,
+        "set_name": "Rebel Alliance Battle Pack",
+        "release_year": 2016,
+        "source_short_title": "Battlefront",
+        "piece_count": 101,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0687",
+                "minifig_name": "Rodian Alliance Fighter",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0688",
+                "minifig_name": "Rebel Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0689",
+                "minifig_name": "Duros Alliance Fighter",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0690",
+                "minifig_name": "Rebel Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75134,
+        "set_name": "Galactic Empire Battle Pack",
+        "release_year": 2016,
+        "source_short_title": "Battlefront",
+        "piece_count": 109,
+        "msrp": 12.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0691",
+                "minifig_name": "Jump Trooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0692",
+                "minifig_name": "Imperial Shock Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0693",
+                "minifig_name": "Imperial Crewman",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75164,
+        "set_name": "Rebel Trooper Battle Pack",
+        "release_year": 2017,
+        "source_short_title": "Rogue One",
+        "piece_count": 120,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0803",
+                "minifig_name": "Private Kappehl",
+                "specification": "Rebel Trooper",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0804",
+                "minifig_name": "Corporal Rostok",
+                "specification": "Rebel Trooper",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0805",
+                "minifig_name": "Private Calfor",
+                "specification": "Rebel Trooper",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0806",
+                "minifig_name": "Corporal Tonc",
+                "specification": "Rebel Trooper",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75165,
+        "set_name": "Imperial Trooper Battle Pack",
+        "release_year": 2017,
+        "source_short_title": "Rogue One",
+        "piece_count": 112,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0585",
+                "minifig_name": "Stormtrooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0807",
+                "minifig_name": "Death Trooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75166,
+        "set_name": "First Order Transport Speeder Battle Pack",
+        "release_year": 2017,
+        "source_short_title": "Ep. VII",
+        "piece_count": 117,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0666",
+                "minifig_name": "First Order Flametrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0667",
+                "minifig_name": "First Order Stormtrooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0832",
+                "minifig_name": "Colonel Datoo",
+                "specification": "First Order Officer",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75167,
+        "set_name": "Bounty Hunter Speeder Bike Battle Pack",
+        "release_year": 2017,
+        "source_short_title": "Ep. V",
+        "piece_count": 125,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0751",
+                "minifig_name": "Dengar",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0828",
+                "minifig_name": "Bossk",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0830",
+                "minifig_name": "4-LOM",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0831a",
+                "minifig_name": "IG-88",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75197,
+        "set_name": "First Order Specialists Battle Pack",
+        "release_year": 2018,
+        "source_short_title": "Ep. VIII",
+        "piece_count": 108,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0671",
+                "minifig_name": "First Order Fleet Engineer",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0871",
+                "minifig_name": "First Order Shuttle Pilot",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0886",
+                "minifig_name": "First Order Stormtrooper Executioner",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75198,
+        "set_name": "Tatooine Battle Pack",
+        "release_year": 2018,
+        "source_short_title": "Ep. IV",
+        "piece_count": 97,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0620",
+                "minifig_name": "Tusken Raider",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0895",
+                "minifig_name": "R3-T2",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0896",
+                "minifig_name": "Jawa",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0897",
+                "minifig_name": "Jawa",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75206,
+        "set_name": "Jedi and Clone Troopers Battle Pack",
+        "release_year": 2018,
+        "source_short_title": "Ep. II",
+        "piece_count": 102,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0909",
+                "minifig_name": "Barriss Offee",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0910",
+                "minifig_name": "Clone Trooper",
+                "specification": "Phase I",
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0911",
+                "minifig_name": "Ki-Adi-Mundi",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75207,
+        "set_name": "Imperial Patrol Battle Pack",
+        "release_year": 2018,
+        "source_short_title": "Solo",
+        "piece_count": 99,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0912",
+                "minifig_name": "Corporal Latt",
+                "specification": "Imperial Emigration Officer",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0913",
+                "minifig_name": "Imperial Recruitment Officer",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0914",
+                "minifig_name": "Imperial Patrol Trooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75225,
+        "set_name": "Elite Praetorian Guard Battle Pack",
+        "release_year": 2019,
+        "source_short_title": "Ep. VIII",
+        "piece_count": 109,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0905",
+                "minifig_name": "First Order Stormtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0989",
+                "minifig_name": "Elite Praetorian Guard",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0990",
+                "minifig_name": "Elite Praetorian Guard",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw0998",
+                "minifig_name": "Praetorian Training Droid",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75226,
+        "set_name": "Inferno Squad Battle Pack",
+        "release_year": 2019,
+        "source_short_title": "Battlefront",
+        "piece_count": 118,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0986",
+                "minifig_name": "Inferno Squad Agent",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0987",
+                "minifig_name": "Inferno Squad Agent",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw0988",
+                "minifig_name": "Inferno Squad Agent",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1000",
+                "minifig_name": "Iden Versio",
+                "specification": "Inferno Squad Commander",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75262,
+        "set_name": "Imperial Dropship – 20th Anniversary Edition",
+        "release_year": 2019,
+        "source_short_title": "Legends",
+        "piece_count": 125,
+        "msrp": 19.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0997b",
+                "minifig_name": "Stormtrooper",
+                "specification": null,
+                "count": 3,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1031",
+                "minifig_name": "Shadow Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1032",
+                "minifig_name": "Han Solo",
+                "specification": "20th Anniversary",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75266,
+        "set_name": "Sith Troopers Battle Pack",
+        "release_year": 2020,
+        "source_short_title": "Ep. IX",
+        "piece_count": 105,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw1065",
+                "minifig_name": "Sith Trooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1075",
+                "minifig_name": "Sith Jet Trooper",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1076",
+                "minifig_name": "Sith Fleet Officer",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75267,
+        "set_name": "Mandalorian Battle Pack",
+        "release_year": 2020,
+        "source_short_title": "The Mandalorian",
+        "piece_count": 102,
+        "msrp": 14.99,
+        "minifigs": [
+            {
+                "bl_id": "sw1077",
+                "minifig_name": "Mandalorian Tribe Warrior",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1078",
+                "minifig_name": "Mandalorian Tribe Warrior",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1079",
+                "minifig_name": "Mandalorian Tribe Warrior",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1080",
+                "minifig_name": "Mandalorian Tribe Warrior",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75280,
+        "set_name": "501st Legion Clone Troopers",
+        "release_year": 2020,
+        "source_short_title": "Clone Wars",
+        "piece_count": 285,
+        "msrp": 29.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0001c",
+                "minifig_name": "Battle Droid",
+                "specification": null,
+                "count": 2,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1093",
+                "minifig_name": "Clone Jet Trooper",
+                "specification": "501st Legion",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1094",
+                "minifig_name": "Clone Trooper",
+                "specification": "501st Legion",
+                "count": 3,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75320,
+        "set_name": "Snowtrooper Battle Pack",
+        "release_year": 2022,
+        "source_short_title": "Ep. V",
+        "piece_count": 105,
+        "msrp": 19.99,
+        "minifigs": [
+            {
+                "bl_id": "sw1178",
+                "minifig_name": "Snowtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1179",
+                "minifig_name": "Snowtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1181",
+                "minifig_name": "Snowtrooper",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1182",
+                "minifig_name": "Scout Trooper",
+                "specification": "Hoth",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75345,
+        "set_name": "501st Clone Troopers Battle Pack",
+        "release_year": 2023,
+        "source_short_title": "Clone Wars",
+        "piece_count": 119,
+        "msrp": 19.99,
+        "minifigs": [
+            {
+                "bl_id": "sw1246",
+                "minifig_name": "Clone Officer",
+                "specification": "501st Legion",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1247",
+                "minifig_name": "Clone Heavy Trooper",
+                "specification": "501st Legion",
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1248",
+                "minifig_name": "Clone Specialist",
+                "specification": "501st Legion",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75359,
+        "set_name": "332nd Ahsoka's Clone Trooper Battle Pack",
+        "release_year": 2023,
+        "source_short_title": "Clone Wars",
+        "piece_count": 108,
+        "msrp": 19.99,
+        "minifigs": [
+            {
+                "bl_id": "sw1276",
+                "minifig_name": "Clone Trooper",
+                "specification": "501st Legion, 332nd Company",
+                "count": 2,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1277",
+                "minifig_name": "Captain Vaughn",
+                "specification": "501st Legion, 332nd Company",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1278",
+                "minifig_name": "Clone Trooper",
+                "specification": "501st Legion, 332nd Company",
+                "count": 1,
+                "is_unique": 1
+            }
+        ]
+    },
+    {
+        "set_id": 75372,
+        "set_name": "Clone Trooper & Battle Droid Battle Pack",
+        "release_year": 2024,
+        "source_short_title": "Clone Wars",
+        "piece_count": 215,
+        "msrp": 29.99,
+        "minifigs": [
+            {
+                "bl_id": "sw0001d",
+                "minifig_name": "Battle Droid",
+                "specification": null,
+                "count": 1,
+                "is_unique": 0
+            },
+            {
+                "bl_id": "sw1305",
+                "minifig_name": "Clone Shock Trooper",
+                "specification": "Coruscant Guard",
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1319",
+                "minifig_name": "Clone Trooper",
+                "specification": "Phase II",
+                "count": 3,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1320",
+                "minifig_name": "Battle Droid",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1321",
+                "minifig_name": "Super Battle Droid",
+                "specification": null,
+                "count": 3,
+                "is_unique": 0
+            }
+        ]
+    },
+    {
+        "set_id": 75373,
+        "set_name": "Ambush on Mandalore Battle Pack",
+        "release_year": 2024,
+        "source_short_title": "The Mandalorian",
+        "piece_count": 109,
+        "msrp": 19.99,
+        "minifigs": [
+            {
+                "bl_id": "sw1344",
+                "minifig_name": "Mandalorian Nite Owl",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1345",
+                "minifig_name": "Mandalorian Warrior",
+                "specification": null,
+                "count": 1,
+                "is_unique": 1
+            },
+            {
+                "bl_id": "sw1346",
+                "minifig_name": "Imperial Commando",
+                "specification": null,
+                "count": 2,
+                "is_unique": 1
+            }
+        ]
+    }
 ]

@@ -14,9 +14,8 @@ const options = {
 	cert: fs.readFileSync("ssl/domain.crt", "utf8")
 };
 const server = https.createServer(options, app);
-const port = process.env.PORT || 3000;
-server.listen(port, () => {
-	console.log(`App listening on https://localhost:${port}`);
+server.listen(3000, () => {
+	console.log("App listening on https://localhost:3000");
 });
 
 
@@ -38,15 +37,6 @@ app.get("/", (req, res) => {
 		"status": "Running"
 	};
 	res.send(status);
-});
-
-// test endpoint
-app.get("/api", (req, res) => {
-	query = "SELECT * FROM fish";
-	db.query(query, (err, result) => {
-		if (err) throw err;
-		res.send(result);	
-	});
 });
 
 // battlepacks endpoint
