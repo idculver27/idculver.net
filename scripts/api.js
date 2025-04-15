@@ -72,7 +72,7 @@ app.get("/battle_packs", (req, res) => {
 	});
 });
 
-// fish query endpoint
+// fish endpoint
 app.get("/fish", (req, res) => {
 	query = `
 		SELECT fish_name, base_price, bundle_name, JSON_OBJECT(
