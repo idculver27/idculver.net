@@ -27,7 +27,7 @@ var quizResults = {
 
 var bank;
 var imgs;
-fetch("../databases/villagerquiz.json")
+fetch("../databases/villager_quiz.json")
 	.then((response) => response.json())
 	.then((json) => {
 		bank = json.bank;
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	shareButton.addEventListener("click", () => {
 		audio.play();
-		let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver.net/villagerquiz.html" + "\n\n" + villagerImg.src;
+		let copyText = "I'm a " + villagerName.textContent + "!\n" + "https://idculver.net/villager_quiz.html" + "\n\n" + villagerImg.src;
 		navigator.clipboard.writeText(copyText);
 	});
 	restartButton.addEventListener("click", () => {

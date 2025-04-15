@@ -39,24 +39,23 @@ app.get("/", (req, res) => {
 	res.send(status);
 });
 
-// battlepacks endpoint
-app.get("/battlepacks", (req, res) => {
+// battle packs endpoint
+app.get("/battle_packs", (req, res) => {
 	query = `
-		SELECT set_id, set_name, release_year, short_title AS source_short_title, piece_count, msrp,
-			(
-				SELECT JSON_ARRAYAGG(
-					JSON_OBJECT(
-						'bl_id', bl_id,
-						'minifig_name', minifig_name,
-						'specification', specification,
-						'count', count,
-						'is_unique', is_unique
-					)
+		SELECT set_id, set_name, release_year, short_title AS source_short_title, piece_count, msrp, (
+			SELECT JSON_ARRAYAGG(
+				JSON_OBJECT(
+					'bl_id', bl_id,
+					'minifig_name', minifig_name,
+					'specification', specification,
+					'count', count,
+					'is_unique', is_unique
 				)
-				FROM bp_battle_pack_has_minifig
-				JOIN bp_minifig USING (bl_id)
-				WHERE bp_battle_pack.set_id = bp_battle_pack_has_minifig.set_id 
-			) AS minifigs
+			)
+			FROM bp_battle_pack_has_minifig
+			JOIN bp_minifig USING (bl_id)
+			WHERE bp_battle_pack.set_id = bp_battle_pack_has_minifig.set_id 
+		) AS minifigs
 		FROM bp_battle_pack
 		JOIN bp_source USING (source_id)
 		ORDER BY release_year, set_id;
@@ -67,6 +66,43 @@ app.get("/battlepacks", (req, res) => {
 		// parse json
 		for (set of result) {
 			set.minifigs = JSON.parse(set.minifigs);
+		}
+		
+		res.send(result);
+	});
+});
+
+// fish query endpoint
+app.get("/fish", (req, res) => {
+	query = `
+		SELECT fish_name, base_price, bundle_name, JSON_OBJECT(
+			'spring', spring,
+			'summer', summer,
+			'fall', fall,
+			'winter', winter
+		) AS seasons, (
+			SELECT JSON_ARRAYAGG(
+				JSON_OBJECT(
+					'location_name', location_name,
+					'ignore_seasons', ignore_seasons
+				)
+			)
+			FROM sv_fish_in_location
+			JOIN sv_location USING (location_id)
+			WHERE sv_fish.fish_id = sv_fish_in_location.fish_id
+		) AS locations, time_range, weather
+		FROM sv_fish
+		LEFT JOIN sv_bundle USING (bundle_id)
+		JOIN sv_seasons USING (fish_id)
+		ORDER BY fish_name, fish_id;
+	`;
+	db.query(query, (err, result) => {
+		if (err) throw err;
+
+		// parse json
+		for (fish of result) {
+			fish.seasons = JSON.parse(fish.seasons);
+			fish.locations = JSON.parse(fish.locations);
 		}
 		
 		res.send(result);
