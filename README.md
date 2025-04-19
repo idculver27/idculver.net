@@ -38,6 +38,7 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 		proxy_set_header Connection 'upgrade';
 		proxy_set_header Host $host;
 		proxy_cache_bypass $http_upgrade;
+		add_header Access-Control-Allow-Origin *;
 }
 ```
 
