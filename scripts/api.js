@@ -72,6 +72,13 @@ app.get("/api/battle_packs", (req, res) => {
 			set.minifigs = JSON.parse(set.minifigs);
 		}
 		
+		// make bools into real bools
+		for (set of result) {
+			for (minifig of set.minifigs) {
+				minifig.is_unique = Boolean(minifig.is_unique);
+			}
+		}
+
 		res.send(result);
 	});
 });
@@ -107,6 +114,16 @@ app.get("/api/fish", (req, res) => {
 		for (fish of result) {
 			fish.seasons = JSON.parse(fish.seasons);
 			fish.locations = JSON.parse(fish.locations);
+		}
+
+		// make bools into real bools
+		for (fish of result) {
+			for (season in fish.seasons) {
+				fish.seasons[season] = Boolean(fish.seasons[season]);
+			}
+			for (location of fish.locations) {
+				location.ignore_seasons = Boolean(location.ignore_seaons);
+			}
 		}
 		
 		res.send(result);
