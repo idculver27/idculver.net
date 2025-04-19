@@ -98,5 +98,5 @@ DB_PASSWORD=password123
 
 4. Start app server with pm2
 ```bash
-sudo pm2 start scripts/api.js --name="idculverAPI"
+sudo pm2 start scripts/api.js --name="idculverAPI" --watch
 ```
