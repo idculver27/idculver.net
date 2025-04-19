@@ -38,7 +38,11 @@ db.connect((err) => {
 // status endpoint
 app.get("/api", (req, res) => {
 	const status = {
-		"status": "Running"
+		"status": "Running",
+		"endpoints": [
+			"/battle_packs",
+			"/fish"
+		]
 	};
 	res.send(status);
 });
