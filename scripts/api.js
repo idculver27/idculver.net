@@ -4,20 +4,24 @@ const fs = require("fs");
 const https = require("https");
 const mysql = require("mysql");
 
+// env vars
+const cert_path = process.env.CERT_PATH || "/etc/pki/tls/certs/idculver_net.crt";
+const key_path = process.env.KEY_PATH || "/etc/pki/tls/private/culverpi.key";
+const port = process.env.PORT || 3000;
+
 // initialize app
 const app = express();
 app.use(express.json());
 
 // initialize server
 const options = {
-	key: fs.readFileSync("ssl/domain.key", "utf8"),
-	cert: fs.readFileSync("ssl/domain.crt", "utf8")
+	cert: fs.readFileSync(cert_path, "utf8"),
+	key: fs.readFileSync(key_path, "utf8")
 };
 const server = https.createServer(options, app);
-server.listen(3000, () => {
-	console.log("App listening on https://localhost:3000");
+server.listen(port, () => {
+	console.log(`App listening on https://localhost:${port}`);
 });
-
 
 // connect to database
 const db = mysql.createConnection({
