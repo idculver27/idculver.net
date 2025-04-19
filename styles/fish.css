@@ -11,6 +11,7 @@ body {
 	background-color: var(--darktan);
 	font-family: Verdana, Tahoma, sans-serif;
 	margin: 0px;
+	margin-bottom: 10px;
 }
 h1 {
 	margin-left: auto;
@@ -72,10 +73,6 @@ th {
 }
 .rain {
 	background-color: var(--rain);
-}
-.sideways {
-	transform: rotate(180deg);
-	writing-mode: vertical-lr;
 }
 .svgholder {
 	position: relative;
