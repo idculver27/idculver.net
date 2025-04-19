@@ -15,7 +15,12 @@ sudo git clone git@github.com:idculver27/idculver.net.git
 `ln -s /var/www/idculver.net/ ~/idculver.net`
 
 ## Web Proxy Setup
-1. Edit `/etc/nginx/sites-available/default`
+1. Get SSL files
+Follow the instructions at https://ap.www.namecheap.com/ProductList/SslCertificates to get the files
+Put the cert in `/etc/pki/tls/certs/`
+Put the key in `/etc/pki/tls/private/`
+
+2. Edit `/etc/nginx/sites-available/default`
 Change `root /var/www/html;` to `root /var/www/idculver.net;`
 Replace the location with these:
 ```
@@ -34,54 +39,13 @@ Replace the location with these:
 }
 ```
 
-2. Get SSL files
-Follow the instructions at https://ap.www.namecheap.com/ProductList/SslCertificates to get the files
-Put the cert in `/etc/pki/tls/certs/`
-Put the key in `/etc/pki/tls/private/`
-
-3. Edit `/etc/apache2/apache2.conf`
-```
-# redirect to HTTPS
-server {
-	listen 80;
-	server_name idculver.net;
-	return 301 https://idculver.net$request_uri;
-}
-
-# idculver.net
-server {
-	listen 443 ssl default_server;
-	server_name idculver.net;
-	ssl_certificate /etc/pki/tls/certs/idculver_net.crt;
-	ssl_certificate_key /etc/pki/tls/private/culverpi.key;
-
-	root /var/www/idculver.net;
-	index index.html index.htm index.nginx-debian.html;
-
-	# idculver.net
-	location / {
-		try_files $uri $uri/ =404;
-	}
-	# API
-	location /api {
-		proxy_pass https://localhost:3000;
-		proxy_http_version 1.1;
-		proxy_set_header Upgrade $http_upgrade;
-		proxy_set_header Connection 'upgrade';
-		proxy_set_header Host $host;
-		proxy_cache_bypass $http_upgrade;
-	}
-}
-
-```
-
-4. Restart nginx
+3. Restart nginx
 `sudo systemctl restart nginx`
 
-5. Set up port forwarding on your router
+4. Set up port forwarding on your router
 ...
 
-6. Point Namecheap DNS to your router
+5. Point Namecheap DNS to your router
 https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns
 
 ## API Setup
@@ -89,10 +53,10 @@ https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns
 
 2. Set up Node.js
 ```bash
-npm init
-npm install express
-npm install mysql
-npm install dotenv
+sudo npm init
+sudo npm install dotenv
+sudo npm install express
+sudo npm install mysql
 ```
 
 3. Configure environment variables
@@ -124,4 +88,4 @@ flush privileges;
 ```
 
 5. Create the database
-use `databases/idculver.sql`
+Use `databases/idculver.sql`

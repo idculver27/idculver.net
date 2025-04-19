@@ -36,7 +36,7 @@ db.connect((err) => {
 });
 
 // status endpoint
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
 	const status = {
 		"status": "Running"
 	};
@@ -44,7 +44,7 @@ app.get("/", (req, res) => {
 });
 
 // battle packs endpoint
-app.get("/battle_packs", (req, res) => {
+app.get("/api/battle_packs", (req, res) => {
 	query = `
 		SELECT set_id, set_name, release_year, short_title AS source_short_title, piece_count, msrp, (
 			SELECT JSON_ARRAYAGG(
@@ -77,7 +77,7 @@ app.get("/battle_packs", (req, res) => {
 });
 
 // fish endpoint
-app.get("/fish", (req, res) => {
+app.get("/api/fish", (req, res) => {
 	query = `
 		SELECT fish_name, base_price, bundle_name, JSON_OBJECT(
 			'spring', spring,
