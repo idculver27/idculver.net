@@ -58,10 +58,10 @@ sudo apt install mariadb-server
 ```
 
 2. Secure the installation
+	- Take the default value for all prompts except `Change the root password? [Y/n]`. Answer `n` to that one.
 ```bash
 sudo mysql_secure_installation
 ```
-Take the default value for all prompts except `Change the root password? [Y/n]`. Answer `n` to that one.
 
 3. Log in to the database as root
 ```bash
