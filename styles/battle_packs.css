@@ -37,6 +37,9 @@ table, td, tr {
 	padding: 5px;
 	vertical-align: top;
 }
+.blid {
+	color: var(--gray);
+}
 .icon {
 	margin-left: 5px;
 	margin-top: 5px;

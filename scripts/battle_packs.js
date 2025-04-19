@@ -75,7 +75,13 @@ function buildMinifigTable(set) {
 			picsRow += `<td><img class="minifig-pic" src="https://www.bricklink.com/ML/${minifig.bl_id}.jpg" alt="${minifig.minifig_name}"></td>`;
 		}
 		let multiplier = minifig.count > 1 ? ` (x${minifig.count})` : "";
-		namesRow += `<td colspan="${minifig.count}" style="max-width: ${150 * minifig.count}px;"><p${minifig.is_unique ? ' class="unique" title="Unique to this set!"' : ""}>${minifig.minifig_name}${multiplier}</p><i>${minifig.specification ? minifig.specification : ""}</i></td>`;
+		namesRow += `
+			<td colspan="${minifig.count}" style="max-width: ${150 * minifig.count}px;">
+				<p${minifig.is_unique ? ' class="unique" title="Unique to this set!"' : ""}>${minifig.minifig_name}${multiplier}</p>
+				<i>${minifig.specification ? minifig.specification : ""}</i>
+				<i class="blid">${minifig.bl_id}</i>
+			</td>
+		`;
 	});
 
 	picsRow += "</tr>";
