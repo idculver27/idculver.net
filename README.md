@@ -18,9 +18,9 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 
 ## Web Proxy Setup
 1. Get SSL files
-	- Follow the instructions at https://ap.www.namecheap.com/ProductList/SslCertificates to get the files
-	- Put the cert in `/etc/pki/tls/certs/`
-	- Put the key in `/etc/pki/tls/private/`
+  - Follow the instructions at https://ap.www.namecheap.com/ProductList/SslCertificates to get the files
+  - Put the cert in `/etc/pki/tls/certs/`
+  - Put the key in `/etc/pki/tls/private/`
 
 2. Edit `/etc/nginx/sites-available/default`
 	- Change `root /var/www/html;` to `root /var/www/idculver.net;`
@@ -46,7 +46,7 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 sudo systemctl restart nginx
 ```
 
-4. Set up port forwarding on your router
+4. Set up port forwarding on your router  
 ...
 
 5. Point Namecheap DNS to your router: https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns
@@ -61,7 +61,7 @@ sudo apt install mariadb-server
 ```bash
 sudo mysql_secure_installation
 ```
-	- Take the default value for all prompts except "Change the root password? [Y/n]". Answer `n` to that one.
+  - Take the default value for all prompts except `Change the root password? [Y/n]`. Answer `n` to that one.
 
 3. Log in to the database as root
 ```bash
@@ -70,12 +70,12 @@ sudo mysql -u root -p
 
 4. Create the read-only user
 ```sql
-create user 'idc_ro'@'localhost' identified by 'password123';
-grant select on idculver.* to 'idc_ro'@'localhost';
-flush privileges;
+CREATE USER 'idc_ro'@'localhost' IDENTIFIED BY 'password123';
+GRANT SELECT ON idculver.* TO 'idc_ro'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
-5. Create the database using `databases/idculver.sql`
+5. Build the database using `databases/idculver.sql`
 
 ## API Setup
 1. Install Node.js
