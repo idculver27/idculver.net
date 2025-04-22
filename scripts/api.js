@@ -90,12 +90,12 @@ app.get("/api/battle_packs", (req, res) => {
 // fish endpoint
 app.get("/api/fish", (req, res) => {
 	query = `
-		SELECT fish_name, base_price, bundle_name, JSON_OBJECT(
+		SELECT fish_name, base_price, JSON_OBJECT(
 			'spring', spring,
 			'summer', summer,
 			'fall', fall,
 			'winter', winter
-		) AS seasons, (
+		) AS seasons, weather, time_range, (
 			SELECT JSON_ARRAYAGG(
 				JSON_OBJECT(
 					'location_name', location_name,
@@ -105,10 +105,12 @@ app.get("/api/fish", (req, res) => {
 			FROM sv_fish_in_location
 			JOIN sv_location USING (location_id)
 			WHERE sv_fish.fish_id = sv_fish_in_location.fish_id
-		) AS locations, time_range, weather
+		) AS locations
 		FROM sv_fish
 		LEFT JOIN sv_bundle USING (bundle_id)
 		JOIN sv_seasons USING (fish_id)
+		JOIN sv_fish_in_location USING (fish_id)
+		JOIN sv_location USING (location_id)
 		ORDER BY fish_name, fish_id;
 	`;
 	db.query(query, (err, result) => {
@@ -130,6 +132,75 @@ app.get("/api/fish", (req, res) => {
 			}
 		}
 		
+		res.send(result);
+	});
+});
+
+// query fish by location
+app.get("/api/fish/location/:location_name", (req, res) => {
+	query = `
+		SELECT fish_name, base_price, JSON_OBJECT(
+			'spring', spring,
+			'summer', summer,
+			'fall', fall,
+			'winter', winter
+		) AS seasons, weather, time_range, (
+			SELECT JSON_ARRAYAGG(
+				JSON_OBJECT(
+					'location_name', location_name,
+					'ignore_seasons', ignore_seasons
+				)
+			)
+			FROM sv_fish_in_location
+			JOIN sv_location USING (location_id)
+			WHERE sv_fish.fish_id = sv_fish_in_location.fish_id
+		) AS locations
+		FROM sv_fish
+		LEFT JOIN sv_bundle USING (bundle_id)
+		JOIN sv_seasons USING (fish_id)
+		JOIN sv_fish_in_location USING (fish_id)
+		JOIN sv_location USING (location_id)
+		WHERE location_name='${req.params.location_name}'
+		ORDER BY fish_name, fish_id;
+	`;
+	db.query(query, (err, result) => {
+		if (err) throw err;
+
+		// parse json
+		for (fish of result) {
+			fish.seasons = JSON.parse(fish.seasons);
+			fish.locations = JSON.parse(fish.locations);
+		}
+
+		// make bools into real bools
+		for (fish of result) {
+			for (season in fish.seasons) {
+				fish.seasons[season] = Boolean(fish.seasons[season]);
+			}
+			for (location of fish.locations) {
+				location.ignore_seasons = Boolean(location.ignore_seaons);
+			}
+		}
+
+		res.send(result);
+	});
+});
+
+// query fish locations
+app.get("/api/fish/locations", (req, res) => {
+	query = `
+		SELECT location_name, ignore_seasons 
+		FROM sv_location
+		ORDER BY location_name;
+	`;
+	db.query(query, (err, result) => {
+		if (err) throw err;
+
+		// make bools into real bools
+		for (location of result) {
+			location.ignore_seasons = Boolean(location.ignore_seaons);
+		}
+
 		res.send(result);
 	});
 });
