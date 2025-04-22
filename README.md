@@ -5,7 +5,7 @@
 # Dump database
 
 ```bash
-sudo mariadb-dump -u root -p -x -A > /var/www/idculvernet/databases/idculver.sql
+sudo mariadb-dump -u root -p -x -A > /var/www/idculver.net/databases/idculver.sql
 ```
 
 ---
