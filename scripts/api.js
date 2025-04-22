@@ -40,8 +40,7 @@ app.get("/api", (req, res) => {
 	const status = {
 		"status": "Running",
 		"endpoints": [
-			"/battle_packs",
-			"/fish"
+			"/battle_packs"
 		]
 	};
 	res.send(status);
@@ -60,12 +59,12 @@ app.get("/api/battle_packs", (req, res) => {
 					'is_unique', is_unique
 				)
 			)
-			FROM bp_battle_pack_has_minifig
-			JOIN bp_minifig USING (bl_id)
-			WHERE bp_battle_pack.set_id = bp_battle_pack_has_minifig.set_id 
+			FROM battle_pack_has_minifig
+			JOIN minifig USING (bl_id)
+			WHERE battle_pack.set_id = battle_pack_has_minifig.set_id 
 		) AS minifigs
-		FROM bp_battle_pack
-		JOIN bp_source USING (source_id)
+		FROM battle_pack
+		JOIN source USING (source_id)
 		ORDER BY release_year, set_id;
 	`;
 	db.query(query, (err, result) => {
@@ -79,126 +78,8 @@ app.get("/api/battle_packs", (req, res) => {
 		// make bools into real bools
 		for (set of result) {
 			for (minifig of set.minifigs) {
-				minifig.is_unique = Boolean(minifig.is_unique);
+				minifig.is_unique = !!minifig.is_unique;
 			}
-		}
-
-		res.send(result);
-	});
-});
-
-// fish endpoint
-app.get("/api/fish", (req, res) => {
-	query = `
-		SELECT fish_name, base_price, JSON_OBJECT(
-			'spring', spring,
-			'summer', summer,
-			'fall', fall,
-			'winter', winter
-		) AS seasons, weather, time_range, (
-			SELECT JSON_ARRAYAGG(
-				JSON_OBJECT(
-					'location_name', location_name,
-					'ignore_seasons', ignore_seasons
-				)
-			)
-			FROM sv_fish_in_location
-			JOIN sv_location USING (location_id)
-			WHERE sv_fish.fish_id = sv_fish_in_location.fish_id
-		) AS locations
-		FROM sv_fish
-		LEFT JOIN sv_bundle USING (bundle_id)
-		JOIN sv_seasons USING (fish_id)
-		JOIN sv_fish_in_location USING (fish_id)
-		JOIN sv_location USING (location_id)
-		ORDER BY fish_name, fish_id;
-	`;
-	db.query(query, (err, result) => {
-		if (err) throw err;
-
-		// parse json
-		for (fish of result) {
-			fish.seasons = JSON.parse(fish.seasons);
-			fish.locations = JSON.parse(fish.locations);
-		}
-
-		// make bools into real bools
-		for (fish of result) {
-			for (season in fish.seasons) {
-				fish.seasons[season] = Boolean(fish.seasons[season]);
-			}
-			for (location of fish.locations) {
-				location.ignore_seasons = Boolean(location.ignore_seaons);
-			}
-		}
-		
-		res.send(result);
-	});
-});
-
-// query fish by location
-app.get("/api/fish/location/:location_name", (req, res) => {
-	query = `
-		SELECT fish_name, base_price, JSON_OBJECT(
-			'spring', spring,
-			'summer', summer,
-			'fall', fall,
-			'winter', winter
-		) AS seasons, weather, time_range, (
-			SELECT JSON_ARRAYAGG(
-				JSON_OBJECT(
-					'location_name', location_name,
-					'ignore_seasons', ignore_seasons
-				)
-			)
-			FROM sv_fish_in_location
-			JOIN sv_location USING (location_id)
-			WHERE sv_fish.fish_id = sv_fish_in_location.fish_id
-		) AS locations
-		FROM sv_fish
-		LEFT JOIN sv_bundle USING (bundle_id)
-		JOIN sv_seasons USING (fish_id)
-		JOIN sv_fish_in_location USING (fish_id)
-		JOIN sv_location USING (location_id)
-		WHERE location_name='${req.params.location_name}'
-		ORDER BY fish_name, fish_id;
-	`;
-	db.query(query, (err, result) => {
-		if (err) throw err;
-
-		// parse json
-		for (fish of result) {
-			fish.seasons = JSON.parse(fish.seasons);
-			fish.locations = JSON.parse(fish.locations);
-		}
-
-		// make bools into real bools
-		for (fish of result) {
-			for (season in fish.seasons) {
-				fish.seasons[season] = Boolean(fish.seasons[season]);
-			}
-			for (location of fish.locations) {
-				location.ignore_seasons = Boolean(location.ignore_seaons);
-			}
-		}
-
-		res.send(result);
-	});
-});
-
-// query fish locations
-app.get("/api/fish/locations", (req, res) => {
-	query = `
-		SELECT location_name, ignore_seasons 
-		FROM sv_location
-		ORDER BY location_name;
-	`;
-	db.query(query, (err, result) => {
-		if (err) throw err;
-
-		// make bools into real bools
-		for (location of result) {
-			location.ignore_seasons = Boolean(location.ignore_seaons);
 		}
 
 		res.send(result);

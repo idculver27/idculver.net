@@ -2,6 +2,14 @@
 
 ---
 
+# Dump database
+
+```bash
+sudo mariadb-dump -u root -p -x -A > /var/www/idculvernet/databases/idculver.sql
+```
+
+---
+
 # How to deploy
 
 ## Repo Setup
@@ -38,7 +46,7 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 		proxy_set_header Connection 'upgrade';
 		proxy_set_header Host $host;
 		proxy_cache_bypass $http_upgrade;
-		add_header Access-Control-Allow-Origin *;
+		add_header Access-Control-Allow-Origin * always;
 }
 ```
 

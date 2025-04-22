@@ -30,6 +30,12 @@ header {
 img {
 	image-rendering: pixelated;
 	width: 32px;
+	vertical-align: middle;
+}
+span {
+	height: 32px;
+	margin-left: 10px;
+	vertical-align: middle;
 }
 svg {
 	height: 1px;
@@ -46,7 +52,9 @@ table {
 }
 td, th, tr {
 	border: 1px solid var(--verydarktan);
-	padding: 6px;
+	padding: 10px;
+	padding-bottom: 6px;
+	padding-top: 6px;
 }
 th {
 	min-width: 20px;
