@@ -71,13 +71,13 @@ app.get("/api/battle_packs", (req, res) => {
 		if (err) throw err;
 
 		// parse json
-		for (set of result) {
+		for (let set of result) {
 			set.minifigs = JSON.parse(set.minifigs);
 		}
 		
 		// make bools into real bools
-		for (set of result) {
-			for (minifig of set.minifigs) {
+		for (let set of result) {
+			for (let minifig of set.minifigs) {
 				minifig.is_unique = !!minifig.is_unique;
 			}
 		}
