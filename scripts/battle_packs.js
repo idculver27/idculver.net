@@ -67,7 +67,7 @@ function buildListing(set) {
 }
 
 function buildMinifigTable(set) {
-	if (!set.minifigs) return;
+	if (!set.minifigs) return "";
 
 	let picsRow = "<tr>";
 	let namesRow = "<tr>";
