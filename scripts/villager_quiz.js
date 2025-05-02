@@ -1,3 +1,30 @@
+const biomes = [
+	"b_desert",
+	"b_jungle",
+	"b_plains",
+	"b_savanna",
+	"b_snowy",
+	"b_swamp",
+	"b_taiga"
+];
+const professions = [
+	"p_armorer",
+	"p_butcher",
+	"p_cartographer",
+	"p_cleric",
+	"p_farmer",
+	"p_fisherman",
+	"p_fletcher",
+	"p_leatherworker",
+	"p_librarian",
+	"p_nitwit",
+	"p_stone_mason",
+	"p_shepherd",
+	"p_toolsmith",
+	"p_unemployed",
+	"p_weaponsmith"
+];
+
 var quizResults = {
 	// biomes
 	b_desert: 0,
@@ -42,7 +69,7 @@ audio.volume = 0.3;
 window.addEventListener("DOMContentLoaded", () => {
 	startButton.addEventListener("click", () => {
 		audio.play();
-		startDiv.setAttribute("hidden",true);
+		startDiv.setAttribute("hidden", true);
 		questionDiv.removeAttribute("hidden");
 		displayQuestion();
 	});
@@ -67,22 +94,22 @@ function displayQuestion() {
 	let h2 = newElement("h2");
 	h2.textContent = bank[qIndex].text;
 	questionDiv.appendChild(h2);
-	
+
 	let button;
-	for(let answer of ["a","b","c","d"]) {
-		button = newElement("button","button");
+	for (let answer of ["a", "b", "c", "d"]) {
+		button = newElement("button", "button");
 		button.textContent = bank[qIndex][answer].text;
 		button.addEventListener("click", () => {
 			audio.play();
 
 			// add score to results
-			for(let key of bank[qIndex][answer].score) {
+			for (let key of bank[qIndex][answer].score) {
 				quizResults[key]++;
 			}
 
 			// next question
 			qIndex++;
-			if(qIndex < bank.length) {
+			if (qIndex < bank.length) {
 				displayQuestion();
 			} else {
 				finalResults();
@@ -93,33 +120,33 @@ function displayQuestion() {
 }
 
 function finalResults() {
-	questionDiv.setAttribute("hidden",true);
+	questionDiv.setAttribute("hidden", true);
 	resultsDiv.removeAttribute("hidden");
 
 	// probably could do this better
-	let biome = findWinner(["b_desert","b_jungle","b_plains","b_savanna","b_snowy","b_swamp","b_taiga"]);
-	let profession = findWinner(["p_armorer","p_butcher","p_cartographer","p_cleric","p_farmer","p_fisherman","p_fletcher","p_leatherworker","p_librarian","p_nitwit","p_stone_mason","p_shepherd","p_toolsmith","p_unemployed","p_weaponsmith"]);
+	let biome = findWinner(biomes);
+	let profession = findWinner(professions);
 
 	villagerName.textContent = textFormat(biome) + " " + textFormat(profession);
 	villagerImg.alt = villagerName.textContent + " picture";
 	villagerImg.src = imgs[biome][profession];
-	
+
 	//console.log(quizResults);
 }
 
 function findWinner(keys) {
 	// find top score
 	let maxScore = 0;
-	for(let key of keys) {
-		if(quizResults[key] > maxScore) {
+	for (let key of keys) {
+		if (quizResults[key] > maxScore) {
 			maxScore = quizResults[key];
 		}
 	}
 
 	// find all keys tied for first place
 	let firstPlaceKeys = [];
-	for(let key of keys) {
-		if(quizResults[key] == maxScore) {
+	for (let key of keys) {
+		if (quizResults[key] == maxScore) {
 			firstPlaceKeys.push(key);
 		}
 	}
@@ -128,9 +155,9 @@ function findWinner(keys) {
 	return firstPlaceKeys[Math.floor(Math.random() * firstPlaceKeys.length)];
 }
 
-function newElement(childType, className="") {
+function newElement(childType, className = "") {
 	let child = document.createElement(childType);
-	if(className) {
+	if (className) {
 		child.className = className;
 	}
 	return child;
@@ -138,7 +165,7 @@ function newElement(childType, className="") {
 
 function textFormat(raw) {
 	let words = raw.substring(2).split("_");
-	for(let i = 0; i < words.length; i++) {
+	for (let i = 0; i < words.length; i++) {
 		words[i] = words[i][0].toUpperCase() + words[i].substring(1);
 	}
 	return words.join(" ");
@@ -146,27 +173,45 @@ function textFormat(raw) {
 
 // simulate X quizes with random answers and print summary of results
 function stressTest(runs) {
-	let testResults = Object.assign({},quizResults);
-	let answers = ["a","b","c","d"];
+	// build empty results table
+	let resultsTable = {};
+	let resultsRow = {};
+	for (let biome of biomes) {
+		resultsRow[biome] = 0;
+	}
+	for (let profession of professions) {
+		resultsTable[profession] = resultsRow;
+	}
 
-	for(let i = 0; i < runs; i++) {
-		let runResults = Object.assign({},quizResults);
+	let testResults = Object.assign({}, quizResults);
+	let answers = ["a", "b", "c", "d"];
 
-		for(let question of bank) {
+	for (let i = 0; i < runs; i++) {
+		let runResults = Object.assign({}, quizResults);
+
+		for (let question of bank) {
 			// random answer
 			let answer = answers[Math.ceil(Math.random() * 3)];
 			// add score to results
-			for(let key of question[answer].score) {
+			for (let key of question[answer].score) {
 				runResults[key]++;
 			}
 		}
 
-		let biome = findWinner(["b_desert","b_jungle","b_plains","b_savanna","b_snowy","b_swamp","b_taiga"]);
-		let profession = findWinner(["p_armorer","p_butcher","p_cartographer","p_cleric","p_farmer","p_fisherman","p_fletcher","p_leatherworker","p_librarian","p_nitwit","p_stone_mason","p_shepherd","p_toolsmith","p_unemployed","p_weaponsmith"]);
+		let biome = findWinner(biomes);
+		let profession = findWinner(professions);
 
-		testResults[biome]++;
-		testResults[profession]++;
+		// add result to table
+		resultsTable[profession][biome]++;
 	}
 
-	console.log(testResults);
+	// pretty print results
+	console.log(`${" ".padEnd(13)} | desert  | jungle  | plains  | savanna | snowy   | swamp   | taiga`);
+	for (let profession of professions) {
+		let line = profession.substring(2).padEnd(13);
+		for (let biome of biomes) {
+			line += ` | ${resultsTable[profession][biome].toString().padStart(7)}`;
+		}
+		console.log(line);
+	}
 }
