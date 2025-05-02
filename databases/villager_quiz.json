@@ -4,76 +4,76 @@
 			"text": "What's your favorite ice cream flavor?",
 			"a": {
 				"text": "Vanilla",
-				"score": ["b_plains","b_snowy","p_butcher","p_fisherman","p_shepherd"]
+				"score": ["b_plains", "b_snowy", "p_butcher", "p_fisherman", "p_shepherd"]
 			},
 			"b": {
 				"text": "Chocolate",
-				"score": ["b_jungle","p_cartographer","p_librarian","p_stone_mason","p_unemployed"]
+				"score": ["b_jungle", "p_cartographer", "p_librarian", "p_stone_mason", "p_unemployed"]
 			},
 			"c": {
 				"text": "Strawberry",
-				"score": ["b_taiga","p_armorer","p_farmer","p_leatherworker"]
+				"score": ["b_taiga", "p_armorer", "p_farmer", "p_leatherworker"]
 			},
 			"d": {
 				"text": "Mint chocolate chip",
-				"score": ["p_cleric","p_fletcher","p_nitwit","p_toolsmith","p_weaponsmith"]
+				"score": ["p_cleric", "p_fletcher", "p_nitwit", "p_toolsmith", "p_weaponsmith"]
 			}
 		},
 		{
 			"text": "Where would you rather live?",
 			"a": {
 				"text": "Wisconsin",
-				"score": ["b_snowy","b_taiga","p_farmer"]
+				"score": ["b_snowy", "b_taiga", "p_farmer"]
 			},
 			"b": {
 				"text": "Texas",
-				"score": ["b_desert","b_plains","p_weaponsmith"]
+				"score": ["b_desert", "b_plains", "p_weaponsmith"]
 			},
 			"c": {
 				"text": "Florida",
-				"score": ["b_swamp","b_jungle","p_fisherman","p_nitwit"]
+				"score": ["b_swamp", "b_jungle", "p_fisherman", "p_nitwit"]
 			},
 			"d": {
 				"text": "California",
-				"score": ["b_desert","b_savanna"]
+				"score": ["b_desert", "b_savanna"]
 			}
 		},
 		{
 			"text": "What's your dream job?",
 			"a": {
 				"text": "Something in STEM",
-				"score": ["p_armorer","p_cartographer","p_fletcher","p_stone_mason","p_toolsmith","p_weaponsmith"]
+				"score": ["p_armorer", "p_cartographer", "p_fletcher", "p_stone_mason", "p_toolsmith", "p_weaponsmith"]
 			},
 			"b": {
 				"text": "Something in the service industry",
-				"score": ["p_butcher","p_cleric","p_librarian"]
+				"score": ["p_butcher", "p_cleric", "p_librarian"]
 			},
 			"c": {
 				"text": "Something in agriculture",
-				"score": ["p_farmer","p_fisherman","p_leatherworker","p_shepherd"]
+				"score": ["p_farmer", "p_fisherman", "p_leatherworker", "p_shepherd"]
 			},
 			"d": {
 				"text": "To not work",
-				"score": ["p_nitwit","p_unemployed"]
+				"score": ["p_nitwit", "p_unemployed"]
 			}
 		},
 		{
 			"text": "What's your favorite type of pizza?",
 			"a": {
 				"text": "Pepperoni",
-				"score": ["p_leatherworker","p_stone_mason","p_toolsmith"]
+				"score": ["p_leatherworker", "p_stone_mason", "p_toolsmith"]
 			},
 			"b": {
 				"text": "Sausage",
-				"score": ["p_armorer","p_butcher","p_farmer","p_weaponsmith"]
+				"score": ["p_armorer", "p_butcher", "p_farmer", "p_weaponsmith"]
 			},
 			"c": {
 				"text": "Hawaiian",
-				"score": ["p_cartographer","p_fisherman","p_nitwit"]
+				"score": ["p_cartographer", "p_fisherman", "p_nitwit"]
 			},
 			"d": {
 				"text": "Just cheese",
-				"score": ["p_cleric","p_fletcher","p_librarian","p_shepherd","p_unemployed"]
+				"score": ["p_cleric", "p_fletcher", "p_librarian", "p_shepherd", "p_unemployed"]
 			}
 		},
 		{
@@ -84,11 +84,11 @@
 			},
 			"b": {
 				"text": "Spring",
-				"score": ["b_plains","b_savanna"]
+				"score": ["b_plains", "b_savanna"]
 			},
 			"c": {
 				"text": "Summer",
-				"score": ["b_desert","b_jungle","b_swamp"]
+				"score": ["b_desert", "b_jungle", "b_swamp"]
 			},
 			"d": {
 				"text": "Fall",
@@ -99,53 +99,53 @@
 			"text": "What do you like to do on a Friday night?",
 			"a": {
 				"text": "Go to the bar",
-				"score": ["p_fisherman","p_nitwit","p_stone_mason"]
+				"score": ["p_fisherman", "p_nitwit", "p_stone_mason"]
 			},
 			"b": {
 				"text": "Hang out with friends",
-				"score": ["p_armorer","p_butcher","p_fletcher","p_librarian"]
+				"score": ["p_armorer", "p_butcher", "p_fletcher", "p_librarian"]
 			},
 			"c": {
 				"text": "Watch TV",
-				"score": ["p_cartographer","p_toolsmith","p_unemployed","p_weaponsmith"]
+				"score": ["p_cartographer", "p_toolsmith", "p_unemployed", "p_weaponsmith"]
 			},
 			"d": {
 				"text": "Work",
-				"score": ["p_cleric","p_farmer","p_leatherworker","p_shepherd"]
+				"score": ["p_cleric", "p_farmer", "p_leatherworker", "p_shepherd"]
 			}
 		},
 		{
 			"text": "What's your favorite dinosaur?",
 			"a": {
 				"text": "T-Rex",
-				"score": ["p_butcher","p_nitwit","p_unemployed","p_weaponsmith"]
+				"score": ["p_butcher", "p_nitwit", "p_unemployed", "p_weaponsmith"]
 			},
 			"b": {
 				"text": "Stegosaurus",
-				"score": ["p_cartographer","p_leatherworker","p_stone_mason"]
+				"score": ["p_cartographer", "p_leatherworker", "p_stone_mason"]
 			},
 			"c": {
 				"text": "Velociraptor",
-				"score": ["p_cleric","p_fisherman","p_fletcher","p_librarian","p_toolsmith"]
+				"score": ["p_cleric", "p_fisherman", "p_fletcher", "p_librarian", "p_toolsmith"]
 			},
 			"d": {
 				"text": "Triceratops",
-				"score": ["p_armorer","p_farmer","p_shepherd"]
+				"score": ["p_armorer", "p_farmer", "p_shepherd"]
 			}
 		},
 		{
 			"text": "Where would you rather go on vacation?",
 			"a": {
 				"text": "South America",
-				"score": ["b_jungle","b_swamp"]
+				"score": ["b_jungle", "b_swamp"]
 			},
 			"b": {
 				"text": "Europe",
-				"score": ["b_plains","b_taiga"]
+				"score": ["b_plains", "b_taiga"]
 			},
 			"c": {
 				"text": "Australia",
-				"score": ["b_desert","b_savanna"]
+				"score": ["b_desert", "b_savanna"]
 			},
 			"d": {
 				"text": "Antarctica",
@@ -156,68 +156,68 @@
 			"text": "What would you do in the zombie apocalypse?",
 			"a": {
 				"text": "Hide in my bunker",
-				"score": ["p_butcher","p_fisherman","p_librarian","p_stone_mason"]
+				"score": ["p_butcher", "p_fisherman", "p_librarian", "p_stone_mason"]
 			},
 			"b": {
 				"text": "Fend for myself",
-				"score": ["p_armorer","p_fletcher","p_toolsmith","p_weaponsmith"]
+				"score": ["p_armorer", "p_fletcher", "p_toolsmith", "p_weaponsmith"]
 			},
 			"c": {
 				"text": "Start a commune",
-				"score": ["p_cleric","p_farmer","p_shepherd"]
+				"score": ["p_cleric", "p_farmer", "p_shepherd"]
 			},
 			"d": {
 				"text": "Die",
-				"score": ["p_cartographer","p_leatherworker","p_nitwit","p_unemployed"]
+				"score": ["p_cartographer", "p_leatherworker", "p_nitwit", "p_unemployed"]
 			}
 		},
 		{
 			"text": "Do you have blue hair and pronouns?",
 			"a": {
 				"text": "Blue hair and pronouns",
-				"score": ["p_butcher","p_farmer","p_librarian","p_leatherworker"]
+				"score": ["p_butcher", "p_farmer", "p_librarian", "p_leatherworker"]
 			},
 			"b": {
 				"text": "Blue hair, but no pronouns",
-				"score": ["p_armorer","p_fletcher","p_toolsmith","p_weaponsmith"]
+				"score": ["p_armorer", "p_fletcher", "p_toolsmith", "p_weaponsmith"]
 			},
 			"c": {
 				"text": "Pronouns, but no blue hair",
-				"score": ["p_cartographer","p_fisherman","p_shepherd","p_unemployed"]
+				"score": ["p_cartographer", "p_fisherman", "p_shepherd", "p_unemployed"]
 			},
 			"d": {
 				"text": "No blue hair and no pronouns",
-				"score": ["p_cleric","p_nitwit","p_stone_mason"]
+				"score": ["p_cleric", "p_nitwit", "p_stone_mason"]
 			}
 		},
 		{
 			"text": "You're hiking in a quiet, peaceful forest. Suddenly, you hear the sound of a twig snapping behind you. You turn around and see Bigfoot. Before you can react, it runs into the trees, and you quickly lose sight of it. What do you do?",
 			"a": {
 				"text": "Dedicate your life to trying to capture Bigfoot",
-				"score": ["p_butcher","p_fletcher","p_unemployed","p_weaponsmith"]
+				"score": ["p_butcher", "p_fletcher", "p_unemployed", "p_weaponsmith"]
 			},
 			"b": {
 				"text": "Pretend this never happened",
-				"score": ["p_farmer","p_fisherman","p_stone_mason","p_shepherd"]
+				"score": ["p_farmer", "p_fisherman", "p_stone_mason", "p_shepherd"]
 			},
 			"c": {
 				"text": "Report this to the Department of Natural Resources",
-				"score": ["p_armorer","p_nitwit","p_toolsmith"]
+				"score": ["p_armorer", "p_nitwit", "p_toolsmith"]
 			},
 			"d": {
 				"text": "See a therapist to treat your schizophrenia",
-				"score": ["p_cartographer","p_cleric","p_leatherworker","p_librarian"]
+				"score": ["p_cartographer", "p_cleric", "p_leatherworker", "p_librarian"]
 			}
 		},
 		{
 			"text": "What's your favorite color?",
 			"a": {
 				"text": "Red",
-				"score": ["b_savanna","p_librarian"]
+				"score": ["b_savanna", "p_librarian"]
 			},
 			"b": {
 				"text": "Green",
-				"score": ["b_desert","b_jungle","p_nitwit"]
+				"score": ["b_desert", "b_jungle", "p_nitwit"]
 			},
 			"c": {
 				"text": "Blue",
@@ -225,34 +225,10 @@
 			},
 			"d": {
 				"text": "Purple",
-				"score": ["b_swamp","p_cleric"]
+				"score": ["b_swamp", "p_cleric"]
 			}
 		}
 	],
-	"bios": {
-		"b_desert": "",
-		"b_jungle": "",
-		"b_plains": "",
-		"b_savanna": "",
-		"b_snowy": "",
-		"b_swamp": "",
-		"b_taiga": "",
-		"p_armorer": "",
-		"p_butcher": "",
-		"p_cartographer": "",
-		"p_cleric": "",
-		"p_farmer": "",
-		"p_fisherman": "",
-		"p_fletcher": "",
-		"p_leatherworker": "",
-		"p_librarian": "",
-		"p_nitwit": "",
-		"p_stone_mason": "",
-		"p_shepherd": "",
-		"p_toolsmith": "",
-		"p_unemployed": "",
-		"p_weaponsmith": ""
-	},
 	"imgs": {
 		"b_desert": {
 			"p_armorer": "https://minecraft.wiki/images/Desert_Armorer.png?43024&format=original",

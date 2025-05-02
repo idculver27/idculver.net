@@ -132,7 +132,7 @@ function finalResults() {
 	villagerImg.alt = villagerName.textContent + " picture";
 	villagerImg.src = imgs[biome][profession];
 
-	//console.log(quizResults);
+	console.log(quizResults);
 }
 
 function findWinner(results, keys) {
