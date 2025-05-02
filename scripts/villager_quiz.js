@@ -75,7 +75,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	testButton.addEventListener("click", () => {
 		audio.play();
-		stressTest(10000);
+		// set stress test run count here
+		stressTest(100000);
 	});
 	shareButton.addEventListener("click", () => {
 		audio.play();
@@ -124,8 +125,8 @@ function finalResults() {
 	resultsDiv.removeAttribute("hidden");
 
 	// probably could do this better
-	let biome = findWinner(biomes);
-	let profession = findWinner(professions);
+	let biome = findWinner(quizResults, biomes);
+	let profession = findWinner(quizResults, professions);
 
 	villagerName.textContent = textFormat(biome) + " " + textFormat(profession);
 	villagerImg.alt = villagerName.textContent + " picture";
@@ -134,19 +135,19 @@ function finalResults() {
 	//console.log(quizResults);
 }
 
-function findWinner(keys) {
+function findWinner(results, keys) {
 	// find top score
 	let maxScore = 0;
 	for (let key of keys) {
-		if (quizResults[key] > maxScore) {
-			maxScore = quizResults[key];
+		if (results[key] > maxScore) {
+			maxScore = results[key];
 		}
 	}
 
 	// find all keys tied for first place
 	let firstPlaceKeys = [];
 	for (let key of keys) {
-		if (quizResults[key] == maxScore) {
+		if (results[key] == maxScore) {
 			firstPlaceKeys.push(key);
 		}
 	}
@@ -173,6 +174,8 @@ function textFormat(raw) {
 
 // simulate X quizes with random answers and print summary of results
 function stressTest(runs) {
+	console.log(`Simulating ${runs} runs...`)
+
 	// build empty results table
 	let resultsTable = {};
 	let resultsRow = {};
@@ -180,17 +183,16 @@ function stressTest(runs) {
 		resultsRow[biome] = 0;
 	}
 	for (let profession of professions) {
-		resultsTable[profession] = resultsRow;
+		resultsTable[profession] = Object.assign({}, resultsRow);
 	}
 
-	let testResults = Object.assign({}, quizResults);
-	let answers = ["a", "b", "c", "d"];
-
+	// run tests
 	for (let i = 0; i < runs; i++) {
 		let runResults = Object.assign({}, quizResults);
 
 		for (let question of bank) {
 			// random answer
+			let answers = ["a", "b", "c", "d"];
 			let answer = answers[Math.ceil(Math.random() * 3)];
 			// add score to results
 			for (let key of question[answer].score) {
@@ -198,8 +200,8 @@ function stressTest(runs) {
 			}
 		}
 
-		let biome = findWinner(biomes);
-		let profession = findWinner(professions);
+		let biome = findWinner(runResults, biomes);
+		let profession = findWinner(runResults, professions);
 
 		// add result to table
 		resultsTable[profession][biome]++;
