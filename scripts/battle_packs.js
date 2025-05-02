@@ -102,7 +102,7 @@ function buildMinifigTable(set) {
 }
 
 function getMinifigTotal(minifigs) {
-	// if (!set.minifigs) return 0;
+	if (!set.minifigs) return 0;
 	let minifigTotal = 0;
 	minifigs.forEach(minifig => {
 		minifigTotal += minifig.count;
