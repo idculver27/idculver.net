@@ -76,8 +76,8 @@ app.get("/api/battle_packs", (req, res) => {
 		}
 		
 		// make bools into real bools
-		if (set.minifigs) {
-			for (let set of result) {
+		for (let set of result) {
+			if (set.minifigs) {
 				for (let minifig of set.minifigs) {
 					minifig.is_unique = !!minifig.is_unique;
 				}
