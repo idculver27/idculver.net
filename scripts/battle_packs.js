@@ -67,6 +67,8 @@ function buildListing(set) {
 }
 
 function buildMinifigTable(set) {
+	if (!set.minifigs) return;
+
 	let picsRow = "<tr>";
 	let namesRow = "<tr>";
 
@@ -100,6 +102,7 @@ function buildMinifigTable(set) {
 }
 
 function getMinifigTotal(minifigs) {
+	// if (!set.minifigs) return 0;
 	let minifigTotal = 0;
 	minifigs.forEach(minifig => {
 		minifigTotal += minifig.count;

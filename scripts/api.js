@@ -76,12 +76,13 @@ app.get("/api/battle_packs", (req, res) => {
 		}
 		
 		// make bools into real bools
-		for (let set of result) {
-			for (let minifig of set.minifigs) {
-				minifig.is_unique = !!minifig.is_unique;
+		if (set.minifigs) {
+			for (let set of result) {
+				for (let minifig of set.minifigs) {
+					minifig.is_unique = !!minifig.is_unique;
+				}
 			}
 		}
-
 		res.send(result);
 	});
 });
