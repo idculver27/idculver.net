@@ -2,15 +2,32 @@
 
 ---
 
-# Dump database
+# Database Operations
 
+## Dump
 ```bash
 sudo mariadb-dump -u root -p -x -B idculver > /var/www/idculver.net/databases/idculver.sql
 ```
 
+## Log in
+```bash
+sudo mysql -u root -p
+```
+```sql
+USE idculver;
+```
+
+## Common commands
+```sql
+SHOW tables;
+DESCRIBE battle_pack;
+SELECT * FROM battle_pack;
+UPDATE battle_pack SET msrp='9.99' WHERE set_id=7654; 
+```
+
 ---
 
-# How to deploy
+# How To Deploy
 
 ## Repo Setup
 1. Clone the repo
