@@ -12,7 +12,7 @@ function buildListing(set) {
 	let listing = `
 		<hr>
 		<div class="listing">
-			<h3>${set.set_id} ${set.set_name}</h3>
+			<h3>${set.set_number} ${set.set_name}</h3>
 			<div class="info">
 				<table>
 					<tr>
@@ -21,7 +21,7 @@ function buildListing(set) {
 					</tr>
 					<tr>
 						<td>Source:</td>
-						<td>${set.source_short_title}</td>
+						<td title=${set.source.title}>${set.source.short_title}</td>
 					</tr>
 					<tr>
 						<td>Pieces:</td>
@@ -41,20 +41,20 @@ function buildListing(set) {
 					</tr>
 				</table>
 				<br>
-				<a href="https://www.lego.com/en-us/product/${set.set_name.toLowerCase().replaceAll(" ", "-")}-${set.set_id}" title="View on LEGO.com (not available for older sets)">
+				<a href="https://www.lego.com/en-us/product/${set.set_name.toLowerCase().replaceAll(" ", "-")}-${set.set_number}" title="View on LEGO.com (not available for older sets)">
 					<img src="https://www.lego.com/favicon-32x32.png" alt="LEGO.com">
 				</a>
 				<span class="spacer"></span>
-				<a href="https://www.bricklink.com/v2/catalog/catalogitem.page?S=${set.set_id}-1" title="View on Bricklink">
+				<a href="https://www.bricklink.com/v2/catalog/catalogitem.page?S=${set.set_number}-1" title="View on Bricklink">
 					<img src="https://static.bricklink.com/renovate/img/favicon/favicon-32x32.png" alt="Bricklink">
 				</a>
 				<span class="spacer"></span>
-				<a href="https://brickset.com/sets/${set.set_id}-1/${set.set_name.replace("& ", "").replace(".", "").replaceAll(" ", "-")}" title="View on Brickset">
+				<a href="https://brickset.com/sets/${set.set_number}-1/${set.set_name.replace("& ", "").replace(".", "").replaceAll(" ", "-")}" title="View on Brickset">
 					<img src="https://brickset.com/assets/images/icons/favicon-32x32.png" alt="Brickset">
 				</a>
 			</div>
 			<div class="set">
-				<img class="set-pic" src="https://img.bricklink.com/ItemImage/ON/0/${set.set_id}-1.png" alt="Box">
+				<img class="set-pic" src="https://img.bricklink.com/ItemImage/ON/0/${set.set_number}-1.png" alt="Box">
 			</div>
 			<div class="minifig">
 				<table>

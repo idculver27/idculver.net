@@ -49,7 +49,11 @@ app.get("/api", (req, res) => {
 // battle packs endpoint
 app.get("/api/battle_packs", (req, res) => {
 	query = `
-		SELECT set_id, set_name, release_year, short_title AS source_short_title, piece_count, msrp, (
+		SELECT set_number, set_name, release_year, piece_count, msrp, 
+		JSON_OBJECT (
+			'title', title,
+			'short_title', short_title
+		) AS source, (
 			SELECT JSON_ARRAYAGG(
 				JSON_OBJECT(
 					'bl_id', bl_id,
@@ -61,17 +65,18 @@ app.get("/api/battle_packs", (req, res) => {
 			)
 			FROM battle_pack_has_minifig
 			JOIN minifig USING (bl_id)
-			WHERE battle_pack.set_id = battle_pack_has_minifig.set_id 
+			WHERE battle_pack.set_number = battle_pack_has_minifig.set_number 
 		) AS minifigs
 		FROM battle_pack
 		JOIN source USING (source_id)
-		ORDER BY release_year, set_id;
+		ORDER BY release_year, set_number;
 	`;
 	db.query(query, (err, result) => {
 		if (err) throw err;
 
 		// parse json
 		for (let set of result) {
+			set.source = JSON.parse(set.source);
 			set.minifigs = JSON.parse(set.minifigs);
 		}
 		
