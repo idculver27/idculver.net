@@ -25,18 +25,65 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 ```
 
 ## Web Proxy Setup
-1. Get SSL files
-	- Follow the instructions at https://ap.www.namecheap.com/ProductList/SslCertificates to get the files
-	- Put the cert in `/etc/pki/tls/certs/`
-	- Put the key in `/etc/pki/tls/private/`
+1. Skip straight to step 6 if the cert is already active and you have the private key
 
-2. Edit `/etc/nginx/sites-available/default`
-	- Change `root /var/www/html;` to `root /var/www/idculver.net;`
-	- Replace the location with this:
+2. Generate a CSR
+```bash
+openssl req -newkey rsa:2048 -keyout culverpi.key -out culverpi.csr
 ```
+
+3. Submit the CSR
+	- [SSL Certificates](https://ap.www.namecheap.com/ProductList/SslCertificates) > Activate > Next > Manually > Next
+	- Paste in the CSR > Next > Next > Next > Submit
+	- Follow the instructions for DNS validation
+
+4. DNS validation for CSR
+	- Click the "from this page (Edit methods)" link
+	- Edit Methods dropdown > Get Record
+	- Copy the Host and Target
+	- [Advanced DNS](https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns) > Add New Record > CNAME Record
+	- Paste in Host and Target > Save Changes (checkmark)
+
+5. Wait for the DNS record to propagate (this can take over 24 hours)
+	- [SSL Certificates](https://ap.www.namecheap.com/ProductList/SslCertificates)
+	- Wait for Status to change from Pending to Active
+
+6. Get cert
+	- [SSL Certificates](https://ap.www.namecheap.com/ProductList/SslCertificates)
+	- Details > Download
+
+7. Install SSL files
+	- Cert path: `/var/www/idculver.net/ssl/idculver_net.crt`
+	- Key path: `/var/www/idculver.net/ssl/culverpi.key`
+	- If you put them somewhere else, put the paths in `/var/www/idculver.net/.env`, such as:
+```bash
+CERT_PATH=ssl/domain.crt
+KEY_PATH=ssl/domain.key
+```
+
+8. Change `/etc/nginx/sites-available/default` to this:
+	- Make sure to change the SSL paths if needed
+```
+# redirect to HTTPS
+server {
+	listen 80;
+	server_name idculver.net;
+	return 301 https://idculver.net$request_uri;
+}
+
 # idculver.net
+server {
+	listen 443 ssl default_server;
+	server_name idculver.net;
+	ssl_certificate /var/www/idculver.net/ssl/idculver_net.crt;
+	ssl_certificate_key /var/www/idculver.net/ssl/culverpi.key;
+
+	root /var/www/idculver.net;
+	index index.html index.htm index.nginx-debian.html;
+
+	# idculver.net
 	location / {
-		try_files $uri $uri/ /index.html =404;
+		try_files $uri $uri/ =404;
 	}
 	# API
 	location /api {
@@ -47,18 +94,22 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 		proxy_set_header Host $host;
 		proxy_cache_bypass $http_upgrade;
 		add_header Access-Control-Allow-Origin * always;
+	}
 }
 ```
 
-3. Restart nginx
+9. Restart nginx
 ```bash
+sudo nginx -t
 sudo systemctl restart nginx
 ```
 
-4. Set up port forwarding on your router  
-...
+10. Set up port forwarding on your router  
+	- ...
 
-5. Point Namecheap DNS to your router: https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns
+11. Point Namecheap DNS to your router
+	- [Advanced DNS](https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns)
+	- Change the value of the A Record to your router's public IP > Save Changes (checkmark)
 
 ## Database Setup
 1. Install MariaDB
