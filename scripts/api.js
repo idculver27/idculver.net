@@ -5,8 +5,8 @@ const https = require("https");
 const mysql = require("mysql");
 
 // env vars
-const cert_path = process.env.CERT_PATH || "/etc/pki/tls/certs/idculver_net.crt";
-const key_path = process.env.KEY_PATH || "/etc/pki/tls/private/culverpi.key";
+const cert_path = process.env.CERT_PATH || "ssl/idculver_net.crt";
+const key_path = process.env.KEY_PATH || "ssl/culverpi.key";
 const port = process.env.PORT || 3000;
 
 // initialize app
