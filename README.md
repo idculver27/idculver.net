@@ -42,34 +42,17 @@ ln -s /var/www/idculver.net/ ~/idculver.net
 ```
 
 ## Web Proxy Setup
-1. Skip straight to step 6 if the cert is already active and you have the private key
-
-2. Generate a CSR
+1. Generate a CSR
 ```bash
 openssl req -newkey rsa:2048 -keyout culverpi.key -out culverpi.csr
 ```
 
-3. Submit the CSR
+2. Submit the CSR
 	- [SSL Certificates](https://ap.www.namecheap.com/ProductList/SslCertificates) > Activate > Next > Manually > Next
 	- Paste in the CSR > Next > Next > Next > Submit
-	- Follow the instructions for DNS validation
+	- Follow the instructions for DNS validation: https://www.namecheap.com/support/knowledgebase/article.aspx/9637/68/how-can-i-complete-domain-control-validation-dcv-for-my-ssl-certificate/
 
-4. DNS validation for CSR
-	- Click the "from this page (Edit methods)" link
-	- Edit Methods dropdown > Get Record
-	- Copy the Host and Target
-	- [Advanced DNS](https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns) > Add New Record > CNAME Record
-	- Paste in Host and Target > Save Changes (checkmark)
-
-5. Wait for the DNS record to propagate (this can take over 24 hours)
-	- [SSL Certificates](https://ap.www.namecheap.com/ProductList/SslCertificates)
-	- Wait for Status to change from Pending to Active
-
-6. Get cert
-	- [SSL Certificates](https://ap.www.namecheap.com/ProductList/SslCertificates)
-	- Details > Download
-
-7. Install SSL files
+3. Install SSL files
 	- Cert path: `/var/www/idculver.net/ssl/idculver_net.crt`
 	- Key path: `/var/www/idculver.net/ssl/culverpi.key`
 	- If you put them somewhere else, put the paths in `/var/www/idculver.net/.env`, such as:
@@ -78,7 +61,7 @@ CERT_PATH=ssl/domain.crt
 KEY_PATH=ssl/domain.key
 ```
 
-8. Change `/etc/nginx/sites-available/default` to this:
+4. Change `/etc/nginx/sites-available/default` to this:
 	- Make sure to change the SSL paths if needed
 ```
 # redirect to HTTPS
@@ -115,16 +98,16 @@ server {
 }
 ```
 
-9. Restart nginx
+5. Restart nginx
 ```bash
 sudo nginx -t
 sudo systemctl restart nginx
 ```
 
-10. Set up port forwarding on your router  
+6. Set up port forwarding on your router  
 	- ...
 
-11. Point Namecheap DNS to your router
+7. Point Namecheap DNS to your router
 	- [Advanced DNS](https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns)
 	- Change the value of the A Record to your router's public IP > Save Changes (checkmark)
 
