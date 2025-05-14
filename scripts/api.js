@@ -72,7 +72,10 @@ app.get("/api/battle_packs", (req, res) => {
 		ORDER BY release_year, set_number;
 	`;
 	db.query(query, (err, result) => {
-		if (err) throw err;
+		if (err) {
+			res.status(500).send("Server encountered an error :(");	
+			throw err;
+		}
 
 		// parse json
 		for (let set of result) {
