@@ -21,7 +21,7 @@ function buildListing(set) {
 					</tr>
 					<tr>
 						<td>Source:</td>
-						<td title=${set.source.title}>${set.source.short_title}</td>
+						<td title="${set.source.title}">${set.source.short_title}</td>
 					</tr>
 					<tr>
 						<td>Pieces:</td>
