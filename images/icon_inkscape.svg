@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="true"
      showguides="true"
-     inkscape:zoom="8"
-     inkscape:cx="-11.75"
-     inkscape:cy="25.1875"
+     inkscape:zoom="11.313709"
+     inkscape:cx="-3.0052038"
+     inkscape:cy="11.357903"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -91,25 +91,25 @@
        inkscape:label="x=16"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="9.515543,15.999998"
+       position="9.4955385,15.999998"
        orientation="-1,0"
        id="guide10"
        inkscape:locked="false"
-       inkscape:label="x=8+sqrt(36.75)/4"
+       inkscape:label="x=8+sqrt(36.75)/4-0.02"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="11.031087,15.999998"
+       position="11.011088,15.999998"
        orientation="-1,0"
        id="guide11"
        inkscape:locked="false"
-       inkscape:label="x=8+sqrt(36.75)/2"
+       inkscape:label="x=8+sqrt(36.75)/2-0.02"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="12.546631,15.999998"
+       position="12.526628,15.999998"
        orientation="-1,0"
        id="guide12"
        inkscape:locked="false"
-       inkscape:label="x=8+sqrt(36.75)*3/4"
+       inkscape:label="x=8+sqrt(36.75)*3/4-0.02"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
        position="15.999998,15.999998"
@@ -251,6 +251,27 @@
        inkscape:locked="false"
        inkscape:label="y=14.125 "
        inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="9.5355385,15.999998"
+       orientation="-1,0"
+       id="guide6"
+       inkscape:label="x=8+sqrt(36.75)/4+0.02"
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="11.051088,15.999998"
+       orientation="-1,0"
+       id="guide24"
+       inkscape:label="x=8+sqrt(36.75)/2+0.02"
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="12.566628,15.999998"
+       orientation="-1,0"
+       id="guide25"
+       inkscape:label="x=8+sqrt(36.75)*3/4+0.02"
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
   </sodipodi:namedview>
   <defs
      id="defs1" />
@@ -279,25 +300,25 @@
     <path
        id="rect27"
        style="fill:#000000;stroke-width:0.264583"
-       d="M 8,8 9.5155445,6 v 7.25 C 9.5155445,15.125 8,16 8,14.125 Z"
+       d="m 8.005,8 1.49054,-2 0,7.25 c 0,1.875 -1.49054,2.75 -1.49054,0.875 z"
        sodipodi:nodetypes="ccccc"
        inkscape:label="feather1" />
     <path
        id="path29"
        style="fill:#000000;stroke-width:0.264583"
-       d="m 9.5155442,6 h 1.5155448 v 6.375 c 0,1.875 -1.5155445,2.75 -1.5155445,0.875 z"
+       d="m 9.53554,6 1.47555,0 0,6.375 c 0,1.875 -1.47555,2.75 -1.47555,0.875 z"
        sodipodi:nodetypes="ccccc"
        inkscape:label="feather2" />
     <path
        id="path30"
        style="fill:#000000;stroke-width:0.264583"
-       d="m 11.031089,6 h 1.515544 l 0,5.5 c 0,1.875 -1.515544,2.75 -1.515544,0.875 z"
+       d="m 11.05109,6 1.47554,0 v 5.5 c 0,1.875 -1.47554,2.75 -1.47554,0.875 z"
        sodipodi:nodetypes="ccccc"
        inkscape:label="feather3" />
     <path
        id="path31"
        style="fill:#000000;stroke-width:0.264583"
-       d="m 12.546636,6 h 1.515544 l 0,4.625 c 0,1.875 -1.515547,2.75 -1.515547,0.875 z"
+       d="m 12.56663,6 1.49555,0 v 4.625 c 0,1.875 -1.49555,2.75 -1.49555,0.875 z"
        sodipodi:nodetypes="ccccc"
        inkscape:label="feather4" />
     <path
