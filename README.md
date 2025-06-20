@@ -22,7 +22,9 @@ USE idculver;
 SHOW tables;
 DESCRIBE battle_pack;
 SELECT * FROM battle_pack;
+START TRANSACTION;
 UPDATE battle_pack SET msrp='9.99' WHERE set_id=7654; 
+COMMIT;
 ```
 
 ---
