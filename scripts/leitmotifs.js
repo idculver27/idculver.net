@@ -20,18 +20,19 @@ function buildNodes(leitmotif) {
 	// create leitmotif node
 	let l_node = {
 		id: leitmotif.leitmotif_name,
-		class: "leitmotif"
+		class: "leitmotif",
+		name: leitmotif.leitmotif_name
 	};
 	nodes.push(l_node);
 
 	// song nodes
 	for (let song of leitmotif.appearances) {
-		const new_song_name = `${song.game_short_title}-${song.track_number}. ${song.track_title}`;
+		const id = `${song.game_short_title}-${song.track_number}`;
 
 		// make sure song node doesn't already exist
 		let song_already_added = false;
 		for (let node of nodes) {
-			if (node.id === new_song_name) {
+			if (node.id === id) {
 				song_already_added = true;
 				break;
 			}
@@ -40,8 +41,9 @@ function buildNodes(leitmotif) {
 		// create song node
 		if (!song_already_added) {
 			let s_node = {
-				id: new_song_name,
-				class: "song"
+				id: id,
+				class: "song",
+				name: song.track_title
 			};
 			nodes.push(s_node);
 		}
@@ -49,7 +51,7 @@ function buildNodes(leitmotif) {
 		// create link
 		let link = {
 			source: leitmotif.leitmotif_name,
-			target: new_song_name
+			target: id
 		};
 		links.push(link);
 	}
@@ -57,14 +59,19 @@ function buildNodes(leitmotif) {
 
 function simulate() {
 	// initialize simulation
-	const svg = d3.select("svg");
 	const simulation = d3.forceSimulation(nodes)
 		.force("link", d3.forceLink(links).id(d => d.id))
-		.force("charge", d3.forceManyBody())
+		.force("charge", d3.forceManyBody().strength(-100))
 		.force("x", d3.forceX())
-		.force("y", d3.forceY())
-		.force("center", d3.forceCenter(300, 300)) // fix
-		.on("tick", ticked);
+		.force("y", d3.forceY());
+
+	// draw SVG container
+	const width = 1800;
+	const height = 800;
+	const svg = d3.select("svg")
+		.attr("width", width)
+		.attr("height", height)
+		.attr("viewBox", [-width / 2, -height / 2, width, height]);
 
 	// draw links
 	const link = svg.append("g")
@@ -81,7 +88,7 @@ function simulate() {
 		.data(nodes)
 		.join("circle")
 		.attr("r", 10)
-		.attr("class", d => d.class);
+		.attr("class", d => nodeClass(d));
 
 	// draw node labels
 	const label = svg.append("g")
@@ -89,8 +96,8 @@ function simulate() {
 		.selectAll()
 		.data(nodes)
 		.join("text")
-		.text(d => d.id)
-		.attr("class", d => `label${d.class === "song" ? " " + d.id.substring(0,2).toLowerCase() : ""}`);
+		.text(d => d.name)
+		.attr("class", "label");
 
 	// draw sprites
 	const sprite = svg.append("g")
@@ -101,7 +108,7 @@ function simulate() {
 		.attr("href", d => `../images/leitmotifs/${d.id}.png`);
 
 	// update positions each tick
-	function ticked() {
+	simulation.on("tick", () => {
 		link
 			.attr("x1", d => d.source.x)
 			.attr("y1", d => d.source.y)
@@ -116,7 +123,7 @@ function simulate() {
 		sprite
 			.attr("x", d => d.x)
 			.attr("y", d => d.y);
-	}
+	});
 
 	// allow dragging nodes
 	node.call(d3.drag()
@@ -145,4 +152,9 @@ function simulate() {
 		event.subject.fx = null;
 		event.subject.fy = null;
 	}
+}
+
+function nodeClass(node) {
+	if (node.class === "song") return `${node.id.substring(0,2).toLowerCase()}`;
+	return node.class;
 }
