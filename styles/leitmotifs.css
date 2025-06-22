@@ -1,21 +1,37 @@
+:root {
+	--ut: #FF0000;
+	--d1: #5585BD;
+	--d2: #6FD1FF;
+	--d3: #FEF960;
+	--d4: #000000;
+}
 body {
-	background-color: black;
+	background-color: gray;
 	color: white;
 	font-family: Verdana, Tahoma, sans-serif;
-}
-.leitmotif {
-	fill: blue;
-}
-.song {
-	fill: green;
 }
 .link {
 	stroke-width: 1px;
 	stroke: white;
-
 }
 .label {
-	fill: red;
+	fill: white;
+	text-anchor: middle;
+}
+.ut {
+	fill: var(--ut);
+}
+.d1 {
+	fill: var(--d1);
+}
+.d2 {
+	fill: var(--d2);
+}
+.d3 {
+	fill: var(--d3);
+}
+.d4 {
+	fill: var(--d4);
 }
 svg {
 	width: 100%;

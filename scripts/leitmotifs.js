@@ -90,7 +90,15 @@ function simulate() {
 		.data(nodes)
 		.join("text")
 		.text(d => d.id)
-		.attr("class", "label");
+		.attr("class", d => `label${d.class === "song" ? " " + d.id.substring(0,2).toLowerCase() : ""}`);
+
+	// draw sprites
+	const sprite = svg.append("g")
+		.attr("id", "sprites")
+		.selectAll()
+		.data(nodes)
+		.join("image")
+		.attr("href", d => `../images/leitmotifs/${d.id}.png`);
 
 	// update positions each tick
 	function ticked() {
@@ -105,17 +113,20 @@ function simulate() {
 		label
 			.attr("x", d => d.x)
 			.attr("y", d => d.y);
+		sprite
+			.attr("x", d => d.x)
+			.attr("y", d => d.y);
 	}
 
 	// allow dragging nodes
 	node.call(d3.drag()
-		.on("start", dragstarted)
+		.on("start", dragStarted)
 		.on("drag", dragged)
-		.on("end", dragended));
+		.on("end", dragEnded));
 
 	// reheat the simulation when drag starts
 	// fix the position of the subject (the node being dragged)
-	function dragstarted(event) {
+	function dragStarted(event) {
 		if (!event.active) simulation.alphaTarget(0.3).restart();
 		event.subject.fx = event.subject.x;
 		event.subject.fy = event.subject.y;
@@ -129,7 +140,7 @@ function simulate() {
 
 	// allow the simulation to cool
 	// unfix the position of the subject
-	function dragended(event) {
+	function dragEnded(event) {
 		if (!event.active) simulation.alphaTarget(0);
 		event.subject.fx = null;
 		event.subject.fy = null;
