@@ -8,67 +8,65 @@ window.addEventListener("DOMContentLoaded", () => {
 	fetch("../databases/temp.json")
 		.then((response) => response.json())
 		.then((json) => {
-			json.forEach(leitmotif => {
-				buildNodes(leitmotif);
+			json.forEach(row => {
+				buildLinks(row);
 			});
 
 			simulate();
 		});
 });
 
-function buildNodes(leitmotif) {
-	// create leitmotif node
-	let l_node = {
-		id: leitmotif.leitmotif_name,
-		class: "leitmotif",
-		name: leitmotif.leitmotif_name
-	};
-	nodes.push(l_node);
+function buildLinks(row) {
+	const leitmotif_id = row.leitmotif_name;
+	const song_id = `${row.game_short_title}-${row.track_number}`;
+	
+	// add link
+	const new_link = {
+		source: leitmotif_id,
+		target: song_id
+	}
+	links.push(new_link);
 
-	// song nodes
-	for (let song of leitmotif.appearances) {
-		const id = `${song.game_short_title}-${song.track_number}`;
+	// identify missing nodes
+	let leitmotif_already_added = false;
+	let song_already_added = false;
+	for (let node of nodes) {
+		if (node.id === leitmotif_id) leitmotif_already_added = true;
+		else if (node.id === song_id) song_already_added = true;
+		if (leitmotif_already_added && song_already_added) break;
+	}
 
-		// make sure song node doesn't already exist
-		let song_already_added = false;
-		for (let node of nodes) {
-			if (node.id === id) {
-				song_already_added = true;
-				break;
-			}
+	// add missing nodes
+	if (!leitmotif_already_added) {
+		let new_node = {
+			id: leitmotif_id,
+			class: "leitmotif"
 		}
-
-		// create song node
-		if (!song_already_added) {
-			let s_node = {
-				id: id,
-				class: "song",
-				name: song.track_title
-			};
-			nodes.push(s_node);
+		nodes.push(new_node);
+	}
+	if (!song_already_added) {
+		let new_node = {
+			id: song_id,
+			class: "song",
+			name: row.track_title
 		}
-
-		// create link
-		let link = {
-			source: leitmotif.leitmotif_name,
-			target: id
-		};
-		links.push(link);
+		nodes.push(new_node);
 	}
 }
 
 function simulate() {
 	// initialize simulation
+	const xystrength = 0.1;
 	const simulation = d3.forceSimulation(nodes)
 		.force("link", d3.forceLink(links).id(d => d.id))
 		.force("charge", d3.forceManyBody().strength(-100))
-		.force("x", d3.forceX())
-		.force("y", d3.forceY());
+		.force("x", d3.forceX().strength(xystrength))
+		.force("y", d3.forceY().strength(xystrength));
 
 	// draw SVG container
 	const width = 1800;
 	const height = 800;
-	const svg = d3.select("svg")
+	const svg = d3.select("#canvas")
 		.attr("width", width)
 		.attr("height", height)
 		.attr("viewBox", [-width / 2, -height / 2, width, height]);
@@ -90,15 +88,6 @@ function simulate() {
 		.attr("r", 10)
 		.attr("class", d => nodeClass(d));
 
-	// draw node labels
-	const label = svg.append("g")
-		.attr("id", "labels")
-		.selectAll()
-		.data(nodes)
-		.join("text")
-		.text(d => d.name)
-		.attr("class", "label");
-
 	// draw sprites
 	const sprite = svg.append("g")
 		.attr("id", "sprites")
@@ -117,13 +106,13 @@ function simulate() {
 		node
 			.attr("cx", d => d.x)
 			.attr("cy", d => d.y);
-		label
-			.attr("x", d => d.x)
-			.attr("y", d => d.y);
 		sprite
 			.attr("x", d => d.x)
 			.attr("y", d => d.y);
 	});
+
+	// allow selecting nodes
+	node.on("click", event => updateInfoPanel(event));
 
 	// allow dragging nodes
 	node.call(d3.drag()
@@ -155,6 +144,10 @@ function simulate() {
 }
 
 function nodeClass(node) {
-	if (node.class === "song") return `${node.id.substring(0,2).toLowerCase()}`;
+	if (node.class === "song") return `song ${node.id.substring(0,2).toLowerCase()}`;
 	return node.class;
+}
+
+function updateInfoPanel(event) {
+	console.log(event);
 }

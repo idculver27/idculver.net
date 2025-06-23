@@ -73,7 +73,7 @@ app.get("/api/battle_packs", (req, res) => {
 	`;
 	db.query(query, (err, result) => {
 		if (err) {
-			res.status(500).send("Server encountered an error :(");	
+			res.status(500).send("Server encountered an error :(");
 			throw err;
 		}
 
@@ -82,7 +82,7 @@ app.get("/api/battle_packs", (req, res) => {
 			set.source = JSON.parse(set.source);
 			set.minifigs = JSON.parse(set.minifigs);
 		}
-		
+
 		// make bools into real bools
 		for (let set of result) {
 			if (set.minifigs) {
@@ -98,25 +98,16 @@ app.get("/api/battle_packs", (req, res) => {
 // leitmotifs endpoint
 app.get("/api/leitmotifs", (req, res) => {
 	query = `
-		SELECT leitmotif_name, (
-			SELECT JSON_ARRAYAGG(
-				JSON_OBJECT(
-					'game_short_title', g.game_short_title,
-					'track_number', s.track_number,
-					'track_title', s.track_title
-				)
-			)
-			FROM leitmotif_in_song l_s
-			JOIN song s ON l_s.game_id = s.game_id AND l_s.track_number = s.track_number
-			JOIN game g ON s.game_id = g.game_id
-			WHERE l_s.leitmotif_id = l.leitmotif_id
-		) AS appearances
-		FROM leitmotif l
-		ORDER BY leitmotif_id;
+		SELECT leitmotif_name, game_short_title, track_number, track_title
+		FROM leitmotif
+		JOIN leitmotif_in_song USING (leitmotif_id)
+		JOIN song USING (game_id, track_number)
+		JOIN game USING (game_id)
+		ORDER BY leitmotif_id, game_id, track_number;
 	`;
 	db.query(query, (err, result) => {
 		if (err) {
-			res.status(500).send("Server encountered an error :(");	
+			res.status(500).send("Server encountered an error :(");
 			throw err;
 		}
 
