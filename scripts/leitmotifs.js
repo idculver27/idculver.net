@@ -17,9 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function buildLinks(row) {
-	const leitmotif_id = row.leitmotif_name;
+	const leitmotif_id = row.leitmotif_name.replaceAll(/[^\w]/g, "");
 	const song_id = `${row.game_short_title}-${row.track_number}`;
-	
+
 	// add link
 	const new_link = {
 		source: leitmotif_id,
@@ -40,7 +40,8 @@ function buildLinks(row) {
 	if (!leitmotif_already_added) {
 		let new_node = {
 			id: leitmotif_id,
-			class: "leitmotif"
+			class: "leitmotif",
+			name: row.leitmotif_name,
 		}
 		nodes.push(new_node);
 	}
@@ -56,7 +57,7 @@ function buildLinks(row) {
 
 function simulate() {
 	// initialize simulation
-	const xystrength = 0.1;
+	const xystrength = 0.15;
 	const simulation = d3.forceSimulation(nodes)
 		.force("link", d3.forceLink(links).id(d => d.id))
 		.force("charge", d3.forceManyBody().strength(-100))
@@ -79,22 +80,37 @@ function simulate() {
 		.join("line")
 		.attr("class", "link");
 
-	// draw nodes
-	const node = svg.append("g")
-		.attr("id", "nodes")
+	// draw song nodes
+	const song = svg.append("g")
+		.attr("id", "songs")
 		.selectAll()
-		.data(nodes)
+		.data(nodes.filter(d => d.class === "song"))
 		.join("circle")
-		.attr("r", 10)
-		.attr("class", d => nodeClass(d));
+		.attr("r", 5)
+		.attr("class", d => nodeClass(d))
+	song.append("title")
+		.text(d => d.name);
+	song.on("click", event => updateInfoPanel(event));
+	song.call(d3.drag()
+		.on("start", dragStarted)
+		.on("drag", dragged)
+		.on("end", dragEnded));
 
-	// draw sprites
-	const sprite = svg.append("g")
-		.attr("id", "sprites")
+	// draw leitmotif nodes
+	const leitmotif = svg.append("g")
+		.attr("id", "leitmotifs")
 		.selectAll()
-		.data(nodes)
+		.data(nodes.filter(d => d.class === "leitmotif"))
 		.join("image")
-		.attr("href", d => `../images/leitmotifs/${d.id}.png`);
+		.attr("id", d => `sprite${d.id}`)
+		.attr("href", d => `../images/leitmotifs/${d.name.replace("?", "")}.png`)
+	leitmotif.append("title")
+		.text(d => d.name);
+	leitmotif.on("click", event => updateInfoPanel(event));
+	leitmotif.call(d3.drag()
+		.on("start", dragStarted)
+		.on("drag", dragged)
+		.on("end", dragEnded));
 
 	// update positions each tick
 	simulation.on("tick", () => {
@@ -103,22 +119,13 @@ function simulate() {
 			.attr("y1", d => d.source.y)
 			.attr("x2", d => d.target.x)
 			.attr("y2", d => d.target.y);
-		node
+		song
 			.attr("cx", d => d.x)
 			.attr("cy", d => d.y);
-		sprite
-			.attr("x", d => d.x)
-			.attr("y", d => d.y);
+		leitmotif
+			.attr("x", d => getSpriteX(d)[0])
+			.attr("y", d => getSpriteX(d)[1]);
 	});
-
-	// allow selecting nodes
-	node.on("click", event => updateInfoPanel(event));
-
-	// allow dragging nodes
-	node.call(d3.drag()
-		.on("start", dragStarted)
-		.on("drag", dragged)
-		.on("end", dragEnded));
 
 	// reheat the simulation when drag starts
 	// fix the position of the subject (the node being dragged)
@@ -144,10 +151,18 @@ function simulate() {
 }
 
 function nodeClass(node) {
-	if (node.class === "song") return `song ${node.id.substring(0,2).toLowerCase()}`;
+	if (node.class === "song") return `song ${node.id.substring(0, 2).toLowerCase()}`;
 	return node.class;
 }
 
 function updateInfoPanel(event) {
 	console.log(event);
+}
+
+function getSpriteX(node) {
+	const sprite = document.getElementById(`sprite${node.id}`);
+	const rect = sprite.getBoundingClientRect();
+	const x = node.x - (rect.width / 2);
+	const y = node.y - (rect.height / 2);
+	return [x, y];
 }
