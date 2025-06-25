@@ -98,7 +98,7 @@ app.get("/api/battle_packs", (req, res) => {
 // leitmotifs endpoint
 app.get("/api/leitmotifs", (req, res) => {
 	query = `
-		SELECT leitmotif_name, game_short_title, track_number, track_title
+		SELECT leitmotif_name, game_id, game_title, track_number, track_title
 		FROM leitmotif
 		JOIN leitmotif_in_song USING (leitmotif_id)
 		JOIN song USING (game_id, track_number)

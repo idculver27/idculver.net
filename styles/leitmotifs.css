@@ -14,16 +14,19 @@ svg {
 	max-width: 100%;
 	border: 1px solid green;
 }
-.d1 {
+.g0 {
+	fill: #A349A4;
+}
+.g1 {
 	fill: #851053;
 }
-.d2 {
+.g2 {
 	fill: #31D989;
 }
-.d3 {
+.g3 {
 	fill: #FEF960;
 }
-.d4 {
+.g4 {
 	fill: #526AF3;
 }
 .legend {
@@ -38,9 +41,6 @@ svg {
 	stroke-width: 1.5px;
 	stroke: white;
 	/* stroke: #3CB24E; */
-}
-.ut {
-	fill: #A349A4;
 }
 #info_panel {
 	position: absolute;

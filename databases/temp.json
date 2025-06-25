@@ -1,1783 +1,2080 @@
 [
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 1,
 		"track_title": "Once Upon a Time"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 2,
 		"track_title": "Start Menu"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 12,
 		"track_title": "Home"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 13,
 		"track_title": "Home (Music Box)"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 54,
 		"track_title": "Hotel"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 55,
 		"track_title": "Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 71,
 		"track_title": "Undertale"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 73,
 		"track_title": "The Choice"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 85,
 		"track_title": "Fallen Down (Reprise)"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 87,
 		"track_title": "Hopes and Dreams"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 89,
 		"track_title": "SAVE the World"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 91,
 		"track_title": "Final Power"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 93,
 		"track_title": "Menu (Full)"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 94,
 		"track_title": "Respite"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 96,
 		"track_title": "Last Goodbye"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 101,
 		"track_title": "Good Night"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 2,
 		"track_title": "Beginning"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 38,
 		"track_title": "You Can Always Come Home"
 	},
 	{
 		"leitmotif_name": "Once Upon a Time",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 40,
 		"track_title": "Before the Story"
 	},
 	{
 		"leitmotif_name": "Flowey",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 3,
 		"track_title": "Your Best Friend"
 	},
 	{
 		"leitmotif_name": "Flowey",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 79,
 		"track_title": "Your Best Nightmare"
 	},
 	{
 		"leitmotif_name": "Flowey",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 80,
 		"track_title": "Finale"
 	},
 	{
 		"leitmotif_name": "Flowey",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 87,
 		"track_title": "Hopes and Dreams"
 	},
 	{
 		"leitmotif_name": "Flowey",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 89,
 		"track_title": "SAVE the World"
 	},
 	{
 		"leitmotif_name": "Flowey",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 96,
 		"track_title": "Last Goodbye"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 5,
 		"track_title": "Ruins"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 31,
 		"track_title": "Waterfall"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 33,
 		"track_title": "Quiet Water"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 45,
 		"track_title": "NGAHHH!!"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 46,
 		"track_title": "Spear of Justice"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 81,
 		"track_title": "An Ending"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 86,
 		"track_title": "Don't Give Up"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 94,
 		"track_title": "Respite"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 97,
 		"track_title": "But the Earth Refused to Die"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 98,
 		"track_title": "Battle Against a True Hero"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 51,
 		"track_title": "Gyaa Ha ha!"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 52,
 		"track_title": "Fireplace"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 58,
 		"track_title": "Hammer of Justice"
 	},
 	{
 		"leitmotif_name": "Ruins",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 69,
 		"track_title": "Need a hand!?"
 	},
 	{
 		"leitmotif_name": "Uwa!!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 6,
 		"track_title": "Uwa!! So Temperate♫"
 	},
 	{
 		"leitmotif_name": "Uwa!!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 18,
 		"track_title": "Uwa!! So Holiday♫"
 	},
 	{
 		"leitmotif_name": "Uwa!!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 52,
 		"track_title": "Uwa!! So HEATS!!♫"
 	},
 	{
 		"leitmotif_name": "Uwa!!",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 22,
 		"track_title": "Glowing Snow"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 7,
 		"track_title": "Anticipation"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 9,
 		"track_title": "Enemy Approaching"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 14,
 		"track_title": "Heartache"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 21,
 		"track_title": "Dogsong"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 43,
 		"track_title": "Temmie Village"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 44,
 		"track_title": "Tem Shop"
 	},
 	{
 		"leitmotif_name": "Enemy Approaching",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Ghost Fight",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 10,
 		"track_title": "Ghost Fight"
 	},
 	{
 		"leitmotif_name": "Ghost Fight",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 36,
 		"track_title": "Dummy!"
 	},
 	{
 		"leitmotif_name": "Ghost Fight",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 37,
 		"track_title": "Pathetic House"
 	},
 	{
 		"leitmotif_name": "Ghost Fight",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 59,
 		"track_title": "Spider Dance"
 	},
 	{
 		"leitmotif_name": "Ghost Fight",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 43,
 		"track_title": "Chill Jailbreak Alarm To Study And Relax To"
 	},
 	{
 		"leitmotif_name": "Ghost Fight",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 71,
 		"track_title": "The Ol' Jitterbug"
 	},
 	{
 		"leitmotif_name": "Determination",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 11,
 		"track_title": "Determination"
 	},
 	{
 		"leitmotif_name": "Determination",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 77,
 		"track_title": "ASGORE"
 	},
 	{
 		"leitmotif_name": "Determination",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 10,
 		"track_title": "Rude Buster"
 	},
 	{
 		"leitmotif_name": "Determination",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 15,
 		"track_title": "Lantern"
 	},
 	{
 		"leitmotif_name": "Determination",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 15,
 		"track_title": "Vapor Buster"
 	},
 	{
 		"leitmotif_name": "Home",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 12,
 		"track_title": "Home"
 	},
 	{
 		"leitmotif_name": "Home",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 13,
 		"track_title": "Home (Music Box)"
 	},
 	{
 		"leitmotif_name": "Home",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 38,
 		"track_title": "You Can Always Come Home"
 	},
 	{
 		"leitmotif_name": "Heartache",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 14,
 		"track_title": "Heartache"
 	},
 	{
 		"leitmotif_name": "Heartache",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 77,
 		"track_title": "ASGORE"
 	},
 	{
 		"leitmotif_name": "Sans",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 15,
 		"track_title": "sans."
 	},
 	{
 		"leitmotif_name": "Sans",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 63,
 		"track_title": "It's Raining Somewhere Else"
 	},
 	{
 		"leitmotif_name": "Sans",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 72,
 		"track_title": "Song That Might Play When You Fight Sans"
 	},
 	{
 		"leitmotif_name": "Sans",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Papyrus",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 16,
 		"track_title": "Nyeh Heh Heh!"
 	},
 	{
 		"leitmotif_name": "Papyrus",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 24,
 		"track_title": "Bonetrousle"
 	},
 	{
 		"leitmotif_name": "Papyrus",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 72,
 		"track_title": "Song That Might Play When You Fight Sans"
 	},
 	{
 		"leitmotif_name": "Papyrus",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 17,
 		"track_title": "Snowy"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 22,
 		"track_title": "Snowdin Town"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 23,
 		"track_title": "Shop"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 25,
 		"track_title": "Dating Start!"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 27,
 		"track_title": "Dating Fight!"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 56,
 		"track_title": "Confession"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 87,
 		"track_title": "Hopes and Dreams"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 92,
 		"track_title": "Reunited"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 3,
 		"track_title": "School"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 37,
 		"track_title": "A Town Called Hometown"
 	},
 	{
 		"leitmotif_name": "Snowdin",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 41,
 		"track_title": "Another day in hometown"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 26,
 		"track_title": "Dating Tense!"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 30,
 		"track_title": "Undyne"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 32,
 		"track_title": "Run!"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 45,
 		"track_title": "NGAHHH!!"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 46,
 		"track_title": "Spear of Justice"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 77,
 		"track_title": "ASGORE"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 51,
 		"track_title": "Gyaa Ha ha!"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 52,
 		"track_title": "Fireplace"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 56,
 		"track_title": "Wise words"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 58,
 		"track_title": "Hammer of Justice"
 	},
 	{
 		"leitmotif_name": "Undyne",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 69,
 		"track_title": "Need a hand!?"
 	},
 	{
 		"leitmotif_name": "Another Medium",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 31,
 		"track_title": "Waterfall"
 	},
 	{
 		"leitmotif_name": "Another Medium",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 51,
 		"track_title": "Another Medium"
 	},
 	{
 		"leitmotif_name": "Another Medium",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 65,
 		"track_title": "CORE"
 	},
 	{
 		"leitmotif_name": "Another Medium",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 68,
 		"track_title": "Death by Glamour"
 	},
 	{
 		"leitmotif_name": "Another Medium",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 95,
 		"track_title": "Bring It In, Guys!"
 	},
 	{
 		"leitmotif_name": "Asriel",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 34,
 		"track_title": "Memory"
 	},
 	{
 		"leitmotif_name": "Asriel",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 71,
 		"track_title": "Undertale"
 	},
 	{
 		"leitmotif_name": "Asriel",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 73,
 		"track_title": "The Choice"
 	},
 	{
 		"leitmotif_name": "Asriel",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 80,
 		"track_title": "Finale"
 	},
 	{
 		"leitmotif_name": "Asriel",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 90,
 		"track_title": "His Theme"
 	},
 	{
 		"leitmotif_name": "Alphys",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 35,
 		"track_title": "Bird That Carries You Over A Disproportionately Small Gap"
 	},
 	{
 		"leitmotif_name": "Alphys",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 48,
 		"track_title": "Alphys"
 	},
 	{
 		"leitmotif_name": "Alphys",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 82,
 		"track_title": "She's Playing Piano"
 	},
 	{
 		"leitmotif_name": "Alphys",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 83,
 		"track_title": "Here We Are"
 	},
 	{
 		"leitmotif_name": "Dummy Coda",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 36,
 		"track_title": "Dummy!"
 	},
 	{
 		"leitmotif_name": "Dummy Coda",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 39,
 		"track_title": "BIG SHOT"
 	},
 	{
 		"leitmotif_name": "Spooktune",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 38,
 		"track_title": "Spooktune"
 	},
 	{
 		"leitmotif_name": "Spooktune",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 39,
 		"track_title": "Spookwave"
 	},
 	{
 		"leitmotif_name": "Spooktune",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 53,
 		"track_title": "A DARK ZONE"
 	},
 	{
 		"leitmotif_name": "It's Showtime!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 49,
 		"track_title": "It's Showtime!"
 	},
 	{
 		"leitmotif_name": "It's Showtime!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 50,
 		"track_title": "Metal Crusher"
 	},
 	{
 		"leitmotif_name": "It's Showtime!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 57,
 		"track_title": "Live Report"
 	},
 	{
 		"leitmotif_name": "It's Showtime!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 58,
 		"track_title": "Death Report"
 	},
 	{
 		"leitmotif_name": "It's Showtime!",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 68,
 		"track_title": "Death by Glamour"
 	},
 	{
 		"leitmotif_name": "Metal Crusher",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 50,
 		"track_title": "Metal Crusher"
 	},
 	{
 		"leitmotif_name": "Metal Crusher",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 66,
 		"track_title": "Last Episode!"
 	},
 	{
 		"leitmotif_name": "Metal Crusher",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 68,
 		"track_title": "Death by Glamour"
 	},
 	{
 		"leitmotif_name": "Oh! One True Love",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 61,
 		"track_title": "Oh! One True Love"
 	},
 	{
 		"leitmotif_name": "Oh! One True Love",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 62,
 		"track_title": "Oh! Dungeon"
 	},
 	{
 		"leitmotif_name": "Oh! One True Love",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 69,
 		"track_title": "For the Fans"
 	},
 	{
 		"leitmotif_name": "It's Raining Somewhere Else",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 63,
 		"track_title": "It's Raining Somewhere Else"
 	},
 	{
 		"leitmotif_name": "It's Raining Somewhere Else",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 70,
 		"track_title": "The place where it rained"
 	},
 	{
 		"leitmotif_name": "Your Best Nightmare",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 78,
 		"track_title": "You Idiot"
 	},
 	{
 		"leitmotif_name": "Your Best Nightmare",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 79,
 		"track_title": "Your Best Nightmare"
 	},
 	{
 		"leitmotif_name": "Your Best Nightmare",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 88,
 		"track_title": "Burn in Despair!"
 	},
 	{
 		"leitmotif_name": "Your Best Nightmare",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 23,
 		"track_title": "Imminent Death"
 	},
 	{
 		"leitmotif_name": "Your Best Nightmare",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 24,
 		"track_title": "Vs. Susie"
 	},
 	{
 		"leitmotif_name": "Your Best Nightmare",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 36,
 		"track_title": "Your Power"
 	},
 	{
 		"leitmotif_name": "Battle Against a True Hero",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 98,
 		"track_title": "Battle Against a True Hero"
 	},
 	{
 		"leitmotif_name": "Battle Against a True Hero",
-		"game_short_title": "UT",
+		"game_id": 0,
+		"game_title": "UNDERTALE",
 		"track_number": 99,
 		"track_title": "Power of \"NEO\""
 	},
 	{
 		"leitmotif_name": "Battle Against a True Hero",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 39,
 		"track_title": "BIG SHOT"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 2,
 		"track_title": "Beginning"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 3,
 		"track_title": "School"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 13,
 		"track_title": "Field of Hopes and Dreams"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 19,
 		"track_title": "Scarlet Forest"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 33,
 		"track_title": "THE WORLD REVOLVING"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 34,
 		"track_title": "Friendship"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 36,
 		"track_title": "Your Power"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 37,
 		"track_title": "A Town Called Hometown"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 38,
 		"track_title": "You Can Always Come Home"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 39,
 		"track_title": "Don't Forget"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 1,
 		"track_title": "Faint Glow"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 36,
 		"track_title": "The Dark Truth"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 45,
 		"track_title": "Until Next Time"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 20,
 		"track_title": "Raise Up Your Bat"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 40,
 		"track_title": "Hymn"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 41,
 		"track_title": "Another day in hometown"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 43,
 		"track_title": "Castle Funk"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 49,
 		"track_title": "Dark Sanctuary"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 50,
 		"track_title": "From Now On (Battle 2)"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 57,
 		"track_title": "Piano that may not be played that well"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 64,
 		"track_title": "Dark Place"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 66,
 		"track_title": "Crumbling Tower"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 68,
 		"track_title": "GUARDIAN"
 	},
 	{
 		"leitmotif_name": "Don't Forget",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 74,
 		"track_title": "With Hope Crossed On Our Hearts"
 	},
 	{
 		"leitmotif_name": "Hometown",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 3,
 		"track_title": "School"
 	},
 	{
 		"leitmotif_name": "Hometown",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 37,
 		"track_title": "A Town Called Hometown"
 	},
 	{
 		"leitmotif_name": "Hometown",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 41,
 		"track_title": "Another day in hometown"
 	},
 	{
 		"leitmotif_name": "Susie",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 4,
 		"track_title": "Susie"
 	},
 	{
 		"leitmotif_name": "Susie",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 24,
 		"track_title": "Vs. Susie"
 	},
 	{
 		"leitmotif_name": "Roaring Knight",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 5,
 		"track_title": "The Door"
 	},
 	{
 		"leitmotif_name": "Roaring Knight",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 7,
 		"track_title": "The Chase"
 	},
 	{
 		"leitmotif_name": "Roaring Knight",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 30,
 		"track_title": "Black Knife"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 8,
 		"track_title": "The Legend"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 11,
 		"track_title": "Empty Town"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 30,
 		"track_title": "Chaos King"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 3,
 		"track_title": "My Castle Town"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 39,
 		"track_title": "Old wooden rafters"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 43,
 		"track_title": "Castle Funk"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 49,
 		"track_title": "Dark Sanctuary"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 60,
 		"track_title": "The Second Sanctuary"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 63,
 		"track_title": "The Third Sanctuary"
 	},
 	{
 		"leitmotif_name": "The Legend",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 73,
 		"track_title": "The LEGEND...?"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 9,
 		"track_title": "Lancer"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 16,
 		"track_title": "I'm Very Bad"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 20,
 		"track_title": "Thrash Machine"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 21,
 		"track_title": "Vs. Lancer"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 25,
 		"track_title": "Card Castle"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 30,
 		"track_title": "Chaos King"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 28,
 		"track_title": "Acid Tunnel of Love"
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 29,
 		"track_title": "It's Pronounced \"Rules\""
 	},
 	{
 		"leitmotif_name": "Lancer",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 9,
 		"track_title": "Dig! Dig! To The Center of the Earth!"
 	},
 	{
 		"leitmotif_name": "Rude Buster",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 10,
 		"track_title": "Rude Buster"
 	},
 	{
 		"leitmotif_name": "Rude Buster",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 15,
 		"track_title": "Lantern"
 	},
 	{
 		"leitmotif_name": "Rude Buster",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 11,
 		"track_title": "Ruder Buster"
 	},
 	{
 		"leitmotif_name": "Rude Buster",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 15,
 		"track_title": "Vapor Buster"
 	},
 	{
 		"leitmotif_name": "Field of Hopes and Dreams",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 13,
 		"track_title": "Field of Hopes and Dreams"
 	},
 	{
 		"leitmotif_name": "Field of Hopes and Dreams",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 19,
 		"track_title": "Scarlet Forest"
 	},
 	{
 		"leitmotif_name": "Quiet Autumn",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 18,
 		"track_title": "Quiet Autumn"
 	},
 	{
 		"leitmotif_name": "Quiet Autumn",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 19,
 		"track_title": "Scarlet Forest"
 	},
 	{
 		"leitmotif_name": "Card Castle",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 22,
 		"track_title": "Basement"
 	},
 	{
 		"leitmotif_name": "Card Castle",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 25,
 		"track_title": "Card Castle"
 	},
 	{
 		"leitmotif_name": "Card Castle",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 30,
 		"track_title": "Chaos King"
 	},
 	{
 		"leitmotif_name": "Rouxls Kaard",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 26,
 		"track_title": "Rouxls Kaard"
 	},
 	{
 		"leitmotif_name": "Rouxls Kaard",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 29,
 		"track_title": "It's Pronounced \"Rules\""
 	},
 	{
 		"leitmotif_name": "Hip Shop",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 28,
 		"track_title": "Hip Shop"
 	},
 	{
 		"leitmotif_name": "Hip Shop",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 14,
 		"track_title": "Welcome to the Green Room"
 	},
 	{
 		"leitmotif_name": "Hip Shop",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 26,
 		"track_title": "TV WORLD"
 	},
 	{
 		"leitmotif_name": "Hip Shop",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 32,
 		"track_title": "Dump"
 	},
 	{
 		"leitmotif_name": "Darkness Falls",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 31,
 		"track_title": "Darkness Falls"
 	},
 	{
 		"leitmotif_name": "Darkness Falls",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 16,
 		"track_title": "Faint Courage (Game Over)"
 	},
 	{
 		"leitmotif_name": "The World Revolving (Freedom)",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 32,
 		"track_title": "The Circus"
 	},
 	{
 		"leitmotif_name": "The World Revolving (Freedom)",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 33,
 		"track_title": "THE WORLD REVOLVING"
 	},
 	{
 		"leitmotif_name": "The World Revolving (Freedom)",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 39,
 		"track_title": "BIG SHOT"
 	},
 	{
 		"leitmotif_name": "The World Revolving (Freedom)",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 41,
 		"track_title": "Dialtone"
 	},
 	{
 		"leitmotif_name": "The World Revolving (Freedom)",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 58,
 		"track_title": "Hammer of Justice"
 	},
 	{
 		"leitmotif_name": "The World Revolving (Freedom)",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 77,
 		"track_title": "Air Waves"
 	},
 	{
 		"leitmotif_name": "THE HOLY",
-		"game_short_title": "D1",
+		"game_id": 1,
+		"game_title": "DELTARUNE Chapter 1",
 		"track_number": 35,
 		"track_title": "THE HOLY"
 	},
 	{
 		"leitmotif_name": "THE HOLY",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 32,
 		"track_title": "Dump"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 2,
 		"track_title": "Girl Next Door"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 30,
 		"track_title": "Lost Girl"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 31,
 		"track_title": "Ferris Wheel"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 20,
 		"track_title": "Raise Up Your Bat"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 42,
 		"track_title": "Friends"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 45,
 		"track_title": "Gingerbread House"
 	},
 	{
 		"leitmotif_name": "Noelle",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 46,
 		"track_title": "The distance between two"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 5,
 		"track_title": "Queen"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 7,
 		"track_title": "A Simple Diversion"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 15,
 		"track_title": "Smart Race"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 20,
 		"track_title": "Cool Mixtape"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 24,
 		"track_title": "Elegant Entrance"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 26,
 		"track_title": "Pandora Palace"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 32,
 		"track_title": "Attack of the Killer Queen"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 33,
 		"track_title": "Giga Size"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 35,
 		"track_title": "Knock You Down !!"
 	},
 	{
 		"leitmotif_name": "Queen",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 44,
 		"track_title": "Knock You Down!! - Rhythm Ver."
 	},
 	{
 		"leitmotif_name": "A CYBER'S WORLD?",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 6,
 		"track_title": "A CYBER'S WORLD?"
 	},
 	{
 		"leitmotif_name": "A CYBER'S WORLD?",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 17,
 		"track_title": "WELCOME TO THE CITY"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 6,
 		"track_title": "A CYBER'S WORLD?"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 8,
 		"track_title": "Almost To The Guys!"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 11,
 		"track_title": "Cyber Battle (Solo)"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 12,
 		"track_title": "When I Get Happy I Dance Like This"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 13,
 		"track_title": "Sound Studio"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 17,
 		"track_title": "WELCOME TO THE CITY"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 18,
 		"track_title": "Mini Studio"
 	},
 	{
 		"leitmotif_name": "Sweet Cap'n Cakes",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 19,
 		"track_title": "Holiday Studio"
 	},
 	{
 		"leitmotif_name": "Berdly",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 14,
 		"track_title": "Berdly"
 	},
 	{
 		"leitmotif_name": "Berdly",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 15,
 		"track_title": "Smart Race"
 	},
 	{
 		"leitmotif_name": "Berdly",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 25,
 		"track_title": "Bluebird of Misfortune"
 	},
 	{
 		"leitmotif_name": "Berdly",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 32,
 		"track_title": "Attack of the Killer Queen"
 	},
 	{
 		"leitmotif_name": "Berdly",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 35,
 		"track_title": "Knock You Down !!"
 	},
 	{
 		"leitmotif_name": "Berdly",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 44,
 		"track_title": "Knock You Down!! - Rhythm Ver."
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 21,
 		"track_title": "HEY EVERY !"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 40,
 		"track_title": "A Real Boy!"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 2,
 		"track_title": "Feature Presentation"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 26,
 		"track_title": "TV WORLD"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 27,
 		"track_title": "It's TV Time!"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 28,
 		"track_title": "Hall of Fame"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 32,
 		"track_title": "Dump"
 	},
 	{
 		"leitmotif_name": "HEY EVERY !",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 76,
 		"track_title": "Catswing"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 22,
 		"track_title": "Spamton"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 23,
 		"track_title": "NOW'S YOUR CHANCE TO BE A"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 38,
 		"track_title": "Deal Gone Wrong"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D2",
+		"game_id": 2,
+		"game_title": "DELTARUNE Chapter 2",
 		"track_number": 39,
 		"track_title": "BIG SHOT"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 27,
 		"track_title": "It's TV Time!"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 76,
 		"track_title": "Catswing"
 	},
 	{
 		"leitmotif_name": "Spamton",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 77,
 		"track_title": "Air Waves"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 2,
 		"track_title": "Feature Presentation"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 3,
 		"track_title": "And Now For Today's Sponsors…!"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 4,
 		"track_title": "MIKE, the BOARD, please!"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 5,
 		"track_title": "Sandy Board"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 6,
 		"track_title": "Adventure Board"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 7,
 		"track_title": "Query?"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 8,
 		"track_title": "Quiz!"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 12,
 		"track_title": "Physical Challenge"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 13,
 		"track_title": "Board Clear!"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 16,
 		"track_title": "Paradise, Paradise"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 23,
 		"track_title": "Big City Board"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 24,
 		"track_title": "Doom Board"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 25,
 		"track_title": "Metaphysical Challenge"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 26,
 		"track_title": "TV WORLD"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 27,
 		"track_title": "It's TV Time!"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D3",
+		"game_id": 3,
+		"game_title": "DELTARUNE Chapter 3",
 		"track_number": 33,
 		"track_title": "SWORD"
 	},
 	{
 		"leitmotif_name": "Tenna",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 76,
 		"track_title": "Catswing"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 49,
 		"track_title": "Dark Sanctuary"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 50,
 		"track_title": "From Now On (Battle 2)"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 55,
 		"track_title": "Ever Higher"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 66,
 		"track_title": "Crumbling Tower"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 67,
 		"track_title": "SPAWN"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 68,
 		"track_title": "GUARDIAN"
 	},
 	{
 		"leitmotif_name": "Dark Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 72,
 		"track_title": "Neverending Night"
 	},
 	{
 		"leitmotif_name": "Gerson Boom",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 51,
 		"track_title": "Gyaa Ha ha!"
 	},
 	{
 		"leitmotif_name": "Gerson Boom",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 56,
 		"track_title": "Wise words"
 	},
 	{
 		"leitmotif_name": "Gerson Boom",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 58,
 		"track_title": "Hammer of Justice"
 	},
 	{
 		"leitmotif_name": "Gerson Boom",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 69,
 		"track_title": "Need a hand!?"
 	},
 	{
 		"leitmotif_name": "The Second Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 60,
 		"track_title": "The Second Sanctuary"
 	},
 	{
 		"leitmotif_name": "The Second Sanctuary",
-		"game_short_title": "D4",
+		"game_id": 4,
+		"game_title": "DELTARUNE Chapter 4",
 		"track_number": 63,
 		"track_title": "The Third Sanctuary"
 	}

@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function buildLinks(row) {
 	const leitmotif_id = row.leitmotif_name.replaceAll(/[^\w]/g, "");
-	const song_id = `${row.game_short_title}-${row.track_number}`;
+	const song_id = `${row.game_id}-${row.track_number}`;
 
 	// add link
 	const new_link = {
@@ -41,7 +41,7 @@ function buildLinks(row) {
 		let new_node = {
 			id: leitmotif_id,
 			class: "leitmotif",
-			name: row.leitmotif_name,
+			leitmotif_name: row.leitmotif_name,
 		}
 		nodes.push(new_node);
 	}
@@ -49,7 +49,10 @@ function buildLinks(row) {
 		let new_node = {
 			id: song_id,
 			class: "song",
-			name: row.track_title
+			game_id: row.game_id,
+			game_title: row.game_title,
+			track_number: row.track_number,
+			track_title: row.track_title
 		}
 		nodes.push(new_node);
 	}
@@ -86,10 +89,15 @@ function simulate() {
 		.selectAll()
 		.data(nodes.filter(d => d.class === "song"))
 		.join("circle")
+		.attr("id", d => d.id)
+		.attr("class", d => `song g${d.id.substring(0, 1)}`)
 		.attr("r", 5)
-		.attr("class", d => nodeClass(d))
+		.attr("game_id", d => d.game_id)
+		.attr("game_title", d => d.game_title)
+		.attr("track_number", d => d.track_number)
+		.attr("track_title", d => d.track_title);
 	song.append("title")
-		.text(d => d.name);
+		.text(d => d.track_title);
 	song.on("click", event => updateInfoPanel(event));
 	song.call(d3.drag()
 		.on("start", dragStarted)
@@ -102,10 +110,12 @@ function simulate() {
 		.selectAll()
 		.data(nodes.filter(d => d.class === "leitmotif"))
 		.join("image")
-		.attr("id", d => `sprite${d.id}`)
-		.attr("href", d => `../images/leitmotifs/${d.name.replace("?", "")}.png`)
+		.attr("id", d => d.id)
+		.attr("class", "leitmotif")
+		.attr("href", d => `/images/leitmotifs/${d.leitmotif_name.replace("?", "")}.png`)
+		.attr("leitmotif_name", d => d.leitmotif_name);
 	leitmotif.append("title")
-		.text(d => d.name);
+		.text(d => d.leitmotif_name);
 	leitmotif.on("click", event => updateInfoPanel(event));
 	leitmotif.call(d3.drag()
 		.on("start", dragStarted)
@@ -150,19 +160,51 @@ function simulate() {
 	}
 }
 
-function nodeClass(node) {
-	if (node.class === "song") return `song ${node.id.substring(0, 2).toLowerCase()}`;
-	return node.class;
-}
-
-function updateInfoPanel(event) {
-	console.log(event);
-}
-
 function getSpriteX(node) {
-	const sprite = document.getElementById(`sprite${node.id}`);
+	const sprite = document.getElementById(node.id);
 	const rect = sprite.getBoundingClientRect();
 	const x = node.x - (rect.width / 2);
 	const y = node.y - (rect.height / 2);
 	return [x, y];
+}
+
+function updateInfoPanel(event) {
+	info_panel.removeAttribute("hidden");
+	if (event.target.classList[0] === "leitmotif") {
+		// update info panel
+		const leitmotif_name = event.target.attributes.leitmotif_name.value;
+		selected_name.textContent = leitmotif_name;
+		selected_caption.textContent = "Leitmotif";
+		selected_sprite.src = `/images/leitmotifs/${leitmotif_name.replace("?", "")}.png`;
+		selected_sprite.removeAttribute("hidden");
+		selected_list_name.textContent = "Appears in:";
+		
+		// find connections
+		let list = "";
+		for (let link of links) {
+			if (link.source.leitmotif_name === leitmotif_name) {
+				list += `<p>${link.target.game_id.toString().replace("0", "U")}-${link.target.track_number}. ${link.target.track_title}</p>`;
+			}
+		}
+		selected_list.innerHTML = list;		
+	} else if (event.target.classList[0] === "song") {
+		// update info panel
+		const game_id = parseInt(event.target.attributes.game_id.value);
+		const game_title = event.target.attributes.game_title.value;
+		const track_number = parseInt(event.target.attributes.track_number.value);
+		const track_title = event.target.attributes.track_title.value;
+		selected_name.textContent = track_title;
+		selected_caption.textContent = `${game_title.replace("Chapter", "Ch.")} OST #${track_number}`;
+		selected_sprite.setAttribute("hidden", true);
+		selected_list_name.textContent = "Leitmotifs:"
+
+		// find connections
+		let list = "";
+		for (let link of links) {
+			if (link.target.game_id === game_id && link.target.track_number === track_number) {
+				list += `<p>${link.source.leitmotif_name}</p>`;
+			}
+		}
+		selected_list.innerHTML = list;	
+	}
 }
