@@ -62,7 +62,7 @@ function simulate() {
 	// initialize simulation
 	const xystrength = 0.15;
 	const simulation = d3.forceSimulation(nodes)
-		.force("link", d3.forceLink(links).id(d => d.id))
+		.force("link", d3.forceLink(links).id(d => d.id).distance(30))
 		.force("charge", d3.forceManyBody().strength(-100))
 		.force("x", d3.forceX().strength(xystrength))
 		.force("y", d3.forceY().strength(xystrength));
@@ -91,7 +91,7 @@ function simulate() {
 		.join("circle")
 		.attr("id", d => d.id)
 		.attr("class", d => `song g${d.id.substring(0, 1)}`)
-		.attr("r", 5)
+		.attr("r", 6)
 		.attr("game_id", d => d.game_id)
 		.attr("game_title", d => d.game_title)
 		.attr("track_number", d => d.track_number)
@@ -133,8 +133,8 @@ function simulate() {
 			.attr("cx", d => d.x)
 			.attr("cy", d => d.y);
 		leitmotif
-			.attr("x", d => getSpriteX(d)[0])
-			.attr("y", d => getSpriteX(d)[1]);
+			.attr("x", d => getSpriteOffset(d)[0])
+			.attr("y", d => getSpriteOffset(d)[1]);
 	});
 
 	// reheat the simulation when drag starts
@@ -160,7 +160,7 @@ function simulate() {
 	}
 }
 
-function getSpriteX(node) {
+function getSpriteOffset(node) {
 	const sprite = document.getElementById(node.id);
 	const rect = sprite.getBoundingClientRect();
 	const x = node.x - (rect.width / 2);
@@ -175,9 +175,14 @@ function updateInfoPanel(event) {
 		const leitmotif_name = event.target.attributes.leitmotif_name.value;
 		selected_name.textContent = leitmotif_name;
 		selected_caption.textContent = "Leitmotif";
-		selected_sprite.src = `/images/leitmotifs/${leitmotif_name.replace("?", "")}.png`;
-		selected_sprite.removeAttribute("hidden");
 		selected_list_name.textContent = "Appears in:";
+
+		// update sprite
+		selected_sprite.removeAttribute("width");
+		selected_sprite.src = `/images/leitmotifs/${leitmotif_name.replace("?", "")}.png`;
+		const rect = selected_sprite.getBoundingClientRect();
+		selected_sprite.width = rect.width * 2;
+		selected_sprite.removeAttribute("hidden");		
 		
 		// find connections
 		let list = "";

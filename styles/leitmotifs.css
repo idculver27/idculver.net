@@ -3,6 +3,17 @@ body {
 	color: white;
 	font-family: Verdana, Tahoma, sans-serif;
 }
+h2 {
+	font-size: 140%;
+	margin: 0px;
+}
+img {
+	image-rendering: pixelated;
+}
+p {
+	margin-bottom: 7px;
+	margin-top: 7px;
+}
 span {
 	align-items: center;
 	display: inline-flex;
@@ -13,6 +24,10 @@ svg {
 	font-size: 0%;
 	max-width: 100%;
 	border: 1px solid green;
+}
+.big_margin {
+	margin-bottom: 12px;
+	margin-top: 12px;
 }
 .g0 {
 	fill: #A349A4;
@@ -38,14 +53,23 @@ svg {
 	fill: white;
 }
 .link {
-	stroke-width: 1.5px;
 	stroke: white;
+	stroke-width: 1.5px;
 	/* stroke: #3CB24E; */
 }
 #info_panel {
-	position: absolute;
-	top: 100px;
+	background-color: black;
+	border: 2px solid white;
 	left: 40px;
-	background-color: gray;
-	width: 300px;
+	max-width: 350px;
+	min-width: 200px;
+	padding: 20px;
+	position: absolute;
+	top: 90px;
+}
+#selected_list {
+	margin-left: 10px;
+}
+#selected_sprite {
+	margin-left: 30px;
 }
