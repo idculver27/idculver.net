@@ -14,7 +14,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
 			simulate();
 		});
+
+	// TODO: this doesn't work, find a way to detect clicking on the background - probably add a static rect, or detect if click is actually on child element?
+	// canvas.addEventListener("click", () => {
+	// 	info_panel.setAttribute("hidden", true);
+	// });
 });
+
+
 
 function buildLinks(row) {
 	const leitmotif_id = row.leitmotif_name.replaceAll(/[^\w]/g, "");
@@ -59,21 +66,21 @@ function buildLinks(row) {
 }
 
 function simulate() {
-	// initialize simulation
-	const xystrength = 0.15;
-	const simulation = d3.forceSimulation(nodes)
-		.force("link", d3.forceLink(links).id(d => d.id).distance(30))
-		.force("charge", d3.forceManyBody().strength(-100))
-		.force("x", d3.forceX().strength(xystrength))
-		.force("y", d3.forceY().strength(xystrength));
-
 	// draw SVG container
 	const width = 1800;
 	const height = 800;
 	const svg = d3.select("#canvas")
 		.attr("width", width)
-		.attr("height", height)
-		.attr("viewBox", [-width / 2, -height / 2, width, height]);
+		.attr("height", height);
+
+	// initialize simulation
+	const xystrength = 0.15;
+	const simulation = d3.forceSimulation(nodes).alphaDecay(0.02)
+		.force("link", d3.forceLink(links).id(d => d.id).distance(30))
+		.force("charge", d3.forceManyBody().strength(-100))
+		// .force("x", d3.forceX(canvas.clientWidth / 2).strength(xystrength))
+		// .force("y", d3.forceY(canvas.clientHeight / 2).strength(xystrength));
+		.force("boundary", forceBoundary(0, 0, width, height));
 
 	// draw links
 	const link = svg.append("g")
@@ -124,6 +131,7 @@ function simulate() {
 
 	// update positions each tick
 	simulation.on("tick", () => {
+		// TODO: update center for x and y forces?
 		link
 			.attr("x1", d => d.source.x)
 			.attr("y1", d => d.source.y)
@@ -158,6 +166,9 @@ function simulate() {
 		event.subject.fx = null;
 		event.subject.fy = null;
 	}
+
+	// failsafe
+	invalidation.then(() => simulation.stop());
 }
 
 function getSpriteOffset(node) {
@@ -178,12 +189,11 @@ function updateInfoPanel(event) {
 		selected_list_name.textContent = "Appears in:";
 
 		// update sprite
-		selected_sprite.removeAttribute("width");
 		selected_sprite.src = `/images/leitmotifs/${leitmotif_name.replace("?", "")}.png`;
-		const rect = selected_sprite.getBoundingClientRect();
+		const rect = document.getElementById(event.target.id).getBoundingClientRect();
 		selected_sprite.width = rect.width * 2;
-		selected_sprite.removeAttribute("hidden");		
-		
+		selected_sprite.removeAttribute("hidden");
+
 		// find connections
 		let list = "";
 		for (let link of links) {
@@ -191,7 +201,7 @@ function updateInfoPanel(event) {
 				list += `<p>${link.target.game_id.toString().replace("0", "U")}-${link.target.track_number}. ${link.target.track_title}</p>`;
 			}
 		}
-		selected_list.innerHTML = list;		
+		selected_list.innerHTML = list;
 	} else if (event.target.classList[0] === "song") {
 		// update info panel
 		const game_id = parseInt(event.target.attributes.game_id.value);
@@ -210,6 +220,6 @@ function updateInfoPanel(event) {
 				list += `<p>${link.source.leitmotif_name}</p>`;
 			}
 		}
-		selected_list.innerHTML = list;	
+		selected_list.innerHTML = list;
 	}
 }
