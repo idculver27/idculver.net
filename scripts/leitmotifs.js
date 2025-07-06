@@ -15,10 +15,10 @@ window.addEventListener("DOMContentLoaded", () => {
 			simulate();
 		});
 
-	// TODO: this doesn't work, find a way to detect clicking on the background - probably add a static rect, or detect if click is actually on child element?
-	// canvas.addEventListener("click", () => {
-	// 	info_panel.setAttribute("hidden", true);
-	// });
+	// close info panel
+	canvas.addEventListener("click", (event) => {
+		if (event.target.id === "canvas") info_panel.setAttribute("hidden", true);
+	});
 });
 
 
@@ -74,12 +74,12 @@ function simulate() {
 		.attr("height", height);
 
 	// initialize simulation
-	const xystrength = 0.15;
+	const xystrength = 0.1;
 	const simulation = d3.forceSimulation(nodes).alphaDecay(0.02)
-		.force("link", d3.forceLink(links).id(d => d.id).distance(30))
+		.force("link", d3.forceLink(links).id(d => d.id).distance(40))
 		.force("charge", d3.forceManyBody().strength(-100))
-		// .force("x", d3.forceX(canvas.clientWidth / 2).strength(xystrength))
-		// .force("y", d3.forceY(canvas.clientHeight / 2).strength(xystrength));
+		.force("x", d3.forceX(canvas.clientWidth / 2).strength(xystrength))
+		.force("y", d3.forceY(canvas.clientHeight / 2).strength(xystrength))
 		.force("boundary", forceBoundary(0, 0, width, height));
 
 	// draw links
@@ -131,7 +131,10 @@ function simulate() {
 
 	// update positions each tick
 	simulation.on("tick", () => {
-		// TODO: update center for x and y forces?
+		// update center position
+		simulation
+			.force("x", d3.forceX(canvas.clientWidth / 2).strength(xystrength))
+			.force("y", d3.forceY(canvas.clientHeight / 2).strength(xystrength))
 		link
 			.attr("x1", d => d.source.x)
 			.attr("y1", d => d.source.y)
@@ -168,7 +171,7 @@ function simulate() {
 	}
 
 	// failsafe
-	invalidation.then(() => simulation.stop());
+	// invalidation.then(() => simulation.stop());
 }
 
 function getSpriteOffset(node) {
