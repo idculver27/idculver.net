@@ -23,7 +23,8 @@ SHOW tables;
 DESCRIBE battle_pack;
 SELECT * FROM battle_pack;
 START TRANSACTION;
-UPDATE battle_pack SET msrp='9.99' WHERE set_id=7654; 
+INSERT INTO minifig VALUES ('sw1416', 'Death Trooper', 'Thrawn', 1);
+UPDATE battle_pack SET msrp='9.99' WHERE set_number=7654;
 COMMIT;
 ```
 
