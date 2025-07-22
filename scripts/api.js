@@ -63,17 +63,17 @@ app.get("/api/battle_packs", (req, res) => {
 					'is_unique', is_unique
 				)
 			)
-			FROM battle_pack_has_minifig
-			JOIN minifig USING (bl_id)
-			WHERE battle_pack.set_number = battle_pack_has_minifig.set_number 
+			FROM battle_pack_has_minifig bp_m
+			JOIN minifig m USING (bl_id)
+			WHERE bp.set_number = bp_m.set_number 
 		) AS minifigs
-		FROM battle_pack
+		FROM battle_pack bp
 		JOIN source USING (source_id)
 		ORDER BY release_year, set_number;
 	`;
 	db.query(query, (err, result) => {
 		if (err) {
-			res.status(500).send("Server encountered an error :(");	
+			res.status(500).send("Server encountered an error :(");
 			throw err;
 		}
 
@@ -82,7 +82,7 @@ app.get("/api/battle_packs", (req, res) => {
 			set.source = JSON.parse(set.source);
 			set.minifigs = JSON.parse(set.minifigs);
 		}
-		
+
 		// make bools into real bools
 		for (let set of result) {
 			if (set.minifigs) {
@@ -91,6 +91,26 @@ app.get("/api/battle_packs", (req, res) => {
 				}
 			}
 		}
+		res.send(result);
+	});
+});
+
+// leitmotifs endpoint
+app.get("/api/leitmotifs", (req, res) => {
+	query = `
+		SELECT leitmotif_name, game_id, game_title, track_number, track_title
+		FROM leitmotif
+		JOIN leitmotif_in_song USING (leitmotif_id)
+		JOIN song USING (game_id, track_number)
+		JOIN game USING (game_id)
+		ORDER BY leitmotif_id, game_id, track_number;
+	`;
+	db.query(query, (err, result) => {
+		if (err) {
+			res.status(500).send("Server encountered an error :(");
+			throw err;
+		}
+
 		res.send(result);
 	});
 });
