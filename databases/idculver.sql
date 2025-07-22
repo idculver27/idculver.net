@@ -32,13 +32,13 @@ DROP TABLE IF EXISTS `battle_pack`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `battle_pack` (
-  `set_id` int(11) NOT NULL DEFAULT 0,
+  `set_number` int(11) NOT NULL DEFAULT 0,
   `set_name` varchar(50) NOT NULL,
   `release_year` year(4) NOT NULL,
   `source_id` int(11) NOT NULL,
   `piece_count` int(11) DEFAULT NULL,
   `msrp` decimal(10,2) DEFAULT NULL,
-  PRIMARY KEY (`set_id`),
+  PRIMARY KEY (`set_number`),
   KEY `source_id` (`source_id`),
   CONSTRAINT `battle_pack_ibfk_1` FOREIGN KEY (`source_id`) REFERENCES `source` (`source_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -107,12 +107,12 @@ DROP TABLE IF EXISTS `battle_pack_has_minifig`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `battle_pack_has_minifig` (
-  `set_id` int(11) NOT NULL,
+  `set_number` int(11) NOT NULL,
   `bl_id` varchar(10) NOT NULL,
   `count` int(11) NOT NULL DEFAULT 1,
-  PRIMARY KEY (`set_id`,`bl_id`),
+  PRIMARY KEY (`set_number`,`bl_id`),
   KEY `bl_id` (`bl_id`),
-  CONSTRAINT `battle_pack_has_minifig_ibfk_1` FOREIGN KEY (`set_id`) REFERENCES `battle_pack` (`set_id`),
+  CONSTRAINT `battle_pack_has_minifig_ibfk_1` FOREIGN KEY (`set_number`) REFERENCES `battle_pack` (`set_number`),
   CONSTRAINT `battle_pack_has_minifig_ibfk_2` FOREIGN KEY (`bl_id`) REFERENCES `minifig` (`bl_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -260,6 +260,431 @@ INSERT INTO `battle_pack_has_minifig` VALUES (75373,'sw1344',1);
 INSERT INTO `battle_pack_has_minifig` VALUES (75373,'sw1345',1);
 INSERT INTO `battle_pack_has_minifig` VALUES (75373,'sw1346',2);
 /*!40000 ALTER TABLE `battle_pack_has_minifig` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `game`
+--
+
+DROP TABLE IF EXISTS `game`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `game` (
+  `game_id` int(11) NOT NULL,
+  `game_title` varchar(50) NOT NULL,
+  PRIMARY KEY (`game_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `game`
+--
+
+LOCK TABLES `game` WRITE;
+/*!40000 ALTER TABLE `game` DISABLE KEYS */;
+INSERT INTO `game` VALUES (0,'UNDERTALE');
+INSERT INTO `game` VALUES (1,'DELTARUNE Chapter 1');
+INSERT INTO `game` VALUES (2,'DELTARUNE Chapter 2');
+INSERT INTO `game` VALUES (3,'DELTARUNE Chapter 3');
+INSERT INTO `game` VALUES (4,'DELTARUNE Chapter 4');
+/*!40000 ALTER TABLE `game` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `leitmotif`
+--
+
+DROP TABLE IF EXISTS `leitmotif`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `leitmotif` (
+  `leitmotif_id` int(11) NOT NULL AUTO_INCREMENT,
+  `leitmotif_name` varchar(50) NOT NULL,
+  PRIMARY KEY (`leitmotif_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=405 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `leitmotif`
+--
+
+LOCK TABLES `leitmotif` WRITE;
+/*!40000 ALTER TABLE `leitmotif` DISABLE KEYS */;
+INSERT INTO `leitmotif` VALUES (1,'Once Upon a Time');
+INSERT INTO `leitmotif` VALUES (2,'Flowey');
+INSERT INTO `leitmotif` VALUES (3,'Ruins');
+INSERT INTO `leitmotif` VALUES (4,'Uwa!!');
+INSERT INTO `leitmotif` VALUES (5,'Enemy Approaching');
+INSERT INTO `leitmotif` VALUES (6,'Ghost Fight');
+INSERT INTO `leitmotif` VALUES (7,'Determination');
+INSERT INTO `leitmotif` VALUES (8,'Home');
+INSERT INTO `leitmotif` VALUES (9,'Heartache');
+INSERT INTO `leitmotif` VALUES (10,'Sans');
+INSERT INTO `leitmotif` VALUES (11,'Papyrus');
+INSERT INTO `leitmotif` VALUES (12,'Snowdin');
+INSERT INTO `leitmotif` VALUES (13,'Undyne');
+INSERT INTO `leitmotif` VALUES (14,'Another Medium');
+INSERT INTO `leitmotif` VALUES (15,'Asriel');
+INSERT INTO `leitmotif` VALUES (16,'Alphys');
+INSERT INTO `leitmotif` VALUES (17,'Dummy Coda');
+INSERT INTO `leitmotif` VALUES (18,'Spooktune');
+INSERT INTO `leitmotif` VALUES (19,'It\'s Showtime!');
+INSERT INTO `leitmotif` VALUES (20,'Metal Crusher');
+INSERT INTO `leitmotif` VALUES (21,'Oh! One True Love');
+INSERT INTO `leitmotif` VALUES (22,'It\'s Raining Somewhere Else');
+INSERT INTO `leitmotif` VALUES (23,'Your Best Nightmare');
+INSERT INTO `leitmotif` VALUES (24,'Battle Against a True Hero');
+INSERT INTO `leitmotif` VALUES (101,'Don\'t Forget');
+INSERT INTO `leitmotif` VALUES (102,'Hometown');
+INSERT INTO `leitmotif` VALUES (103,'Susie');
+INSERT INTO `leitmotif` VALUES (104,'Roaring Knight');
+INSERT INTO `leitmotif` VALUES (105,'The Legend');
+INSERT INTO `leitmotif` VALUES (106,'Lancer');
+INSERT INTO `leitmotif` VALUES (107,'Rude Buster');
+INSERT INTO `leitmotif` VALUES (108,'Field of Hopes and Dreams');
+INSERT INTO `leitmotif` VALUES (109,'Quiet Autumn');
+INSERT INTO `leitmotif` VALUES (110,'Card Castle');
+INSERT INTO `leitmotif` VALUES (111,'Rouxls Kaard');
+INSERT INTO `leitmotif` VALUES (112,'Hip Shop');
+INSERT INTO `leitmotif` VALUES (113,'Darkness Falls');
+INSERT INTO `leitmotif` VALUES (114,'The World Revolving (Freedom)');
+INSERT INTO `leitmotif` VALUES (115,'THE HOLY');
+INSERT INTO `leitmotif` VALUES (201,'Noelle');
+INSERT INTO `leitmotif` VALUES (202,'Queen');
+INSERT INTO `leitmotif` VALUES (203,'A CYBER\'S WORLD?');
+INSERT INTO `leitmotif` VALUES (204,'Sweet Cap\'n Cakes');
+INSERT INTO `leitmotif` VALUES (205,'Berdly');
+INSERT INTO `leitmotif` VALUES (206,'HEY EVERY !');
+INSERT INTO `leitmotif` VALUES (207,'Spamton');
+INSERT INTO `leitmotif` VALUES (301,'Tenna');
+INSERT INTO `leitmotif` VALUES (401,'Dark Sanctuary');
+INSERT INTO `leitmotif` VALUES (402,'Gerson Boom');
+INSERT INTO `leitmotif` VALUES (403,'The Second Sanctuary');
+/*!40000 ALTER TABLE `leitmotif` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `leitmotif_in_song`
+--
+
+DROP TABLE IF EXISTS `leitmotif_in_song`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `leitmotif_in_song` (
+  `leitmotif_id` int(11) NOT NULL,
+  `game_id` int(11) NOT NULL,
+  `track_number` int(11) NOT NULL,
+  PRIMARY KEY (`leitmotif_id`,`game_id`,`track_number`),
+  KEY `game_id` (`game_id`,`track_number`),
+  CONSTRAINT `leitmotif_in_song_ibfk_1` FOREIGN KEY (`leitmotif_id`) REFERENCES `leitmotif` (`leitmotif_id`),
+  CONSTRAINT `leitmotif_in_song_ibfk_2` FOREIGN KEY (`game_id`, `track_number`) REFERENCES `song` (`game_id`, `track_number`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `leitmotif_in_song`
+--
+
+LOCK TABLES `leitmotif_in_song` WRITE;
+/*!40000 ALTER TABLE `leitmotif_in_song` DISABLE KEYS */;
+INSERT INTO `leitmotif_in_song` VALUES (1,0,1);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,2);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,12);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,13);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,54);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,55);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,71);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,73);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,85);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,87);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,89);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,91);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,93);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,94);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,96);
+INSERT INTO `leitmotif_in_song` VALUES (1,0,101);
+INSERT INTO `leitmotif_in_song` VALUES (1,1,2);
+INSERT INTO `leitmotif_in_song` VALUES (1,1,38);
+INSERT INTO `leitmotif_in_song` VALUES (1,1,40);
+INSERT INTO `leitmotif_in_song` VALUES (2,0,3);
+INSERT INTO `leitmotif_in_song` VALUES (2,0,79);
+INSERT INTO `leitmotif_in_song` VALUES (2,0,80);
+INSERT INTO `leitmotif_in_song` VALUES (2,0,87);
+INSERT INTO `leitmotif_in_song` VALUES (2,0,89);
+INSERT INTO `leitmotif_in_song` VALUES (2,0,96);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,5);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,31);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,33);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,45);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,46);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,81);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,86);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,94);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,97);
+INSERT INTO `leitmotif_in_song` VALUES (3,0,98);
+INSERT INTO `leitmotif_in_song` VALUES (3,4,51);
+INSERT INTO `leitmotif_in_song` VALUES (3,4,52);
+INSERT INTO `leitmotif_in_song` VALUES (3,4,58);
+INSERT INTO `leitmotif_in_song` VALUES (3,4,69);
+INSERT INTO `leitmotif_in_song` VALUES (4,0,6);
+INSERT INTO `leitmotif_in_song` VALUES (4,0,18);
+INSERT INTO `leitmotif_in_song` VALUES (4,0,52);
+INSERT INTO `leitmotif_in_song` VALUES (4,3,22);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,7);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,9);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,14);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,21);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,43);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,44);
+INSERT INTO `leitmotif_in_song` VALUES (5,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (6,0,10);
+INSERT INTO `leitmotif_in_song` VALUES (6,0,36);
+INSERT INTO `leitmotif_in_song` VALUES (6,0,37);
+INSERT INTO `leitmotif_in_song` VALUES (6,0,59);
+INSERT INTO `leitmotif_in_song` VALUES (6,2,43);
+INSERT INTO `leitmotif_in_song` VALUES (6,4,71);
+INSERT INTO `leitmotif_in_song` VALUES (7,0,11);
+INSERT INTO `leitmotif_in_song` VALUES (7,0,77);
+INSERT INTO `leitmotif_in_song` VALUES (7,1,10);
+INSERT INTO `leitmotif_in_song` VALUES (7,1,15);
+INSERT INTO `leitmotif_in_song` VALUES (7,3,15);
+INSERT INTO `leitmotif_in_song` VALUES (8,0,12);
+INSERT INTO `leitmotif_in_song` VALUES (8,0,13);
+INSERT INTO `leitmotif_in_song` VALUES (8,1,38);
+INSERT INTO `leitmotif_in_song` VALUES (9,0,14);
+INSERT INTO `leitmotif_in_song` VALUES (9,0,77);
+INSERT INTO `leitmotif_in_song` VALUES (10,0,15);
+INSERT INTO `leitmotif_in_song` VALUES (10,0,63);
+INSERT INTO `leitmotif_in_song` VALUES (10,0,72);
+INSERT INTO `leitmotif_in_song` VALUES (10,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (11,0,16);
+INSERT INTO `leitmotif_in_song` VALUES (11,0,24);
+INSERT INTO `leitmotif_in_song` VALUES (11,0,72);
+INSERT INTO `leitmotif_in_song` VALUES (11,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,17);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,22);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,23);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,25);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,27);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,56);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,87);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,92);
+INSERT INTO `leitmotif_in_song` VALUES (12,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (12,1,3);
+INSERT INTO `leitmotif_in_song` VALUES (12,1,37);
+INSERT INTO `leitmotif_in_song` VALUES (12,4,41);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,26);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,30);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,32);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,45);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,46);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,77);
+INSERT INTO `leitmotif_in_song` VALUES (13,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (13,4,51);
+INSERT INTO `leitmotif_in_song` VALUES (13,4,52);
+INSERT INTO `leitmotif_in_song` VALUES (13,4,56);
+INSERT INTO `leitmotif_in_song` VALUES (13,4,58);
+INSERT INTO `leitmotif_in_song` VALUES (13,4,69);
+INSERT INTO `leitmotif_in_song` VALUES (14,0,31);
+INSERT INTO `leitmotif_in_song` VALUES (14,0,51);
+INSERT INTO `leitmotif_in_song` VALUES (14,0,65);
+INSERT INTO `leitmotif_in_song` VALUES (14,0,68);
+INSERT INTO `leitmotif_in_song` VALUES (14,0,95);
+INSERT INTO `leitmotif_in_song` VALUES (15,0,34);
+INSERT INTO `leitmotif_in_song` VALUES (15,0,71);
+INSERT INTO `leitmotif_in_song` VALUES (15,0,73);
+INSERT INTO `leitmotif_in_song` VALUES (15,0,80);
+INSERT INTO `leitmotif_in_song` VALUES (15,0,90);
+INSERT INTO `leitmotif_in_song` VALUES (16,0,35);
+INSERT INTO `leitmotif_in_song` VALUES (16,0,48);
+INSERT INTO `leitmotif_in_song` VALUES (16,0,82);
+INSERT INTO `leitmotif_in_song` VALUES (16,0,83);
+INSERT INTO `leitmotif_in_song` VALUES (17,0,36);
+INSERT INTO `leitmotif_in_song` VALUES (17,2,39);
+INSERT INTO `leitmotif_in_song` VALUES (18,0,38);
+INSERT INTO `leitmotif_in_song` VALUES (18,0,39);
+INSERT INTO `leitmotif_in_song` VALUES (18,4,53);
+INSERT INTO `leitmotif_in_song` VALUES (19,0,49);
+INSERT INTO `leitmotif_in_song` VALUES (19,0,50);
+INSERT INTO `leitmotif_in_song` VALUES (19,0,57);
+INSERT INTO `leitmotif_in_song` VALUES (19,0,58);
+INSERT INTO `leitmotif_in_song` VALUES (19,0,68);
+INSERT INTO `leitmotif_in_song` VALUES (20,0,50);
+INSERT INTO `leitmotif_in_song` VALUES (20,0,66);
+INSERT INTO `leitmotif_in_song` VALUES (20,0,68);
+INSERT INTO `leitmotif_in_song` VALUES (21,0,61);
+INSERT INTO `leitmotif_in_song` VALUES (21,0,62);
+INSERT INTO `leitmotif_in_song` VALUES (21,0,69);
+INSERT INTO `leitmotif_in_song` VALUES (22,0,63);
+INSERT INTO `leitmotif_in_song` VALUES (22,4,70);
+INSERT INTO `leitmotif_in_song` VALUES (23,0,78);
+INSERT INTO `leitmotif_in_song` VALUES (23,0,79);
+INSERT INTO `leitmotif_in_song` VALUES (23,0,88);
+INSERT INTO `leitmotif_in_song` VALUES (23,1,23);
+INSERT INTO `leitmotif_in_song` VALUES (23,1,24);
+INSERT INTO `leitmotif_in_song` VALUES (23,1,36);
+INSERT INTO `leitmotif_in_song` VALUES (24,0,98);
+INSERT INTO `leitmotif_in_song` VALUES (24,0,99);
+INSERT INTO `leitmotif_in_song` VALUES (24,2,39);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,2);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,3);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,13);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,19);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,33);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,34);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,36);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,37);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,38);
+INSERT INTO `leitmotif_in_song` VALUES (101,1,39);
+INSERT INTO `leitmotif_in_song` VALUES (101,2,1);
+INSERT INTO `leitmotif_in_song` VALUES (101,2,36);
+INSERT INTO `leitmotif_in_song` VALUES (101,2,45);
+INSERT INTO `leitmotif_in_song` VALUES (101,3,20);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,40);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,41);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,43);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,49);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,50);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,57);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,64);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,66);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,68);
+INSERT INTO `leitmotif_in_song` VALUES (101,4,74);
+INSERT INTO `leitmotif_in_song` VALUES (102,1,3);
+INSERT INTO `leitmotif_in_song` VALUES (102,1,37);
+INSERT INTO `leitmotif_in_song` VALUES (102,4,41);
+INSERT INTO `leitmotif_in_song` VALUES (103,1,4);
+INSERT INTO `leitmotif_in_song` VALUES (103,1,24);
+INSERT INTO `leitmotif_in_song` VALUES (104,1,5);
+INSERT INTO `leitmotif_in_song` VALUES (104,1,7);
+INSERT INTO `leitmotif_in_song` VALUES (104,3,30);
+INSERT INTO `leitmotif_in_song` VALUES (105,1,8);
+INSERT INTO `leitmotif_in_song` VALUES (105,1,11);
+INSERT INTO `leitmotif_in_song` VALUES (105,1,30);
+INSERT INTO `leitmotif_in_song` VALUES (105,2,3);
+INSERT INTO `leitmotif_in_song` VALUES (105,4,39);
+INSERT INTO `leitmotif_in_song` VALUES (105,4,43);
+INSERT INTO `leitmotif_in_song` VALUES (105,4,49);
+INSERT INTO `leitmotif_in_song` VALUES (105,4,60);
+INSERT INTO `leitmotif_in_song` VALUES (105,4,63);
+INSERT INTO `leitmotif_in_song` VALUES (105,4,73);
+INSERT INTO `leitmotif_in_song` VALUES (106,1,9);
+INSERT INTO `leitmotif_in_song` VALUES (106,1,16);
+INSERT INTO `leitmotif_in_song` VALUES (106,1,20);
+INSERT INTO `leitmotif_in_song` VALUES (106,1,21);
+INSERT INTO `leitmotif_in_song` VALUES (106,1,25);
+INSERT INTO `leitmotif_in_song` VALUES (106,1,30);
+INSERT INTO `leitmotif_in_song` VALUES (106,2,28);
+INSERT INTO `leitmotif_in_song` VALUES (106,2,29);
+INSERT INTO `leitmotif_in_song` VALUES (106,3,9);
+INSERT INTO `leitmotif_in_song` VALUES (107,1,10);
+INSERT INTO `leitmotif_in_song` VALUES (107,1,15);
+INSERT INTO `leitmotif_in_song` VALUES (107,3,11);
+INSERT INTO `leitmotif_in_song` VALUES (107,3,15);
+INSERT INTO `leitmotif_in_song` VALUES (108,1,13);
+INSERT INTO `leitmotif_in_song` VALUES (108,1,19);
+INSERT INTO `leitmotif_in_song` VALUES (109,1,18);
+INSERT INTO `leitmotif_in_song` VALUES (109,1,19);
+INSERT INTO `leitmotif_in_song` VALUES (110,1,22);
+INSERT INTO `leitmotif_in_song` VALUES (110,1,25);
+INSERT INTO `leitmotif_in_song` VALUES (110,1,30);
+INSERT INTO `leitmotif_in_song` VALUES (111,1,26);
+INSERT INTO `leitmotif_in_song` VALUES (111,2,29);
+INSERT INTO `leitmotif_in_song` VALUES (112,1,28);
+INSERT INTO `leitmotif_in_song` VALUES (112,3,14);
+INSERT INTO `leitmotif_in_song` VALUES (112,3,26);
+INSERT INTO `leitmotif_in_song` VALUES (112,3,32);
+INSERT INTO `leitmotif_in_song` VALUES (113,1,31);
+INSERT INTO `leitmotif_in_song` VALUES (113,2,16);
+INSERT INTO `leitmotif_in_song` VALUES (114,1,32);
+INSERT INTO `leitmotif_in_song` VALUES (114,1,33);
+INSERT INTO `leitmotif_in_song` VALUES (114,2,39);
+INSERT INTO `leitmotif_in_song` VALUES (114,2,41);
+INSERT INTO `leitmotif_in_song` VALUES (114,4,58);
+INSERT INTO `leitmotif_in_song` VALUES (114,4,77);
+INSERT INTO `leitmotif_in_song` VALUES (115,1,35);
+INSERT INTO `leitmotif_in_song` VALUES (115,3,32);
+INSERT INTO `leitmotif_in_song` VALUES (201,2,2);
+INSERT INTO `leitmotif_in_song` VALUES (201,2,30);
+INSERT INTO `leitmotif_in_song` VALUES (201,2,31);
+INSERT INTO `leitmotif_in_song` VALUES (201,3,20);
+INSERT INTO `leitmotif_in_song` VALUES (201,4,42);
+INSERT INTO `leitmotif_in_song` VALUES (201,4,45);
+INSERT INTO `leitmotif_in_song` VALUES (201,4,46);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,5);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,7);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,15);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,20);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,24);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,26);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,32);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,33);
+INSERT INTO `leitmotif_in_song` VALUES (202,2,35);
+INSERT INTO `leitmotif_in_song` VALUES (202,4,44);
+INSERT INTO `leitmotif_in_song` VALUES (203,2,6);
+INSERT INTO `leitmotif_in_song` VALUES (203,2,17);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,6);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,8);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,11);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,12);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,13);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,17);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,18);
+INSERT INTO `leitmotif_in_song` VALUES (204,2,19);
+INSERT INTO `leitmotif_in_song` VALUES (205,2,14);
+INSERT INTO `leitmotif_in_song` VALUES (205,2,15);
+INSERT INTO `leitmotif_in_song` VALUES (205,2,25);
+INSERT INTO `leitmotif_in_song` VALUES (205,2,32);
+INSERT INTO `leitmotif_in_song` VALUES (205,2,35);
+INSERT INTO `leitmotif_in_song` VALUES (205,4,44);
+INSERT INTO `leitmotif_in_song` VALUES (206,2,21);
+INSERT INTO `leitmotif_in_song` VALUES (206,2,40);
+INSERT INTO `leitmotif_in_song` VALUES (206,3,2);
+INSERT INTO `leitmotif_in_song` VALUES (206,3,26);
+INSERT INTO `leitmotif_in_song` VALUES (206,3,27);
+INSERT INTO `leitmotif_in_song` VALUES (206,3,28);
+INSERT INTO `leitmotif_in_song` VALUES (206,3,32);
+INSERT INTO `leitmotif_in_song` VALUES (206,4,76);
+INSERT INTO `leitmotif_in_song` VALUES (207,2,22);
+INSERT INTO `leitmotif_in_song` VALUES (207,2,23);
+INSERT INTO `leitmotif_in_song` VALUES (207,2,38);
+INSERT INTO `leitmotif_in_song` VALUES (207,2,39);
+INSERT INTO `leitmotif_in_song` VALUES (207,3,27);
+INSERT INTO `leitmotif_in_song` VALUES (207,4,76);
+INSERT INTO `leitmotif_in_song` VALUES (207,4,77);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,2);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,3);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,4);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,5);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,6);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,7);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,8);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,12);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,13);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,16);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,23);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,24);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,25);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,26);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,27);
+INSERT INTO `leitmotif_in_song` VALUES (301,3,33);
+INSERT INTO `leitmotif_in_song` VALUES (301,4,76);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,49);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,50);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,55);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,66);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,67);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,68);
+INSERT INTO `leitmotif_in_song` VALUES (401,4,72);
+INSERT INTO `leitmotif_in_song` VALUES (402,4,51);
+INSERT INTO `leitmotif_in_song` VALUES (402,4,56);
+INSERT INTO `leitmotif_in_song` VALUES (402,4,58);
+INSERT INTO `leitmotif_in_song` VALUES (402,4,69);
+INSERT INTO `leitmotif_in_song` VALUES (403,4,60);
+INSERT INTO `leitmotif_in_song` VALUES (403,4,63);
+/*!40000 ALTER TABLE `leitmotif_in_song` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -419,6 +844,296 @@ INSERT INTO `minifig` VALUES ('sw1346','Imperial Commando',NULL,1);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `song`
+--
+
+DROP TABLE IF EXISTS `song`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `song` (
+  `game_id` int(11) NOT NULL,
+  `track_number` int(11) NOT NULL,
+  `track_title` varchar(100) NOT NULL,
+  PRIMARY KEY (`game_id`,`track_number`),
+  CONSTRAINT `song_ibfk_1` FOREIGN KEY (`game_id`) REFERENCES `game` (`game_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `song`
+--
+
+LOCK TABLES `song` WRITE;
+/*!40000 ALTER TABLE `song` DISABLE KEYS */;
+INSERT INTO `song` VALUES (0,1,'Once Upon a Time');
+INSERT INTO `song` VALUES (0,2,'Start Menu');
+INSERT INTO `song` VALUES (0,3,'Your Best Friend');
+INSERT INTO `song` VALUES (0,4,'Fallen Down');
+INSERT INTO `song` VALUES (0,5,'Ruins');
+INSERT INTO `song` VALUES (0,6,'Uwa!! So Temperate♫');
+INSERT INTO `song` VALUES (0,7,'Anticipation');
+INSERT INTO `song` VALUES (0,8,'Unnecessary Tension');
+INSERT INTO `song` VALUES (0,9,'Enemy Approaching');
+INSERT INTO `song` VALUES (0,10,'Ghost Fight');
+INSERT INTO `song` VALUES (0,11,'Determination');
+INSERT INTO `song` VALUES (0,12,'Home');
+INSERT INTO `song` VALUES (0,13,'Home (Music Box)');
+INSERT INTO `song` VALUES (0,14,'Heartache');
+INSERT INTO `song` VALUES (0,15,'sans.');
+INSERT INTO `song` VALUES (0,16,'Nyeh Heh Heh!');
+INSERT INTO `song` VALUES (0,17,'Snowy');
+INSERT INTO `song` VALUES (0,18,'Uwa!! So Holiday♫');
+INSERT INTO `song` VALUES (0,19,'Dogbass');
+INSERT INTO `song` VALUES (0,20,'Mysterious Place');
+INSERT INTO `song` VALUES (0,21,'Dogsong');
+INSERT INTO `song` VALUES (0,22,'Snowdin Town');
+INSERT INTO `song` VALUES (0,23,'Shop');
+INSERT INTO `song` VALUES (0,24,'Bonetrousle');
+INSERT INTO `song` VALUES (0,25,'Dating Start!');
+INSERT INTO `song` VALUES (0,26,'Dating Tense!');
+INSERT INTO `song` VALUES (0,27,'Dating Fight!');
+INSERT INTO `song` VALUES (0,28,'Premonition');
+INSERT INTO `song` VALUES (0,29,'Danger Mystery');
+INSERT INTO `song` VALUES (0,30,'Undyne');
+INSERT INTO `song` VALUES (0,31,'Waterfall');
+INSERT INTO `song` VALUES (0,32,'Run!');
+INSERT INTO `song` VALUES (0,33,'Quiet Water');
+INSERT INTO `song` VALUES (0,34,'Memory');
+INSERT INTO `song` VALUES (0,35,'Bird That Carries You Over A Disproportionately Small Gap');
+INSERT INTO `song` VALUES (0,36,'Dummy!');
+INSERT INTO `song` VALUES (0,37,'Pathetic House');
+INSERT INTO `song` VALUES (0,38,'Spooktune');
+INSERT INTO `song` VALUES (0,39,'Spookwave');
+INSERT INTO `song` VALUES (0,40,'Ghouliday');
+INSERT INTO `song` VALUES (0,41,'Chill');
+INSERT INTO `song` VALUES (0,42,'Thundersnail');
+INSERT INTO `song` VALUES (0,43,'Temmie Village');
+INSERT INTO `song` VALUES (0,44,'Tem Shop');
+INSERT INTO `song` VALUES (0,45,'NGAHHH!!');
+INSERT INTO `song` VALUES (0,46,'Spear of Justice');
+INSERT INTO `song` VALUES (0,47,'Ooo');
+INSERT INTO `song` VALUES (0,48,'Alphys');
+INSERT INTO `song` VALUES (0,49,'It\'s Showtime!');
+INSERT INTO `song` VALUES (0,50,'Metal Crusher');
+INSERT INTO `song` VALUES (0,51,'Another Medium');
+INSERT INTO `song` VALUES (0,52,'Uwa!! So HEATS!!♫');
+INSERT INTO `song` VALUES (0,53,'Stronger Monsters');
+INSERT INTO `song` VALUES (0,54,'Hotel');
+INSERT INTO `song` VALUES (0,55,'Can You Really Call This A Hotel, I Didn\'t Receive A Mint On My Pillow Or Anything');
+INSERT INTO `song` VALUES (0,56,'Confession');
+INSERT INTO `song` VALUES (0,57,'Live Report');
+INSERT INTO `song` VALUES (0,58,'Death Report');
+INSERT INTO `song` VALUES (0,59,'Spider Dance');
+INSERT INTO `song` VALUES (0,60,'Wrong Enemy !?');
+INSERT INTO `song` VALUES (0,61,'Oh! One True Love');
+INSERT INTO `song` VALUES (0,62,'Oh! Dungeon');
+INSERT INTO `song` VALUES (0,63,'It\'s Raining Somewhere Else');
+INSERT INTO `song` VALUES (0,64,'CORE Approach');
+INSERT INTO `song` VALUES (0,65,'CORE');
+INSERT INTO `song` VALUES (0,66,'Last Episode!');
+INSERT INTO `song` VALUES (0,67,'Oh My...');
+INSERT INTO `song` VALUES (0,68,'Death by Glamour');
+INSERT INTO `song` VALUES (0,69,'For the Fans');
+INSERT INTO `song` VALUES (0,70,'Long Elevator');
+INSERT INTO `song` VALUES (0,71,'Undertale');
+INSERT INTO `song` VALUES (0,72,'Song That Might Play When You Fight Sans');
+INSERT INTO `song` VALUES (0,73,'The Choice');
+INSERT INTO `song` VALUES (0,74,'Small Shock');
+INSERT INTO `song` VALUES (0,75,'Barrier');
+INSERT INTO `song` VALUES (0,76,'Bergentrückung');
+INSERT INTO `song` VALUES (0,77,'ASGORE');
+INSERT INTO `song` VALUES (0,78,'You Idiot');
+INSERT INTO `song` VALUES (0,79,'Your Best Nightmare');
+INSERT INTO `song` VALUES (0,80,'Finale');
+INSERT INTO `song` VALUES (0,81,'An Ending');
+INSERT INTO `song` VALUES (0,82,'She\'s Playing Piano');
+INSERT INTO `song` VALUES (0,83,'Here We Are');
+INSERT INTO `song` VALUES (0,84,'Amalgam');
+INSERT INTO `song` VALUES (0,85,'Fallen Down (Reprise)');
+INSERT INTO `song` VALUES (0,86,'Don\'t Give Up');
+INSERT INTO `song` VALUES (0,87,'Hopes and Dreams');
+INSERT INTO `song` VALUES (0,88,'Burn in Despair!');
+INSERT INTO `song` VALUES (0,89,'SAVE the World');
+INSERT INTO `song` VALUES (0,90,'His Theme');
+INSERT INTO `song` VALUES (0,91,'Final Power');
+INSERT INTO `song` VALUES (0,92,'Reunited');
+INSERT INTO `song` VALUES (0,93,'Menu (Full)');
+INSERT INTO `song` VALUES (0,94,'Respite');
+INSERT INTO `song` VALUES (0,95,'Bring It In, Guys!');
+INSERT INTO `song` VALUES (0,96,'Last Goodbye');
+INSERT INTO `song` VALUES (0,97,'But the Earth Refused to Die');
+INSERT INTO `song` VALUES (0,98,'Battle Against a True Hero');
+INSERT INTO `song` VALUES (0,99,'Power of \"NEO\"');
+INSERT INTO `song` VALUES (0,100,'MEGALOVANIA');
+INSERT INTO `song` VALUES (0,101,'Good Night');
+INSERT INTO `song` VALUES (1,1,'ANOTHER HIM');
+INSERT INTO `song` VALUES (1,2,'Beginning');
+INSERT INTO `song` VALUES (1,3,'School');
+INSERT INTO `song` VALUES (1,4,'Susie');
+INSERT INTO `song` VALUES (1,5,'The Door');
+INSERT INTO `song` VALUES (1,6,'Cliffs');
+INSERT INTO `song` VALUES (1,7,'The Chase');
+INSERT INTO `song` VALUES (1,8,'The Legend');
+INSERT INTO `song` VALUES (1,9,'Lancer');
+INSERT INTO `song` VALUES (1,10,'Rude Buster');
+INSERT INTO `song` VALUES (1,11,'Empty Town');
+INSERT INTO `song` VALUES (1,12,'Weird Birds');
+INSERT INTO `song` VALUES (1,13,'Field of Hopes and Dreams');
+INSERT INTO `song` VALUES (1,14,'Fanfare (from \"Rose of Winter\")');
+INSERT INTO `song` VALUES (1,15,'Lantern');
+INSERT INTO `song` VALUES (1,16,'I\'m Very Bad');
+INSERT INTO `song` VALUES (1,17,'Checker Dance');
+INSERT INTO `song` VALUES (1,18,'Quiet Autumn');
+INSERT INTO `song` VALUES (1,19,'Scarlet Forest');
+INSERT INTO `song` VALUES (1,20,'Thrash Machine');
+INSERT INTO `song` VALUES (1,21,'Vs. Lancer');
+INSERT INTO `song` VALUES (1,22,'Basement');
+INSERT INTO `song` VALUES (1,23,'Imminent Death');
+INSERT INTO `song` VALUES (1,24,'Vs. Susie');
+INSERT INTO `song` VALUES (1,25,'Card Castle');
+INSERT INTO `song` VALUES (1,26,'Rouxls Kaard');
+INSERT INTO `song` VALUES (1,27,'April 2012');
+INSERT INTO `song` VALUES (1,28,'Hip Shop');
+INSERT INTO `song` VALUES (1,29,'Gallery');
+INSERT INTO `song` VALUES (1,30,'Chaos King');
+INSERT INTO `song` VALUES (1,31,'Darkness Falls');
+INSERT INTO `song` VALUES (1,32,'The Circus');
+INSERT INTO `song` VALUES (1,33,'THE WORLD REVOLVING');
+INSERT INTO `song` VALUES (1,34,'Friendship');
+INSERT INTO `song` VALUES (1,35,'THE HOLY');
+INSERT INTO `song` VALUES (1,36,'Your Power');
+INSERT INTO `song` VALUES (1,37,'A Town Called Hometown');
+INSERT INTO `song` VALUES (1,38,'You Can Always Come Home');
+INSERT INTO `song` VALUES (1,39,'Don\'t Forget');
+INSERT INTO `song` VALUES (1,40,'Before the Story');
+INSERT INTO `song` VALUES (2,1,'Faint Glow');
+INSERT INTO `song` VALUES (2,2,'Girl Next Door');
+INSERT INTO `song` VALUES (2,3,'My Castle Town');
+INSERT INTO `song` VALUES (2,4,'Ohhhhohohoho!');
+INSERT INTO `song` VALUES (2,5,'Queen');
+INSERT INTO `song` VALUES (2,6,'A CYBER\'S WORLD?');
+INSERT INTO `song` VALUES (2,7,'A Simple Diversion');
+INSERT INTO `song` VALUES (2,8,'Almost To The Guys!');
+INSERT INTO `song` VALUES (2,9,'Cool Beat');
+INSERT INTO `song` VALUES (2,10,'When I Get Mad I Dance Like This');
+INSERT INTO `song` VALUES (2,11,'Cyber Battle (Solo)');
+INSERT INTO `song` VALUES (2,12,'When I Get Happy I Dance Like This');
+INSERT INTO `song` VALUES (2,13,'Sound Studio');
+INSERT INTO `song` VALUES (2,14,'Berdly');
+INSERT INTO `song` VALUES (2,15,'Smart Race');
+INSERT INTO `song` VALUES (2,16,'Faint Courage (Game Over)');
+INSERT INTO `song` VALUES (2,17,'WELCOME TO THE CITY');
+INSERT INTO `song` VALUES (2,18,'Mini Studio');
+INSERT INTO `song` VALUES (2,19,'Holiday Studio');
+INSERT INTO `song` VALUES (2,20,'Cool Mixtape');
+INSERT INTO `song` VALUES (2,21,'HEY EVERY !');
+INSERT INTO `song` VALUES (2,22,'Spamton');
+INSERT INTO `song` VALUES (2,23,'NOW\'S YOUR CHANCE TO BE A');
+INSERT INTO `song` VALUES (2,24,'Elegant Entrance');
+INSERT INTO `song` VALUES (2,25,'Bluebird of Misfortune');
+INSERT INTO `song` VALUES (2,26,'Pandora Palace');
+INSERT INTO `song` VALUES (2,27,'KEYGEN');
+INSERT INTO `song` VALUES (2,28,'Acid Tunnel of Love');
+INSERT INTO `song` VALUES (2,29,'It\'s Pronounced \"Rules\"');
+INSERT INTO `song` VALUES (2,30,'Lost Girl');
+INSERT INTO `song` VALUES (2,31,'Ferris Wheel');
+INSERT INTO `song` VALUES (2,32,'Attack of the Killer Queen');
+INSERT INTO `song` VALUES (2,33,'Giga Size');
+INSERT INTO `song` VALUES (2,34,'Powers Combined');
+INSERT INTO `song` VALUES (2,35,'Knock You Down !!');
+INSERT INTO `song` VALUES (2,36,'The Dark Truth');
+INSERT INTO `song` VALUES (2,37,'Digital Roots');
+INSERT INTO `song` VALUES (2,38,'Deal Gone Wrong');
+INSERT INTO `song` VALUES (2,39,'BIG SHOT');
+INSERT INTO `song` VALUES (2,40,'A Real Boy!');
+INSERT INTO `song` VALUES (2,41,'Dialtone');
+INSERT INTO `song` VALUES (2,42,'sans.');
+INSERT INTO `song` VALUES (2,43,'Chill Jailbreak Alarm To Study And Relax To');
+INSERT INTO `song` VALUES (2,44,'You Can Always Come Home');
+INSERT INTO `song` VALUES (2,45,'Until Next Time');
+INSERT INTO `song` VALUES (2,46,'Before The Story');
+INSERT INTO `song` VALUES (3,1,'Flashback (Excerpt)');
+INSERT INTO `song` VALUES (3,2,'Feature Presentation');
+INSERT INTO `song` VALUES (3,3,'And Now For Today\'s Sponsors…!');
+INSERT INTO `song` VALUES (3,4,'MIKE, the BOARD, please!');
+INSERT INTO `song` VALUES (3,5,'Sandy Board');
+INSERT INTO `song` VALUES (3,6,'Adventure Board');
+INSERT INTO `song` VALUES (3,7,'Query?');
+INSERT INTO `song` VALUES (3,8,'Quiz!');
+INSERT INTO `song` VALUES (3,9,'Dig! Dig! To The Center of the Earth!');
+INSERT INTO `song` VALUES (3,10,'Pushing Buddies');
+INSERT INTO `song` VALUES (3,11,'Ruder Buster');
+INSERT INTO `song` VALUES (3,12,'Physical Challenge');
+INSERT INTO `song` VALUES (3,13,'Board Clear!');
+INSERT INTO `song` VALUES (3,14,'Welcome to the Green Room');
+INSERT INTO `song` VALUES (3,15,'Vapor Buster');
+INSERT INTO `song` VALUES (3,16,'Paradise, Paradise');
+INSERT INTO `song` VALUES (3,17,'Raft Ride');
+INSERT INTO `song` VALUES (3,18,'SOUTH OF THE BORDER!!');
+INSERT INTO `song` VALUES (3,19,'Sound Check');
+INSERT INTO `song` VALUES (3,20,'Raise Up Your Bat');
+INSERT INTO `song` VALUES (3,21,'KING OF ROLYPOLY');
+INSERT INTO `song` VALUES (3,22,'Glowing Snow');
+INSERT INTO `song` VALUES (3,23,'Big City Board');
+INSERT INTO `song` VALUES (3,24,'Doom Board');
+INSERT INTO `song` VALUES (3,25,'Metaphysical Challenge');
+INSERT INTO `song` VALUES (3,26,'TV WORLD');
+INSERT INTO `song` VALUES (3,27,'It\'s TV Time!');
+INSERT INTO `song` VALUES (3,28,'Hall of Fame');
+INSERT INTO `song` VALUES (3,29,'Breath');
+INSERT INTO `song` VALUES (3,30,'Black Knife');
+INSERT INTO `song` VALUES (3,31,'Crickets');
+INSERT INTO `song` VALUES (3,32,'Dump');
+INSERT INTO `song` VALUES (3,33,'SWORD');
+INSERT INTO `song` VALUES (3,34,'NORTHERNLIGHT');
+INSERT INTO `song` VALUES (3,35,'GLACEIR');
+INSERT INTO `song` VALUES (3,36,'BIT ROOTS');
+INSERT INTO `song` VALUES (3,37,'ERAM');
+INSERT INTO `song` VALUES (3,38,'BURNING EYES');
+INSERT INTO `song` VALUES (4,39,'Old wooden rafters');
+INSERT INTO `song` VALUES (4,40,'Hymn');
+INSERT INTO `song` VALUES (4,41,'Another day in hometown');
+INSERT INTO `song` VALUES (4,42,'Friends');
+INSERT INTO `song` VALUES (4,43,'Castle Funk');
+INSERT INTO `song` VALUES (4,44,'Knock You Down!! - Rhythm Ver.');
+INSERT INTO `song` VALUES (4,45,'Gingerbread House');
+INSERT INTO `song` VALUES (4,46,'The distance between two');
+INSERT INTO `song` VALUES (4,47,'C');
+INSERT INTO `song` VALUES (4,48,'ATRIUM');
+INSERT INTO `song` VALUES (4,49,'Dark Sanctuary');
+INSERT INTO `song` VALUES (4,50,'From Now On (Battle 2)');
+INSERT INTO `song` VALUES (4,51,'Gyaa Ha ha!');
+INSERT INTO `song` VALUES (4,52,'Fireplace');
+INSERT INTO `song` VALUES (4,53,'A DARK ZONE');
+INSERT INTO `song` VALUES (4,54,'Mysterious Ringing');
+INSERT INTO `song` VALUES (4,55,'Ever Higher');
+INSERT INTO `song` VALUES (4,56,'Wise words');
+INSERT INTO `song` VALUES (4,57,'Piano that may not be played that well');
+INSERT INTO `song` VALUES (4,58,'Hammer of Justice');
+INSERT INTO `song` VALUES (4,59,'12am');
+INSERT INTO `song` VALUES (4,60,'The Second Sanctuary');
+INSERT INTO `song` VALUES (4,61,'Ripple');
+INSERT INTO `song` VALUES (4,62,'13am');
+INSERT INTO `song` VALUES (4,63,'The Third Sanctuary');
+INSERT INTO `song` VALUES (4,64,'Dark Place');
+INSERT INTO `song` VALUES (4,65,'Heavy Footsteps');
+INSERT INTO `song` VALUES (4,66,'Crumbling Tower');
+INSERT INTO `song` VALUES (4,67,'SPAWN');
+INSERT INTO `song` VALUES (4,68,'GUARDIAN');
+INSERT INTO `song` VALUES (4,69,'Need a hand!?');
+INSERT INTO `song` VALUES (4,70,'The place where it rained');
+INSERT INTO `song` VALUES (4,71,'The Ol\' Jitterbug');
+INSERT INTO `song` VALUES (4,72,'Neverending Night');
+INSERT INTO `song` VALUES (4,73,'The LEGEND...?');
+INSERT INTO `song` VALUES (4,74,'With Hope Crossed On Our Hearts');
+INSERT INTO `song` VALUES (4,75,'Volume Adjustment');
+INSERT INTO `song` VALUES (4,76,'Catswing');
+INSERT INTO `song` VALUES (4,77,'Air Waves');
+INSERT INTO `song` VALUES (4,78,'Concert for you');
+/*!40000 ALTER TABLE `song` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `source`
 --
 
@@ -470,4 +1185,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-13 21:00:21
+-- Dump completed on 2025-07-21 21:53:47
