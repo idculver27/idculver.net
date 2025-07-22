@@ -96,6 +96,7 @@ INSERT INTO `battle_pack` VALUES (75359,'332nd Ahsoka\'s Clone Trooper Battle Pa
 INSERT INTO `battle_pack` VALUES (75372,'Clone Trooper & Battle Droid Battle Pack',2024,11,215,29.99);
 INSERT INTO `battle_pack` VALUES (75373,'Ambush on Mandalore Battle Pack',2024,18,109,19.99);
 INSERT INTO `battle_pack` VALUES (75412,'Death Trooper & Night Trooper Battle Pack',2025,19,119,19.99);
+INSERT INTO `battle_pack` VALUES (75431,'327th Star Corps Clone Troopers Battle Pack',2025,3,258,44.99);
 /*!40000 ALTER TABLE `battle_pack` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -259,6 +260,9 @@ INSERT INTO `battle_pack_has_minifig` VALUES (75372,'sw1321',3);
 INSERT INTO `battle_pack_has_minifig` VALUES (75373,'sw1344',1);
 INSERT INTO `battle_pack_has_minifig` VALUES (75373,'sw1345',1);
 INSERT INTO `battle_pack_has_minifig` VALUES (75373,'sw1346',2);
+INSERT INTO `battle_pack_has_minifig` VALUES (75412,'sw1358',1);
+INSERT INTO `battle_pack_has_minifig` VALUES (75412,'sw1416',2);
+INSERT INTO `battle_pack_has_minifig` VALUES (75412,'sw1417',1);
 /*!40000 ALTER TABLE `battle_pack_has_minifig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -840,6 +844,9 @@ INSERT INTO `minifig` VALUES ('sw1321','Super Battle Droid',NULL,0);
 INSERT INTO `minifig` VALUES ('sw1344','Mandalorian Nite Owl',NULL,1);
 INSERT INTO `minifig` VALUES ('sw1345','Mandalorian Warrior',NULL,1);
 INSERT INTO `minifig` VALUES ('sw1346','Imperial Commando',NULL,1);
+INSERT INTO `minifig` VALUES ('sw1358','Night Trooper',NULL,1);
+INSERT INTO `minifig` VALUES ('sw1416','Death Trooper','Thrawn',1);
+INSERT INTO `minifig` VALUES ('sw1417','Night Trooper',NULL,1);
 /*!40000 ALTER TABLE `minifig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1185,4 +1192,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-21 21:53:47
+-- Dump completed on 2025-07-21 22:08:46
