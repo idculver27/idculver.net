@@ -66,21 +66,12 @@ function buildLinks(row) {
 }
 
 function simulate() {
-	// draw SVG container
-	const width = 1800;
-	const height = 800;
-	const svg = d3.select("#canvas")
-		.attr("width", width)
-		.attr("height", height);
-
 	// initialize simulation
-	const xystrength = 0.1;
-	const simulation = d3.forceSimulation(nodes).alphaDecay(0.02)
+	const svg = d3.select("#canvas");
+	const simulation = d3.forceSimulation(nodes)
+		.alphaDecay(0.01)
 		.force("link", d3.forceLink(links).id(d => d.id).distance(40))
-		.force("charge", d3.forceManyBody().strength(-100))
-		.force("x", d3.forceX(canvas.clientWidth / 2).strength(xystrength))
-		.force("y", d3.forceY(canvas.clientHeight / 2).strength(xystrength))
-		.force("boundary", forceBoundary(0, 0, width, height));
+		.force("charge", d3.forceManyBody().strength(-100));
 
 	// draw links
 	const link = svg.append("g")
@@ -98,7 +89,7 @@ function simulate() {
 		.join("circle")
 		.attr("id", d => d.id)
 		.attr("class", d => `song g${d.id.substring(0, 1)}`)
-		.attr("r", 6)
+		.attr("r", 5)
 		.attr("game_id", d => d.game_id)
 		.attr("game_title", d => d.game_title)
 		.attr("track_number", d => d.track_number)
@@ -131,10 +122,13 @@ function simulate() {
 
 	// update positions each tick
 	simulation.on("tick", () => {
-		// update center position
+		// update centering forces
+		const xyStrength = 0.1;
+		const borderMoat = 10;
 		simulation
-			.force("x", d3.forceX(canvas.clientWidth / 2).strength(xystrength))
-			.force("y", d3.forceY(canvas.clientHeight / 2).strength(xystrength))
+			.force("x", d3.forceX(canvas.clientWidth / 2).strength(xyStrength))
+			.force("y", d3.forceY(canvas.clientHeight / 2).strength(xyStrength))
+			.force("boundary", forceBoundary(borderMoat, borderMoat, canvas.clientWidth - borderMoat, canvas.clientHeight - borderMoat));
 		link
 			.attr("x1", d => d.source.x)
 			.attr("y1", d => d.source.y)

@@ -1,13 +1,33 @@
+:root {
+	--bg: #282852;
+}
+a {
+	text-align: center;
+	text-decoration: none;
+}
 body {
-	background-color: black;
+	background-color: var(--bg);
 	color: white;
 	font-family: Verdana, Tahoma, sans-serif;
-}
-h2 {
-	font-size: 140%;
 	margin: 0px;
 }
-img {
+footer {
+	background-color: var(--bg);
+	bottom: 1vh;
+	left: 1vw;
+	position: absolute;
+}
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+h2 {
+	margin: 0px;
+}
+header {
+	display: flex;
+}
+image, img {
 	image-rendering: pixelated;
 }
 p {
@@ -19,11 +39,6 @@ span {
 	display: inline-flex;
 	font-size: 70%;
 	margin: 10px;
-}
-svg {
-	font-size: 0%;
-	max-width: 100%;
-	border: 1px solid green;
 }
 .big_margin {
 	margin-bottom: 12px;
@@ -44,28 +59,38 @@ svg {
 .g4 {
 	fill: #526AF3;
 }
+.icon {
+	image-rendering: auto;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 0px;
+	width: 40px;
+}
 .legend {
 	height: 10px;
 	margin-right: 5px;
 	width: 20px;
 }
-.leitmotif {
-	fill: white;
-}
 .link {
 	stroke: white;
-	stroke-width: 1.5px;
-	/* stroke: #3CB24E; */
+	stroke-width: 1px;
+}
+#canvas {
+	height: 94vh;
+	margin: 0px;
+	position: absolute;
+	top: 6vh;
+	width: 100vw;
 }
 #info_panel {
-	background-color: black;
-	border: 2px solid white;
-	left: 40px;
-	max-width: 350px;
-	min-width: 200px;
+	background-color: var(--bg);
+	border: 3px solid #00C000;
+	left: 2vw;
+	max-width: 20vw;
+	min-width: 10vw;
 	padding: 20px;
 	position: absolute;
-	top: 90px;
+	top: 12vh;
 }
 #selected_list {
 	margin-left: 10px;

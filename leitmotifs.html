@@ -11,15 +11,14 @@
 	<script src="scripts/leitmotifs.js" type="module"></script>
 </head>
 <body>
-	<h1>Undertale/Deltarune Leitmotifs</h1>
+	<header>
+		<a href="/">
+			<img class="icon" src="images/icon.svg" alt="Home">
+		</a>
+		<h1>Undertale/Deltarune Leitmotifs Graph</h1>
+		<div class="icon"></div>
+	</header>
 	<svg id="canvas"></svg>
-	<div id="info_panel" hidden>
-		<h2 id="selected_name"></h2>
-		<p class="big_margin"><i id="selected_caption"></i></p>
-		<img id="selected_sprite">
-		<p class="big_margin" id="selected_list_name"></p>
-		<div id="selected_list"></div>
-	</div>
 	<footer>
 		<span><svg class="legend"><rect class="legend g0"></rect></svg>UNDERTALE</span>
 		<span><svg class="legend"><rect class="legend g1"></rect></svg>DELTARUNE Ch. 1</span>
@@ -27,5 +26,12 @@
 		<span><svg class="legend"><rect class="legend g3"></rect></svg>DELTARUNE Ch. 3</span>
 		<span><svg class="legend"><rect class="legend g4"></rect></svg>DELTARUNE Ch. 4</span>
 	</footer>
+		<div id="info_panel" hidden>
+		<h2 id="selected_name"></h2>
+		<p class="big_margin"><i id="selected_caption"></i></p>
+		<img id="selected_sprite">
+		<p class="big_margin" id="selected_list_name"></p>
+		<div id="selected_list"></div>
+	</div>
 </body>
 </html>
