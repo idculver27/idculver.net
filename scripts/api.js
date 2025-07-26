@@ -40,7 +40,8 @@ app.get("/api", (req, res) => {
 	const status = {
 		"status": "Running",
 		"endpoints": [
-			"/api/battle_packs"
+			"/api/battle_packs",
+			"/api/leitmotifs"
 		]
 	};
 	res.send(status);

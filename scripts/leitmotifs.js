@@ -4,8 +4,7 @@ var nodes = [];
 var links = [];
 
 window.addEventListener("DOMContentLoaded", () => {
-	// fetch("https://idculver.net/api/leitmotifs")
-	fetch("../databases/temp.json")
+	fetch("https://idculver.net/api/leitmotifs")
 		.then((response) => response.json())
 		.then((json) => {
 			json.forEach(row => {
