@@ -69,7 +69,7 @@ function simulate() {
 	const svg = d3.select("#canvas");
 	const simulation = d3.forceSimulation(nodes)
 		.alphaDecay(0.01)
-		.force("link", d3.forceLink(links).id(d => d.id).distance(40))
+		.force("link", d3.forceLink(links).id(d => d.id).distance(50))
 		.force("charge", d3.forceManyBody().strength(-100));
 
 	// draw links
@@ -88,7 +88,7 @@ function simulate() {
 		.join("circle")
 		.attr("id", d => d.id)
 		.attr("class", d => `song g${d.id.substring(0, 1)}`)
-		.attr("r", 5)
+		.attr("r", 6)
 		.attr("game_id", d => d.game_id)
 		.attr("game_title", d => d.game_title)
 		.attr("track_number", d => d.track_number)

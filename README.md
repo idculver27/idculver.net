@@ -25,6 +25,7 @@ SELECT * FROM battle_pack;
 START TRANSACTION;
 INSERT INTO minifig VALUES ('sw1416', 'Death Trooper', 'Thrawn', 1);
 UPDATE battle_pack SET msrp='9.99' WHERE set_number=7654;
+DELETE FROM leitmotif WHERE leitmotif_id=25;
 COMMIT;
 ```
 
