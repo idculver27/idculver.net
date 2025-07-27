@@ -366,7 +366,7 @@ INSERT INTO `leitmotif` VALUES (301,'Tenna');
 INSERT INTO `leitmotif` VALUES (401,'Sanctuary');
 INSERT INTO `leitmotif` VALUES (402,'Gerson Boom');
 INSERT INTO `leitmotif` VALUES (403,'2nd Sanctuary');
-INSERT INTO `leitmotif` VALUES (404,'TItan');
+INSERT INTO `leitmotif` VALUES (404,'Titan');
 /*!40000 ALTER TABLE `leitmotif` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -444,7 +444,6 @@ INSERT INTO `leitmotif_in_song` VALUES (5,0,52);
 INSERT INTO `leitmotif_in_song` VALUES (5,3,22);
 INSERT INTO `leitmotif_in_song` VALUES (6,0,7);
 INSERT INTO `leitmotif_in_song` VALUES (6,0,9);
-INSERT INTO `leitmotif_in_song` VALUES (6,0,14);
 INSERT INTO `leitmotif_in_song` VALUES (6,0,21);
 INSERT INTO `leitmotif_in_song` VALUES (6,0,43);
 INSERT INTO `leitmotif_in_song` VALUES (6,0,44);
@@ -518,7 +517,6 @@ INSERT INTO `leitmotif_in_song` VALUES (19,0,38);
 INSERT INTO `leitmotif_in_song` VALUES (19,0,39);
 INSERT INTO `leitmotif_in_song` VALUES (19,4,53);
 INSERT INTO `leitmotif_in_song` VALUES (20,0,49);
-INSERT INTO `leitmotif_in_song` VALUES (20,0,50);
 INSERT INTO `leitmotif_in_song` VALUES (20,0,57);
 INSERT INTO `leitmotif_in_song` VALUES (20,0,58);
 INSERT INTO `leitmotif_in_song` VALUES (20,0,68);
@@ -545,6 +543,7 @@ INSERT INTO `leitmotif_in_song` VALUES (25,4,64);
 INSERT INTO `leitmotif_in_song` VALUES (26,0,98);
 INSERT INTO `leitmotif_in_song` VALUES (26,0,99);
 INSERT INTO `leitmotif_in_song` VALUES (26,2,39);
+INSERT INTO `leitmotif_in_song` VALUES (26,3,38);
 INSERT INTO `leitmotif_in_song` VALUES (101,1,2);
 INSERT INTO `leitmotif_in_song` VALUES (101,1,3);
 INSERT INTO `leitmotif_in_song` VALUES (101,1,13);
@@ -622,7 +621,7 @@ INSERT INTO `leitmotif_in_song` VALUES (114,2,41);
 INSERT INTO `leitmotif_in_song` VALUES (114,4,58);
 INSERT INTO `leitmotif_in_song` VALUES (114,4,77);
 INSERT INTO `leitmotif_in_song` VALUES (115,1,35);
-INSERT INTO `leitmotif_in_song` VALUES (115,3,32);
+INSERT INTO `leitmotif_in_song` VALUES (115,3,33);
 INSERT INTO `leitmotif_in_song` VALUES (201,2,2);
 INSERT INTO `leitmotif_in_song` VALUES (201,2,30);
 INSERT INTO `leitmotif_in_song` VALUES (201,2,31);
@@ -1210,4 +1209,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-27  2:00:29
+-- Dump completed on 2025-07-27 17:20:37
