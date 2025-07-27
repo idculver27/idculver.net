@@ -76,10 +76,10 @@ span {
 	stroke-width: 2px;
 }
 #canvas {
-	height: 94vh;
+	height: 93vh;
 	margin: 0px;
 	position: absolute;
-	top: 6vh;
+	top: 7vh;
 	width: 100vw;
 }
 #info_panel {
