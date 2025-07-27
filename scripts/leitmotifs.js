@@ -47,7 +47,7 @@ function buildLinks(row) {
 		let new_node = {
 			id: leitmotif_id,
 			class: "leitmotif",
-			leitmotif_name: row.leitmotif_name,
+			leitmotif_name: row.leitmotif_name
 		}
 		nodes.push(new_node);
 	}
