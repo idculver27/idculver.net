@@ -2,14 +2,14 @@
 
 ---
 
-# Database Operations
+## Database Operations
 
-## Dump
+### Dump
 ```bash
 sudo mariadb-dump -u root -p -x -B --skip-extended-insert idculver > /var/www/idculver.net/databases/idculver.sql
 ```
 
-## Log in
+### Log in
 ```bash
 sudo mysql -u root -p
 ```
@@ -17,7 +17,7 @@ sudo mysql -u root -p
 USE idculver;
 ```
 
-## Common commands
+### Common commands
 ```sql
 SHOW tables;
 DESCRIBE battle_pack;
@@ -29,11 +29,16 @@ DELETE FROM leitmotif WHERE leitmotif_id=25;
 COMMIT;
 ```
 
+## Restart API after server reboot
+```bash
+sudo pm2 resurrect
+```
+
 ---
 
-# How To Deploy
+## How To Deploy
 
-## Repo Setup
+### Repo Setup
 1. Clone the repo
 ```bash
 cd /var/www/
@@ -45,7 +50,7 @@ sudo git clone git@github.com:idculver27/idculver.net.git
 ln -s /var/www/idculver.net/ ~/idculver.net
 ```
 
-## Web Proxy Setup
+### Web Proxy Setup
 1. Generate a CSR
 ```bash
 openssl req -newkey rsa:2048 -keyout culverpi.key -out culverpi.csr
@@ -115,7 +120,7 @@ sudo systemctl restart nginx
 	- [Advanced DNS](https://ap.www.namecheap.com/Domains/DomainControlPanel/idculver.net/advancedns)
 	- Change the value of the A Record to your router's public IP > Save Changes (checkmark)
 
-## Database Setup
+### Database Setup
 1. Install MariaDB
 ```bash
 sudo apt install mariadb-server
@@ -141,7 +146,7 @@ FLUSH PRIVILEGES;
 
 5. Build the database using `databases/idculver.sql`
 
-## API Setup
+### API Setup
 1. Install Node.js
 
 2. Set up Node.js
