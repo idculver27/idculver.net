@@ -357,7 +357,7 @@ INSERT INTO `leitmotif` VALUES (114,'Freedom (The World Revolving)');
 INSERT INTO `leitmotif` VALUES (115,'THE HOLY');
 INSERT INTO `leitmotif` VALUES (201,'Noelle');
 INSERT INTO `leitmotif` VALUES (202,'Queen');
-INSERT INTO `leitmotif` VALUES (203,'A Cyber\'s World');
+INSERT INTO `leitmotif` VALUES (203,'Cyber City');
 INSERT INTO `leitmotif` VALUES (204,'Sweet Cap\'n Cakes');
 INSERT INTO `leitmotif` VALUES (205,'Berdly');
 INSERT INTO `leitmotif` VALUES (206,'TV Time');
@@ -575,6 +575,7 @@ INSERT INTO `leitmotif_in_song` VALUES (103,1,4);
 INSERT INTO `leitmotif_in_song` VALUES (103,1,24);
 INSERT INTO `leitmotif_in_song` VALUES (104,1,5);
 INSERT INTO `leitmotif_in_song` VALUES (104,1,7);
+INSERT INTO `leitmotif_in_song` VALUES (104,1,33);
 INSERT INTO `leitmotif_in_song` VALUES (104,3,30);
 INSERT INTO `leitmotif_in_song` VALUES (105,1,8);
 INSERT INTO `leitmotif_in_song` VALUES (105,1,11);
@@ -621,6 +622,7 @@ INSERT INTO `leitmotif_in_song` VALUES (114,2,41);
 INSERT INTO `leitmotif_in_song` VALUES (114,4,58);
 INSERT INTO `leitmotif_in_song` VALUES (114,4,77);
 INSERT INTO `leitmotif_in_song` VALUES (115,1,35);
+INSERT INTO `leitmotif_in_song` VALUES (115,3,32);
 INSERT INTO `leitmotif_in_song` VALUES (115,3,33);
 INSERT INTO `leitmotif_in_song` VALUES (201,2,2);
 INSERT INTO `leitmotif_in_song` VALUES (201,2,30);
@@ -1209,4 +1211,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-27 17:20:37
+-- Dump completed on 2025-09-04  0:33:00
