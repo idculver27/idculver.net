@@ -41,7 +41,9 @@ app.get("/api", (req, res) => {
 		"status": "Running",
 		"endpoints": [
 			"/api/battle_packs",
-			"/api/leitmotifs"
+			"/api/leitmotifs/songs",
+			"/api/leitmotifs/leitmotifs",
+			"/api/leitmotifs/leitmotifs_in_songs"
 		]
 	};
 	res.send(status);
@@ -96,17 +98,46 @@ app.get("/api/battle_packs", (req, res) => {
 	});
 });
 
-// leitmotifs endpoint
-app.get("/api/leitmotifs", (req, res) => {
+// leitmotifs/songs endpoint
+app.get("/api/leitmotifs/songs", (req, res) => {
 	query = `
-		SELECT game_id, track_number, track_title, (
-			SELECT JSON_ARRAYAGG(leitmotif_name)
-			FROM leitmotif_in_song l_s
-			JOIN leitmotif l USING (leitmotif_id)
-			WHERE s.game_id = l_s.game_id AND s.track_number = l_s.track_number
-		) AS leitmotifs
-		FROM song s
+		SELECT game_id, game_title, track_number, track_title
+		FROM song
 		JOIN game USING (game_id);
+	`;
+	db.query(query, (err, result) => {
+		if (err) {
+			res.status(500).send("Server encountered an error :(");
+			throw err;
+		}
+
+		res.send(result);
+	});
+});
+
+// leitmotifs/leitmotifs endpoint
+app.get("/api/leitmotifs/leitmotifs", (req, res) => {
+	query = `
+		SELECT leitmotif_id, leitmotif_name
+		FROM leitmotif;
+	`;
+	db.query(query, (err, result) => {
+		if (err) {
+			res.status(500).send("Server encountered an error :(");
+			throw err;
+		}
+
+		res.send(result);
+	});
+});
+
+// leitmotifs/leitmotifs_in_songs endpoint
+app.get("/api/leitmotifs/leitmotifs_in_songs", (req, res) => {
+	query = `
+		SELECT leitmotif_name, game_id, track_number
+		FROM song
+		JOIN leitmotif_in_song USING (game_id, track_number)
+		JOIN leitmotif USING (leitmotif_id);
 	`;
 	db.query(query, (err, result) => {
 		if (err) {

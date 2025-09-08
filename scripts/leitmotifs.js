@@ -4,11 +4,30 @@ var nodes = [];
 var links = [];
 
 window.addEventListener("DOMContentLoaded", () => {
+	// add song nodes
+	fetch("https://idculver.net/api/leitmotifs/songs")
+		.then((response) => response.json())
+		.then((json) => {
+			json.forEach(row => {
+				addSongNode(row);
+			})
+		});
+
+	// add leitmotif nodes
+	fetch("https://idculver.net/api/leitmotifs/leitmotifs")
+		.then((response) => response.json())
+		.then((json) => {
+			json.forEach(row => {
+				addLeitmotifNode(row);
+			})
+		});
+
+	// add links
 	fetch("https://idculver.net/api/leitmotifs")
 		.then((response) => response.json())
 		.then((json) => {
 			json.forEach(row => {
-				buildLinks(row);
+				addLink(row);
 			});
 
 			simulate();
@@ -20,10 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-
-
-function buildLinks(row) {
-	// add song node
+function addSongNode(row) {
 	const song_id = `${row.game_id}-${row.track_number}`;
 	let new_node = {
 		id: song_id,
@@ -34,36 +50,26 @@ function buildLinks(row) {
 		track_title: row.track_title
 	}
 	nodes.push(new_node);
+}
 
-	// leitmotifs
-	for (let leitmotif in row.leitmotifs) {
-		const leitmotif_id = leitmotif.replaceAll(/[^\w]/g, "");
-
-		// add leitmotif node if needed
-		let leitmotif_already_added = false;
-		for (let node of nodes) {
-			if (node.id === leitmotif_id) {
-				leitmotif_already_added = true;
-				break;
-			}
-		}
-		if (!leitmotif_already_added) {
-			let new_node = {
-				id: leitmotif_id,
-				class: "leitmotif",
-				leitmotif_name: leitmotif
-			}
-			nodes.push(new_node);
-		}
-
-		// add link
-		const new_link = {
-			source: leitmotif_id,
-			target: song_id
-		}
-		links.push(new_link);
-
+function addLeitmotifNode(row) {
+	const leitmotif_id = row.leitmotif_name.replaceAll(/[^\w]/g, "");
+	let new_node = {
+		id: leitmotif_id,
+		class: "leitmotif",
+		leitmotif_name: row_leitmotif_name
 	}
+	nodes.push(new_node);
+}
+
+function addLink(row) {
+	const song_id = `${row.game_id}-${row.track_number}`;
+	const leitmotif_id = row.leitmotif_name.replaceAll(/[^\w]/g, "");
+	const new_link = {
+		source: leitmotif_id,
+		target: song_id
+	}
+	links.push(new_link);
 }
 
 function simulate() {
