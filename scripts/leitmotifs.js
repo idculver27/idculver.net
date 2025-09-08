@@ -4,40 +4,31 @@ var nodes = [];
 var links = [];
 
 window.addEventListener("DOMContentLoaded", () => {
-	// add song nodes
-	fetch("https://idculver.net/api/leitmotifs/songs")
-		.then((response) => response.json())
-		.then((json) => {
-			json.forEach(row => {
-				addSongNode(row);
-			})
-		});
-
-	// add leitmotif nodes
-	fetch("https://idculver.net/api/leitmotifs/leitmotifs")
-		.then((response) => response.json())
-		.then((json) => {
-			json.forEach(row => {
-				addLeitmotifNode(row);
-			})
-		});
-
-	// add links
-	fetch("https://idculver.net/api/leitmotifs/leitmotifs_in_songs")
-		.then((response) => response.json())
-		.then((json) => {
-			json.forEach(row => {
-				addLink(row);
-			});
-
-			simulate();
-		});
+	buildNodesAndLinks()
+		.then(simulate);
 
 	// close info panel
 	canvas.addEventListener("click", (event) => {
 		if (event.target.id === "canvas") info_panel.setAttribute("hidden", true);
 	});
 });
+
+async function buildNodesAndLinks() {
+	// add song nodes
+	const response1 = await fetch("https://idculver.net/api/leitmotifs/songs");
+	const data1 = await response1.json();
+	data1.forEach(row => addSongNode(row));
+
+	// add leitmotif nodes
+	const response2 = await fetch("https://idculver.net/api/leitmotifs/leitmotifs")
+	const data2 = await response2.json();
+	data2.forEach(row => addLeitmotifNode(row));
+
+	// add links
+	const response3 = await fetch("https://idculver.net/api/leitmotifs/leitmotifs_in_songs")
+	const data3 = await response3.json();
+	data3.forEach(row => addLink(row));
+}
 
 function addSongNode(row) {
 	const song_id = `${row.game_id}-${row.track_number}`;
@@ -216,6 +207,9 @@ function updateInfoPanel(event) {
 		selected_caption.textContent = `${game_title.replace("Chapter", "Ch.")} OST #${track_number}`;
 		selected_sprite.setAttribute("hidden", true);
 		selected_list_name.textContent = "Leitmotifs:"
+
+		// spotify embed
+
 
 		// find connections
 		let list = "";
