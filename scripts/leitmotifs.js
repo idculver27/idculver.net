@@ -181,6 +181,7 @@ function updateInfoPanel(event) {
 		const leitmotif_name = event.target.attributes.leitmotif_name.value;
 		selected_name.textContent = leitmotif_name;
 		selected_caption.textContent = "Leitmotif";
+		spotify_embed.setAttribute("hidden", true);
 		selected_list_name.textContent = "Appears in:";
 
 		// update sprite
@@ -206,10 +207,9 @@ function updateInfoPanel(event) {
 		selected_name.textContent = track_title;
 		selected_caption.textContent = `${game_title.replace("Chapter", "Ch.")} OST #${track_number}`;
 		selected_sprite.setAttribute("hidden", true);
+		spotify_embed.removeAttribute("hidden");
+		spotify_embed.src = `https://open.spotify.com/embed/track/${spotify_id}`;
 		selected_list_name.textContent = "Leitmotifs:"
-
-		// spotify embed
-
 
 		// find connections
 		let list = "";
