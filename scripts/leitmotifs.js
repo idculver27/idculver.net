@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		});
 
 	// add links
-	fetch("https://idculver.net/api/leitmotifs")
+	fetch("https://idculver.net/api/leitmotifs/leitmotifs_in_songs")
 		.then((response) => response.json())
 		.then((json) => {
 			json.forEach(row => {
