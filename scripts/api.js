@@ -99,12 +99,14 @@ app.get("/api/battle_packs", (req, res) => {
 // leitmotifs endpoint
 app.get("/api/leitmotifs", (req, res) => {
 	query = `
-		SELECT leitmotif_name, game_id, game_title, track_number, track_title
-		FROM leitmotif
-		JOIN leitmotif_in_song USING (leitmotif_id)
-		JOIN song USING (game_id, track_number)
-		JOIN game USING (game_id)
-		ORDER BY leitmotif_id, game_id, track_number;
+		SELECT game_id, track_number, track_title, (
+			SELECT JSON_ARRAYAGG(leitmotif_name)
+			FROM leitmotif_in_song l_s
+			JOIN leitmotif l USING (leitmotif_id)
+			WHERE s.game_id = l_s.game_id AND s.track_number = l_s.track_number
+		) AS leitmotifs
+		FROM song s
+		JOIN game USING (game_id);
 	`;
 	db.query(query, (err, result) => {
 		if (err) {

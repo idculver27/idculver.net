@@ -23,44 +23,46 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 function buildLinks(row) {
-	const leitmotif_id = row.leitmotif_name.replaceAll(/[^\w]/g, "");
+	// add song node
 	const song_id = `${row.game_id}-${row.track_number}`;
-
-	// add link
-	const new_link = {
-		source: leitmotif_id,
-		target: song_id
+	let new_node = {
+		id: song_id,
+		class: "song",
+		game_id: row.game_id,
+		game_title: row.game_title,
+		track_number: row.track_number,
+		track_title: row.track_title
 	}
-	links.push(new_link);
+	nodes.push(new_node);
 
-	// identify missing nodes
-	let leitmotif_already_added = false;
-	let song_already_added = false;
-	for (let node of nodes) {
-		if (node.id === leitmotif_id) leitmotif_already_added = true;
-		else if (node.id === song_id) song_already_added = true;
-		if (leitmotif_already_added && song_already_added) break;
-	}
+	// leitmotifs
+	for (let leitmotif in row.leitmotifs) {
+		const leitmotif_id = leitmotif.replaceAll(/[^\w]/g, "");
 
-	// add missing nodes
-	if (!leitmotif_already_added) {
-		let new_node = {
-			id: leitmotif_id,
-			class: "leitmotif",
-			leitmotif_name: row.leitmotif_name
+		// add leitmotif node if needed
+		let leitmotif_already_added = false;
+		for (let node of nodes) {
+			if (node.id === leitmotif_id) {
+				leitmotif_already_added = true;
+				break;
+			}
 		}
-		nodes.push(new_node);
-	}
-	if (!song_already_added) {
-		let new_node = {
-			id: song_id,
-			class: "song",
-			game_id: row.game_id,
-			game_title: row.game_title,
-			track_number: row.track_number,
-			track_title: row.track_title
+		if (!leitmotif_already_added) {
+			let new_node = {
+				id: leitmotif_id,
+				class: "leitmotif",
+				leitmotif_name: row.leitmotif_name
+			}
+			nodes.push(new_node);
 		}
-		nodes.push(new_node);
+
+		// add link
+		const new_link = {
+			source: leitmotif_id,
+			target: song_id
+		}
+		links.push(new_link);
+
 	}
 }
 
