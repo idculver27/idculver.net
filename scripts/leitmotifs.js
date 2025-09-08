@@ -57,7 +57,7 @@ function addLeitmotifNode(row) {
 	let new_node = {
 		id: leitmotif_id,
 		class: "leitmotif",
-		leitmotif_name: row_leitmotif_name
+		leitmotif_name: row.leitmotif_name
 	}
 	nodes.push(new_node);
 }
@@ -223,6 +223,9 @@ function updateInfoPanel(event) {
 			if (link.target.game_id === game_id && link.target.track_number === track_number) {
 				list += `<p>${link.source.leitmotif_name}</p>`;
 			}
+		}
+		if (list === "") {
+			list = "<p>None</p>";
 		}
 		selected_list.innerHTML = list;
 	}
