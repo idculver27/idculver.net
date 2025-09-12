@@ -92,7 +92,8 @@ function simulate() {
 		.attr("game_id", d => d.game_id)
 		.attr("game_title", d => d.game_title)
 		.attr("track_number", d => d.track_number)
-		.attr("track_title", d => d.track_title);
+		.attr("track_title", d => d.track_title)
+		.attr("spotify_url", d => d.spotify_url);
 	song.append("title")
 		.text(d => d.track_title);
 	song.on("click", event => updateInfoPanel(event));
@@ -205,11 +206,13 @@ function updateInfoPanel(event) {
 		const game_title = event.target.attributes.game_title.value;
 		const track_number = parseInt(event.target.attributes.track_number.value);
 		const track_title = event.target.attributes.track_title.value;
+		const spotify_url = event.target.attributes.spotify_url.value.replace("track", "embed/track");
+
 		selected_name.textContent = track_title;
 		selected_caption.textContent = `${game_title.replace("Chapter", "Ch.")} OST #${track_number}`;
 		selected_sprite.setAttribute("hidden", true);
 		spotify_embed.removeAttribute("hidden");
-		spotify_embed.src = `https://open.spotify.com/embed/track/${spotify_url.substring(32)}`;
+		spotify_embed.src = spotify_url;
 		selected_list_name.textContent = "Leitmotifs:"
 
 		// find connections

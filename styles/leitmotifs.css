@@ -86,8 +86,7 @@ span {
 	background-color: #222222;
 	border: 3px solid #00C000;
 	left: 2vw;
-	max-width: 20vw;
-	min-width: 10vw;
+	max-width: 400px;
 	padding: 20px;
 	position: absolute;
 	top: 12vh;
