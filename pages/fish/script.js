@@ -11,14 +11,14 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function buildTableOcean() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Ocean"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// season
@@ -31,7 +31,7 @@ function buildTableOcean() {
 				if (!fish.time) tr.innerHTML += "<td>Any</td>";
 				else tr.innerHTML += `<td>${fish.time}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableOcean.appendChild(tr);
@@ -40,14 +40,14 @@ function buildTableOcean() {
 }
 
 function buildTableForestPond() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Forest Pond"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// season
@@ -60,7 +60,7 @@ function buildTableForestPond() {
 				if (!fish.time) tr.innerHTML += "<td>Any</td>";
 				else tr.innerHTML += `<td>${fish.time}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableForestPond.appendChild(tr);
@@ -69,14 +69,14 @@ function buildTableForestPond() {
 }
 
 function buildTableMountainLake() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Mountain Lake"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// season
@@ -89,7 +89,7 @@ function buildTableMountainLake() {
 				if (!fish.time) tr.innerHTML += "<td>Any</td>";
 				else tr.innerHTML += `<td>${fish.time}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableMountainLake.appendChild(tr);
@@ -98,14 +98,14 @@ function buildTableMountainLake() {
 }
 
 function buildTableSecretWoodsPond() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Secret Woods Pond"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// season
@@ -118,7 +118,7 @@ function buildTableSecretWoodsPond() {
 				if (!fish.time) tr.innerHTML += "<td>Any</td>";
 				else tr.innerHTML += `<td>${fish.time}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableSecretWoodsPond.appendChild(tr);
@@ -127,14 +127,14 @@ function buildTableSecretWoodsPond() {
 }
 
 function buildTableForestWaterfall() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Forest Waterfall"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// season
@@ -147,14 +147,14 @@ function buildTableForestWaterfall() {
 }
 
 function buildTableRiver() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["River"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// season
@@ -169,7 +169,7 @@ function buildTableRiver() {
 				// location
 				tr.innerHTML += `<td>${fish.location}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableRiver.appendChild(tr);
@@ -178,20 +178,20 @@ function buildTableRiver() {
 }
 
 function buildTableMines() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Mines"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// level
 				tr.innerHTML += `<td>${fish.level}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableMines.appendChild(tr);
@@ -200,14 +200,14 @@ function buildTableMines() {
 }
 
 function buildTableGingerIsland() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Ginger Island"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// weather
@@ -219,7 +219,7 @@ function buildTableGingerIsland() {
 				// location
 				tr.innerHTML += `<td>${fish.location}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableGingerIsland.appendChild(tr);
@@ -228,14 +228,14 @@ function buildTableGingerIsland() {
 }
 
 function buildTableSpecial() {
-	fetch("../databases/fish.json")
+	fetch("fish.json")
 		.then((response) => response.json())
 		.then((json) => {
 			json["Special"].forEach(fish => {
 				let tr = document.createElement("tr");
 
 				// fish
-				tr.innerHTML = `<td><img src="images/fish/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
+				tr.innerHTML = `<td><img src="media/${fish.fish_name.replace(" ", "_")}.png"><span>${fish.fish_name}</span></td>`;
 				// base price
 				tr.innerHTML += `<td style="text-align: right;">${fish.base_price}g</td>`;
 				// weather
@@ -247,7 +247,7 @@ function buildTableSpecial() {
 				// location
 				tr.innerHTML += `<td>${fish.location}</td>`;
 				// bundle
-				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="images/fish/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
+				if (fish.bundle) tr.innerHTML += `<td class="centered"><img src="media/${fish.bundle.replaceAll(" ", "_")}.png" title="${fish.bundle}"></td>`;
 				else tr.innerHTML += "<td></td>";
 
 				tableSpecial.appendChild(tr);

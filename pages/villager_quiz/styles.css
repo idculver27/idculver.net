@@ -1,5 +1,5 @@
 body {
-	background-image: url("/images/darkdirt.png");
+	background-image: url("media/darkdirt.png");
 	font-family: Verdana, Tahoma, sans-serif;
 	margin: 0px;
 	text-align: center;
@@ -29,7 +29,7 @@ img {
 .button {
 	background-color: #c6c6c6;
 	border: 10px solid transparent;
-	border-image: url("/images/buttongray.png") 10 stretch;
+	border-image: url("media/buttongray.png") 10 stretch;
 	color: #4c4c4c;
 	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 12pt;
@@ -40,7 +40,7 @@ img {
 }
 .button:hover {
 	background-color: #218306;
-	border-image: url("/images/buttongreen.png") 10 stretch;
+	border-image: url("media/buttongreen.png") 10 stretch;
 	color: white;
 }
 .icon {

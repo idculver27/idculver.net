@@ -54,7 +54,7 @@ var quizResults = {
 
 var bank;
 var imgs;
-fetch("../databases/villager_quiz.json")
+fetch("villager_quiz.json")
 	.then((response) => response.json())
 	.then((json) => {
 		bank = json.bank;
@@ -63,7 +63,7 @@ fetch("../databases/villager_quiz.json")
 
 var qIndex = 0;
 
-var audio = new Audio("sounds/click_stereo.ogg");
+var audio = new Audio("media/click_stereo.ogg");
 audio.volume = 0.3;
 
 window.addEventListener("DOMContentLoaded", () => {

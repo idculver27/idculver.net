@@ -149,13 +149,13 @@ function updateBlazeGrid(size) {
 function incrementBlaze(blaze) {
 	if(blaze.title == 0) {
 		blaze.title = 1;
-		blaze.innerHTML = '<img src="images/blaze1.png">';
+		blaze.innerHTML = '<img src="media/blaze1.png">';
 	} else if(blaze.title == 1) {
 		blaze.title = 2;
-		blaze.innerHTML = '<img src="images/blaze2.png">';
+		blaze.innerHTML = '<img src="media/blaze2.png">';
 	} else {
 		blaze.title = 0;
-		blaze.innerHTML = '<img src="images/blaze0.png">';
+		blaze.innerHTML = '<img src="media/blaze0.png">';
 	}
 }
 

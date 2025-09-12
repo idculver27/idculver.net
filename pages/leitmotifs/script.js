@@ -110,7 +110,7 @@ function simulate() {
 		.join("image")
 		.attr("id", d => d.id)
 		.attr("class", "leitmotif")
-		.attr("href", d => `/images/leitmotifs/${d.leitmotif_name.replace("?", "")}.png`)
+		.attr("href", d => `media/${d.leitmotif_name.replace("?", "")}.png`)
 		.attr("leitmotif_name", d => d.leitmotif_name);
 	leitmotif.append("title")
 		.text(d => d.leitmotif_name);
@@ -187,7 +187,7 @@ function updateInfoPanel(event) {
 		selected_list_name.textContent = "Appears in:";
 
 		// update sprite
-		selected_sprite.src = `/images/leitmotifs/${leitmotif_name.replace("?", "")}.png`;
+		selected_sprite.src = `media/${leitmotif_name.replace("?", "")}.png`;
 		const rect = document.getElementById(event.target.id).getBoundingClientRect();
 		selected_sprite.width = rect.width * 2;
 		selected_sprite.removeAttribute("hidden");
