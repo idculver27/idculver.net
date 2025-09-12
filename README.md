@@ -6,7 +6,7 @@
 
 ### Dump
 ```bash
-sudo mariadb-dump -u root -p -x -B --skip-extended-insert idculver > /var/www/idculver.net/databases/idculver.sql
+sudo mariadb-dump -u root -p -x -B --skip-extended-insert idculver > /var/www/idculver.net/database/idculver.sql
 ```
 
 ### Log in
