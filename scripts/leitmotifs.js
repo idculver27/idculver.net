@@ -38,7 +38,8 @@ function addSongNode(row) {
 		game_id: row.game_id,
 		game_title: row.game_title,
 		track_number: row.track_number,
-		track_title: row.track_title
+		track_title: row.track_title,
+		spotify_url: row.spotify_url
 	}
 	nodes.push(new_node);
 }
@@ -208,7 +209,7 @@ function updateInfoPanel(event) {
 		selected_caption.textContent = `${game_title.replace("Chapter", "Ch.")} OST #${track_number}`;
 		selected_sprite.setAttribute("hidden", true);
 		spotify_embed.removeAttribute("hidden");
-		spotify_embed.src = `https://open.spotify.com/embed/track/${spotify_id}`;
+		spotify_embed.src = `https://open.spotify.com/embed/track/${spotify_url.substring(32)}`;
 		selected_list_name.textContent = "Leitmotifs:"
 
 		// find connections
